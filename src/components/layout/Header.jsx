@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState('');
   const router = useRouter();
 
   useEffect(() => {
@@ -22,13 +23,34 @@ const Header = () => {
   };
 
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Services', href: '/services' },
+    { 
+      name: 'About Us', 
+      href: '/about',
+      submenu: [
+        { name: 'Mission', href: '/about#mission' },
+        { name: 'Meet the Team', href: '/about#team' }
+      ]
+    },
     { name: 'Approach', href: '/approach' },
-    { name: 'Cases', href: '/cases' },
+    { 
+      name: 'Services', 
+      href: '/services',
+      submenu: [
+        { name: 'Data Annotation', href: '/services#annotation' },
+        { name: 'Data Processing', href: '/services#processing' }
+      ]
+    },
+    { name: 'Credentials', href: '/credentials' },
     { name: 'Contact', href: '/contact' },
   ];
+
+  const handleSubmenuToggle = (name) => {
+    if (isSubmenuOpen === name) {
+      setIsSubmenuOpen('');
+    } else {
+      setIsSubmenuOpen(name);
+    }
+  };
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
@@ -46,17 +68,52 @@ const Header = () => {
         <nav className="hidden md:block">
           <ul className="flex items-center space-x-8">
             {navigation.map((item) => (
-              <li key={item.name}>
-                <Link 
-                  href={item.href}
-                  className={`text-base font-medium transition duration-300 ${
-                    router.pathname === item.href
-                      ? 'text-secondary'
-                      : 'text-primary hover:text-secondary'
-                  }`}
-                >
-                  {item.name}
-                </Link>
+              <li key={item.name} className="relative group">
+                {item.submenu ? (
+                  <>
+                    <button
+                      className={`text-base font-medium transition duration-300 flex items-center ${
+                        router.pathname === item.href || router.pathname.startsWith(item.href + '/')
+                          ? 'text-secondary'
+                          : 'text-primary hover:text-secondary'
+                      }`}
+                      onClick={() => handleSubmenuToggle(item.name)}
+                    >
+                      {item.name}
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        className="h-4 w-4 ml-1" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg overflow-hidden z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+                      {item.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.name}
+                          href={subItem.href}
+                          className="block px-4 py-2 text-sm text-primary hover:bg-gray-100 hover:text-secondary"
+                        >
+                          {subItem.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <Link 
+                    href={item.href}
+                    className={`text-base font-medium transition duration-300 ${
+                      router.pathname === item.href
+                        ? 'text-secondary'
+                        : 'text-primary hover:text-secondary'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                )}
               </li>
             ))}
             <li>
@@ -91,17 +148,53 @@ const Header = () => {
           <ul className="flex flex-col space-y-4">
             {navigation.map((item) => (
               <li key={item.name}>
-                <Link 
-                  href={item.href}
-                  className={`block px-3 py-2 text-base font-medium ${
-                    router.pathname === item.href
-                      ? 'text-secondary'
-                      : 'text-primary hover:text-secondary'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                {item.submenu ? (
+                  <div>
+                    <button
+                      className={`flex justify-between items-center w-full px-3 py-2 text-base font-medium ${
+                        router.pathname === item.href || router.pathname.startsWith(item.href + '/')
+                          ? 'text-secondary'
+                          : 'text-primary hover:text-secondary'
+                      }`}
+                      onClick={() => handleSubmenuToggle(item.name)}
+                    >
+                      {item.name}
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        className={`h-4 w-4 ml-1 transition-transform ${isSubmenuOpen === item.name ? 'rotate-180' : ''}`} 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div className={`pl-4 mt-2 space-y-2 ${isSubmenuOpen === item.name ? 'block' : 'hidden'}`}>
+                      {item.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.name}
+                          href={subItem.href}
+                          className="block px-3 py-1 text-sm text-primary hover:text-secondary"
+                          onClick={() => setIsOpen(false)}
+                        >
+                          {subItem.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <Link 
+                    href={item.href}
+                    className={`block px-3 py-2 text-base font-medium ${
+                      router.pathname === item.href
+                        ? 'text-secondary'
+                        : 'text-primary hover:text-secondary'
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )}
               </li>
             ))}
             <li className="pt-2">
