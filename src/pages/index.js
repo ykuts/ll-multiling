@@ -4,8 +4,8 @@ import SolutionSection from '../components/sections/SolutionSection';
 import AboutSection from '../components/sections/AboutSection';
 import ApproachSection from '../components/sections/ApproachSection';
 import ServicesOverviewSection from '../components/sections/ServicesOverviewSection';
-import CredentialsSection from '../components/sections/CredentialsSection';
 import CTASection from '../components/sections/CTASection';
+import CredentialsSection from '../components/sections/CredentialsSection';
 
 export default function Home() {
   return (
@@ -13,9 +13,9 @@ export default function Home() {
       <HeroSection />
       <ChallengeSection />
       <SolutionSection />
-      <AboutSection />
       <ApproachSection />
       <ServicesOverviewSection />
+      <AboutSection />
       <CredentialsSection />
       <CTASection />
     </>
