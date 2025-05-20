@@ -1,115 +1,241 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Container from '../components/ui/Container';
+import Button from '../components/ui/Button';
+import SectionHeading from '../components/ui/SectionHeading';
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/pages/index.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+    <>
+      {/* Hero Section */}
+      <section className="relative py-20 md:py-32 bg-gradient-to-r from-primary to-secondary text-white">
+        <Container>
+          <div className="max-w-3xl">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+              Behind every smart model is smarter data preparation
+            </h1>
+            <p className="text-xl mb-8 text-accent">
+              We provide end-to-end data processing and annotation services to transform your data into a powerful asset.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Button href="/services" variant="white" size="lg">
+                Our Services
+              </Button>
+              <Button href="/contact" variant="outline" size="lg" className="text-white border-white hover:bg-white/10">
+                Get in Touch
+              </Button>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <SectionHeading
+            title="About Label Ladder"
+            subtitle="We combine Swiss precision and data excellence with Namibian talent and agility to deliver high-quality, scalable data solutions."
+            centered
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-secondary">
+              <h3 className="text-xl font-bold text-primary mb-3">High-Quality Data Services</h3>
+              <p className="text-gray-600">
+                Quality control processes for in-house data labelers ensure accurate and high-quality processed data.
+              </p>
+            </div>
+            
+            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-secondary">
+              <h3 className="text-xl font-bold text-primary mb-3">Skilled Talent Pool</h3>
+              <p className="text-gray-600">
+                A group of trained and experienced annotators facilitating transformation of raw data.
+              </p>
+            </div>
+            
+            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-secondary">
+              <h3 className="text-xl font-bold text-primary mb-3">A Venture Built on Impact</h3>
+              <p className="text-gray-600">
+                Label Ladder is based on empowerment, where 1,000 Namibians are trained with digital skills.
+              </p>
+            </div>
+            
+            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-secondary">
+              <h3 className="text-xl font-bold text-primary mb-3">Cost-Effective Service</h3>
+              <p className="text-gray-600">
+                Reducing overhead costs associated with hiring, training, and maintaining an in-house team.
+              </p>
+            </div>
+          </div>
+          
+          <div className="mt-12 text-center">
+            <Button href="/about" variant="primary" size="lg">
+              Learn More About Us
+            </Button>
+          </div>
+        </Container>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <Container>
+          <SectionHeading
+            title="Our Services"
+            subtitle="High-quality data annotation and processing services to transform your raw data into valuable assets."
+            centered
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px]">
+              <h3 className="text-xl font-bold text-primary mb-3">Text Annotation</h3>
+              <p className="text-gray-600 mb-4">
+                Character recognition, transcription, article qualification, and content moderation services.
+              </p>
+              <Button href="/services#text" variant="outline" size="sm">
+                Learn More
+              </Button>
+            </div>
+            
+            <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px]">
+              <h3 className="text-xl font-bold text-primary mb-3">Image Annotation</h3>
+              <p className="text-gray-600 mb-4">
+                Image annotation, labelling, shape recognition, and image segmentation services.
+              </p>
+              <Button href="/services#image" variant="outline" size="sm">
+                Learn More
+              </Button>
+            </div>
+            
+            <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px]">
+              <h3 className="text-xl font-bold text-primary mb-3">Video Annotation</h3>
+              <p className="text-gray-600 mb-4">
+                Transcription and sequencing services for video content.
+              </p>
+              <Button href="/services#video" variant="outline" size="sm">
+                Learn More
+              </Button>
+            </div>
+            
+            <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px]">
+              <h3 className="text-xl font-bold text-primary mb-3">Audio Annotation</h3>
+              <p className="text-gray-600 mb-4">
+                Speech-to-text and sentiment analysis for audio content.
+              </p>
+              <Button href="/services#audio" variant="outline" size="sm">
+                Learn More
+              </Button>
+            </div>
+            
+            <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px]">
+              <h3 className="text-xl font-bold text-primary mb-3">Data Entry</h3>
+              <p className="text-gray-600 mb-4">
+                Manual or automatic input, update, or maintenance of data in a digital format.
+              </p>
+              <Button href="/services#processing" variant="outline" size="sm">
+                Learn More
+              </Button>
+            </div>
+            
+            <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px]">
+              <h3 className="text-xl font-bold text-primary mb-3">Data Processing</h3>
+              <p className="text-gray-600 mb-4">
+                Data validation, cleansing, and migration services.
+              </p>
+              <Button href="/services#processing" variant="outline" size="sm">
+                Learn More
+              </Button>
+            </div>
+          </div>
+          
+          <div className="mt-12 text-center">
+            <Button href="/services" variant="primary" size="lg">
+              View All Services
+            </Button>
+          </div>
+        </Container>
+      </section>
+
+      {/* Approach Section */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <SectionHeading
+            title="Our Approach"
+            subtitle="We follow a thoughtful approach to designing a solution that fits your needs."
+            centered
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+            <div>
+              <div className="flex items-center mb-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white font-bold text-xl mr-4">
+                  1
+                </div>
+                <h3 className="text-xl font-bold text-primary">Needs Assessment</h3>
+              </div>
+              <p className="text-gray-600 ml-16">
+                We start by understanding your data, models, and business goals. Our in-house data professionals work with your team to identify the real purpose of the dataset.
+              </p>
+            </div>
+            
+            <div>
+              <div className="flex items-center mb-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white font-bold text-xl mr-4">
+                  2
+                </div>
+                <h3 className="text-xl font-bold text-primary">Custom Annotation Design</h3>
+              </div>
+              <p className="text-gray-600 ml-16">
+                We don't apply a one-size-fits-all approach. We design annotation workflows tailored to your use case and quality control protocols aligned with your accuracy targets.
+              </p>
+            </div>
+            
+            <div>
+              <div className="flex items-center mb-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white font-bold text-xl mr-4">
+                  3
+                </div>
+                <h3 className="text-xl font-bold text-primary">Future-Proofed Data Architecture</h3>
+              </div>
+              <p className="text-gray-600 ml-16">
+                We think ahead. Our approach ensures your labelled data integrates seamlessly into ML/AI pipelines and supports model retraining and versioning.
+              </p>
+            </div>
+            
+            <div>
+              <div className="flex items-center mb-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white font-bold text-xl mr-4">
+                  4
+                </div>
+                <h3 className="text-xl font-bold text-primary">Human in the Loop, Always</h3>
+              </div>
+              <p className="text-gray-600 ml-16">
+                Our workforce is trained beyond basic labelling – they are skilled in domain-specific annotation and continuously improving through feedback loops.
+              </p>
+            </div>
+          </div>
+          
+          <div className="mt-12 text-center">
+            <Button href="/approach" variant="primary" size="lg">
+              Learn More About Our Approach
+            </Button>
+          </div>
+        </Container>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 bg-primary text-white">
+        <Container>
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to unlock the full potential of your data?
+            </h2>
+            <p className="text-xl mb-8 text-accent">
+              Let us help you transform your data into a powerful asset that drives smarter decisions, streamlined operations, and real competitive edge.
+            </p>
+            <Button href="/contact" variant="white" size="lg">
+              Contact Us Today
+            </Button>
+          </div>
+        </Container>
+      </section>
+    </>
   );
 }
