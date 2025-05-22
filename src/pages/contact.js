@@ -143,7 +143,7 @@ export default function Contact() {
                   </div>
                 </div>
                 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-14a3 3 0 00-3 3v2H7a1 1 0 000 2h1v1a1 1 0 01-1 1 1 1 0 100 2h6a1 1 0 100-2H9.83c.11-.313.17-.65.17-1v-1h1a1 1 0 100-2h-1V7a1 1 0 112 0 1 1 0 102 0 3 3 0 00-3-3z" clipRule="evenodd" />
@@ -158,9 +158,9 @@ export default function Contact() {
                       </a>
                     </p>
                   </div>
-                </div>
+                </div> */}
                 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
@@ -175,7 +175,7 @@ export default function Contact() {
                       </a>
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
               
               <div className="mt-12">
@@ -355,7 +355,7 @@ export default function Contact() {
       </section>
       
       {/* Office Locations Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <Container>
           <SectionHeading
             title="Our Offices"
@@ -406,10 +406,10 @@ export default function Contact() {
             ))}
           </div>
         </Container>
-      </section>
+      </section> */}
       
       {/* FAQ Section */}
-      <section className="py-16">
+      <section className="py-16 bg-gray-50">
         <Container>
           <SectionHeading
             title="Frequently Asked Questions"

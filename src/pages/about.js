@@ -41,36 +41,39 @@ export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 bg-primary text-white">
+      <section className="relative py-20 bg-primary text-white" id='mission'>
         <Container>
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              About Label Ladder
+              Our Mission
             </h1>
             <p className="text-xl mb-8 text-accent">
-              We provide end-to-end data processing and annotation services — not just to label your data, but to transform it into a powerful asset.
+              Behind every smart model is smarter data preparation
             </p>
           </div>
         </Container>
       </section>
 
       {/* About Section */}
-      <section className="py-16">
+      <section className="py-16" id="about">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <SectionHeading
-                title="Who We Are"
+                title="About Us"
                 subtitle="Label Ladder is a Swiss-Namibian company with offices in Zürich and Windhoek."
               />
               <p className="text-gray-600 mb-6">
-                Whether you're training AI models or managing complex datasets, our solutions are built to reduce operational costs, enhance data quality and usability, and enable faster, insight-driven decisions.
+                We provide <strong>end-to-end data processing and annotation services</strong> — not just to label your data, but to transform it into a powerful asset that drives smarter decisions, streamlined operations, and real competitive edge.
+              </p>
+              <p className="text-gray-600 mb-6">
+                Whether you're training AI models or managing complex datasets, our solutions are built to <strong>reduce operational costs, enhance data quality and usability</strong>, and enable <strong>faster, insight-driven decisions.</strong>
               </p>
               <p className="text-gray-600 mb-6">
                 We combine Swiss precision and data excellence with Namibian talent and agility to deliver high-quality, scalable data solutions that are both globally competitive and locally grounded.
               </p>
               <p className="text-gray-600">
-                Let us help you unlock the full potential of your data — with precision, purpose, and long-term impact.
+                Let us help you unlock the full potential of your data — with <strong>precision, purpose, and long-term impact.</strong>
               </p>
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
@@ -84,8 +87,88 @@ export default function About() {
           </div>
         </Container>
       </section>
-      
-      {/* Our Impact Section */}
+
+        {/* Working With Us Section */}
+        <section className="py-16 bg-gray-50">
+            <Container>
+                <SectionHeading
+                    title="Working with Us"
+                    subtitle="Our commitment to quality and expertise are what sets us apart."
+                    centered
+                />
+                <div className="flex justify-center">
+                    <div className="md:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {/* High-Quality Data Services */}
+                        <div className="border-2 border-blue-900 rounded-lg p-6">
+                            <div className="flex items-center mb-4">
+                                <div className="w-12 mr-4">
+                                    <Image
+                                        src="/images/icons/quality.png"
+                                        alt="High-Quality Data Services"
+                                        width={48}
+                                        height={48}
+                                        className="w-full text-blue-900"
+                                    />
+                                </div>
+                                <h3 className="text-blue-900 text-xl font-bold">HIGH-QUALITY DATA SERVICES</h3>
+                            </div>
+                            <p className="text-blue-900 font-medium mb-2">Quality <span className="font-bold">control processes</span> for in-house data labelers ensure</p>
+                            <p className="text-blue-900 mb-2"><span className="font-bold">accurate</span> and <span className="font-bold">high-quality processed data</span>, avoiding common crowdsourcing inconsistency issues</p>
+                        </div>
+                        {/* Cost-Effective Service */}
+                        <div className="border-2 border-blue-900 rounded-lg p-6">
+                            <div className="flex items-center mb-4">
+                                <div className="w-12 mr-4">
+                                    <Image
+                                        src="/images/icons/cost.png"
+                                        alt="Cost-Effective Service"
+                                        width={48}
+                                        height={48}
+                                        className="w-full text-blue-900"
+                                    />
+                                </div>
+                                <h3 className="text-blue-900 text-xl font-bold">COST-EFFECTIVE SERVICE</h3>
+                            </div>
+                            <p className="text-blue-900 font-medium mb-2">Leveraging a specialized external provider <span className="font-bold">reduces the overhead costs</span> associated with hiring, training, and maintaining an in-house team, allowing <span className="font-bold">focus on core business</span> activities for greater overall productivity</p>
+                        </div>
+                        {/* Skilled Talent Pool */}
+                        <div className="border-2 border-blue-900 rounded-lg p-6">
+                            <div className="flex items-center mb-4">
+                                <div className="w-12 mr-4">
+                                    <Image
+                                        src="/images/icons/talent.png"
+                                        alt="Skilled Talent Pool"
+                                        width={48}
+                                        height={48}
+                                        className="w-full text-blue-900"
+                                    />
+                                </div>
+                                <h3 className="text-blue-900 text-xl font-bold">SKILLED TALENT POOL</h3>
+                            </div>
+                            <p className="text-blue-900 font-medium mb-2">A group of <span className="font-bold">trained and experienced annotators</span> facilitating transformation of raw data to enable the proper functioning of machine-learning systems</p>
+                        </div>
+                        {/* A Venture Built on Impact */}
+                        <div className="border-2 border-blue-900 rounded-lg p-6">
+                            <div className="flex items-center mb-4">
+                                <div className="w-12 mr-4">
+                                    <Image
+                                        src="/images/icons/impact.png"
+                                        alt="A Venture Built on Impact"
+                                        width={48}
+                                        height={48}
+                                        className="w-full text-blue-900"
+                                    />
+                                </div>
+                                <h3 className="text-blue-900 text-xl font-bold">A VENTURE BUILT ON IMPACT</h3>
+                            </div>
+                            <p className="text-blue-900 font-medium mb-2">Label Ladder is based on empowerment, where <span className="font-bold">1'000 Namibians</span> are trained with digital skills, supporting <span className="font-bold">economic development</span> and <span className="font-bold">youth employment</span></p>
+                        </div>
+                    </div>
+                </div>
+            </Container>
+        </section>
+
+        {/* Our Impact Section */}
       <section className="py-16 bg-gray-50">
         <Container>
           <SectionHeading
@@ -106,144 +189,75 @@ export default function About() {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <h3 className="text-2xl font-bold text-primary mb-6">
+              {/* <h3 className="text-2xl font-bold text-primary mb-6">
                 Label Ladder Academy
-              </h3>
+              </h3> */}
               <p className="text-gray-600 mb-6">
-                Our project is supported by the Namibian Ministry of Information, Communication & Technology, and the Ministry of Sport, Youth and National Service.
+                Our project is supported by the Namibian <strong>Ministry of Information, Communication & Technology</strong>, and the <strong>Ministry of Sport, Youth and National Service</strong>.
               </p>
               <p className="text-gray-600 mb-6">
-                Through our Label Ladder Academy program, we guarantee our employees a pathway to growth and employability in a globally competitive industry.
+                Through our <strong>Label Ladder Academy</strong> program, we guarantee our employees a pathway to growth and employability in a <strong>globally competitive industry</strong>.
               </p>
-              
-              <h4 className="text-xl font-bold text-primary mb-4 mt-8">
+            </div>
+            <div className="order-4 md:order-3">
+                <h4 className="text-xl font-bold text-primary mb-4 mt-8">
                 Core Teachings of the Academy:
               </h4>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-white font-bold text-sm mr-3 mt-0.5">1</span>
-                  <span>Intro to Data Work: Learn the basics of data annotation, digital tools, and working in tech</span>
+                  {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">1</span> */}
+                  <span><strong>1. Intro to Data Work:</strong> Learn the basics of data annotation, digital tools, and working in tech</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-white font-bold text-sm mr-3 mt-0.5">2</span>
-                  <span>Annotation Skills Training: Get hands-on with real data — images, text, audio, and video — using industry tools</span>
+                  {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">2</span> */}
+                  <span><strong>2. Annotation Skills Training:</strong> Get hands-on with real data — images, text, audio, and video — using industry tools</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-white font-bold text-sm mr-3 mt-0.5">3</span>
-                  <span>Quality & Review Certification: Train to become a quality checker or team lead with advanced annotation skills</span>
+                  {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">3</span> */}
+                  <span><strong>3. Quality & Review Certification:</strong> Train to become a quality checker or team lead with advanced annotation skills</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-white font-bold text-sm mr-3 mt-0.5">4</span>
-                  <span>Project & Tech Skills: Learn how to manage data projects, use dashboards, and communicate with global teams</span>
+                  {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">4</span> */}
+                  <span><strong>4. Project & Tech Skills:</strong> Learn how to manage data projects, use dashboards, and communicate with global teams</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-white font-bold text-sm mr-3 mt-0.5">5</span>
-                  <span>Workplace Readiness & Soft Skills: Build confidence in communication, teamwork, time management, and professionalism</span>
+                  {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">5</span> */}
+                  <span><strong>5. Workplace Readiness & Soft Skills:</strong> Build confidence in communication, teamwork, time management, and professionalism</span>
                 </li>
               </ul>
             </div>
-          </div>
-        </Container>
-      </section>
-      
-      {/* Our Challenge Section */}
-      <section className="py-16">
-        <Container>
-          <SectionHeading
-            title="Your Challenge"
-            subtitle="Organizations that make data-driven decisions or use machine-learning models face various challenges."
-            centered
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary mb-3">Time</h3>
-              <p className="text-gray-600">
-                Project time spent on data preparation often delays projects or reduces overall productivity.
-              </p>
-            </div>
-            
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary mb-3">Quality</h3>
-              <p className="text-gray-600">
-                Low-quality and misleading data leads to inaccurate predictions, unreliable models and financial losses.
-              </p>
-            </div>
-            
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary mb-3">Costs</h3>
-              <p className="text-gray-600">
-                Managing in-house data processing, labelling and annotation is costly and time-consuming.
-              </p>
-            </div>
-            
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary mb-3">Scalability</h3>
-              <p className="text-gray-600">
-                Some projects require rapid scaling, while others may need specialized annotations for niche applications.
-              </p>
-            </div>
-            
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-primary mb-3">Integration</h3>
-              <p className="text-gray-600">
-                Integrating data with existing AI/ML workflows or pipelines can create process and technical bottlenecks.
-              </p>
+            <div className="order-3 md:order-4">
+              <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+                
+<div class="flex items-center justify-center h-full bg-white">
+  {/* <!-- Book with ladder icon (SVG) --> */}
+  <div class="mr-4">
+    <Image 
+                  src="/images/icons/academy.png" 
+                  alt="Label Ladder Academy" 
+                    width={200}
+                    height={200}
+                  className="object-cover"
+                />
+  </div>
+  
+  {/* <!-- Text "Label Ladder Academy" --> */}
+  <div class="text-primary font-bold">
+    <div class="text-3xl leading-tight">Label</div>
+    <div class="text-3xl leading-tight">Ladder</div>
+    <div class="text-3xl leading-tight">Academy</div>
+  </div>
+</div>
+
+              </div>
             </div>
           </div>
         </Container>
       </section>
       
-      {/* Our Solution Section */}
-      <section className="py-16 bg-gray-50">
-        <Container>
-          <SectionHeading
-            title="Our Solution"
-            subtitle="Label Ladder addresses these challenges through our unique approach and services."
-            centered
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-secondary">
-              <h3 className="text-xl font-bold text-primary mb-3">Speed</h3>
-              <p className="text-gray-600">
-                We deploy trained teams quickly and deliver results fast — without compromising quality.
-              </p>
-            </div>
-            
-            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-secondary">
-              <h3 className="text-xl font-bold text-primary mb-3">Scale</h3>
-              <p className="text-gray-600">
-                From pilot to enterprise volumes, our model adapts seamlessly to your evolving data needs.
-              </p>
-            </div>
-            
-            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-secondary">
-              <h3 className="text-xl font-bold text-primary mb-3">Savings</h3>
-              <p className="text-gray-600">
-                We offer cost-effective services by combining smart design with high-quality local talent.
-              </p>
-            </div>
-            
-            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-secondary">
-              <h3 className="text-xl font-bold text-primary mb-3">Efficiency</h3>
-              <p className="text-gray-600">
-                Our optimized workflows reduce friction, eliminate rework, and accelerate your data readiness.
-              </p>
-            </div>
-            
-            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-secondary">
-              <h3 className="text-xl font-bold text-primary mb-3">Reliability</h3>
-              <p className="text-gray-600">
-                Swiss standards ensure consistent accuracy, data security, and dependable delivery every time.
-              </p>
-            </div>
-          </div>
-        </Container>
-      </section>
       
       {/* Team Section */}
-      <section className="py-16">
+      <section className="py-16" id="team">
         <Container>
           <SectionHeading
             title="Meet the Team"
@@ -254,12 +268,14 @@ export default function About() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
             {team.map((member, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="relative h-64">
+                <div className="relative aspect-square">
                   <Image 
                     src={member.image} 
                     alt={member.name} 
                     fill
-                    className="object-cover"
+                    className="object-contain"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 12.5vw"
+                    
                   />
                 </div>
                 <div className="p-4 text-center">
@@ -280,16 +296,17 @@ export default function About() {
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 mt-12">
               {labelers.map((labeler, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                  <div className="relative h-32">
+                  <div className="relative aspect-square">
                     <Image 
                       src={labeler.image} 
                       alt={labeler.name} 
                       fill
-                      className="object-cover"
+                      className="object-contain"
+                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 12.5vw"
                     />
                   </div>
                   <div className="p-2 text-center">
-                    <h3 className="font-medium text-primary">{labeler.name}</h3>
+                    <h4 className="font-medium text-primary">{labeler.name}</h4>
                   </div>
                 </div>
               ))}

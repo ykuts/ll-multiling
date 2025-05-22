@@ -41,7 +41,6 @@ const Header = () => {
       ]
     },
     { name: 'Credentials', href: '/credentials' },
-    { name: 'Contact', href: '/contact' },
   ];
 
   const handleSubmenuToggle = (name) => {
@@ -52,12 +51,17 @@ const Header = () => {
     }
   };
 
+  const isHomePage = router.pathname === '/';
+  const headerBg = isHomePage && !isScrolled 
+    ? 'bg-primary' 
+    : 'bg-primary shadow-md';
+
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg} ${isScrolled ? 'py-2' : 'py-2'}`}>
       <div className="container flex items-center justify-between">
         <Link href="/" className="relative flex items-center">
           <Image 
-            src="/images/logo.png" 
+            src={isHomePage && !isScrolled ? "/images/logo.png" : "/images/logo.png"} 
             alt="Label Ladder Logo" 
             width={180} 
             height={40} 
@@ -74,8 +78,8 @@ const Header = () => {
                     <button
                       className={`text-base font-medium transition duration-300 flex items-center ${
                         router.pathname === item.href || router.pathname.startsWith(item.href + '/')
-                          ? 'text-secondary'
-                          : 'text-primary hover:text-secondary'
+                          ? 'text-white'
+                          : 'text-white hover:text-secondary'
                       }`}
                       onClick={() => handleSubmenuToggle(item.name)}
                     >
@@ -107,8 +111,8 @@ const Header = () => {
                     href={item.href}
                     className={`text-base font-medium transition duration-300 ${
                       router.pathname === item.href
-                        ? 'text-secondary'
-                        : 'text-primary hover:text-secondary'
+                        ? 'text-white'
+                        : 'text-white hover:text-secondary'
                     }`}
                   >
                     {item.name}
@@ -119,14 +123,14 @@ const Header = () => {
             <li>
               <Link 
                 href="/contact" 
-                className="btn btn-primary"
+                className="btn btn-secondary"
               >
-                Get Started
+                Contact Us
               </Link>
             </li>
           </ul>
         </nav>
-
+    
         {/* Mobile Menu Button */}
         <button 
           type="button" 
@@ -135,9 +139,9 @@ const Header = () => {
           aria-label="Toggle menu"
         >
           <div className={`w-6 h-5 flex flex-col justify-between transition-all duration-300 ${isOpen ? 'transform' : ''}`}>
-            <span className={`h-0.5 w-full bg-primary rounded-full transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-            <span className={`h-0.5 w-full bg-primary rounded-full transition-all duration-300 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-            <span className={`h-0.5 w-full bg-primary rounded-full transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+            <span className={`h-0.5 w-full bg-white rounded-full transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+            <span className={`h-0.5 w-full bg-white rounded-full transition-all duration-300 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+            <span className={`h-0.5 w-full bg-white rounded-full transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
           </div>
         </button>
       </div>
@@ -203,7 +207,7 @@ const Header = () => {
                 className="block w-full text-center btn btn-primary"
                 onClick={() => setIsOpen(false)}
               >
-                Get Started
+                Contact Us
               </Link>
             </li>
           </ul>

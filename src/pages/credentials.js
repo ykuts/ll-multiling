@@ -26,7 +26,7 @@ export default function Cases() {
       image: "/images/cases/nedbank.jpg",
       logo: "/images/cases/nedbank-logo.png"
     },
-    {
+    /* {
       company: "Allyship",
       project: "Database Setup",
       description: "Establishing a scalable database schema for a Zürich-based web accessibility company.",
@@ -35,7 +35,7 @@ export default function Cases() {
       how: "A clear understanding of Allyship's needs was crucial to build a scalable and durable database, to handle the large amounts of data required to identify accessibility issues and devise tailored solutions to remediate them, using AI.",
       image: "/images/cases/allyship.jpg",
       logo: "/images/cases/allyship-logo.png"
-    }
+    } */
   ];
 
   // Testimonials data
@@ -52,12 +52,12 @@ export default function Cases() {
       position: "Head of Digital Banking",
       company: "Nedbank Namibia"
     },
-    {
+    /* {
       quote: "Working with Label Ladder helped us establish a robust database foundation for our accessibility tool. Their understanding of both technical requirements and the purpose of our data was impressive.",
       author: "Lisa Müller",
       position: "Founder",
       company: "Allyship"
-    }
+    } */
   ];
 
   return (
