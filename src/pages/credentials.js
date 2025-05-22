@@ -70,7 +70,7 @@ export default function Cases() {
               Our Case Studies
             </h1>
             <p className="text-xl mb-8 text-accent">
-              See how we've helped organizations transform their data and streamline their operations.
+              See how we&apos;ve helped organizations transform their data and streamline their operations.
             </p>
           </div>
         </Container>

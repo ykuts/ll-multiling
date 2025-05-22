@@ -442,7 +442,7 @@ export default function Contact() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-bold text-primary mb-2">Do you offer custom annotation services for specific industries?</h3>
               <p className="text-gray-600">
-                Yes, we specialize in domain-specific annotation across various industries including healthcare, legal, retail, automotive, and more. Our team receives specialized training to understand the nuances and requirements of each industry's data.
+                Yes, we specialize in domain-specific annotation across various industries including healthcare, legal, retail, automotive, and more. Our team receives specialized training to understand the nuances and requirements of each industry&apos;s data.
               </p>
             </div>
             
@@ -455,7 +455,7 @@ export default function Contact() {
             
             <div className="mt-8 text-center">
               <p className="text-gray-600 mb-4">
-                Don't see your question answered here? Contact us directly.
+                Don&apos;t see your question answered here? Contact us directly.
               </p>
               <Button href="mailto:hello@labelladder.com" variant="outline">
                 Email Your Question

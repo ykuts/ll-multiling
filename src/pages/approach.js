@@ -92,7 +92,7 @@ export default function Approach() {
                 We believe that successful data annotation and processing starts with a deep understanding of the problem space and a carefully designed workflow.
               </p>
               <p className="text-gray-600 mb-6">
-                Our approach ensures that the final outcome is not just "labelled data", but a strategic data asset that powers long-term machine learning and operational success.
+                Our approach ensures that the final outcome is not just &quot;labelled data&quot;, but a strategic data asset that powers long-term machine learning and operational success.
               </p>
               <p className="text-gray-600">
                 By thinking ahead and planning for integration, future updates, and long-term use, we build data solutions that continue to deliver value well beyond the initial project.
@@ -182,7 +182,7 @@ export default function Approach() {
               The Results
             </h2>
             <p className="text-xl mb-8 text-accent">
-              Not just "labelled data", but a strategic data asset that powers long-term machine learning and operational success.
+              Not just &quot;labelled data&quot;, but a strategic data asset that powers long-term machine learning and operational success.
             </p>
             <Button href="/contact" variant="white" size="lg">
               Start Your Project

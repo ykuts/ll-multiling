@@ -67,7 +67,7 @@ export default function About() {
                 We provide <strong>end-to-end data processing and annotation services</strong> — not just to label your data, but to transform it into a powerful asset that drives smarter decisions, streamlined operations, and real competitive edge.
               </p>
               <p className="text-gray-600 mb-6">
-                Whether you're training AI models or managing complex datasets, our solutions are built to <strong>reduce operational costs, enhance data quality and usability</strong>, and enable <strong>faster, insight-driven decisions.</strong>
+                Whether you&rsquo;re training AI models or managing complex datasets, our solutions are built to <strong>reduce operational costs, enhance data quality and usability</strong>, and enable <strong>faster, insight-driven decisions.</strong>
               </p>
               <p className="text-gray-600 mb-6">
                 We combine Swiss precision and data excellence with Namibian talent and agility to deliver high-quality, scalable data solutions that are both globally competitive and locally grounded.
@@ -161,7 +161,7 @@ export default function About() {
                                 </div>
                                 <h3 className="text-blue-900 text-xl font-bold">A VENTURE BUILT ON IMPACT</h3>
                             </div>
-                            <p className="text-blue-900 font-medium mb-2">Label Ladder is based on empowerment, where <span className="font-bold">1'000 Namibians</span> are trained with digital skills, supporting <span className="font-bold">economic development</span> and <span className="font-bold">youth employment</span></p>
+                            <p className="text-blue-900 font-medium mb-2">Label Ladder is based on empowerment, where <span className="font-bold">1&rsquo;000 Namibians</span> are trained with digital skills, supporting <span className="font-bold">economic development</span> and <span className="font-bold">youth employment</span></p>
                         </div>
                     </div>
                 </div>
