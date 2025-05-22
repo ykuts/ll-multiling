@@ -2,6 +2,7 @@ import Container from '../components/ui/Container';
 import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
 import Image from 'next/image';
+import ProcessDesignSection from '@/components/sections/ProcessDesignSection';
 
 export default function Approach() {
   const approachSteps = [
@@ -109,6 +110,9 @@ export default function Approach() {
           </div>
         </Container>
       </section>
+
+        {/* Process Design Section */}
+        <ProcessDesignSection />
       
       {/* Approach Steps Section */}
       {approachSteps.map((step, index) => (
