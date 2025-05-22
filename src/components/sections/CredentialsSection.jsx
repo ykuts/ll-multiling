@@ -30,14 +30,15 @@ const CredentialsSection = () => {
         />
         
         <div className="mt-12 space-y-8">
+            <div className="flex flex-wrap gap-6">
           {cases.map((caseStudy, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg shadow-md">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div key={index} className="bg-white p-8 rounded-lg shadow-md flex-1 min-w-80">
+              
                 <div>
                   <h3 className="text-xl font-bold text-primary mb-2">{caseStudy.company}</h3>
                   <p className="font-semibold text-secondary mb-4">{caseStudy.project}</p>
                 </div>
-                <div className="md:col-span-2">
+                {/* <div className="md:col-span-2">
                   <div className="mb-4">
                     <h4 className="text-lg font-semibold text-primary mb-2">WHO</h4>
                     <p className="text-gray-600">{caseStudy.who}</p>
@@ -50,10 +51,11 @@ const CredentialsSection = () => {
                     <h4 className="text-lg font-semibold text-primary mb-2">HOW</h4>
                     <p className="text-gray-600">{caseStudy.how}</p>
                   </div>
-                </div>
+                </div> */}
               </div>
-            </div>
+            
           ))}
+          </div>
         </div>
         
         <div className="mt-12 text-center">

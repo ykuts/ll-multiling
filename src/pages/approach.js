@@ -149,12 +149,30 @@ export default function Approach() {
                 <div className="mt-8">
                   <h3 className="text-lg font-bold text-primary mb-4">HOW WE DO IT:</h3>
                   <ul className="space-y-3">
-                    {step.teamWork.map((work, i) => (
-                      <li key={i} className="flex items-start">
-                        <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-white font-bold text-sm mr-3 mt-0.5">{i+1}</span>
-                        <span className="text-gray-600">{work}</span>
+                    {/* {step.teamWork.map((work, i) => ( */}
+                      <li key={0} className="flex items-start">
+                        <Image
+                          src="/images/icons/switzerland.png"
+                            alt="Switzerland Flag"
+                            width={48}
+                            height={48}
+                            className="mr-3"
+                        />
+                        {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-white font-bold text-sm mr-3 mt-0.5">{i+1}</span> */}
+                        <span className="text-gray-600">{step.teamWork[0]}</span>
                       </li>
-                    ))}
+                      <li key={1} className="flex items-start">
+                        <Image
+                          src="/images/icons/namibia.png"
+                            alt="Switzerland Flag"
+                            width={48}
+                            height={48}
+                            className="mr-3"
+                        />
+                        {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-white font-bold text-sm mr-3 mt-0.5">{i+1}</span> */}
+                        <span className="text-gray-600">{step.teamWork[1]}</span>
+                      </li>
+                    
                   </ul>
                 </div>
               </div>

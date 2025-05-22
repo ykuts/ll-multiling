@@ -48,3 +48,8 @@ html, body {
   }
 }
 
+.p-footer {
+  color: rgb(236, 248, 248);
+  font-size: 0.875rem;
+}
+

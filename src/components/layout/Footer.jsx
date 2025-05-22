@@ -22,10 +22,10 @@ const Footer = () => {
             <p className="text-accent text-sm max-w-xs">
               We provide end-to-end data processing and annotation services to transform your data into a powerful asset.
             </p>
-            <div className="text-sm text-accent">
+            {/* <div className="text-sm text-accent">
               <p>Swiss-Namibian company with offices in:</p>
               <p>Zürich, Switzerland & Windhoek, Namibia</p>
-            </div>
+            </div> */}
           </div>
           
           {/* Quick Links */}
@@ -49,7 +49,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="/cases" className="text-accent hover:text-white transition">
-                  Case Studies
+                  Credentials
                 </Link>
               </li>
             </ul>
@@ -107,8 +107,8 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="pt-8 mt-8 border-t border-accent/30 text-center text-sm text-accent">
-          <p>&copy; {currentYear} Label Ladder. All rights reserved.</p>
+        <div className="pt-8 mt-8 border-t border-accent/30 text-center text-sm text-accent ">
+          <p className='p-footer'>&copy; {currentYear} Label Ladder. All rights reserved.</p>
         </div>
       </div>
     </footer>
