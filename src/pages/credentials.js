@@ -193,7 +193,7 @@ export default function Cases() {
       ))}
       
       {/* Testimonials Section */}
-      <section className="py-16 bg-primary text-white">
+      {/* <section className="py-16 bg-primary text-white">
         <Container>
           <SectionHeading
             title="Client Testimonials"
@@ -226,7 +226,7 @@ export default function Cases() {
             ))}
           </div>
         </Container>
-      </section>
+      </section> */}
       
       {/* Results & Metrics */}
       <section className="py-16">
@@ -272,12 +272,12 @@ export default function Cases() {
             {['Finance', 'Healthcare', 'E-commerce', 'Software', 'Automotive', 'Manufacturing', 'Logistics', 'Insurance', 'Legal', 'Real Estate', 'Education', 'Energy'].map((industry, index) => (
               <div key={index} className="bg-white p-4 rounded-lg shadow-md text-center">
                 <div className="h-20 flex items-center justify-center">
-                  <span className="text-3xl text-primary">
+                  <span className="text-4xl text-primary">
                     {/* Placeholder for industry icons */}
                     {getIndustryIcon(industry)}
                   </span>
                 </div>
-                <h3 className="font-semibold text-primary">{industry}</h3>
+                <h3 className="font-semibold text-2xl lg:text-xl text-primary">{industry}</h3>
               </div>
             ))}
           </div>
