@@ -123,14 +123,14 @@ export default function Approach() {
       {approachSteps.map((step, index) => (
         <section 
           key={index} 
-          className={`py-16 ${index % 2 === 1 ? 'bg-cover bg-left bg-no-repeat overflow-hidden relative' : 'bg-cover bg-center bg-no-repeat overflow-hidden relative'}`}
+          className={`py-16 ${index % 2 === 1 ? 'bg-cover bg-right bg-no-repeat overflow-hidden relative' : 'bg-cover bg-center bg-no-repeat overflow-hidden relative'}`}
           id={step.title.toLowerCase().replace(/\s+/g, '-')}
           style={{
         backgroundImage:  `url(${step.image})`
       }}
         >
           {/* Background overlay */}
-      <div className="absolute inset-0 bg-white/85"></div>
+      <div className={`absolute inset-0 ${index % 2 === 1 ? 'bg-gradient-to-r from-white/80 to-white/100' : 'bg-gradient-to-r from-white/100 to-white/80'}`} ></div>
           <Container>
             <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 ">
               <div className={`order-2 ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
