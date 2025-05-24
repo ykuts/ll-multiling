@@ -49,7 +49,7 @@ const Card = ({
 
   const cardClasses = {
     default: 'bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300',
-    feature: 'bg-white p-8 rounded-lg shadow-md hover:shadow-lg border-t-4 border-secondary transition-all duration-300',
+    feature: 'bg-white p-8 rounded-lg shadow-md hover:shadow-lg border-t-4 border-primary/90 transition-all duration-300',
     service: 'bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:translate-y-[-5px] transition-all duration-300',
   };
 

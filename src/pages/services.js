@@ -175,7 +175,7 @@ export default function Services() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 bg-primary text-white">
+      <section className="relative py-20 bg-primary text-white" id='services'>
         <Container>
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -213,45 +213,67 @@ export default function Services() {
       </section>
       
       {/* Text Annotation Section */}
-      <section id="text" className="py-16 bg-gray-50">
+      <section id="annotation" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/text.png')"}}>
+        {/* Background overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/100 to-white/80"></div>
+        
         <Container>
-          <SectionHeading
-            title="Text Annotation Services"
-            subtitle="Converting printed or spoken language into structured, machine-readable formats."
-          />
-          
-          <div className="mt-12 overflow-x-auto">
-            <table className="w-full bg-white rounded-lg shadow-md">
-              <thead className="bg-primary text-white">
-                <tr>
-                  <th className="px-6 py-4 text-left">Service</th>
-                  <th className="px-6 py-4 text-left">Description</th>
-                  <th className="px-6 py-4 text-left">Price Range</th>
-                  <th className="px-6 py-4 text-left">Min. Order Quantity</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200">
-                {textServices.map((service, index) => (
-                  <tr key={index} className="hover:bg-gray-50 transition-colors">
-                    <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
-                    <td className="px-6 py-4 text-gray-600">{service.description}</td>
-                    <td className="px-6 py-4 text-gray-600">{service.price}</td>
-                    <td className="px-6 py-4 text-gray-600">{service.moq}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Left side - Table and Title */}
+            <div>
+              <div className="mb-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Text Annotation Services</h2>
+                <p className="text-lg text-gray-600">Converting printed or spoken language into structured, machine-readable formats.</p>
+              </div>
+              
+              <div className="overflow-x-auto">
+                <table className="w-full bg-white rounded-lg shadow-md">
+                  <thead className="bg-primary text-white">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-sm font-medium">SERVICE</th>
+                      <th className="px-4 py-3 text-left text-sm font-medium">DESCRIPTION</th>
+                      <th className="px-4 py-3 text-left text-sm font-medium">UNIT PRICE</th>
+                      <th className="px-4 py-3 text-left text-sm font-medium">MOQ</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {textServices.map((service, index) => (
+                      <tr key={index} className="hover:bg-gray-50 transition-colors">
+                        <td className="px-4 py-3 font-medium text-primary text-sm">{service.name}</td>
+                        <td className="px-4 py-3 text-gray-600 text-sm">{service.description}</td>
+                        <td className="px-4 py-3 text-gray-600 text-sm">{service.price}</td>
+                        <td className="px-4 py-3 text-gray-600 text-sm">{service.moq}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+            {/* Right side - Background image space */}
+            <div className="hidden lg:block">
+              {/* This space is left for the background image */}
+            </div>
           </div>
         </Container>
       </section>
       
       {/* Image Annotation Section */}
-      <section id="image" className="py-16">
+      <section id="image" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/image.png')"}}>
+        {/* Background overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/80 to-white/100"></div>
+        
         <Container>
-          <SectionHeading
-            title="Image Annotation Services"
-            subtitle="Adding metadata to images to make them recognizable and processable by machine learning systems."
-          />
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+              {/* Left side - Table and Title */}
+              <div className="order-1 lg:order-2">
+                <div className="mb-8 order-1 lg:order-2">
+                  <SectionHeading
+                    title="Image Annotation Services"
+                    subtitle="Adding metadata to images to make them recognizable and processable by machine learning systems."
+                  />
+                </div>
+              
           
           <div className="mt-12 overflow-x-auto">
             <table className="w-full bg-white rounded-lg shadow-md">
@@ -275,16 +297,31 @@ export default function Services() {
               </tbody>
             </table>
           </div>
+          </div>
+
+         {/* Right side - Background image space */}
+            <div className="hidden lg:block">
+              {/* This space is left for the background image */}
+            </div>
+          </div> 
         </Container>
       </section>
       
       {/* Video Annotation Section */}
-      <section id="video" className="py-16 bg-gray-50">
+      <section id="image" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/video.png')"}}>
+        {/* Background overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/100 to-white/80"></div>
+        
         <Container>
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+              {/* Left side - Table and Title */}
+              <div >
+                <div className="mb-8">
           <SectionHeading
             title="Video Annotation Services"
             subtitle="Enhancing video content with metadata for better analysis and understanding."
           />
+          </div>
           
           <div className="mt-12 overflow-x-auto">
             <table className="w-full bg-white rounded-lg shadow-md">
@@ -308,16 +345,31 @@ export default function Services() {
               </tbody>
             </table>
           </div>
+          </div>
+
+          {/* Right side - Background image space */}
+            <div className="hidden lg:block">
+              {/* This space is left for the background image */}
+            </div>
+          </div> 
         </Container>
       </section>
       
       {/* Audio Annotation Section */}
-      <section id="audio" className="py-16">
+      <section id="image" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/audio.png')"}}>
+        {/* Background overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/80 to-white/100"></div>
+        
         <Container>
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Left side - Table and Title */}
+              <div className="order-1 lg:order-2">
+                <div className="mb-8 order-1 lg:order-2">
           <SectionHeading
             title="Audio Annotation Services"
             subtitle="Converting audio content to structured formats and analyzing tone for better insights."
           />
+          </div>
           
           <div className="mt-12 overflow-x-auto">
             <table className="w-full bg-white rounded-lg shadow-md">
@@ -341,6 +393,13 @@ export default function Services() {
               </tbody>
             </table>
           </div>
+          </div>
+
+          {/* Right side - Background image space */}
+            <div className="hidden lg:block">
+              {/* This space is left for the background image */}
+            </div>
+          </div> 
         </Container>
       </section>
       
