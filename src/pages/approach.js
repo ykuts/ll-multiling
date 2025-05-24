@@ -3,6 +3,7 @@ import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
 import Image from 'next/image';
 import ProcessDesignSection from '@/components/sections/ProcessDesignSection';
+import HumanInTheLoopSection from '@/components/sections/HumanInTheLoopSection';
 
 export default function Approach() {
   const approachSteps = [
@@ -18,7 +19,8 @@ export default function Approach() {
       teamWork: [
         "Our Swiss team leads structured assessments and defines annotation KPIs and data readiness benchmarks",
         "Our Namibian team conducts dataset exploration, metadata mapping, and prepares datasets for pipeline ingestion"
-      ]
+      ],
+      image: "/images/approach/assessment.png"
     },
     {
       title: "Custom Annotation Design",
@@ -32,7 +34,8 @@ export default function Approach() {
       teamWork: [
         "Our Swiss team sets up control and measurement systems using annotation benchmarks",
         "Our Namibian team operationalizes the workflow, ensuring flexibility for daily QA feedback loops"
-      ]
+      ],
+      image: "/images/approach/customDesign.png"
     },
     {
       title: "Future-Proofed Data Architecture",
@@ -46,7 +49,8 @@ export default function Approach() {
       teamWork: [
         "Our Swiss team defines output architecture, schema governance, and compliance-ready data documentation",
         "Our Namibian team ensures versioning, traceability, and consistent data delivery through managed pipelines"
-      ]
+      ],
+      image: "/images/approach/architecture.png"
     },
     {
       title: "Human in the Loop",
@@ -60,7 +64,8 @@ export default function Approach() {
       teamWork: [
         "Our Swiss team sets review policies and manages continuous learning from model outcomes",
         "Our Namibian team executes annotation with quality-first discipline, escalating ambiguities and refining work"
-      ]
+      ],
+      image: "/images/approach/human.png"
     }
   ];
 
@@ -101,7 +106,7 @@ export default function Approach() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <Image 
-                src="/images/approach/design.jpg" 
+                src="/images/approach/customDesign.png" 
                 alt="Label Ladder Approach" 
                 fill
                 className="object-cover"
@@ -118,12 +123,17 @@ export default function Approach() {
       {approachSteps.map((step, index) => (
         <section 
           key={index} 
-          className={`py-16 ${index % 2 === 1 ? 'bg-gray-50' : ''}`}
+          className={`py-16 ${index % 2 === 1 ? 'bg-cover bg-left bg-no-repeat overflow-hidden relative' : 'bg-cover bg-center bg-no-repeat overflow-hidden relative'}`}
           id={step.title.toLowerCase().replace(/\s+/g, '-')}
+          style={{
+        backgroundImage:  `url(${step.image})`
+      }}
         >
+          {/* Background overlay */}
+      <div className="absolute inset-0 bg-white/85"></div>
           <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div className={`order-2 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
+            <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 ">
+              <div className={`order-2 ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
                 <SectionHeading
                   title={step.title}
                   subtitle={step.subtitle}
@@ -181,13 +191,13 @@ export default function Approach() {
                 </div>
               </div>
               
-              <div className={`order-1 ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
-                <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+              <div className={`order-2 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
+                <div >
                   <Image 
-                    src={`/images/approach/step-${index+1}.jpg`} 
+                    src={step.image} 
                     alt={`${step.title} Process`} 
                     fill
-                    className="object-cover"
+                    className="object-cover hidden"
                   />
                 </div>
               </div>
@@ -195,6 +205,8 @@ export default function Approach() {
           </Container>
         </section>
       ))}
+
+      {/* <HumanInTheLoopSection /> */}
       
       {/* Results Section */}
       <section className="py-16 bg-primary text-white">
