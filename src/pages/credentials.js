@@ -13,8 +13,8 @@ export default function Cases() {
       who: "Adaire is a software development company based in Namibia and serving clients across Germany and Switzerland. Their flagship outsourcing services are used by some of Europe's largest private and public organizations.",
       what: "Adaire was transitioning to a new project management tool and required manual data migration services to ensure accuracy and proper structuring within their new tool.",
       how: "Project data including owner, status, categories, label, and other fields task data was downloaded from Azure DevOps, adjusted to the correct format, then manually imported into Jira.",
-      image: "/images/cases/adaire.jpg",
-      logo: "/images/cases/adaire-logo.png"
+      image: "/images/credentials/adaire.png",
+      logo: "/images/credentials/adaire.png"
     },
     {
       company: "Nedbank",
@@ -23,8 +23,8 @@ export default function Cases() {
       who: "Nedbank is one of the four largest banks in southern Africa, serving 7 million retail and wholesale clients across Namibia alone through its banking services and digital platforms.",
       what: "A new version of their retail client banking & payment application was developed. All migrated client data had to be cleansed, and all features of the application tested to ensure readiness for launch.",
       how: "Label Ladder's team was trained as subject matter experts and used TestFlight to test the mobile iOS application. All bugs or issues were logged and corrected by the bank's development team. User data was verified and cleaned, and dormant accounts were either verified or deleted.",
-      image: "/images/cases/nedbank.jpg",
-      logo: "/images/cases/nedbank-logo.png"
+      image: "/images/credentials/nedbank.jpg",
+      logo: "/images/credentials/nedbank-logo.jpg"
     },
     /* {
       company: "Allyship",
@@ -85,7 +85,7 @@ export default function Cases() {
             centered
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             {caseStudies.map((caseStudy, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="relative h-48">
@@ -93,7 +93,7 @@ export default function Cases() {
                     src={caseStudy.image} 
                     alt={`${caseStudy.company} Case Study`} 
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                   <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/70 to-transparent">
                     <div className="flex items-center">
@@ -105,7 +105,7 @@ export default function Cases() {
                           className="object-contain p-1"
                         />
                       </div>
-                      <h3 className="text-lg font-bold text-white">{caseStudy.company}</h3>
+                      {/* <h3 className="text-lg font-bold text-white">{caseStudy.company}</h3> */}
                     </div>
                   </div>
                 </div>
@@ -143,7 +143,7 @@ export default function Cases() {
                     src={caseStudy.image} 
                     alt={`${caseStudy.company} Case Study`} 
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
               </div>
