@@ -97,6 +97,7 @@ export default function Services() {
   const dataProcessingServices = [
     {
       title: "Data Entry",
+      subtitle: "Data Entry Tasks",
       description: "We manually or automatically input, update, or maintain data in a digital format — usually into databases, spreadsheets, CRMs, or other software systems.",
       tasks: [
         "Typing handwritten information in a spreadsheet",
@@ -107,6 +108,7 @@ export default function Services() {
     },
     {
       title: "Data Validation",
+      subtitle: "Data Validation Tasks",
       description: "We ensure that the data collected, entered, or processed is correct, usable, and meaningful — whether it comes from humans or machines.",
       tasks: [
         "Format checks: Make sure the data is of the correct format",
@@ -117,6 +119,7 @@ export default function Services() {
     },
     {
       title: "Data Cleansing",
+      subtitle: "Data Cleansing Tasks",
       description: "Our teams' work improves the quality, reliability, and usability of data by correcting or removing inaccurate, incomplete, duplicated, or irrelevant data within a dataset.",
       tasks: [
         "Removing duplicates: Make sure an entry doesn't appear twice in a dataset",
@@ -127,6 +130,7 @@ export default function Services() {
     },
     {
       title: "Data Migration",
+      subtitle: "Data Migration Process",
       description: "Data migration is the process of moving data between systems (computing environments, storage system or format) while preserving data integrity and ensuring compatibility with the destination system.",
       tasks: [
         "Extract data from the source system",
@@ -143,31 +147,65 @@ export default function Services() {
     {
       title: "Text Annotation",
       description: "Converting text into structured, machine-readable formats through recognition, transcription, and qualification.",
-      icon: "📝",
+      icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
+        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2"/>
+        <line x1="7" y1="8" x2="17" y2="8" stroke="currentColor" strokeWidth="2"/>
+        <line x1="7" y1="12" x2="17" y2="12" stroke="currentColor" strokeWidth="2"/>
+        <line x1="7" y1="16" x2="13" y2="16" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    ),
       href: "#text",
     },
     {
       title: "Image Annotation",
       description: "Adding metadata to images through tagging, labeling, segmentation and object recognition.",
-      icon: "🖼️",
+      icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
+        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2"/>
+        <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
+        <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    ),
       href: "#image",
     },
     {
       title: "Video Annotation",
       description: "Enhancing video content with metadata through transcription and sequential labeling.",
-      icon: "🎬",
+      icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
+        <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="2"/>
+        <polygon points="10,8 16,12 10,16" fill="currentColor"/>
+        <line x1="4" y1="21" x2="20" y2="21" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    ),
       href: "#video",
     },
     {
       title: "Audio Annotation",
       description: "Converting audio to text and analyzing tone through speech recognition and sentiment analysis.",
-      icon: "🔊",
+      icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
+        <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" stroke="currentColor" strokeWidth="2"/>
+        <path d="M19 10v1a7 7 0 0 1-14 0v-1" stroke="currentColor" strokeWidth="2"/>
+        <line x1="12" y1="19" x2="12" y2="22" stroke="currentColor" strokeWidth="2"/>
+        <line x1="8" y1="22" x2="16" y2="22" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    ),
       href: "#audio",
     },
     {
       title: "Data Processing",
       description: "Transforming raw data into useful formats through entry, validation, cleansing, and migration.",
-      icon: "📊",
+      icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
+        <rect x="8" y="2" width="8" height="4" rx="1" stroke="currentColor" strokeWidth="2"/>
+        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" stroke="currentColor" strokeWidth="2"/>
+        <line x1="9" y1="12" x2="15" y2="12" stroke="currentColor" strokeWidth="2"/>
+        <line x1="9" y1="16" x2="15" y2="16" stroke="currentColor" strokeWidth="2"/>
+        <line x1="9" y1="8" x2="15" y2="8" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    ),
       href: "#processing",
     }
   ];
@@ -203,7 +241,7 @@ export default function Services() {
                 key={index}
                 title={service.title}
                 description={service.description}
-                icon={<span className="text-4xl">{service.icon}</span>}
+                icon={service.icon}
                 href={service.href}
                 variant="feature"
               />
@@ -404,8 +442,12 @@ export default function Services() {
       </section>
       
       {/* Data Processing Section */}
-      <section id="processing" className="py-16 bg-gray-50">
+      <section id="processing" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/entry.png')"}}>
+        {/* Background overlay */}
+        <div className="absolute inset-0 bg-white/80"></div>
+        
         <Container>
+          <div className="relative z-10">
           <SectionHeading
             title="Data Processing Services"
             subtitle="Transforming raw data into clean, structured, and usable formats for better decision-making."
@@ -418,7 +460,7 @@ export default function Services() {
                 <p className="text-gray-600 mb-6">{service.description}</p>
                 
                 <h4 className="font-semibold text-secondary mb-2">
-                  {service.title === "Data Migration" ? "Process:" : "Tasks:"}
+                  {service.subtitle}
                 </h4>
                 <ul className="space-y-2 text-gray-600">
                   {service.tasks.map((task, i) => (
@@ -430,6 +472,7 @@ export default function Services() {
                 </ul>
               </div>
             ))}
+          </div>
           </div>
         </Container>
       </section>
@@ -454,9 +497,9 @@ export default function Services() {
                   Request Custom Quote
                 </Button>
               </div>
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-xl">
+              <div className="relative h-full rounded-lg overflow-hidden shadow-xl">
                 <Image 
-                  src="/images/services/custom-solutions.jpg" 
+                  src="/images/services/сustom-solutions.png" 
                   alt="Custom Data Solutions" 
                   fill
                   className="object-cover"

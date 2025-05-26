@@ -311,22 +311,98 @@ export default function Cases() {
 
 // Helper function to get industry icons
 function getIndustryIcon(industry) {
-  // In a real implementation, you would return specific SVG icons based on the industry
-  // For this example, we'll return a simple placeholder
   const industryIconMap = {
-    'Finance': '💰',
-    'Healthcare': '🏥',
-    'E-commerce': '🛒',
-    'Software': '💻',
-    'Automotive': '🚗',
-    'Manufacturing': '🏭',
-    'Logistics': '🚚',
-    'Insurance': '🔒',
-    'Legal': '⚖️',
-    'Real Estate': '🏢',
-    'Education': '🎓',
-    'Energy': '⚡'
+    'Finance': (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="w-12 h-12 text-primary" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+</svg>
+
+    ),
+    'Healthcare': (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-primary">
+<path d="M8.00006 16.1556C8.0567 17.1333 8.65299 19.2845 10.585 20.0667M11.5527 1.89444L5.91936 13.1613C3.65925 17.6816 6.94624 23 12 23C17.0538 23 20.3408 17.6815 18.0807 13.1613L12.4472 1.89443C12.2629 1.52591 11.737 1.52591 11.5527 1.89444Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+    ),
+    'E-commerce': (
+      <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-primary">
+        <circle cx="8" cy="21" r="1" stroke="currentColor" strokeWidth="2"/>
+        <circle cx="19" cy="21" r="1" stroke="currentColor" strokeWidth="2"/>
+        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    ),
+    'Software': (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-12 h-12 text-primary">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+</svg>
+
+    ),
+    'Automotive': (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="black"  className="w-12 h-12 text-primary" stroke-width="1.5" stroke="currentColor">
+        <path  d="M135.2 117.4L109.1 192l293.8 0-26.1-74.6C372.3 104.6 360.2 96 346.6 96L165.4 96c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32l181.2 0c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2l0 144 0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L96 400l0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L0 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+    ),
+    'Manufacturing': (
+      <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-primary">
+        <rect x="2" y="20" width="20" height="2" stroke="currentColor" strokeWidth="2"/>
+        <rect x="4" y="10" width="6" height="10" stroke="currentColor" strokeWidth="2"/>
+        <rect x="14" y="4" width="6" height="16" stroke="currentColor" strokeWidth="2"/>
+        <path d="M12 2v4l6-2v4" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    ),
+    'Logistics': (
+      <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-primary">
+        <rect x="1" y="3" width="15" height="13" stroke="currentColor" strokeWidth="2"/>
+        <polygon points="16,8 20,8 23,11 23,16 16,16" stroke="currentColor" strokeWidth="2"/>
+        <circle cx="5.5" cy="18.5" r="2.5" stroke="currentColor" strokeWidth="2"/>
+        <circle cx="18.5" cy="18.5" r="2.5" stroke="currentColor" strokeWidth="2"/>
+        <path d="M5 8h6" stroke="currentColor" strokeWidth="2"/>
+        <path d="M5 12h4" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    ),
+    'Insurance': (
+      <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-primary">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" strokeWidth="2"/>
+        <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    ),
+    'Legal': (
+      <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-primary">
+        <path d="M9 12h6" stroke="currentColor" strokeWidth="2"/>
+        <path d="M12 3v6" stroke="currentColor" strokeWidth="2"/>
+        <path d="M6 3h12" stroke="currentColor" strokeWidth="2"/>
+        <path d="M6 21h12" stroke="currentColor" strokeWidth="2"/>
+        <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2"/>
+        <path d="M8 21V9h8v12" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    ),
+    'Real Estate': (
+      <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-primary">
+        <path d="M3 21h18" stroke="currentColor" strokeWidth="2"/>
+        <path d="M5 21V7l8-4v18" stroke="currentColor" strokeWidth="2"/>
+        <path d="M19 21V11l-6-4" stroke="currentColor" strokeWidth="2"/>
+        <path d="M9 9v.01" stroke="currentColor" strokeWidth="2"/>
+        <path d="M9 12v.01" stroke="currentColor" strokeWidth="2"/>
+        <path d="M9 15v.01" stroke="currentColor" strokeWidth="2"/>
+        <path d="M9 18v.01" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    ),
+    'Education': (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-12 h-12 text-primary">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+</svg>
+
+    ),
+    'Energy': (
+      <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-primary">
+        <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" fill="currentColor" stroke="currentColor" strokeWidth="2"/>
+      </svg>
+    )
   };
   
-  return industryIconMap[industry] || '📊';
+  return industryIconMap[industry] || (
+    <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-primary">
+      <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2"/>
+      <path d="M9 9h6v6H9z" stroke="currentColor" strokeWidth="2"/>
+    </svg>
+  );
 }
