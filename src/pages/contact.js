@@ -355,7 +355,7 @@ export default function Contact() {
       </section>
       
       {/* Office Locations Section */}
-      {/* <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50">
         <Container>
           <SectionHeading
             title="Our Offices"
@@ -406,7 +406,7 @@ export default function Contact() {
             ))}
           </div>
         </Container>
-      </section> */}
+      </section>
       
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">

@@ -206,23 +206,38 @@ export default function About() {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">1</span> */}
-                  <span><strong>1. Intro to Data Work:</strong> Learn the basics of data annotation, digital tools, and working in tech</span>
+                  <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
+    1
+  </div>
+                  <span><strong>Intro to Data Work:</strong> Learn the basics of data annotation, digital tools, and working in tech</span>
                 </li>
                 <li className="flex items-start">
                   {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">2</span> */}
-                  <span><strong>2. Annotation Skills Training:</strong> Get hands-on with real data — images, text, audio, and video — using industry tools</span>
+                  <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
+    2
+  </div>
+                  <span><strong>Annotation Skills Training:</strong> Get hands-on with real data — images, text, audio, and video — using industry tools</span>
                 </li>
                 <li className="flex items-start">
                   {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">3</span> */}
-                  <span><strong>3. Quality & Review Certification:</strong> Train to become a quality checker or team lead with advanced annotation skills</span>
+                  <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
+    3
+  </div>
+                  <span><strong>Quality & Review Certification:</strong> Train to become a quality checker or team lead with advanced annotation skills</span>
                 </li>
                 <li className="flex items-start">
                   {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">4</span> */}
-                  <span><strong>4. Project & Tech Skills:</strong> Learn how to manage data projects, use dashboards, and communicate with global teams</span>
+                  <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
+    4
+  </div>
+                  <span><strong>Project & Tech Skills:</strong> Learn how to manage data projects, use dashboards, and communicate with global teams</span>
                 </li>
                 <li className="flex items-start">
                   {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">5</span> */}
-                  <span><strong>5. Workplace Readiness & Soft Skills:</strong> Build confidence in communication, teamwork, time management, and professionalism</span>
+                  <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
+    5
+  </div>
+                  <span><strong>Workplace Readiness & Soft Skills:</strong> Build confidence in communication, teamwork, time management, and professionalism</span>
                 </li>
               </ul>
             </div>

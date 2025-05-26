@@ -464,9 +464,11 @@ export default function Services() {
                 </h4>
                 <ul className="space-y-2 text-gray-600">
                   {service.tasks.map((task, i) => (
-                    <li key={i} className="flex items-start">
-                      <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-secondary text-white text-xs mr-3 mt-0.5">{i+1}</span>
-                      <span>{task}</span>
+                    <li className="flex items-start">
+                      <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
+                        {i + 1}
+                      </div>
+                      <span className="text-gray-600">{task}</span>
                     </li>
                   ))}
                 </ul>
