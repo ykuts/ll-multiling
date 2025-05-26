@@ -272,7 +272,7 @@ export default function Services() {
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     {textServices.map((service, index) => (
-                      <tr key={index} className="hover:bg-gray-50 transition-colors">
+                      <tr key={`text-${index}`} className="hover:bg-gray-50 transition-colors">
                         <td className="px-4 py-3 font-medium text-primary text-sm">{service.name}</td>
                         <td className="px-4 py-3 text-gray-600 text-sm">{service.description}</td>
                         <td className="px-4 py-3 text-gray-600 text-sm">{service.price}</td>
@@ -321,7 +321,7 @@ export default function Services() {
               </thead>
               <tbody className="divide-y divide-gray-200">
                 {imageServices.map((service, index) => (
-                  <tr key={index} className="hover:bg-gray-50 transition-colors">
+                  <tr key={`image-${index}`} className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
                     <td className="px-6 py-4 text-gray-600">{service.description}</td>
                     <td className="px-6 py-4 text-gray-600">{service.price}</td>
@@ -342,7 +342,7 @@ export default function Services() {
       </section>
       
       {/* Video Annotation Section */}
-      <section id="image" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/video.png')"}}>
+      <section id="video" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/video.png')"}}>
         {/* Background overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/100 to-white/80"></div>
         
@@ -369,7 +369,7 @@ export default function Services() {
               </thead>
               <tbody className="divide-y divide-gray-200">
                 {videoServices.map((service, index) => (
-                  <tr key={index} className="hover:bg-gray-50 transition-colors">
+                  <tr key={`video-${index}`} className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
                     <td className="px-6 py-4 text-gray-600">{service.description}</td>
                     <td className="px-6 py-4 text-gray-600">{service.price}</td>
@@ -390,7 +390,7 @@ export default function Services() {
       </section>
       
       {/* Audio Annotation Section */}
-      <section id="image" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/audio.png')"}}>
+      <section id="audio" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/audio.png')"}}>
         {/* Background overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/80 to-white/100"></div>
         
@@ -417,7 +417,7 @@ export default function Services() {
               </thead>
               <tbody className="divide-y divide-gray-200">
                 {audioServices.map((service, index) => (
-                  <tr key={index} className="hover:bg-gray-50 transition-colors">
+                  <tr key={`audio-${index}`} className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
                     <td className="px-6 py-4 text-gray-600">{service.description}</td>
                     <td className="px-6 py-4 text-gray-600">{service.price}</td>
@@ -451,7 +451,7 @@ export default function Services() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             {dataProcessingServices.map((service, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-md">
+              <div key={`processing-${index}`} className="bg-white p-8 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-primary mb-4">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
                 
@@ -460,7 +460,7 @@ export default function Services() {
                 </h4>
                 <ul className="space-y-2 text-gray-600">
                   {service.tasks.map((task, i) => (
-                    <li className="flex items-start">
+                    <li key={`task-${index}-${i}`} className="flex items-start">
                       <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
                         {i + 1}
                       </div>
