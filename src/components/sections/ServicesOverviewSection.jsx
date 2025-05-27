@@ -38,7 +38,7 @@ const ServicesOverviewSection = () => {
               ))}
             </div>
             <div className="mt-6">
-              <Button href="/services#annotation" variant="outline" size="md">
+              <Button href="/services#annotation" variant="outline" size="md" className="w-full sm:w-auto">
                 View Annotation Services
               </Button>
             </div>
@@ -55,7 +55,7 @@ const ServicesOverviewSection = () => {
               ))}
             </div>
             <div className="mt-6">
-              <Button href="/services#processing" variant="outline" size="md">
+              <Button href="/services#processing" variant="outline" size="md" className="w-full sm:w-auto">
                 View Processing Services
               </Button>
             </div>

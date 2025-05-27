@@ -39,7 +39,7 @@ const ApproachSection = () => {
           {steps.map((step, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white font-bold text-xl mr-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white font-bold text-lg mr-4 flex-shrink-0">
                   {step.number}
                 </div>
                 <h3 className="text-xl font-bold text-primary">{step.title}</h3>

@@ -48,7 +48,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/cases" className="text-accent hover:text-white transition">
+                <Link href="/credentials" className="text-accent hover:text-white transition">
                   Credentials
                 </Link>
               </li>
@@ -60,7 +60,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white mb-6">Services</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/services#text" className="text-accent hover:text-white transition">
+                <Link href="/services#annotation" className="text-accent hover:text-white transition">
                   Text Annotation
                 </Link>
               </li>

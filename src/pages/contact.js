@@ -124,78 +124,8 @@ export default function Contact() {
                 title="Get in Touch"
                 subtitle="We'd love to hear from you! Fill out the form and our team will get back to you as soon as possible."
               />
-              
-              <div className="mt-8 space-y-6">
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                    </svg>
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-primary">Email Us</h3>
-                    <p className="mt-1 text-gray-600">
-                      <a href="mailto:hello@labelladder.com" className="hover:text-secondary transition-colors">
-                        hello@labelladder.com
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                
-                {/* <div className="flex items-start">
-                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-14a3 3 0 00-3 3v2H7a1 1 0 000 2h1v1a1 1 0 01-1 1 1 1 0 100 2h6a1 1 0 100-2H9.83c.11-.313.17-.65.17-1v-1h1a1 1 0 100-2h-1V7a1 1 0 112 0 1 1 0 102 0 3 3 0 00-3-3z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-primary">Service Inquiry</h3>
-                    <p className="mt-1 text-gray-600">
-                      For price quotes and service inquiries, please fill out the form or email 
-                      <a href="mailto:sales@labelladder.com" className="ml-1 text-secondary hover:underline">
-                        sales@labelladder.com
-                      </a>
-                    </p>
-                  </div>
-                </div> */}
-                
-                {/* <div className="flex items-start">
-                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-primary">Support</h3>
-                    <p className="mt-1 text-gray-600">
-                      For support with existing projects, please email 
-                      <a href="mailto:support@labelladder.com" className="ml-1 text-secondary hover:underline">
-                        support@labelladder.com
-                      </a>
-                    </p>
-                  </div>
-                </div> */}
-              </div>
-              
-              <div className="mt-12">
-                <h3 className="text-xl font-bold text-primary mb-6">Follow Us</h3>
-                <div className="flex space-x-4">
-                  {/* <a href="https://twitter.com/labelladder" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-secondary transition-colors">
-                    <svg fill="currentColor" viewBox="0 0 24 24" className="h-5 w-5">
-                      <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                    </svg>
-                  </a> */}
-                  <a href="https://linkedin.com/company/labelladder" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-secondary transition-colors">
-                    <svg fill="currentColor" viewBox="0 0 24 24" className="h-5 w-5">
-                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-            {/* Contact Form */}
+
+              {/* Contact Form */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-primary mb-6">Send Us a Message</h3>
               
@@ -350,6 +280,78 @@ export default function Contact() {
                 </form>
               )}
             </div>
+              
+              <div className="mt-8 space-y-6">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-medium text-primary">Email Us</h3>
+                    <p className="mt-1 text-gray-600">
+                      <a href="mailto:hello@labelladder.com" className="hover:text-secondary transition-colors">
+                        hello@labelladder.com
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                
+                {/* <div className="flex items-start">
+                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-14a3 3 0 00-3 3v2H7a1 1 0 000 2h1v1a1 1 0 01-1 1 1 1 0 100 2h6a1 1 0 100-2H9.83c.11-.313.17-.65.17-1v-1h1a1 1 0 100-2h-1V7a1 1 0 112 0 1 1 0 102 0 3 3 0 00-3-3z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-medium text-primary">Service Inquiry</h3>
+                    <p className="mt-1 text-gray-600">
+                      For price quotes and service inquiries, please fill out the form or email 
+                      <a href="mailto:sales@labelladder.com" className="ml-1 text-secondary hover:underline">
+                        sales@labelladder.com
+                      </a>
+                    </p>
+                  </div>
+                </div> */}
+                
+                {/* <div className="flex items-start">
+                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-medium text-primary">Support</h3>
+                    <p className="mt-1 text-gray-600">
+                      For support with existing projects, please email 
+                      <a href="mailto:support@labelladder.com" className="ml-1 text-secondary hover:underline">
+                        support@labelladder.com
+                      </a>
+                    </p>
+                  </div>
+                </div> */}
+              </div>
+              
+              <div className="mt-12">
+                <h3 className="text-xl font-bold text-primary mb-6">Follow Us</h3>
+                <div className="flex space-x-4">
+                  {/* <a href="https://twitter.com/labelladder" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-secondary transition-colors">
+                    <svg fill="currentColor" viewBox="0 0 24 24" className="h-5 w-5">
+                      <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                    </svg>
+                  </a> */}
+                  <a href="https://linkedin.com/company/labelladder" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-secondary transition-colors">
+                    <svg fill="currentColor" viewBox="0 0 24 24" className="h-5 w-5">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            
           </div>
         </Container>
       </section>

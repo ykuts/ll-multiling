@@ -19,11 +19,11 @@ const Button = ({
   
   // Button variants
   const variantClasses = {
-    primary: 'bg-primary text-white hover:bg-primary/90',
-    secondary: 'bg-secondary text-white hover:bg-secondary/90',
-    outline: 'bg-transparent border border-primary text-primary hover:bg-primary/10',
-    outlineSecondary: 'bg-transparent border border-secondary text-secondary hover:bg-secondary/10',
-    white: 'bg-white text-primary hover:bg-gray-100',
+    primary: 'bg-primary text-white hover:bg-primary/90 border-2 border-primary',
+    secondary: 'bg-secondary text-white hover:bg-secondary/90 border-2 border-secondary',
+    outline: 'bg-transparent border-2 border-primary text-primary hover:bg-primary/10',
+    outlineSecondary: 'bg-transparent border-2 border-secondary text-secondary hover:bg-secondary/10',
+    white: 'bg-white text-primary hover:bg-gray-100 border-2 border-white',
   };
   
   const baseClasses = 'rounded-md font-medium transition duration-300 inline-block text-center';

@@ -38,22 +38,6 @@ const CredentialsSection = () => {
           centered
         />
 
-        {/* Client Logos Banner */}
-        {/* <div className="mt-8 mb-12">
-          <div className="flex justify-center items-center space-x-8 md:space-x-12 opacity-70">
-            {cases.map((caseStudy, index) => (
-              <div key={index} className="h-12 w-24 relative grayscale hover:grayscale-0 transition-all duration-300">
-                <Image 
-                  src={caseStudy.logo} 
-                  alt={`${caseStudy.company} Logo`} 
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div> */}
-
         {/* Case Studies Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12">
           {cases.map((caseStudy, index) => (
@@ -82,11 +66,11 @@ const CredentialsSection = () => {
               {/* Project Details */}
               <div className="p-6">
                 <div className="grid grid-cols-2 gap-4 mb-4">
-                  <div className="text-center">
+                  <div className="text-left">
                     <div className="text-lg font-bold text-primary">{caseStudy.duration}</div>
                     <div className="text-xs text-gray-500">Duration</div>
                   </div>
-                  <div className="text-center">
+                  <div className="text-left">
                     <div className="text-lg font-bold text-primary">{caseStudy.dataVolume}</div>
                     <div className="text-xs text-gray-500">Data Volume</div>
                   </div>
@@ -96,52 +80,12 @@ const CredentialsSection = () => {
                   {caseStudy.what}
                 </p>
                 
-                {/* <div className="flex justify-between items-center">
-                  <span className="text-secondary font-medium text-sm hover:underline cursor-pointer">
-                    View Case Study →
-                  </span>
-                  <div className="flex space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-                      </svg>
-                    ))}
-                  </div>
-                </div> */}
               </div>
             </div>
           ))}
         </div>
         
-        {/* <div className="mt-12 space-y-8">
-            <div className="flex flex-wrap gap-6">
-          {cases.map((caseStudy, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg shadow-md flex-1 min-w-80">
-              
-                <div>
-                  <h3 className="text-xl font-bold text-primary mb-2">{caseStudy.company}</h3>
-                  <p className="font-semibold text-secondary mb-4">{caseStudy.project}</p>
-                </div> */}
-                {/* <div className="md:col-span-2">
-                  <div className="mb-4">
-                    <h4 className="text-lg font-semibold text-primary mb-2">WHO</h4>
-                    <p className="text-gray-600">{caseStudy.who}</p>
-                  </div>
-                  <div className="mb-4">
-                    <h4 className="text-lg font-semibold text-primary mb-2">WHAT</h4>
-                    <p className="text-gray-600">{caseStudy.what}</p>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-2">HOW</h4>
-                    <p className="text-gray-600">{caseStudy.how}</p>
-                  </div>
-                </div> */}
-              {/* </div>
-            
-          ))}
-          </div>
-        </div> */}
-        
+                
         <div className="mt-12 text-center">
           <Button href="/credentials" variant="primary" size="lg">
             View All Case Studies
