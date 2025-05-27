@@ -814,3 +814,91 @@ export default function Services() {
     </>
   );
 }
+
+{/* <div className="flex items-start">
+                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-14a3 3 0 00-3 3v2H7a1 1 0 000 2h1v1a1 1 0 01-1 1 1 1 0 100 2h6a1 1 0 100-2H9.83c.11-.313.17-.65.17-1v-1h1a1 1 0 100-2h-1V7a1 1 0 112 0 1 1 0 102 0 3 3 0 00-3-3z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-medium text-primary">Service Inquiry</h3>
+                    <p className="mt-1 text-gray-600">
+                      For price quotes and service inquiries, please fill out the form or email 
+                      <a href="mailto:sales@labelladder.com" className="ml-1 text-secondary hover:underline">
+                        sales@labelladder.com
+                      </a>
+                    </p>
+                  </div>
+                </div> */}
+                
+                {/* <div className="flex items-start">
+                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-medium text-primary">Support</h3>
+                    <p className="mt-1 text-gray-600">
+                      For support with existing projects, please email 
+                      <a href="mailto:support@labelladder.com" className="ml-1 text-secondary hover:underline">
+                        support@labelladder.com
+                      </a>
+                    </p>
+                  </div>
+                </div> */}
+
+
+                {/* <section className="py-16 bg-gray-50">
+        <Container>
+          <SectionHeading
+            title="Our Offices"
+            subtitle="Label Ladder is a Swiss-Namibian company with offices in Zürich and Windhoek."
+            centered
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+            {officeLocations.map((office, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+                <div className="relative h-64 rounded-lg overflow-hidden mb-6">
+                  <Image 
+                    src={office.mapUrl} 
+                    alt={`${office.city} Office Location`} 
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                
+                <h3 className="text-xl font-bold text-primary mb-2">{office.city}, {office.country}</h3>
+                
+                <div className="space-y-3 text-gray-600">
+                  <p className="flex items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-secondary mr-3 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                    </svg>
+                    <span>{office.address}</span>
+                  </p>
+                  
+                  <p className="flex items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-secondary mr-3 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    <span>{office.phone}</span>
+                  </p>
+                  
+                  <p className="flex items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-secondary mr-3 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                    <a href={`mailto:${office.email}`} className="hover:text-secondary transition-colors">
+                      {office.email}
+                    </a>
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section> */}
