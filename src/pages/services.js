@@ -206,6 +206,56 @@ export default function Services() {
     }
   ];
 
+  // Компонент для отображения сервисов в виде карточек на мобильных
+  const ServiceCards = ({ services, sectionTitle }) => (
+    <div className="lg:hidden space-y-4">
+      <h3 className="text-xl font-bold text-primary mb-4">{sectionTitle}</h3>
+      {services.map((service, index) => (
+        <div key={`mobile-${index}`} className="bg-white p-4 rounded-lg border shadow-sm">
+          <h4 className="font-bold text-primary text-lg mb-2">{service.name}</h4>
+          <p className="text-gray-600 text-sm mb-3 leading-relaxed">{service.description}</p>
+          <div className="mt-3 pt-3 border-t border-gray-200 space-y-2">
+            <div className="flex justify-between items-start">
+              <span className="font-medium text-sm text-gray-700">Price:</span>
+              <span className="text-sm text-gray-600 text-right flex-1 ml-2">{service.price}</span>
+            </div>
+            <div className="flex justify-between items-start">
+              <span className="font-medium text-sm text-gray-700">MOQ:</span>
+              <span className="text-sm text-gray-600 text-right flex-1 ml-2">{service.moq}</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+
+  // Компонент для отображения таблиц на десктопе
+  const ServiceTable = ({ services, headers }) => (
+    <div className="hidden lg:block overflow-x-auto">
+      <table className="w-full bg-white rounded-lg shadow-md">
+        <thead className="bg-primary text-white">
+          <tr>
+            {headers.map((header, index) => (
+              <th key={index} className="px-4 py-3 text-left text-sm font-medium">{header}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-200">
+          {services.map((service, index) => (
+            <tr key={`desktop-${index}`} className="hover:bg-gray-50 transition-colors">
+              <td className="px-4 py-3 font-medium text-primary text-sm">{service.name}</td>
+              <td className="px-4 py-3 text-gray-600 text-sm">{service.description}</td>
+              <td className="px-4 py-3 text-gray-600 text-sm">{service.price}</td>
+              <td className="px-4 py-3 text-gray-600 text-sm">{service.moq}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+
+  const tableHeaders = ['SERVICE', 'DESCRIPTION', 'UNIT PRICE', 'MOQ'];
+
   return (
     <>
       {/* Hero Section */}
@@ -253,35 +303,18 @@ export default function Services() {
         
         <Container>
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Left side - Table and Title */}
+            {/* Left side - Content */}
             <div>
               <div className="mb-8">
                 <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Text Annotation Services</h2>
                 <p className="text-lg text-gray-600">Converting printed or spoken language into structured, machine-readable formats.</p>
               </div>
               
-              <div className="overflow-x-auto">
-                <table className="w-full bg-white rounded-lg shadow-md">
-                  <thead className="bg-primary text-white">
-                    <tr>
-                      <th className="px-4 py-3 text-left text-sm font-medium">SERVICE</th>
-                      <th className="px-4 py-3 text-left text-sm font-medium">DESCRIPTION</th>
-                      <th className="px-4 py-3 text-left text-sm font-medium">UNIT PRICE</th>
-                      <th className="px-4 py-3 text-left text-sm font-medium">MOQ</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200">
-                    {textServices.map((service, index) => (
-                      <tr key={`text-${index}`} className="hover:bg-gray-50 transition-colors">
-                        <td className="px-4 py-3 font-medium text-primary text-sm">{service.name}</td>
-                        <td className="px-4 py-3 text-gray-600 text-sm">{service.description}</td>
-                        <td className="px-4 py-3 text-gray-600 text-sm">{service.price}</td>
-                        <td className="px-4 py-3 text-gray-600 text-sm">{service.moq}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+              {/* Mobile Cards */}
+              <ServiceCards services={textServices} sectionTitle="" />
+              
+              {/* Desktop Table */}
+              <ServiceTable services={textServices} headers={tableHeaders} />
             </div>
             
             {/* Right side - Background image space */}
@@ -299,42 +332,45 @@ export default function Services() {
         
         <Container>
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-              {/* Left side - Table and Title */}
-              <div className="order-1 lg:order-2">
-                <div className="mb-8 order-1 lg:order-2">
-                  <SectionHeading
-                    title="Image Annotation Services"
-                    subtitle="Adding metadata to images to make them recognizable and processable by machine learning systems."
-                  />
-                </div>
+            {/* Content side */}
+            <div className="order-1 lg:order-2">
+              <div className="mb-8">
+                <SectionHeading
+                  title="Image Annotation Services"
+                  subtitle="Adding metadata to images to make them recognizable and processable by machine learning systems."
+                />
+              </div>
               
-          
-          <div className="mt-12 overflow-x-auto">
-            <table className="w-full bg-white rounded-lg shadow-md">
-              <thead className="bg-primary text-white">
-                <tr>
-                  <th className="px-6 py-4 text-left">Service</th>
-                  <th className="px-6 py-4 text-left">Description</th>
-                  <th className="px-6 py-4 text-left">Price Range</th>
-                  <th className="px-6 py-4 text-left">Min. Order Quantity</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200">
-                {imageServices.map((service, index) => (
-                  <tr key={`image-${index}`} className="hover:bg-gray-50 transition-colors">
-                    <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
-                    <td className="px-6 py-4 text-gray-600">{service.description}</td>
-                    <td className="px-6 py-4 text-gray-600">{service.price}</td>
-                    <td className="px-6 py-4 text-gray-600">{service.moq}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          </div>
+              {/* Mobile Cards */}
+              <ServiceCards services={imageServices} sectionTitle="" />
+              
+              {/* Desktop Table */}
+              <div className="hidden lg:block overflow-x-auto">
+                <table className="w-full bg-white rounded-lg shadow-md">
+                  <thead className="bg-primary text-white">
+                    <tr>
+                      <th className="px-6 py-4 text-left">Service</th>
+                      <th className="px-6 py-4 text-left">Description</th>
+                      <th className="px-6 py-4 text-left">Price Range</th>
+                      <th className="px-6 py-4 text-left">Min. Order Quantity</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {imageServices.map((service, index) => (
+                      <tr key={`image-${index}`} className="hover:bg-gray-50 transition-colors">
+                        <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
+                        <td className="px-6 py-4 text-gray-600">{service.description}</td>
+                        <td className="px-6 py-4 text-gray-600">{service.price}</td>
+                        <td className="px-6 py-4 text-gray-600">{service.moq}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-         {/* Right side - Background image space */}
-            <div className="hidden lg:block">
+            {/* Background image space */}
+            <div className="hidden lg:block order-2 lg:order-1">
               {/* This space is left for the background image */}
             </div>
           </div> 
@@ -348,40 +384,44 @@ export default function Services() {
         
         <Container>
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-              {/* Left side - Table and Title */}
-              <div >
-                <div className="mb-8">
-          <SectionHeading
-            title="Video Annotation Services"
-            subtitle="Enhancing video content with metadata for better analysis and understanding."
-          />
-          </div>
-          
-          <div className="mt-12 overflow-x-auto">
-            <table className="w-full bg-white rounded-lg shadow-md">
-              <thead className="bg-primary text-white">
-                <tr>
-                  <th className="px-6 py-4 text-left">Service</th>
-                  <th className="px-6 py-4 text-left">Description</th>
-                  <th className="px-6 py-4 text-left">Price Range</th>
-                  <th className="px-6 py-4 text-left">Min. Order Quantity</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200">
-                {videoServices.map((service, index) => (
-                  <tr key={`video-${index}`} className="hover:bg-gray-50 transition-colors">
-                    <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
-                    <td className="px-6 py-4 text-gray-600">{service.description}</td>
-                    <td className="px-6 py-4 text-gray-600">{service.price}</td>
-                    <td className="px-6 py-4 text-gray-600">{service.moq}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          </div>
+            {/* Content side */}
+            <div>
+              <div className="mb-8">
+                <SectionHeading
+                  title="Video Annotation Services"
+                  subtitle="Enhancing video content with metadata for better analysis and understanding."
+                />
+              </div>
+              
+              {/* Mobile Cards */}
+              <ServiceCards services={videoServices} sectionTitle="" />
+              
+              {/* Desktop Table */}
+              <div className="hidden lg:block overflow-x-auto">
+                <table className="w-full bg-white rounded-lg shadow-md">
+                  <thead className="bg-primary text-white">
+                    <tr>
+                      <th className="px-6 py-4 text-left">Service</th>
+                      <th className="px-6 py-4 text-left">Description</th>
+                      <th className="px-6 py-4 text-left">Price Range</th>
+                      <th className="px-6 py-4 text-left">Min. Order Quantity</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {videoServices.map((service, index) => (
+                      <tr key={`video-${index}`} className="hover:bg-gray-50 transition-colors">
+                        <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
+                        <td className="px-6 py-4 text-gray-600">{service.description}</td>
+                        <td className="px-6 py-4 text-gray-600">{service.price}</td>
+                        <td className="px-6 py-4 text-gray-600">{service.moq}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-          {/* Right side - Background image space */}
+            {/* Background image space */}
             <div className="hidden lg:block">
               {/* This space is left for the background image */}
             </div>
@@ -396,41 +436,45 @@ export default function Services() {
         
         <Container>
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Left side - Table and Title */}
-              <div className="order-1 lg:order-2">
-                <div className="mb-8 order-1 lg:order-2">
-          <SectionHeading
-            title="Audio Annotation Services"
-            subtitle="Converting audio content to structured formats and analyzing tone for better insights."
-          />
-          </div>
-          
-          <div className="mt-12 overflow-x-auto">
-            <table className="w-full bg-white rounded-lg shadow-md">
-              <thead className="bg-primary text-white">
-                <tr>
-                  <th className="px-6 py-4 text-left">Service</th>
-                  <th className="px-6 py-4 text-left">Description</th>
-                  <th className="px-6 py-4 text-left">Price Range</th>
-                  <th className="px-6 py-4 text-left">Min. Order Quantity</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200">
-                {audioServices.map((service, index) => (
-                  <tr key={`audio-${index}`} className="hover:bg-gray-50 transition-colors">
-                    <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
-                    <td className="px-6 py-4 text-gray-600">{service.description}</td>
-                    <td className="px-6 py-4 text-gray-600">{service.price}</td>
-                    <td className="px-6 py-4 text-gray-600">{service.moq}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          </div>
+            {/* Content side */}
+            <div className="order-1 lg:order-2">
+              <div className="mb-8">
+                <SectionHeading
+                  title="Audio Annotation Services"
+                  subtitle="Converting audio content to structured formats and analyzing tone for better insights."
+                />
+              </div>
+              
+              {/* Mobile Cards */}
+              <ServiceCards services={audioServices} sectionTitle="" />
+              
+              {/* Desktop Table */}
+              <div className="hidden lg:block overflow-x-auto">
+                <table className="w-full bg-white rounded-lg shadow-md">
+                  <thead className="bg-primary text-white">
+                    <tr>
+                      <th className="px-6 py-4 text-left">Service</th>
+                      <th className="px-6 py-4 text-left">Description</th>
+                      <th className="px-6 py-4 text-left">Price Range</th>
+                      <th className="px-6 py-4 text-left">Min. Order Quantity</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {audioServices.map((service, index) => (
+                      <tr key={`audio-${index}`} className="hover:bg-gray-50 transition-colors">
+                        <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
+                        <td className="px-6 py-4 text-gray-600">{service.description}</td>
+                        <td className="px-6 py-4 text-gray-600">{service.price}</td>
+                        <td className="px-6 py-4 text-gray-600">{service.moq}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-          {/* Right side - Background image space */}
-            <div className="hidden lg:block">
+            {/* Background image space */}
+            <div className="hidden lg:block order-2 lg:order-1">
               {/* This space is left for the background image */}
             </div>
           </div> 
@@ -444,33 +488,33 @@ export default function Services() {
         
         <Container>
           <div className="relative z-10">
-          <SectionHeading
-            title="Data Processing Services"
-            subtitle="Transforming raw data into clean, structured, and usable formats for better decision-making."
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            {dataProcessingServices.map((service, index) => (
-              <div key={`processing-${index}`} className="bg-white p-8 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-primary mb-4">{service.title}</h3>
-                <p className="text-gray-600 mb-6">{service.description}</p>
-                
-                <h4 className="font-semibold text-secondary mb-2">
-                  {service.subtitle}
-                </h4>
-                <ul className="space-y-2 text-gray-600">
-                  {service.tasks.map((task, i) => (
-                    <li key={`task-${index}-${i}`} className="flex items-start">
-                      <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
-                        {i + 1}
-                      </div>
-                      <span className="text-gray-600">{task}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+            <SectionHeading
+              title="Data Processing Services"
+              subtitle="Transforming raw data into clean, structured, and usable formats for better decision-making."
+            />
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+              {dataProcessingServices.map((service, index) => (
+                <div key={`processing-${index}`} className="bg-white p-8 rounded-lg shadow-md">
+                  <h3 className="text-xl font-bold text-primary mb-4">{service.title}</h3>
+                  <p className="text-gray-600 mb-6">{service.description}</p>
+                  
+                  <h4 className="font-semibold text-secondary mb-2">
+                    {service.subtitle}
+                  </h4>
+                  <ul className="space-y-2 text-gray-600">
+                    {service.tasks.map((task, i) => (
+                      <li key={`task-${index}-${i}`} className="flex items-start">
+                        <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
+                          {i + 1}
+                        </div>
+                        <span className="text-gray-600">{task}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </Container>
       </section>
