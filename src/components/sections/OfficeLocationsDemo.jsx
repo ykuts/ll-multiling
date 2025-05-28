@@ -1,4 +1,3 @@
-// src/components/sections/OfficeLocationsDemo.jsx
 import { useState } from 'react';
 import Container from '../ui/Container';
 import SectionHeading from '../ui/SectionHeading';
@@ -11,14 +10,12 @@ const OfficeLocationsDemo = () => {
     {
       city: 'Zürich',
       country: 'Switzerland',
-      address: 'Bahnhofstrasse, 8001 Zürich, Switzerland',
-      description: 'Our European headquarters in the heart of Zürich\'s financial district',
-      phone: '+41 44 XXX XX XX',
-      email: 'zurich@labelladder.com',
+      address: 'Hungerbergstrasse 26, 8046 Zürich, Switzerland',
+      description: 'Our European headquarters in the vibrant Affoltern district',
+      email: 'hello@labelladder.com',
       flag: '/images/icons/switzerland.png',
-      // OpenStreetMap embed для Цюриха
-      mapEmbed: 'https://www.openstreetmap.org/export/embed.html?bbox=8.538%2C47.369%2C8.548%2C47.379&layer=mapnik&marker=47.374%2C8.543',
-      coordinates: { lat: 47.374, lng: 8.543 },
+      mapEmbed: 'https://www.openstreetmap.org/export/embed.html?bbox=8.4950%2C47.4170%2C8.5050%2C47.4220&layer=mapnik&marker=47.4196%2C8.4993',
+      coordinates: { lat: 47.4196, lng: 8.4993 },
       timezone: 'CET (UTC+1)',
       workingHours: [
         'Monday - Friday: 9:00 - 18:00',
@@ -26,19 +23,17 @@ const OfficeLocationsDemo = () => {
         'Sunday: Closed'
       ],
       services: ['Data Strategy', 'Client Relations', 'Quality Assurance'],
-      bgGradient: 'from-red-500 to-white' // Швейцарский флаг
+      bgGradient: 'from-red-500 to-white'
     },
     {
       city: 'Windhoek',
       country: 'Namibia',
-      address: 'Independence Avenue, Windhoek, Namibia',
-      description: 'Our data processing center with skilled local talent',
-      phone: '+264 61 XXX XXXX',
-      email: 'windhoek@labelladder.com',
+      address: '8 Bell Street, Windhoek, Namibia',
+      description: 'Our data processing center with skilled local talent in the city center',
+      email: 'hello@labelladder.com',
       flag: '/images/icons/namibia.png',
-      // OpenStreetMap embed для Виндхука
-      mapEmbed: 'https://www.openstreetmap.org/export/embed.html?bbox=17.055%2C-22.570%2C17.075%2C-22.550&layer=mapnik&marker=-22.560%2C17.065',
-      coordinates: { lat: -22.560, lng: 17.065 },
+      mapEmbed: 'https://www.openstreetmap.org/export/embed.html?bbox=17.0830%2C-22.5830%2C17.0890%2C-22.5780&layer=mapnik&marker=-22.5806%2C17.0859',
+      coordinates: { lat: -22.5806, lng: 17.0859 },
       timezone: 'CAT (UTC+2)',
       workingHours: [
         'Monday - Friday: 8:00 - 17:00',
@@ -46,7 +41,7 @@ const OfficeLocationsDemo = () => {
         'Sunday: Closed'
       ],
       services: ['Data Annotation', 'Processing', 'Label Ladder Academy'],
-      bgGradient: 'from-blue-500 via-red-500 to-green-500' // Намибийский флаг
+      bgGradient: 'from-blue-500 via-red-500 to-green-500'
     }
   ];
 
@@ -186,15 +181,6 @@ const OfficeLocationsDemo = () => {
 
                 <div className="flex items-center">
                   <svg className="w-5 h-5 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  <a href={`tel:${offices[selectedOffice].phone}`} className="text-gray-700 hover:text-secondary transition-colors">
-                    {offices[selectedOffice].phone}
-                  </a>
-                </div>
-
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   <a href={`mailto:${offices[selectedOffice].email}`} className="text-gray-700 hover:text-secondary transition-colors">
@@ -263,7 +249,7 @@ const OfficeLocationsDemo = () => {
                 className="inline-flex items-center px-6 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors font-medium"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 Send Email
               </a>

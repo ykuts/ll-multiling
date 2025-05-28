@@ -16,7 +16,7 @@ export default function Contact() {
         "contactPoint": [
           {
             "@type": "ContactPoint",
-            "telephone": "+41-44-123-45-67",
+            /* "telephone": "+41-44-123-45-67", */
             "contactType": "customer service",
             "email": "hello@labelladder.com",
             "availableLanguage": "English",
@@ -37,18 +37,18 @@ export default function Contact() {
       "@id": "https://labelladder.com/#zurich-office",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Bahnhofstrasse 21",
+        "streetAddress": "Hungerbergstrasse 26",
         "addressLocality": "Zürich",
-        "postalCode": "8001", 
+        "postalCode": "8046", 
         "addressCountry": "CH"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "47.3769",
-        "longitude": "8.5417"
+        "latitude": "47.4196",
+        "longitude": "8.4993"
       },
-      "telephone": "+41-44-123-45-67",
-      "email": "zurich@labelladder.com",
+      /* "telephone": "+41-44-123-45-67",*/
+      "email": "hello@labelladder.com", 
       "url": "https://labelladder.com/contact",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
@@ -68,12 +68,17 @@ export default function Contact() {
       "@id": "https://labelladder.com/#windhoek-office",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Independence Avenue",
+        "streetAddress": "8 Bell Street",
         "addressLocality": "Windhoek",
         "addressCountry": "NA"
       },
-      "telephone": "+264-61-234-5678",
-      "email": "windhoek@labelladder.com",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-22.5806",
+        "longitude": "17.0859"
+      },
+      /* "telephone": "+264-61-234-5678", */
+      "email": "hello@labelladder.com",
       "url": "https://labelladder.com/contact",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification", 

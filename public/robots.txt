@@ -4,7 +4,7 @@ Allow: /
 
 # Important pages
 Allow: /about
-Allow: /services  
+Allow: /services
 Allow: /approach
 Allow: /credentials
 Allow: /contact
@@ -15,8 +15,13 @@ Disallow: /admin/
 Disallow: /_next/
 Disallow: /static/
 
-# Disallow query parameters
-Disallow: /*?
+# Disallow search and filter parameters
+Disallow: /*?*
+Disallow: /*#*
+
+# Allow specific query parameters that are important for SEO
+Allow: /*?utm_*
+Allow: /*?ref=*
 
 # Sitemap location
 Sitemap: https://labelladder.com/sitemap.xml
@@ -24,13 +29,31 @@ Sitemap: https://labelladder.com/sitemap.xml
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
 
+# Host preference
+Host: https://labelladder.com
+
 # Specific instructions for major search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
-User-agent: Bingbot  
+User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
 Allow: /
 */
