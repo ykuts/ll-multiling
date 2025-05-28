@@ -7,91 +7,91 @@ import OfficeLocationsDemo from '../components/sections/OfficeLocationsDemo';
 
 export default function Contact() {
     const structuredData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "Label Ladder",
-        "contactPoint": [
-          {
-            "@type": "ContactPoint",
-            /* "telephone": "+41-44-123-45-67", */
-            "contactType": "customer service",
-            "email": "hello@labelladder.com",
-            "availableLanguage": "English",
-            "hoursAvailable": {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-              "opens": "09:00",
-              "closes": "17:00"
+        {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "mainEntity": {
+                "@type": "Organization",
+                "name": "Label Ladder",
+                "contactPoint": [
+                    {
+                        "@type": "ContactPoint",
+                        /* "telephone": "+41-44-123-45-67", */
+                        "contactType": "customer service",
+                        "email": "hello@labelladder.com",
+                        "availableLanguage": "English",
+                        "hoursAvailable": {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                            "opens": "09:00",
+                            "closes": "17:00"
+                        }
+                    }
+                ]
             }
-          }
-        ]
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Label Ladder Zürich Office",
-      "@id": "https://labelladder.com/#zurich-office",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Hungerbergstrasse 26",
-        "addressLocality": "Zürich",
-        "postalCode": "8046", 
-        "addressCountry": "CH"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "47.4196",
-        "longitude": "8.4993"
-      },
-      /* "telephone": "+41-44-123-45-67",*/
-      "email": "hello@labelladder.com", 
-      "url": "https://labelladder.com/contact",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00", 
-        "closes": "17:00"
-      },
-      "parentOrganization": {
-        "@type": "Organization",
-        "name": "Label Ladder"
-      }
-    },
-    {
-      "@context": "https://schema.org", 
-      "@type": "LocalBusiness",
-      "name": "Label Ladder Windhoek Office",
-      "@id": "https://labelladder.com/#windhoek-office",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "8 Bell Street",
-        "addressLocality": "Windhoek",
-        "addressCountry": "NA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "-22.5806",
-        "longitude": "17.0859"
-      },
-      /* "telephone": "+264-61-234-5678", */
-      "email": "hello@labelladder.com",
-      "url": "https://labelladder.com/contact",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification", 
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "16:00"
-      },
-      "parentOrganization": {
-        "@type": "Organization",
-        "name": "Label Ladder"
-      }
-    }
-  ];
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Label Ladder Zürich Office",
+            "@id": "https://labelladder.com/#zurich-office",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Hungerbergstrasse 26",
+                "addressLocality": "Zürich",
+                "postalCode": "8046",
+                "addressCountry": "CH"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "47.4196",
+                "longitude": "8.4993"
+            },
+            /* "telephone": "+41-44-123-45-67",*/
+            "email": "hello@labelladder.com",
+            "url": "https://labelladder.com/contact",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "17:00"
+            },
+            "parentOrganization": {
+                "@type": "Organization",
+                "name": "Label Ladder"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Label Ladder Windhoek Office",
+            "@id": "https://labelladder.com/#windhoek-office",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "8 Bell Street",
+                "addressLocality": "Windhoek",
+                "addressCountry": "NA"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "-22.5806",
+                "longitude": "17.0859"
+            },
+            /* "telephone": "+264-61-234-5678", */
+            "email": "hello@labelladder.com",
+            "url": "https://labelladder.com/contact",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "16:00"
+            },
+            "parentOrganization": {
+                "@type": "Organization",
+                "name": "Label Ladder"
+            }
+        }
+    ];
 
     const [formData, setFormData] = useState({
         firstName: '',
@@ -115,8 +115,9 @@ export default function Contact() {
         setFormData(prev => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+
         // Basic validation
         if (!formData.firstName || !formData.email || !formData.message) {
             setFormStatus({
@@ -127,25 +128,50 @@ export default function Contact() {
             return;
         }
 
-        // In a real app, you would send the form data to your API here
-        // For now, we'll just simulate a successful submission
-        setFormStatus({
-            submitted: true,
-            error: false,
-            message: 'Thank you for your message! We will get back to you shortly.'
+        // Подготавливаем данные для отправки
+        const formDataToSend = new FormData();
+        formDataToSend.append('form-name', 'contact');
+
+        // Добавляем все поля формы
+        Object.keys(formData).forEach(key => {
+            formDataToSend.append(key, formData[key]);
         });
 
-        // Reset form after successful submission
-        setFormData({
-            firstName: '',
-            lastName: '',
-            email: '',
-            company: '',
-            phone: '',
-            message: '',
-            serviceType: '',
-            dataVolume: ''
-        });
+        try {
+            const response = await fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formDataToSend).toString()
+            });
+
+            if (response.ok) {
+                setFormStatus({
+                    submitted: true,
+                    error: false,
+                    message: 'Thank you for your message! We will get back to you shortly.'
+                });
+
+                // Reset form after successful submission
+                setFormData({
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    company: '',
+                    phone: '',
+                    message: '',
+                    serviceType: '',
+                    dataVolume: ''
+                });
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            setFormStatus({
+                submitted: false,
+                error: true,
+                message: 'There was an error sending your message. Please try again or contact us directly at hello@labelladder.com'
+            });
+        }
     };
 
     const serviceTypes = [
@@ -168,13 +194,13 @@ export default function Contact() {
     ];
 
     return (
-        <Layout 
-      title="Contact Label Ladder - Get Quote for Data Annotation Services"
-      description="Contact Label Ladder for professional data annotation and processing services. Offices in Zürich, Switzerland and Windhoek, Namibia. Get your custom quote today - hello@labelladder.com"
-      keywords="contact Label Ladder, data annotation quote, get data processing quote, Label Ladder offices, Zurich office, Windhoek office, data annotation consultation, hello@labelladder.com"
-      image="https://labelladder.com/images/og/contact-og.jpg"
-      structuredData={structuredData}
-    >
+        <Layout
+            title="Contact Label Ladder - Get Quote for Data Annotation Services"
+            description="Contact Label Ladder for professional data annotation and processing services. Offices in Zürich, Switzerland and Windhoek, Namibia. Get your custom quote today - hello@labelladder.com"
+            keywords="contact Label Ladder, data annotation quote, get data processing quote, Label Ladder offices, Zurich office, Windhoek office, data annotation consultation, hello@labelladder.com"
+            image="https://labelladder.com/images/og/contact-og.jpg"
+            structuredData={structuredData}
+        >
             {/* Hero Section */}
             <section className="relative py-20 bg-primary text-white">
                 <Container>
@@ -240,7 +266,11 @@ export default function Contact() {
                                     <p>{formStatus.message}</p>
                                 </div>
                             ) : (
-                                <form onSubmit={handleSubmit} name="contact" netlify>
+                                <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                                    {/* Скрытые поля для Netlify */}
+                                    <input type="hidden" name="form-name" value="contact" />
+                                    <input type="hidden" name="bot-field" />
+
                                     {formStatus.error && (
                                         <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md mb-6">
                                             <p>{formStatus.message}</p>
@@ -380,8 +410,14 @@ export default function Contact() {
                                     </div>
 
                                     <div>
-                                        <Button type="submit" variant="primary" size="lg" className="w-full">
-                                            Send Message
+                                        <Button
+                                            type="submit"
+                                            variant="primary"
+                                            size="lg"
+                                            className="w-full"
+                                            disabled={formStatus.submitted}
+                                        >
+                                            {formStatus.submitted ? 'Message Sent!' : 'Send Message'}
                                         </Button>
                                     </div>
                                 </form>
