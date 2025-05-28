@@ -1,3 +1,4 @@
+import Layout from '../components/layout/Layout';
 import Container from '../components/ui/Container';
 import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
@@ -6,6 +7,35 @@ import ProcessDesignSection from '@/components/sections/ProcessDesignSection';
 import HumanInTheLoopSection from '@/components/sections/HumanInTheLoopSection';
 
 export default function Approach() {
+const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Label Ladder's Data Annotation Approach - Human-in-the-Loop Methodology",
+    "description": "Learn about our comprehensive 4-step approach to data annotation: needs assessment, custom design, future-proofed architecture, and human-in-the-loop quality assurance.",
+    "author": {
+      "@type": "Organization",
+      "name": "Label Ladder"
+    },
+    "publisher": {
+      "@type": "Organization", 
+      "name": "Label Ladder",
+      "logo": "https://labelladder.com/images/logo.png"
+    },
+    "mainEntityOfPage": "https://labelladder.com/approach",
+    "articleSection": "Methodology",
+    "keywords": ["data annotation methodology", "human-in-the-loop", "data quality assurance", "annotation workflow"],
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Data Annotation Process"
+      },
+      {
+        "@type": "Thing", 
+        "name": "Quality Control"
+      }
+    ]
+  };
+
   const approachSteps = [
     {
       title: "Needs Assessment",
@@ -70,7 +100,15 @@ export default function Approach() {
   ];
 
   return (
-    <>
+    <Layout 
+      title="Our Data Annotation Approach - Human-in-the-Loop Methodology"
+      description="Discover Label Ladder's proven 4-step approach to data annotation: comprehensive needs assessment, custom workflow design, future-proofed architecture, and human-in-the-loop quality assurance for superior results."
+      keywords="data annotation approach, human-in-the-loop annotation, data annotation methodology, annotation workflow design, data quality control, custom annotation solutions, Swiss data annotation process"
+      image="https://labelladder.com/images/og/approach-og.jpg"
+      type="article"
+      article={true}
+      structuredData={structuredData}
+      >
       {/* Hero Section */}
       <section className="relative py-20 bg-primary text-white">
         <Container>
@@ -224,6 +262,6 @@ export default function Approach() {
           </div>
         </Container>
       </section>
-    </>
+    </Layout>
   );
 }

@@ -1,3 +1,4 @@
+import Layout from '../components/layout/Layout';
 import Container from '../components/ui/Container';
 import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
@@ -5,6 +6,86 @@ import Card from '../components/ui/Card';
 import Image from 'next/image';
 
 export default function Services() {
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Data Annotation and Processing Services",
+    "description": "Comprehensive data annotation and processing services for machine learning and AI applications",
+    "provider": {
+      "@type": "Organization",
+      "name": "Label Ladder"
+    },
+    "serviceType": "Data Processing Services",
+    "areaServed": "Global",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Data Annotation Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Text Annotation Services",
+            "description": "Character recognition, transcription, article qualification, content moderation",
+            "offers": {
+              "@type": "Offer",
+              "priceRange": "$0.005-$5",
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Image Annotation Services",
+            "description": "Image tagging, labeling, shape recognition, image segmentation",
+            "offers": {
+              "@type": "Offer",
+              "priceRange": "$0.02-$5",
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Video Annotation Services",
+            "description": "Video transcription and sequencing services",
+            "offers": {
+              "@type": "Offer",
+              "priceRange": "$2-$15",
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Audio Processing Services",
+            "description": "Speech-to-text conversion and sentiment analysis",
+            "offers": {
+              "@type": "Offer",
+              "priceRange": "$0.02-$5",
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Data Processing Services",
+            "description": "Data entry, validation, cleansing, and migration services"
+          }
+        }
+      ]
+    }
+  };
+
   // Text Annotation Services
   const textServices = [
     {
@@ -148,60 +229,60 @@ export default function Services() {
       title: "Text Annotation",
       description: "Converting text into structured, machine-readable formats through recognition, transcription, and qualification.",
       icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
-        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2"/>
-        <line x1="7" y1="8" x2="17" y2="8" stroke="currentColor" strokeWidth="2"/>
-        <line x1="7" y1="12" x2="17" y2="12" stroke="currentColor" strokeWidth="2"/>
-        <line x1="7" y1="16" x2="13" y2="16" stroke="currentColor" strokeWidth="2"/>
-      </svg>
-    ),
+        <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
+          <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" />
+          <line x1="7" y1="8" x2="17" y2="8" stroke="currentColor" strokeWidth="2" />
+          <line x1="7" y1="12" x2="17" y2="12" stroke="currentColor" strokeWidth="2" />
+          <line x1="7" y1="16" x2="13" y2="16" stroke="currentColor" strokeWidth="2" />
+        </svg>
+      ),
       href: "#text",
     },
     {
       title: "Image Annotation",
       description: "Adding metadata to images through tagging, labeling, segmentation and object recognition.",
       icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
-        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2"/>
-        <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
-        <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" stroke="currentColor" strokeWidth="2"/>
-      </svg>
-    ),
+        <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
+          <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" />
+          <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" />
+          <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" stroke="currentColor" strokeWidth="2" />
+        </svg>
+      ),
       href: "#image",
     },
     {
       title: "Video Annotation",
       description: "Enhancing video content with metadata through transcription and sequential labeling.",
       icon: (
-      <svg viewBox="0 0 122.88 111.34" className="w-8 h-8 text-primary"> <title>video</title> <path fill="currentColor" d="M23.59,0h75.7a23.68,23.68,0,0,1,23.59,23.59V87.75A23.56,23.56,0,0,1,116,104.41l-.22.2a23.53,23.53,0,0,1-16.44,6.73H23.59a23.53,23.53,0,0,1-16.66-6.93l-.2-.22A23.46,23.46,0,0,1,0,87.75V23.59A23.66,23.66,0,0,1,23.59,0ZM54,47.73,79.25,65.36a3.79,3.79,0,0,1,.14,6.3L54.22,89.05a3.75,3.75,0,0,1-2.4.87A3.79,3.79,0,0,1,48,86.13V50.82h0A3.77,3.77,0,0,1,54,47.73ZM7.35,26.47h14L30.41,7.35H23.59A16.29,16.29,0,0,0,7.35,23.59v2.88ZM37.05,7.35,28,26.47H53.36L62.43,7.38v0Zm32,0L59.92,26.47h24.7L93.7,7.35Zm31.32,0L91.26,26.47h24.27V23.59a16.32,16.32,0,0,0-15.2-16.21Zm15.2,26.68H7.35V87.75A16.21,16.21,0,0,0,12,99.05l.17.16A16.19,16.19,0,0,0,23.59,104h75.7a16.21,16.21,0,0,0,11.3-4.6l.16-.18a16.17,16.17,0,0,0,4.78-11.46V34.06Z"/> </svg>
-    ),
+        <svg viewBox="0 0 122.88 111.34" className="w-8 h-8 text-primary"> <title>video</title> <path fill="currentColor" d="M23.59,0h75.7a23.68,23.68,0,0,1,23.59,23.59V87.75A23.56,23.56,0,0,1,116,104.41l-.22.2a23.53,23.53,0,0,1-16.44,6.73H23.59a23.53,23.53,0,0,1-16.66-6.93l-.2-.22A23.46,23.46,0,0,1,0,87.75V23.59A23.66,23.66,0,0,1,23.59,0ZM54,47.73,79.25,65.36a3.79,3.79,0,0,1,.14,6.3L54.22,89.05a3.75,3.75,0,0,1-2.4.87A3.79,3.79,0,0,1,48,86.13V50.82h0A3.77,3.77,0,0,1,54,47.73ZM7.35,26.47h14L30.41,7.35H23.59A16.29,16.29,0,0,0,7.35,23.59v2.88ZM37.05,7.35,28,26.47H53.36L62.43,7.38v0Zm32,0L59.92,26.47h24.7L93.7,7.35Zm31.32,0L91.26,26.47h24.27V23.59a16.32,16.32,0,0,0-15.2-16.21Zm15.2,26.68H7.35V87.75A16.21,16.21,0,0,0,12,99.05l.17.16A16.19,16.19,0,0,0,23.59,104h75.7a16.21,16.21,0,0,0,11.3-4.6l.16-.18a16.17,16.17,0,0,0,4.78-11.46V34.06Z" /> </svg>
+      ),
       href: "#video",
     },
     {
       title: "Audio Annotation",
       description: "Converting audio to text and analyzing tone through speech recognition and sentiment analysis.",
       icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
-        <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" stroke="currentColor" strokeWidth="2"/>
-        <path d="M19 10v1a7 7 0 0 1-14 0v-1" stroke="currentColor" strokeWidth="2"/>
-        <line x1="12" y1="19" x2="12" y2="22" stroke="currentColor" strokeWidth="2"/>
-        <line x1="8" y1="22" x2="16" y2="22" stroke="currentColor" strokeWidth="2"/>
-      </svg>
-    ),
+        <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
+          <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" stroke="currentColor" strokeWidth="2" />
+          <path d="M19 10v1a7 7 0 0 1-14 0v-1" stroke="currentColor" strokeWidth="2" />
+          <line x1="12" y1="19" x2="12" y2="22" stroke="currentColor" strokeWidth="2" />
+          <line x1="8" y1="22" x2="16" y2="22" stroke="currentColor" strokeWidth="2" />
+        </svg>
+      ),
       href: "#audio",
     },
     {
       title: "Data Processing",
       description: "Transforming raw data into useful formats through entry, validation, cleansing, and migration.",
       icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
-        <rect x="8" y="2" width="8" height="4" rx="1" stroke="currentColor" strokeWidth="2"/>
-        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" stroke="currentColor" strokeWidth="2"/>
-        <line x1="9" y1="12" x2="15" y2="12" stroke="currentColor" strokeWidth="2"/>
-        <line x1="9" y1="16" x2="15" y2="16" stroke="currentColor" strokeWidth="2"/>
-        <line x1="9" y1="8" x2="15" y2="8" stroke="currentColor" strokeWidth="2"/>
-      </svg>
-    ),
+        <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
+          <rect x="8" y="2" width="8" height="4" rx="1" stroke="currentColor" strokeWidth="2" />
+          <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" stroke="currentColor" strokeWidth="2" />
+          <line x1="9" y1="12" x2="15" y2="12" stroke="currentColor" strokeWidth="2" />
+          <line x1="9" y1="16" x2="15" y2="16" stroke="currentColor" strokeWidth="2" />
+          <line x1="9" y1="8" x2="15" y2="8" stroke="currentColor" strokeWidth="2" />
+        </svg>
+      ),
       href: "#processing",
     }
   ];
@@ -257,7 +338,14 @@ export default function Services() {
   const tableHeaders = ['SERVICE', 'DESCRIPTION', 'UNIT PRICE', 'MOQ'];
 
   return (
-    <>
+    <Layout
+      Layout
+      title="Data Annotation Services - Complete Price List & Service Guide 2024"
+      description="Professional data annotation services with transparent pricing. Text annotation from $0.005/char, image annotation from $0.05/image, video transcription from $2/min. High-quality, scalable solutions for AI and ML projects."
+      keywords="data annotation pricing, text annotation cost, image labeling price, video transcription rates, audio processing services, data entry prices, data validation cost, data cleaning services, machine learning annotation"
+      image="https://labelladder.com/images/og/services-og.jpg"
+      structuredData={structuredData}
+    >
       {/* Hero Section */}
       <section className="relative py-20 bg-primary text-white" id='services'>
         <Container>
@@ -280,7 +368,7 @@ export default function Services() {
             subtitle="We provide a comprehensive range of data services to meet your specific needs."
             centered
           />
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {serviceTypes.map((service, index) => (
               <Card
@@ -295,12 +383,12 @@ export default function Services() {
           </div>
         </Container>
       </section>
-      
+
       {/* Text Annotation Section */}
-      <section id="annotation" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/text.png')"}}>
+      <section id="annotation" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{ backgroundImage: "url('/images/services/text.png')" }}>
         {/* Background overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/100 to-white/80"></div>
-        
+
         <Container>
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left side - Content */}
@@ -309,14 +397,14 @@ export default function Services() {
                 <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Text Annotation Services</h2>
                 <p className="text-lg text-gray-600">Converting printed or spoken language into structured, machine-readable formats.</p>
               </div>
-              
+
               {/* Mobile Cards */}
               <ServiceCards services={textServices} sectionTitle="" />
-              
+
               {/* Desktop Table */}
               <ServiceTable services={textServices} headers={tableHeaders} />
             </div>
-            
+
             {/* Right side - Background image space */}
             <div className="hidden lg:block">
               {/* This space is left for the background image */}
@@ -324,12 +412,12 @@ export default function Services() {
           </div>
         </Container>
       </section>
-      
+
       {/* Image Annotation Section */}
-      <section id="image" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/image.png')"}}>
+      <section id="image" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{ backgroundImage: "url('/images/services/image.png')" }}>
         {/* Background overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/80 to-white/100"></div>
-        
+
         <Container>
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Content side */}
@@ -340,10 +428,10 @@ export default function Services() {
                   subtitle="Adding metadata to images to make them recognizable and processable by machine learning systems."
                 />
               </div>
-              
+
               {/* Mobile Cards */}
               <ServiceCards services={imageServices} sectionTitle="" />
-              
+
               {/* Desktop Table */}
               <div className="hidden lg:block overflow-x-auto">
                 <table className="w-full bg-white rounded-lg shadow-md">
@@ -373,15 +461,15 @@ export default function Services() {
             <div className="hidden lg:block order-2 lg:order-1">
               {/* This space is left for the background image */}
             </div>
-          </div> 
+          </div>
         </Container>
       </section>
-      
+
       {/* Video Annotation Section */}
-      <section id="video" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/video.png')"}}>
+      <section id="video" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{ backgroundImage: "url('/images/services/video.png')" }}>
         {/* Background overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/100 to-white/80"></div>
-        
+
         <Container>
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Content side */}
@@ -392,10 +480,10 @@ export default function Services() {
                   subtitle="Enhancing video content with metadata for better analysis and understanding."
                 />
               </div>
-              
+
               {/* Mobile Cards */}
               <ServiceCards services={videoServices} sectionTitle="" />
-              
+
               {/* Desktop Table */}
               <div className="hidden lg:block overflow-x-auto">
                 <table className="w-full bg-white rounded-lg shadow-md">
@@ -425,15 +513,15 @@ export default function Services() {
             <div className="hidden lg:block">
               {/* This space is left for the background image */}
             </div>
-          </div> 
+          </div>
         </Container>
       </section>
-      
+
       {/* Audio Annotation Section */}
-      <section id="audio" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/audio.png')"}}>
+      <section id="audio" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{ backgroundImage: "url('/images/services/audio.png')" }}>
         {/* Background overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/80 to-white/100"></div>
-        
+
         <Container>
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Content side */}
@@ -444,10 +532,10 @@ export default function Services() {
                   subtitle="Converting audio content to structured formats and analyzing tone for better insights."
                 />
               </div>
-              
+
               {/* Mobile Cards */}
               <ServiceCards services={audioServices} sectionTitle="" />
-              
+
               {/* Desktop Table */}
               <div className="hidden lg:block overflow-x-auto">
                 <table className="w-full bg-white rounded-lg shadow-md">
@@ -477,28 +565,28 @@ export default function Services() {
             <div className="hidden lg:block order-2 lg:order-1">
               {/* This space is left for the background image */}
             </div>
-          </div> 
+          </div>
         </Container>
       </section>
-      
+
       {/* Data Processing Section */}
-      <section id="processing" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/images/services/entry.png')"}}>
+      <section id="processing" className="relative py-16 bg-cover bg-center bg-no-repeat overflow-hidden" style={{ backgroundImage: "url('/images/services/entry.png')" }}>
         {/* Background overlay */}
         <div className="absolute inset-0 bg-white/80"></div>
-        
+
         <Container>
           <div className="relative z-10">
             <SectionHeading
               title="Data Processing Services"
               subtitle="Transforming raw data into clean, structured, and usable formats for better decision-making."
             />
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
               {dataProcessingServices.map((service, index) => (
                 <div key={`processing-${index}`} className="bg-white p-8 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold text-primary mb-4">{service.title}</h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
-                  
+
                   <h4 className="font-semibold text-secondary mb-2">
                     {service.subtitle}
                   </h4>
@@ -518,7 +606,7 @@ export default function Services() {
           </div>
         </Container>
       </section>
-      
+
       {/* Custom Solutions */}
       <section className="py-16">
         <Container>
@@ -540,9 +628,9 @@ export default function Services() {
                 </Button>
               </div>
               <div className="relative h-full rounded-lg overflow-hidden shadow-xl">
-                <Image 
-                  src="/images/services/сustom-solutions.png" 
-                  alt="Custom Data Solutions" 
+                <Image
+                  src="/images/services/сustom-solutions.png"
+                  alt="Custom Data Solutions"
                   fill
                   className="object-cover"
                 />
@@ -551,7 +639,7 @@ export default function Services() {
           </div>
         </Container>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-16 bg-primary text-white">
         <Container>
@@ -568,6 +656,6 @@ export default function Services() {
           </div>
         </Container>
       </section>
-    </>
+    </Layout>
   );
 }

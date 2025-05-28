@@ -1,9 +1,37 @@
+import Layout from '@/components/layout/Layout';
 import Container from '../components/ui/Container';
 import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
 import Image from 'next/image';
 
 export default function Cases() {
+const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Label Ladder Case Studies and Credentials",
+    "description": "Real client success stories and case studies from Label Ladder's data annotation and processing projects",
+    "mainEntity": [
+      {
+        "@type": "Article",
+        "headline": "Adaire Project Management Data Migration Case Study",
+        "description": "How Label Ladder helped Adaire migrate project data from Azure DevOps to Jira",
+        "author": {
+          "@type": "Organization",
+          "name": "Label Ladder"
+        }
+      },
+      {
+        "@type": "Article", 
+        "headline": "Nedbank Client Data Validation & Migration Case Study",
+        "description": "Label Ladder's successful data validation and mobile app testing for Nedbank's 7 million clients",
+        "author": {
+          "@type": "Organization",
+          "name": "Label Ladder"
+        }
+      }
+    ]
+  };
+
   // Case studies data
   const caseStudies = [
     {
@@ -61,7 +89,13 @@ export default function Cases() {
   ];
 
   return (
-    <>
+    <Layout 
+      title="Client Case Studies & Success Stories - Label Ladder Credentials"
+      description="Explore Label Ladder's proven track record with real client case studies. See how we've helped Adaire, Nedbank, and other companies with data migration, validation, and processing projects achieving 99.8% accuracy."
+      keywords="Label Ladder case studies, data annotation success stories, client testimonials, Adaire case study, Nedbank data migration, data processing results, client credentials, project portfolio"
+      image="https://labelladder.com/images/og/credentials-og.jpg"
+      structuredData={structuredData}
+      >
       {/* Hero Section */}
       <section className="relative py-20 bg-primary text-white">
         <Container>
@@ -305,7 +339,7 @@ export default function Cases() {
           </div>
         </Container>
       </section>
-    </>
+    </Layout>
   );
 }
 
