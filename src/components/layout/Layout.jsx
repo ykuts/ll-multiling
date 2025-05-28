@@ -45,16 +45,16 @@ const Layout = ({
     "address": [
       {
         "@type": "PostalAddress",
-        "streetAddress": "Bahnhofstrasse 21",
+        "streetAddress": "Hungerbergstrasse 26",
         "addressLocality": "Zürich",
-        "postalCode": "8001",
+        "postalCode": "8046",
         "addressRegion": "Zurich",
         "addressCountry": "CH",
         "name": "Label Ladder Zürich Office"
       },
       {
         "@type": "PostalAddress",
-        "streetAddress": "123 Independence Avenue",
+        "streetAddress": "8 Bell Street",
         "addressLocality": "Windhoek",
         "addressRegion": "Khomas",
         "addressCountry": "NA",
@@ -64,7 +64,7 @@ const Layout = ({
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+41-44-123-45-67",
+        /* "telephone": "+41-44-123-45-67", */
         "contactType": "customer service",
         "email": "hello@labelladder.com",
         "availableLanguage": ["English"],
@@ -159,10 +159,10 @@ const Layout = ({
         <meta name="ICBM" content="47.3769, 8.5417" />
         
         {/* Language and Region Alternates */}
-        <link rel="alternate" hreflang="en" href={pageCanonicalUrl} />
-        <link rel="alternate" hreflang="en-CH" href={pageCanonicalUrl} />
-        <link rel="alternate" hreflang="en-NA" href={pageCanonicalUrl} />
-        <link rel="alternate" hreflang="x-default" href={pageCanonicalUrl} />
+        <link rel="alternate" hrefLang="en" href={pageCanonicalUrl} />
+        <link rel="alternate" hrefLang="en-CH" href={pageCanonicalUrl} />
+        <link rel="alternate" hrefLang="en-NA" href={pageCanonicalUrl} />
+        <link rel="alternate" hrefLang="x-default" href={pageCanonicalUrl} />
         
         {/* Preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -182,6 +182,12 @@ const Layout = ({
           </>
         )}
 
+        {/* Additional Security Headers */}
+        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+        <meta httpEquiv="X-Frame-Options" content="DENY" />
+        <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
+
         {/* Organization Structured Data - Always included */}
         <script
           type="application/ld+json"
@@ -199,19 +205,6 @@ const Layout = ({
             }}
           />
         )}
-
-        {/* Favicon and App Icons */}
-        <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-        <link rel="manifest" href="/favicon/site.webmanifest" />
-
-        {/* Additional Security Headers */}
-        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
-        <meta httpEquiv="X-Frame-Options" content="DENY" />
-        <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
       </Head>
       
       <div className="flex flex-col min-h-screen">
