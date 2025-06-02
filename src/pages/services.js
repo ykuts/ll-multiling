@@ -1,11 +1,18 @@
+import { useEffect } from 'react';
 import Layout from '../components/layout/Layout';
 import Container from '../components/ui/Container';
 import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import Image from 'next/image';
+import { trackServiceInquiry } from '../lib/gtag';
 
 export default function Services() {
+
+  useEffect(() => {
+    trackServiceInquiry('services_page_view');
+  }, []);
+
 
   const structuredData = {
     "@context": "https://schema.org",

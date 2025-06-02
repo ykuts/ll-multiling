@@ -1,63 +1,70 @@
 export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
 
-// Отправка просмотра страницы в GA
+// Send pageview to GA
 export const pageview = (url) => {
-  if (typeof window !== 'undefined' && window.gtag) {
+  if (typeof window !== 'undefined' && window.gtag && GA_TRACKING_ID) {
     window.gtag('config', GA_TRACKING_ID, {
       page_path: url,
     });
   }
 };
 
-// Отправка событий в GA
+// Send events to GA
 export const event = ({ action, category, label, value }) => {
-  if (typeof window !== 'undefined' && window.gtag) {
+  if (typeof window !== 'undefined' && window.gtag && GA_TRACKING_ID) {
     window.gtag('event', action, {
       event_category: category,
       event_label: label,
       value: value,
-      send_to: GA_TRACKING_ID
     });
   }
 };
 
-// Специфичные события для Label Ladder
-export const trackContactForm = (formType) => {
+// Specific events for Label Ladder
+export const trackContactForm = (formType = 'contact') => {
   event({
     action: 'form_submit',
-    category: 'Contact',
+    category: 'engagement',
     label: formType,
   });
 };
 
 export const trackServiceInquiry = (serviceType) => {
   event({
-    action: 'service_inquiry',
-    category: 'Services',
+    action: 'service_view',
+    category: 'engagement', 
     label: serviceType,
   });
 };
 
-export const trackDownload = (fileName) => {
+export const trackEmailClick = () => {
   event({
-    action: 'download',
-    category: 'Resources',
-    label: fileName,
+    action: 'email_click',
+    category: 'contact',
+    label: 'email_header',
   });
 };
 
 export const trackPhoneClick = () => {
   event({
     action: 'phone_click',
-    category: 'Contact',
-    label: 'Header Phone',
+    category: 'contact', 
+    label: 'phone_header',
   });
 };
 
-export const trackEmailClick = () => {
+export const trackDownload = (fileName) => {
   event({
-    action: 'email_click', 
-    category: 'Contact',
-    label: 'Email Link',
+    action: 'file_download',
+    category: 'engagement',
+    label: fileName,
+  });
+};
+
+export const trackOfficeInteraction = (office) => {
+  event({
+    action: 'office_interaction',
+    category: 'engagement',
+    label: office,
   });
 };

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Container from '../ui/Container';
 import SectionHeading from '../ui/SectionHeading';
 import Image from 'next/image';
+import { trackOfficeInteraction, trackEmailClick } from '../../lib/gtag';
 
 const OfficeLocationsDemo = () => {
   const [selectedOffice, setSelectedOffice] = useState(0);
@@ -37,13 +38,23 @@ const OfficeLocationsDemo = () => {
       timezone: 'CAT (UTC+2)',
       workingHours: [
         'Monday - Friday: 8:00 - 17:00',
-        'Saturday: 9:00 - 13:00', 
+        'Saturday: 9:00 - 13:00',
         'Sunday: Closed'
       ],
       services: ['Data Annotation', 'Processing', 'Label Ladder Academy'],
       bgGradient: 'from-blue-500 via-red-500 to-green-500'
     }
   ];
+
+  const handleOfficeSelect = (index) => {
+    setSelectedOffice(index);
+    const officeName = offices[index].city.toLowerCase();
+    trackOfficeInteraction(officeName);
+  };
+
+  const handleEmailClick = (office) => {
+    trackEmailClick();
+  };
 
   const createGoogleMapsUrl = (address) => {
     return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
@@ -68,12 +79,11 @@ const OfficeLocationsDemo = () => {
             {offices.map((office, index) => (
               <button
                 key={index}
-                onClick={() => setSelectedOffice(index)}
-                className={`flex items-center px-6 py-3 rounded-md transition-all duration-300 ${
-                  selectedOffice === index
+                onClick={() => handleOfficeSelect(index)}
+                className={`flex items-center px-6 py-3 rounded-md transition-all duration-300 ${selectedOffice === index
                     ? 'bg-primary text-white shadow-md'
                     : 'text-gray-600 hover:text-primary hover:bg-gray-50'
-                }`}
+                  }`}
               >
                 <div className="w-6 h-4 rounded-sm overflow-hidden mr-3">
                   <Image
@@ -105,7 +115,7 @@ const OfficeLocationsDemo = () => {
                   title={`${offices[selectedOffice].city} Office Location`}
                   className="rounded-t-xl"
                 />
-                
+
                 {/* Map Overlay with Office Info */}
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-lg">
@@ -183,7 +193,9 @@ const OfficeLocationsDemo = () => {
                   <svg className="w-5 h-5 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <a href={`mailto:${offices[selectedOffice].email}`} className="text-gray-700 hover:text-secondary transition-colors">
+                  <a href={`mailto:${offices[selectedOffice].email}`}
+                    onClick={handleEmailClick}
+                    className="text-gray-700 hover:text-secondary transition-colors">
                     {offices[selectedOffice].email}
                   </a>
                 </div>
@@ -211,7 +223,7 @@ const OfficeLocationsDemo = () => {
                 <h4 className="font-semibold text-primary mb-3">Key Services</h4>
                 <div className="flex flex-wrap gap-2">
                   {offices[selectedOffice].services.map((service, index) => (
-                    <span 
+                    <span
                       key={index}
                       className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-medium"
                     >
@@ -231,7 +243,7 @@ const OfficeLocationsDemo = () => {
               Ready to Visit or Schedule a Meeting?
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Whether you're in Europe or Africa, we're here to help with your data needs. 
+              Whether you're in Europe or Africa, we're here to help with your data needs.
               Contact us to schedule an in-person meeting or virtual consultation.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -246,6 +258,7 @@ const OfficeLocationsDemo = () => {
               </a>
               <a
                 href="mailto:hello@labelladder.com"
+                onClick={handleEmailClick}
                 className="inline-flex items-center px-6 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors font-medium"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

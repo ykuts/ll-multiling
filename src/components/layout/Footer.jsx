@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { trackEmailClick } from '../../lib/gtag';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -88,7 +89,7 @@ const Footer = () => {
               <div>
                 <p className="text-accent text-sm">
                   <span className="font-medium text-white">Email:</span><br />
-                  <a href="mailto:hello@labelladder.com" className="hover:text-white transition">
+                  <a href="mailto:hello@labelladder.com" className="hover:text-white transition" onClick={trackEmailClick}>
                     hello@labelladder.com
                   </a>
                 </p>

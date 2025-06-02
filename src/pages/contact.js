@@ -4,6 +4,7 @@ import Container from '../components/ui/Container';
 import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
 import OfficeLocationsDemo from '../components/sections/OfficeLocationsDemo';
+import { trackContactForm } from '../lib/gtag';
 
 export default function Contact() {
     const structuredData = [
@@ -145,6 +146,8 @@ export default function Contact() {
             });
 
             if (response.ok) {
+                trackContactForm('main_contact_form');
+
                 setFormStatus({
                     submitted: true,
                     error: false,
