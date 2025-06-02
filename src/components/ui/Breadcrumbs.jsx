@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 const Breadcrumbs = ({ customBreadcrumbs = null, className = '' }) => {
   const router = useRouter();
   
-  // Если переданы кастомные breadcrumbs, используем их
+  // If custom breadcrumbs are provided, use them
   if (customBreadcrumbs) {
     const breadcrumbSchema = {
       "@context": "https://schema.org",
@@ -55,7 +55,7 @@ const Breadcrumbs = ({ customBreadcrumbs = null, className = '' }) => {
     );
   }
 
-  // Автоматическая генерация breadcrumbs на основе URL
+  // Automatic generation of breadcrumbs based on URL
   const pathSegments = router.asPath.split('/').filter(segment => segment && !segment.includes('?'));
   
   if (pathSegments.length === 0) return null; // Не показываем на главной странице

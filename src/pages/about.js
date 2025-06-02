@@ -286,9 +286,9 @@ export default function About() {
                         <div className="order-3 md:order-4">
                             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
 
-                                <div class="flex items-center justify-center h-full bg-white">
+                                <div className="flex items-center justify-center h-full bg-white">
                                     {/* <!-- Book with ladder icon (SVG) --> */}
-                                    <div class="mr-4">
+                                    <div className="mr-4">
                                         <Image
                                             src="/images/icons/academy.png"
                                             alt="Label Ladder Academy"
@@ -299,10 +299,10 @@ export default function About() {
                                     </div>
 
                                     {/* <!-- Text "Label Ladder Academy" --> */}
-                                    <div class="text-primary font-bold">
-                                        <div class="text-3xl leading-tight">Label</div>
-                                        <div class="text-3xl leading-tight">Ladder</div>
-                                        <div class="text-3xl leading-tight">Academy</div>
+                                    <div className="text-primary font-bold">
+                                        <div className="text-3xl leading-tight">Label</div>
+                                        <div className="text-3xl leading-tight">Ladder</div>
+                                        <div className="text-3xl leading-tight">Academy</div>
                                     </div>
                                 </div>
 

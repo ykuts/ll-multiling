@@ -4,7 +4,6 @@ import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
 import Image from 'next/image';
 import ProcessDesignSection from '@/components/sections/ProcessDesignSection';
-import HumanInTheLoopSection from '@/components/sections/HumanInTheLoopSection';
 
 export default function Approach() {
 const structuredData = {

@@ -1,5 +1,4 @@
 import Container from '../ui/Container';
-import SectionHeading from '../ui/SectionHeading';
 import Image from 'next/image';
 
 const HumanInTheLoopSection = () => {

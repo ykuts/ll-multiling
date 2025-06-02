@@ -55,7 +55,7 @@ html, body {
 }
 
 
-/* Анимации для переключения офисов */
+/* Animations for switching offices */
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -71,7 +71,7 @@ html, body {
   animation: slideIn 0.5s ease-out;
 }
 
-/* Стили для интерактивных карт */
+/* Styles for interactive maps */
 .map-container {
   position: relative;
   overflow: hidden;
@@ -87,14 +87,14 @@ html, body {
   transform: scale(1.02);
 }
 
-/* Градиенты для флагов стран */
+/* Gradients for country flags */
 .flag-gradient {
   background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для кнопок переключения офисов */
+/* Styles for office switch buttons */
 .office-tab {
   position: relative;
   overflow: hidden;
@@ -115,7 +115,7 @@ html, body {
   left: 100%;
 }
 
-/* Пульсирующий эффект для активного офиса */
+/* Pulsing effect for active office */
 .office-active {
   position: relative;
 }
@@ -145,7 +145,7 @@ html, body {
   }
 }
 
-/* Стили для карточек информации */
+/* Styles for information cards */
 .office-info-card {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.95);
@@ -153,7 +153,7 @@ html, body {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для тегов услуг */
+/* Styles for service tags */
 .service-tag {
   position: relative;
   overflow: hidden;
@@ -174,7 +174,7 @@ html, body {
   left: 100%;
 }
 
-/* Адаптивные стили для мобильных устройств */
+/* Responsive styles for mobile devices */
 @media (max-width: 768px) {
   .office-tab {
     font-size: 14px;
@@ -191,7 +191,7 @@ html, body {
   }
 }
 
-/* Стили для индикатора загрузки карты */
+/* Styles for the map loading indicator */
 .map-loading {
   display: flex;
   align-items: center;

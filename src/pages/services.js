@@ -287,7 +287,7 @@ export default function Services() {
     }
   ];
 
-  // Компонент для отображения сервисов в виде карточек на мобильных
+  // Component for displaying services as cards on mobile
   const ServiceCards = ({ services, sectionTitle }) => (
     <div className="lg:hidden space-y-4">
       <h3 className="text-xl font-bold text-primary mb-4">{sectionTitle}</h3>
@@ -310,7 +310,7 @@ export default function Services() {
     </div>
   );
 
-  // Компонент для отображения таблиц на десктопе
+  // Component for displaying tables on desktop
   const ServiceTable = ({ services, headers }) => (
     <div className="hidden lg:block overflow-x-auto">
       <table className="w-full bg-white rounded-lg shadow-md">

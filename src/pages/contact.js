@@ -128,11 +128,11 @@ export default function Contact() {
             return;
         }
 
-        // Подготавливаем данные для отправки
+        // Prepare data for submission
         const formDataToSend = new FormData();
         formDataToSend.append('form-name', 'contact');
 
-        // Добавляем все поля формы
+        // Add all form fields
         Object.keys(formData).forEach(key => {
             formDataToSend.append(key, formData[key]);
         });
@@ -219,7 +219,7 @@ export default function Contact() {
             <section className="py-16">
                 <Container>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                        {/* Левая колонка - Контактная информация */}
+                        {/* Left column - Contact information */}
                         <div>
                             <SectionHeading
                                 title="Get in Touch"
@@ -257,7 +257,7 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        {/* Правая колонка - Контактная форма */}
+                        {/* Right column - Contact form */}
                         <div className="bg-white p-8 rounded-lg shadow-md">
                             <h3 className="text-xl font-bold text-primary mb-6">Send Us a Message</h3>
 
@@ -267,7 +267,7 @@ export default function Contact() {
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                                    {/* Скрытые поля для Netlify */}
+                                    {/* Hidden fields for Netlify */}
                                     <input type="hidden" name="form-name" value="contact" />
                                     <input type="hidden" name="bot-field" />
 

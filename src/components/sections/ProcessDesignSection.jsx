@@ -180,16 +180,6 @@ const ProcessDesignSection = () => {
           </div>
         </div>
 
-        {/* Mobile Arrows */}
-        {/* <div className="lg:hidden flex flex-col items-center mt-8 space-y-4">
-          {[1, 2, 3, 4].map((arrow) => (
-            <div key={arrow} className="bg-secondary rounded-full w-12 h-12 flex items-center justify-center">
-              <svg className="w-6 h-6 text-white transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-          ))}
-        </div> */}
       </Container>
     </section>
   );
