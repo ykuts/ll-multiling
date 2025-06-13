@@ -7,7 +7,7 @@ export const useSEO = () => {
   const [isBot, setIsBot] = useState(false);
 
   useEffect(() => {
-    // Определяем, является ли посетитель ботом
+    // Determine if the visitor is a bot
     const userAgent = navigator.userAgent.toLowerCase();
     const botPatterns = [
       'googlebot', 'bingbot', 'slurp', 'duckduckbot', 
@@ -20,18 +20,18 @@ export const useSEO = () => {
     );
     setIsBot(isBotDetected);
 
-    // Увеличиваем счетчик просмотров страницы
+    // Increment the page view counter
     setPageViews(prev => prev + 1);
   }, [router.asPath]);
 
-  // Функция для отправки пользовательских событий
+  // Function to send custom events
   const trackCustomEvent = (eventName, properties = {}) => {
     if (typeof window !== 'undefined' && window.gtag && !isBot) {
       window.gtag('event', eventName, properties);
     }
   };
 
-  // Функция для отслеживания времени на странице
+  // Function to track time on page
   const trackTimeOnPage = () => {
     const startTime = Date.now();
     
@@ -44,7 +44,7 @@ export const useSEO = () => {
     };
   };
 
-  // Функция для отслеживания скролла
+  // Function to track scroll
   const trackScrollDepth = () => {
     let maxScroll = 0;
     
@@ -56,7 +56,7 @@ export const useSEO = () => {
       if (scrollPercent > maxScroll) {
         maxScroll = scrollPercent;
         
-        // Отправляем события на ключевых точках
+        // Send events at key points
         if ([25, 50, 75, 90].includes(scrollPercent)) {
           trackCustomEvent('scroll_depth', {
             scroll_depth: scrollPercent,

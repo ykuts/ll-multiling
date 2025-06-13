@@ -1,7 +1,7 @@
 const JsonLd = ({ data }) => {
   if (!data) return null;
 
-  // Проверяем, что это валидный JSON
+  // Check that this is valid JSON
   try {
     JSON.stringify(data);
   } catch (error) {

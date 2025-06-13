@@ -58,7 +58,7 @@ const Breadcrumbs = ({ customBreadcrumbs = null, className = '' }) => {
   // Automatic generation of breadcrumbs based on URL
   const pathSegments = router.asPath.split('/').filter(segment => segment && !segment.includes('?'));
   
-  if (pathSegments.length === 0) return null; // Не показываем на главной странице
+  if (pathSegments.length === 0) return null; 
   
   const pageNames = {
     'about': 'About Us',

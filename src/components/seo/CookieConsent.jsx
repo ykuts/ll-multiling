@@ -15,7 +15,7 @@ const CookieConsent = () => {
     localStorage.setItem('cookie-consent', 'accepted');
     setShowConsent(false);
     
-    // Инициализируем аналитику после согласия
+    // Initialize analytics after consent
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('consent', 'update', {
         analytics_storage: 'granted',
@@ -28,7 +28,7 @@ const CookieConsent = () => {
     localStorage.setItem('cookie-consent', 'declined');
     setShowConsent(false);
     
-    // Отклоняем аналитику
+    // Decline analytics
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('consent', 'update', {
         analytics_storage: 'denied',

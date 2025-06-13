@@ -43,14 +43,19 @@ export default function About() {
     // Team data
     const team = [
         {
-            name: 'Lorenzo Olivi',
+            name: 'Marion Schleifer',
             role: 'Co-founder & CEO',
+            image: '/images/team/marion.png',
+        },
+        {
+            name: 'Lorenzo Olivi',
+            role: 'Business Development',
             image: '/images/team/lorenzo.png',
         },
         {
-            name: 'Marion Schleifer',
-            role: 'Co-founder & CTO',
-            image: '/images/team/marion.png',
+            name: 'Elzine Mushambi',
+            role: 'Co-founder & Advisor',
+            image: '/images/team/elzine.png',
         },
         {
             name: 'Natasha Bassingthwaighte',
@@ -322,7 +327,7 @@ export default function About() {
                         centered
                     />
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mt-12">
                         {team.map((member, index) => (
                             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
                                 <div className="relative aspect-square">
