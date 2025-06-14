@@ -53,11 +53,6 @@ export default function About() {
             image: '/images/team/lorenzo.png',
         },
         {
-            name: 'Elzine Mushambi',
-            role: 'Co-founder & Advisor',
-            image: '/images/team/elzine.png',
-        },
-        {
             name: 'Natasha Bassingthwaighte',
             role: 'Project Oversight',
             image: '/images/team/natasha.png',
@@ -66,6 +61,11 @@ export default function About() {
             name: 'Klaudia Iita',
             role: 'Operations',
             image: '/images/team/klaudia.png',
+        },
+        {
+            name: 'Elzine Mushambi',
+            role: 'Co-founder & Advisor',
+            image: '/images/team/elzine.png',
         },
     ];
 
