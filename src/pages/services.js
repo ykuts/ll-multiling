@@ -302,7 +302,7 @@ export default function Services() {
         <div key={`mobile-${index}`} className="bg-white p-4 rounded-lg border shadow-sm">
           <h4 className="font-bold text-primary text-lg mb-2">{service.name}</h4>
           <p className="text-gray-600 text-sm mb-3 leading-relaxed">{service.description}</p>
-          <div className="mt-3 pt-3 border-t border-gray-200 space-y-2">
+          {/* <div className="mt-3 pt-3 border-t border-gray-200 space-y-2">
             <div className="flex justify-between items-start">
               <span className="font-medium text-sm text-gray-700">Price:</span>
               <span className="text-sm text-gray-600 text-right flex-1 ml-2">{service.price}</span>
@@ -311,7 +311,7 @@ export default function Services() {
               <span className="font-medium text-sm text-gray-700">MOQ:</span>
               <span className="text-sm text-gray-600 text-right flex-1 ml-2">{service.moq}</span>
             </div>
-          </div>
+          </div> */}
         </div>
       ))}
     </div>
@@ -333,8 +333,8 @@ export default function Services() {
             <tr key={`desktop-${index}`} className="hover:bg-gray-50 transition-colors">
               <td className="px-4 py-3 font-medium text-primary text-sm">{service.name}</td>
               <td className="px-4 py-3 text-gray-600 text-sm">{service.description}</td>
-              <td className="px-4 py-3 text-gray-600 text-sm">{service.price}</td>
-              <td className="px-4 py-3 text-gray-600 text-sm">{service.moq}</td>
+              {/* <td className="px-4 py-3 text-gray-600 text-sm">{service.price}</td>
+              <td className="px-4 py-3 text-gray-600 text-sm">{service.moq}</td> */}
             </tr>
           ))}
         </tbody>
@@ -342,7 +342,8 @@ export default function Services() {
     </div>
   );
 
-  const tableHeaders = ['SERVICE', 'DESCRIPTION', 'UNIT PRICE', 'MOQ'];
+  const tableHeaders = ['SERVICE', 'DESCRIPTION'];
+  /* , 'UNIT PRICE', 'MOQ' */
 
   return (
     <Layout
@@ -446,8 +447,8 @@ export default function Services() {
                     <tr>
                       <th className="px-6 py-4 text-left">Service</th>
                       <th className="px-6 py-4 text-left">Description</th>
-                      <th className="px-6 py-4 text-left">Price Range</th>
-                      <th className="px-6 py-4 text-left">Min. Order Quantity</th>
+                      {/* <th className="px-6 py-4 text-left">Price Range</th>
+                      <th className="px-6 py-4 text-left">Min. Order Quantity</th> */}
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
@@ -455,8 +456,8 @@ export default function Services() {
                       <tr key={`image-${index}`} className="hover:bg-gray-50 transition-colors">
                         <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
                         <td className="px-6 py-4 text-gray-600">{service.description}</td>
-                        <td className="px-6 py-4 text-gray-600">{service.price}</td>
-                        <td className="px-6 py-4 text-gray-600">{service.moq}</td>
+                        {/* <td className="px-6 py-4 text-gray-600">{service.price}</td>
+                        <td className="px-6 py-4 text-gray-600">{service.moq}</td> */}
                       </tr>
                     ))}
                   </tbody>
@@ -498,8 +499,8 @@ export default function Services() {
                     <tr>
                       <th className="px-6 py-4 text-left">Service</th>
                       <th className="px-6 py-4 text-left">Description</th>
-                      <th className="px-6 py-4 text-left">Price Range</th>
-                      <th className="px-6 py-4 text-left">Min. Order Quantity</th>
+                      {/* <th className="px-6 py-4 text-left">Price Range</th>
+                      <th className="px-6 py-4 text-left">Min. Order Quantity</th> */}
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
@@ -507,8 +508,8 @@ export default function Services() {
                       <tr key={`video-${index}`} className="hover:bg-gray-50 transition-colors">
                         <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
                         <td className="px-6 py-4 text-gray-600">{service.description}</td>
-                        <td className="px-6 py-4 text-gray-600">{service.price}</td>
-                        <td className="px-6 py-4 text-gray-600">{service.moq}</td>
+                        {/* <td className="px-6 py-4 text-gray-600">{service.price}</td>
+                        <td className="px-6 py-4 text-gray-600">{service.moq}</td> */}
                       </tr>
                     ))}
                   </tbody>
@@ -550,8 +551,8 @@ export default function Services() {
                     <tr>
                       <th className="px-6 py-4 text-left">Service</th>
                       <th className="px-6 py-4 text-left">Description</th>
-                      <th className="px-6 py-4 text-left">Price Range</th>
-                      <th className="px-6 py-4 text-left">Min. Order Quantity</th>
+                      {/* <th className="px-6 py-4 text-left">Price Range</th>
+                      <th className="px-6 py-4 text-left">Min. Order Quantity</th> */}
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
@@ -559,8 +560,8 @@ export default function Services() {
                       <tr key={`audio-${index}`} className="hover:bg-gray-50 transition-colors">
                         <td className="px-6 py-4 font-medium text-primary">{service.name}</td>
                         <td className="px-6 py-4 text-gray-600">{service.description}</td>
-                        <td className="px-6 py-4 text-gray-600">{service.price}</td>
-                        <td className="px-6 py-4 text-gray-600">{service.moq}</td>
+                        {/* <td className="px-6 py-4 text-gray-600">{service.price}</td>
+                        <td className="px-6 py-4 text-gray-600">{service.moq}</td> */}
                       </tr>
                     ))}
                   </tbody>
