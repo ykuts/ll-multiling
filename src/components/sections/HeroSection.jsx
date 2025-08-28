@@ -24,49 +24,55 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center py-20 md:py-32 text-white overflow-hidden">
       {/* Background Image with Overlay and Parallax */}
-      <div 
-        ref={parallaxRef} 
+      <div
+        ref={parallaxRef}
         className="absolute inset-0 z-0"
-        style={{ 
+        style={{
           transform: `translateY(${parallaxOffset}px)`,
           height: `calc(100% + ${parallaxOffset}px)`,
           top: `-${parallaxOffset}px`
         }}
       >
         <div className="absolute inset-0 bg-primary bg-opacity-80"></div> {/* Overlay - можно регулировать прозрачность */}
-        <Image 
-          src="/images/hero/hero.png" 
-          alt="Background" 
+        <Image
+          src="/images/hero/hero.png"
+          alt="Background"
           fill
           className="object-cover"
           priority
         />
       </div>
-      
+
       <Container>
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           {/* Logo */}
           <div className="mb-6">
             <div className="relative h-56 w-56 mx-auto">
-              <Image 
-                src="/images/logo-white.png" 
-                alt="Label Ladder Logo" 
+              <Image
+                src="/images/logo-white.png"
+                alt="Label Ladder Logo"
                 fill
                 className="object-contain"
               />
             </div>
           </div>
-          
+
           {/* Brand Name */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-wide">
             LABEL LADDER
           </h1>
-          
+
           {/* Tagline */}
           <p className="text-xl md:text-2xl mb-10 text-white">
-            Labelling data. Powering intelligence.
+            High-Quality Data Annotation. From Scale to Specialization.
           </p>
-          
+
+          {/* Subtitle */}
+          <p className="text-lg md:text-xl mb-10 text-accent max-w-4xl mx-auto leading-relaxed">
+            Powering your AI with precision data, delivered by our 1,000-strong team in Namibia.
+            From large-scale general annotation to expert-led medical specialization.
+          </p>
+
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
             <Button href="/services" variant="secondary" size="lg" className="w-48 sm:w-auto">
