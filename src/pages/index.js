@@ -77,12 +77,12 @@ export default function Home() {
     >
       <HeroSection />
       <FoundationSection />
+      <ExpertAnnotationSection />
       <ChallengeSection />
       <SolutionSection />
-      <ExpertAnnotationSection />
       <WhyChooseSection />
       <ApproachSection />
-      <ServicesOverviewSection />
+      {/* <ServicesOverviewSection /> */}
       <CredentialsSection />
       <CTASection />
     </Layout>

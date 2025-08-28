@@ -83,7 +83,7 @@ const WhyChooseSection = () => {
             Ready to Experience the Full Spectrum?
           </h3>
           <p className="text-accent mb-6 max-w-2xl mx-auto">
-            Whether you need large-scale general annotation or specialized medical expertise, 
+            Whether you need large-scale general annotation or specialized expert-led annotation,
             we have the right solution for your project.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -91,7 +91,7 @@ const WhyChooseSection = () => {
               General Annotation
             </Button>
             <Button href="/services#expert" variant="secondary" size="md">
-              Medical Expertise
+              Expert-Led Annotation
             </Button>
             <Button href="/contact" variant="outline" className="text-white border-white hover:bg-white/10" size="md">
               Get Started

@@ -58,20 +58,25 @@ const HeroSection = () => {
           </div>
 
           {/* Brand Name */}
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-wide">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-wide">
             LABEL LADDER
           </h1>
 
-          {/* Tagline */}
-          <p className="text-xl md:text-2xl mb-10 text-white">
-            High-Quality Data Annotation. From Scale to Specialization.
-          </p>
+          {/* Main Tagline */}
+          <h2 className="text-2xl md:text-4xl mb-4 text-white font-bold leading-tight">
+            High-Quality Data Annotation.<br />
+            From Scale to Specialization.
+          </h2>
 
-          {/* Subtitle */}
-          <p className="text-lg md:text-xl mb-10 text-accent max-w-4xl mx-auto leading-relaxed">
-            Powering your AI with precision data, delivered by our 1,000-strong team in Namibia.
-            From large-scale general annotation to expert-led medical specialization.
-          </p>
+          {/* Supporting Messages */}
+          <div className="space-y-3 mb-8 max-w-5xl mx-auto">
+            <p className="text-lg md:text-xl text-accent font-medium">
+              Powering Your AI with Precision Data, Delivered by Our 1,000-Strong Team in Namibia.
+            </p>
+            <p className="text-lg md:text-xl text-white/90">
+              The Full Spectrum of Data Annotation: Scalable General Labeling & Expert-Led Services.
+            </p>
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4">

@@ -66,7 +66,7 @@ const ExpertAnnotationSection = () => {
 
         {/* Medical & Healthcare - Primary Focus */}
         <div className="mt-12 mb-16">
-          <div className="bg-gradient-to-r from-primary to-secondary rounded-xl p-8 text-white mb-8">
+          <div className="bg-secondary rounded-xl p-8 text-white mb-8">
             <div className="text-center mb-8">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/20 mb-4">
                 <svg viewBox="0 0 24 24" fill="none" className="w-10 h-10 text-white">
@@ -74,7 +74,7 @@ const ExpertAnnotationSection = () => {
                 </svg>
               </div>
               <h3 className="text-2xl md:text-3xl font-bold mb-2">Medical & Healthcare Annotation</h3>
-              <p className="text-accent text-lg">Our primary area of expertise with specialized training and clinical oversight</p>
+              <p className="text-white text-lg">Our primary area of expertise with specialized training and clinical oversight</p>
             </div>
           </div>
 
