@@ -7,6 +7,7 @@ import ServicesOverviewSection from '../components/sections/ServicesOverviewSect
 import CTASection from '../components/sections/CTASection';
 import CredentialsSection from '../components/sections/CredentialsSection';
 import FoundationSection from '../components/sections/FoundationSection';
+import ExpertAnnotationSection from '../components/sections/ExpertAnnotationSection';
 
 export default function Home() {
   const structuredData = {
@@ -38,6 +39,7 @@ export default function Home() {
       <FoundationSection />
       <ChallengeSection />
       <SolutionSection />
+      <ExpertAnnotationSection />
       <ApproachSection />
       <ServicesOverviewSection />
       <CredentialsSection />
