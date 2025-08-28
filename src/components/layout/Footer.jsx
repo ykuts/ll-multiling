@@ -55,28 +55,13 @@ const Footer = () => {
             <h3 className="text-lg font-bold text-white mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services#general" className="text-accent hover:text-white transition text-sm">
+                <Link href="/general-services" className="text-accent hover:text-white transition text-sm">
                   General Data Annotation
                 </Link>
               </li>
               <li>
-                <Link href="/medical" className="text-accent hover:text-white transition text-sm">
-                  Medical Annotation
-                </Link>
-              </li>
-              <li>
-                <Link href="/services#annotation" className="text-accent hover:text-white transition text-sm">
-                  Text Annotation
-                </Link>
-              </li>
-              <li>
-                <Link href="/services#image" className="text-accent hover:text-white transition text-sm">
-                  Image Annotation
-                </Link>
-              </li>
-              <li>
-                <Link href="/services#processing" className="text-accent hover:text-white transition text-sm">
-                  Data Processing
+                <Link href="/expert-services" className="text-accent hover:text-white transition text-sm">
+                  Expert & Specialist Annotation
                 </Link>
               </li>
             </ul>
@@ -168,28 +153,13 @@ const Footer = () => {
               <h3 className="text-lg font-bold text-white mb-3">Services</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/services#annotation" className="text-accent hover:text-white transition text-sm">
-                    Text Annotation
+                  <Link href="/general-services" className="text-accent hover:text-white transition text-sm">
+                    General Data Annotation
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services#image" className="text-accent hover:text-white transition text-sm">
-                    Image Annotation
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services#video" className="text-accent hover:text-white transition text-sm">
-                    Video Annotation
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services#audio" className="text-accent hover:text-white transition text-sm">
-                    Audio Annotation
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services#processing" className="text-accent hover:text-white transition text-sm">
-                    Data Processing
+                  <Link href="/expert-services" className="text-accent hover:text-white transition text-sm">
+                    Expert & Specialist Annotation
                   </Link>
                 </li>
               </ul>
