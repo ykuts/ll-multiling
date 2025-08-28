@@ -44,7 +44,7 @@ const structuredData = {
       image: "/images/credentials/adaire.png",
       logo: "/images/credentials/adaire.png"
     },
-    {
+    /* {
       company: "Nedbank",
       project: "Client Data Validation & Migration",
       description: "Data cleansing and feature testing for one of southern Africa's largest banks' new retail client application.",
@@ -53,7 +53,7 @@ const structuredData = {
       how: "Label Ladder's team was trained as subject matter experts and used TestFlight to test the mobile iOS application. All bugs or issues were logged and corrected by the bank's development team. User data was verified and cleaned, and dormant accounts were either verified or deleted.",
       image: "/images/credentials/nedbank.jpg",
       logo: "/images/credentials/nedbank-logo.jpg"
-    },
+    }, */
     /* {
       company: "Allyship",
       project: "Database Setup",
@@ -74,12 +74,12 @@ const structuredData = {
       position: "CTO at Adaire",
       company: "Adaire"
     },
-    {
+    /* {
       quote: "The quality and attention to detail in their data validation process exceeded our expectations. Their team's expertise was invaluable in ensuring our new banking application launched without issues.",
       author: "Sarah Ngombe",
       position: "Head of Digital Banking",
       company: "Nedbank Namibia"
-    },
+    }, */
     /* {
       quote: "Working with Label Ladder helped us establish a robust database foundation for our accessibility tool. Their understanding of both technical requirements and the purpose of our data was impressive.",
       author: "Lisa Müller",

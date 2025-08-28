@@ -36,11 +36,17 @@ const Header = () => {
       name: 'Services',
       href: '/services',
       submenu: [
-        { name: 'General Data Annotation', href: '/services#general', description: 'Large-scale projects with our 1,000-strong team' },
-        { name: 'Expert & Specialist Annotation', href: '/services#expert', description: 'Medical and specialized domain expertise' },
-        { name: 'Medical Services', href: '/medical', description: 'Dedicated healthcare annotation page' },
-        { name: 'Data Processing', href: '/services#processing', description: 'Data entry, validation, cleansing, migration' }
-      ]
+      { 
+        name: 'General Data Annotation', 
+        href: '/general-services', 
+        description: 'For Large-Scale Projects' 
+      },
+      { 
+        name: 'Expert & Specialist Annotation', 
+        href: '/expert-services', 
+        description: 'For Medical, etc.' 
+      }
+    ]
     },
     { name: 'Credentials', href: '/credentials' },
   ];
