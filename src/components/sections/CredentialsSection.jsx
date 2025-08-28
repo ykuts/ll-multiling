@@ -16,7 +16,7 @@ const CredentialsSection = () => {
       duration: "2 weeks",
       dataVolume: "5,000+ records"
     },
-    {
+    /* {
       company: "Nedbank",
       project: "Client Data Validation & Migration",
       who: "Nedbank is one of the four largest banks in southern Africa, serving 7 million retail and wholesale clients.",
@@ -26,7 +26,7 @@ const CredentialsSection = () => {
       industry: "Banking & Finance",
       duration: "6 weeks",
       dataVolume: "7M+ client records"
-    }
+    } */
   ];
 
   return (
