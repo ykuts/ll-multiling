@@ -24,16 +24,55 @@ export default function Home() {
     "mainEntity": {
       "@type": "Organization",
       "name": "Label Ladder",
-      "slogan": "Labelling data. Powering intelligence."
+      "slogan": "High-Quality Data Annotation. From Scale to Specialization.",
+      "description": "Swiss-Namibian company providing data annotation services from large-scale general projects to specialized medical expertise",
+      "foundingDate": "2018",
+      "numberOfEmployees": "1000",
+      "location": [
+        {
+          "@type": "Place",
+          "name": "Zürich, Switzerland"
+        },
+        {
+          "@type": "Place",
+          "name": "Windhoek, Namibia"
+        }
+      ],
+      "serviceArea": {
+        "@type": "Place",
+        "name": "Worldwide"
+      },
+      "hasOfferCatalog": [
+        {
+          "@type": "OfferCatalog",
+          "name": "General Data Annotation Services",
+          "description": "Large-scale annotation services powered by 1,000-strong team"
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Medical & Healthcare Annotation",
+          "description": "Specialized medical data annotation with clinical expertise"
+        }
+      ],
+      "knowsAbout": [
+        "Data Annotation",
+        "Medical Data Processing",
+        "Healthcare AI",
+        "Radiology Annotation",
+        "Pathology Labeling",
+        "Clinical Documentation",
+        "Machine Learning",
+        "Computer Vision"
+      ]
     }
   };
 
   return (
-    <Layout 
-      title="Professional Data Annotation & Processing Services for AI & ML"
-      description="Expert data annotation services for machine learning and AI projects. Swiss precision meets Namibian talent. Text, image, video, audio annotation and comprehensive data processing solutions with competitive pricing."
-      keywords="data annotation services, AI training data, machine learning datasets, data labeling company, text annotation, image annotation, video transcription, audio processing, data validation, data cleaning, Switzerland, Namibia"
-      image="https://labelladder.com/images/og/homepage-og.jpg"
+    <Layout
+      title="Professional Data Annotation: From Scale to Medical Specialization"
+      description="Expert data annotation services combining 1,000-strong Namibian team for large-scale projects with specialized medical expertise for healthcare AI. Swiss precision meets social impact."
+      keywords="data annotation services, medical data annotation, healthcare AI, large scale data labeling, radiology annotation, pathology labeling, clinical data processing, Swiss Namibian partnership, native English speakers"
+      image="https://labelladder.com/images/og/homepage-medical-og.jpg"
       structuredData={structuredData}
     >
       <HeroSection />
