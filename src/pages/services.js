@@ -303,7 +303,7 @@ export default function Services() {
             </h2>
             <p className="text-xl text-gray-600 mb-8">
               Our team can help you determine the right approach for your project. 
-              Whether it's volume or expertise you need, we'll guide you to the best solution.
+              Whether it&lsquo;s volume or expertise you need, we&lsquo;ll guide you to the best solution.
             </p>
             <Button href="/contact" variant="primary" size="lg">
               Get Consultation
