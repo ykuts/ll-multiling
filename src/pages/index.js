@@ -6,6 +6,7 @@ import ApproachSection from '../components/sections/ApproachSection';
 import ServicesOverviewSection from '../components/sections/ServicesOverviewSection';
 import CTASection from '../components/sections/CTASection';
 import CredentialsSection from '../components/sections/CredentialsSection';
+import FoundationSection from '../components/sections/FoundationSection';
 
 export default function Home() {
   const structuredData = {
@@ -34,6 +35,7 @@ export default function Home() {
       structuredData={structuredData}
     >
       <HeroSection />
+      <FoundationSection />
       <ChallengeSection />
       <SolutionSection />
       <ApproachSection />
