@@ -76,12 +76,13 @@ const Header = () => {
               <li key={item.name} className="relative group">
                 {item.submenu ? (
                   <>
-                    <button
+                    {/* Main link Services - clickable */}
+                    <Link
+                      href={item.href}
                       className={`text-base font-medium transition duration-300 flex items-center ${router.pathname === item.href || router.pathname.startsWith(item.href + '/')
                           ? 'text-white'
                           : 'text-white hover:text-secondary'
                         }`}
-                      onClick={() => handleSubmenuToggle(item.name)}
                     >
                       {item.name}
                       <svg
@@ -93,13 +94,15 @@ const Header = () => {
                       >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
-                    </button>
-                    <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg overflow-hidden z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+                    </Link>
+
+                    {/* Dropdown shows on hover */}
+                    <div className="absolute left-0 mt-2 w-80 bg-white rounded-md shadow-lg overflow-hidden z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
                       {item.submenu.map((subItem) => (
                         <Link
                           key={subItem.name}
                           href={subItem.href}
-                          className="block px-4 py-2 text-sm text-primary hover:bg-gray-100 hover:text-secondary"
+                          className="block px-4 py-3 hover:bg-gray-100 hover:text-secondary border-b border-gray-100 last:border-b-0"
                         >
                           <div className="font-medium text-primary text-sm">{subItem.name}</div>
                           {subItem.description && (
@@ -113,8 +116,8 @@ const Header = () => {
                   <Link
                     href={item.href}
                     className={`text-base font-medium transition duration-300 ${router.pathname === item.href
-                        ? 'text-white'
-                        : 'text-white hover:text-secondary'
+                      ? 'text-white'
+                      : 'text-white hover:text-secondary'
                       }`}
                   >
                     {item.name}
@@ -158,8 +161,8 @@ const Header = () => {
                   <div>
                     <button
                       className={`flex justify-between items-center w-full px-3 py-2 text-base font-medium ${router.pathname === item.href || router.pathname.startsWith(item.href + '/')
-                          ? 'text-secondary'
-                          : 'text-primary hover:text-secondary'
+                        ? 'text-secondary'
+                        : 'text-primary hover:text-secondary'
                         }`}
                       onClick={() => handleSubmenuToggle(item.name)}
                     >
@@ -191,8 +194,8 @@ const Header = () => {
                   <Link
                     href={item.href}
                     className={`block px-3 py-2 text-base font-medium ${router.pathname === item.href
-                        ? 'text-secondary'
-                        : 'text-primary hover:text-secondary'
+                      ? 'text-secondary'
+                      : 'text-primary hover:text-secondary'
                       }`}
                     onClick={() => setIsOpen(false)}
                   >

@@ -368,6 +368,222 @@ export default function Services() {
         </Container>
       </section>
 
+      {/* Services Overview - Two Main Categories */}
+      <section className="py-16">
+        <Container>
+          <SectionHeading
+            title="Our Complete Service Portfolio"
+            subtitle="From large-scale general annotation to specialized medical expertise - we deliver the full spectrum of data services."
+            centered
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+            {/* General Data Annotation */}
+            <div className="bg-gradient-to-br from-primary to-primary/90 text-white rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+              <div className="text-center mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/20 mb-4">
+                  <svg viewBox="0 0 24 24" fill="none" className="w-10 h-10 text-white">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" strokeWidth="2" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-3">General Data Annotation</h3>
+                <p className="text-accent">For Large-Scale Projects</p>
+              </div>
+
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 rounded-full bg-secondary mr-3"></div>
+                  <span>Text, Image, Video, Audio annotation</span>
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 rounded-full bg-secondary mr-3"></div>
+                  <span>Enterprise volume capacity (1,000+ team)</span>
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 rounded-full bg-secondary mr-3"></div>
+                  <span>Native English speakers</span>
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 rounded-full bg-secondary mr-3"></div>
+                  <span>Cost-effective pricing</span>
+                </li>
+              </ul>
+
+              <Button href="#general" variant="white" size="lg" className="w-full">
+                View General Services
+              </Button>
+            </div>
+
+            {/* Expert & Specialist Annotation */}
+            <div className="bg-gradient-to-br from-secondary to-secondary/90 text-white rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+              <div className="text-center mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/20 mb-4">
+                  <svg viewBox="0 0 24 24" fill="none" className="w-10 h-10 text-white">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-3">Expert & Specialist Annotation</h3>
+                <p className="text-white/80">For Medical & Complex Domains</p>
+              </div>
+
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 rounded-full bg-white mr-3"></div>
+                  <span>Medical & Healthcare specialization</span>
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 rounded-full bg-white mr-3"></div>
+                  <span>Radiology, Pathology, Clinical data</span>
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 rounded-full bg-white mr-3"></div>
+                  <span>Expert-led teams with domain knowledge</span>
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 rounded-full bg-white mr-3"></div>
+                  <span>Clinical accuracy & compliance</span>
+                </li>
+              </ul>
+
+              <Button href="#expert" variant="white" size="lg" className="w-full">
+                View Expert Services
+              </Button>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* General Services Section */}
+      <section id="general" className="py-16 bg-gray-50">
+        <Container>
+          <SectionHeading
+            title="General Data Annotation Services"
+            subtitle="High-volume, cost-effective annotation services powered by our 1,000-strong team in Namibia."
+          />
+
+          <div className="bg-white rounded-xl p-8 shadow-md mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8">
+              <div>
+                <h3 className="text-2xl font-bold text-primary mb-4">Built for Scale</h3>
+                <p className="text-gray-600 mb-4">
+                  Our core strength lies in handling large-volume annotation projects efficiently and cost-effectively.
+                  With 1,000 trained annotators in Namibia, we can scale to meet enterprise demands while maintaining
+                  Swiss quality standards.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="text-center p-4 bg-primary/5 rounded-lg">
+                    <div className="text-2xl font-bold text-primary">1M+</div>
+                    <div className="text-sm text-gray-600">Items processed monthly</div>
+                  </div>
+                  <div className="text-center p-4 bg-primary/5 rounded-lg">
+                    <div className="text-2xl font-bold text-primary">48h</div>
+                    <div className="text-sm text-gray-600">Average turnaround</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-primary/5 p-6 rounded-xl">
+                <h4 className="font-bold text-primary mb-4">Why Our General Services Excel:</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 rounded-full bg-secondary mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-sm">Native English speakers for linguistic accuracy</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 rounded-full bg-secondary mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-sm">Swiss quality management and oversight</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 rounded-full bg-secondary mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-sm">Scalable workforce for urgent deadlines</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 rounded-full bg-secondary mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-sm">Competitive pricing through local talent</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Expert Services Section */}
+      <section id="expert" className="py-16 bg-white">
+        <Container>
+          <SectionHeading
+            title="Expert & Specialist Annotation Services"
+            subtitle="Specialized teams with deep domain knowledge for complex annotation challenges."
+          />
+
+          {/* Medical & Healthcare Focus */}
+          <div className="bg-gradient-to-br from-secondary/10 to-primary/10 rounded-xl p-8 mb-8">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary mb-4">
+                <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-white">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+              <h3 className="text-3xl font-bold text-primary mb-2">Medical & Healthcare</h3>
+              <p className="text-lg text-gray-600">Our primary area of specialization</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h4 className="font-bold text-primary mb-3">Radiology & Medical Imaging</h4>
+                <p className="text-gray-600 text-sm mb-4">Expert annotation of X-rays, MRIs, CT scans with clinical accuracy</p>
+                <ul className="text-xs text-gray-500 space-y-1">
+                  <li>• DICOM format support</li>
+                  <li>• Clinical validation</li>
+                  <li>• Radiologist oversight</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h4 className="font-bold text-primary mb-3">Pathology & Lab Data</h4>
+                <p className="text-gray-600 text-sm mb-4">Precise annotation of histopathology images and diagnostic data</p>
+                <ul className="text-xs text-gray-500 space-y-1">
+                  <li>• Cellular identification</li>
+                  <li>• Tissue classification</li>
+                  <li>• Diagnostic labeling</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                <h4 className="font-bold text-primary mb-3">Clinical Documentation</h4>
+                <p className="text-gray-600 text-sm mb-4">Structured annotation of medical records and clinical notes</p>
+                <ul className="text-xs text-gray-500 space-y-1">
+                  <li>• HIPAA compliance</li>
+                  <li>• Medical terminology</li>
+                  <li>• Data standardization</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 text-center">
+              <Button href="/contact" variant="primary" size="lg">
+                Discuss Medical Annotation Needs
+              </Button>
+            </div>
+          </div>
+
+          {/* Future Specializations */}
+          <div className="bg-gray-50 rounded-xl p-6">
+            <h4 className="text-xl font-bold text-primary text-center mb-4">Developing Specializations</h4>
+            <div className="flex flex-wrap justify-center gap-4">
+              <span className="bg-white px-4 py-2 rounded-lg text-sm border border-gray-200">
+                <span className="font-medium text-primary">Agriculture & Environmental</span>
+                <span className="text-xs text-gray-500 ml-2">• Crop monitoring • Satellite imagery</span>
+              </span>
+              <span className="bg-white px-4 py-2 rounded-lg text-sm border border-gray-200">
+                <span className="font-medium text-primary">Geospatial Analysis</span>
+                <span className="text-xs text-gray-500 ml-2">• GIS data • Mapping</span>
+              </span>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* Services Overview */}
       <section className="py-16">
         <Container>
