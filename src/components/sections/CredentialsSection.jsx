@@ -16,6 +16,28 @@ const CredentialsSection = () => {
       duration: "2 weeks",
       dataVolume: "5,000+ records"
     },
+    {
+      company: "Digital Divine Data",
+      project: "Autonomous Driving Annotation",
+      who: "Digital Divine Data (DDD) is a specialized data annotation company focusing on AI training datasets.",
+      what: "DDD collaborated with Label Ladder on the annotation of images for an autonomous driving project, requiring precise object detection and classification for vehicle AI systems.",
+      how: "Our expert annotation team provided detailed labeling of road scenes, vehicles, pedestrians, and traffic infrastructure to support autonomous driving algorithm development.",
+      logo: "/images/credentials/ddd.webp",
+      industry: "Data Annotation",
+      duration: "2 weeks",
+      dataVolume: "200+ Records"
+    },
+    {
+      company: "Ambulanzpartner",
+      project: "Healthcare Data Processing",
+      who: "Ambulanzpartner provides emergency medical services and healthcare solutions.",
+      what: "..... ",
+      how: " ..... ",
+      logo: "/images/credentials/ambulanzpartner.webp",
+      industry: "Healthcare",
+      duration: "2 weeks",
+      dataVolume: "... records"
+    },
     /* {
       company: "Nedbank",
       project: "Client Data Validation & Migration",
@@ -66,10 +88,10 @@ const CredentialsSection = () => {
               {/* Project Details */}
               <div className="p-6">
                 <div className="grid grid-cols-2 gap-4 mb-4">
-                  <div className="text-left">
+                  {/* <div className="text-left">
                     <div className="text-lg font-bold text-primary">{caseStudy.duration}</div>
                     <div className="text-xs text-gray-500">Duration</div>
-                  </div>
+                  </div> */}
                   <div className="text-left">
                     <div className="text-lg font-bold text-primary">{caseStudy.dataVolume}</div>
                     <div className="text-xs text-gray-500">Data Volume</div>

@@ -6,7 +6,7 @@ const WhyChooseSection = () => {
   const features = [
     {
       title: "SCALE & CAPACITY",
-      description: "Our 1,000-strong team in Namibia handles enterprise-volume projects with Swiss quality standards and native English proficiency.",
+      description: "Our 1,000-strong Swiss-Namibian team handles enterprise-volume projects with Swiss quality standards and native English proficiency.",
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
           <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" strokeWidth="2"/>

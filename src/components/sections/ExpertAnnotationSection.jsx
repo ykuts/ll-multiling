@@ -110,27 +110,7 @@ const ExpertAnnotationSection = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Future Specializations */}
-        <div className="bg-gray-50 rounded-xl p-8">
-          <div className="text-center mb-6">
-            <h3 className="text-xl font-bold text-primary mb-2">Developing Specializations</h3>
-            <p className="text-gray-600">Building expertise in additional complex domains</p>
-          </div>
-          
-          <div className="flex flex-wrap justify-center gap-4">
-            {futureSpecializations.map((spec, index) => (
-              <div key={index} className="bg-white rounded-lg px-6 py-3 shadow-sm border border-gray-200">
-                <div className="flex items-center">
-                  <span className="text-sm font-semibold text-primary mr-2">{spec.name}</span>
-                  <span className="text-xs bg-secondary/10 text-secondary px-2 py-1 rounded-full">{spec.status}</span>
-                </div>
-                <p className="text-xs text-gray-500 mt-1">{spec.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        </div>        
 
         {/* CTA */}
         <div className="mt-12 text-center">

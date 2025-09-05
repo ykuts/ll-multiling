@@ -10,7 +10,7 @@ const FoundationSection = () => {
       description: "Trained professionals in Namibia delivering quality data annotation"
     },
     {
-      number: "99.8%",
+      number: "98%",
       label: "Data Accuracy",
       description: "Consistent quality through rigorous training and quality control"
     },
@@ -126,8 +126,7 @@ const FoundationSection = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4">Label Ladder Academy</h3>
               <p className="text-accent mb-4">
-                Our project is supported by the Namibian Ministry of Information, 
-                Communication & Technology, and the Ministry of Sport, Youth and National Service.
+                Our project is supported by the Namibian Ministry of Education, Innovation, Youth, Sports, Arts and Culture.
               </p>
               <p className="text-accent">
                 Through our Label Ladder Academy program, we guarantee our employees a pathway 

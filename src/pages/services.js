@@ -163,7 +163,7 @@ export default function Services() {
           </div>
 
           {/* Future Specializations */}
-          <div className="bg-gray-50 rounded-xl p-6">
+          {/* <div className="bg-gray-50 rounded-xl p-6">
             <h4 className="text-xl font-bold text-primary text-center mb-4">Developing Specializations</h4>
             <div className="flex flex-wrap justify-center gap-4">
               <span className="bg-white px-4 py-2 rounded-lg text-sm border border-gray-200">
@@ -175,7 +175,7 @@ export default function Services() {
                 <span className="text-xs text-gray-500 ml-2">• GIS data • Mapping</span>
               </span>
             </div>
-          </div>
+          </div> */}
         </Container>
       </section>
 
