@@ -204,11 +204,11 @@ export default function Medical() {
                     />
 
                     {medicalServices.map((service, index) => (
-                        <div key={index} className={`mb-16 ${index % 2 === 0 ? '' : ''}`}>
+                        <div key={index} className={`mb-16`}>
                             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                                     {/* Content */}
-                                    <div className={`p-8 lg:p-12 ${index % 2 === 0 ? 'order-1' : 'order-2'}`}>
+                                    <div className={`p-8 lg:p-12 ${index % 2 === 0 ? 'order-2' : 'order-2'}`}>
                                         <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
                                             {service.title}
                                         </h3>
@@ -244,7 +244,7 @@ export default function Medical() {
                                     </div>
 
                                     {/* Image placeholder */}
-                                    <div className={`bg-gradient-to-br from-primary/5 to-secondary/5 flex items-center justify-center p-12 ${index % 2 === 0 ? 'order-2' : 'order-1'}`}>
+                                    <div className={`bg-gradient-to-br from-primary/5 to-secondary/5 flex items-center justify-center p-12 ${index % 2 === 0 ? 'order-1' : 'order-1'}`}>
                                         <div className="text-center">
                                             <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                                                 <svg viewBox="0 0 24 24" fill="none" className="w-16 h-16 text-primary">
@@ -265,7 +265,7 @@ export default function Medical() {
             <section className="py-16 bg-primary text-white">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6  text-white/90">
                             Ready to Advance Your Healthcare AI?
                         </h2>
                         <p className="text-xl mb-8 text-white/90">

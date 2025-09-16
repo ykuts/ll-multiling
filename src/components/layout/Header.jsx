@@ -37,6 +37,11 @@ const Header = () => {
       href: '/services',
       submenu: [
       { 
+        name: 'Our Services', 
+        href: '/services', 
+        description: 'About Our Services' 
+      },
+      { 
         name: 'General Data Annotation', 
         href: '/general-services', 
         description: 'For Large-Scale Projects' 
