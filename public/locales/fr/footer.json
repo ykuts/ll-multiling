@@ -1,0 +1,21 @@
+{
+    "description": "Nous fournissons des services complets de traitement et d'annotation de données pour transformer vos données en un atout puissant.",
+    "quickLinks": {
+        "title": "Liens rapides",
+        "aboutUs": "À propos",
+        "ourApproach": "Notre approche",
+        "credentials": "Références"
+    },
+    "services": {
+        "title": "Services",
+        "generalData": "Annotation de données générales",
+        "expertAnnotation": "Annotation experte et spécialisée"
+    },
+    "contact": {
+        "title": "Contact",
+        "email": "E-mail :",
+        "website": "Site web :"
+    },
+    "cta": "Démarrer votre projet",
+    "copyright": "Label Ladder. Tous droits réservés."
+}

@@ -1,0 +1,107 @@
+{
+    "hero": {
+        "title": "Kontakt",
+        "subtitle": "Kontaktieren Sie unser Team, um Ihre Anforderungen an Datenannotation und -verarbeitung zu besprechen."
+    },
+    "getInTouch": {
+        "title": "Kontaktieren Sie uns",
+        "subtitle": "Wir freuen uns auf Ihre Nachricht! Füllen Sie das Formular aus und unser Team wird sich so schnell wie möglich bei Ihnen melden.",
+        "emailUs": "Per E-Mail"
+    },
+    "socialMedia": {
+        "title": "Folgen Sie uns"
+    },
+    "form": {
+        "title": "Senden Sie uns eine Nachricht",
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "email": "E-Mail-Adresse",
+        "company": "Unternehmen",
+        "phone": "Telefonnummer",
+        "serviceType": "Service-Typ",
+        "dataVolume": "Datenvolumen",
+        "message": "Nachricht",
+        "required": "*",
+        "submit": "Nachricht senden",
+        "submitted": "Nachricht gesendet!",
+        "successMessage": "Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.",
+        "errorMessage": "Bitte füllen Sie alle Pflichtfelder aus.",
+        "errorMessageGeneral": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt unter hello@labelladder.com"
+    },
+    "serviceTypes": {
+        "select": "Service-Typ auswählen",
+        "text": "Textannotation",
+        "image": "Bildannotation",
+        "video": "Videoannotation",
+        "audio": "Audioannotation",
+        "processing": "Datenverarbeitung",
+        "other": "Sonstiges / Nicht sicher"
+    },
+    "dataVolumes": {
+        "select": "Datenvolumen auswählen (falls zutreffend)",
+        "small": "Klein (Weniger als 1.000 Elemente)",
+        "medium": "Mittel (1.000 - 10.000 Elemente)",
+        "large": "Groß (10.000 - 100.000 Elemente)",
+        "enterprise": "Enterprise (100.000+ Elemente)",
+        "unknown": "Noch nicht sicher"
+    },
+    "faq": {
+        "title": "Häufig gestellte Fragen",
+        "subtitle": "Finden Sie Antworten auf häufige Fragen zu unseren Dienstleistungen.",
+        "q1": {
+            "question": "Welche Datentypen können Sie für uns annotieren?",
+            "answer": "Wir bieten Annotationsdienste für eine Vielzahl von Datentypen, darunter Text, Bilder, Videos und Audio. Unsere Dienste reichen von einfacher Beschriftung bis hin zu komplexen Segmentierungsaufgaben für Machine Learning und KI-Anwendungen."
+        },
+        "q2": {
+            "question": "Wie stellen Sie Datensicherheit und Vertraulichkeit sicher?",
+            "answer": "Wir befolgen strenge Datensicherheitsprotokolle, die internationalen Standards entsprechen. Alle unsere Annotatoren unterzeichnen Vertraulichkeitsvereinbarungen, und wir können zusätzliche Sicherheitsmaßnahmen basierend auf Ihren spezifischen Anforderungen implementieren, einschließlich sicherer Infrastruktur und Zugriffskontrollen."
+        },
+        "q3": {
+            "question": "Wie ist die typische Bearbeitungszeit für Projekte?",
+            "answer": "Die Projektzeiten variieren je nach Komplexität und Datenvolumen. Wir liefern detaillierte Zeitschätzungen während der Projektplanung. Für dringende Anforderungen können wir zusätzliche Ressourcen zuweisen, um die Lieferung zu beschleunigen und gleichzeitig Qualitätsstandards beizubehalten."
+        },
+        "q4": {
+            "question": "Bieten Sie maßgeschneiderte Annotationsdienste für bestimmte Branchen an?",
+            "answer": "Ja, wir sind auf branchenspezifische Annotation in verschiedenen Bereichen spezialisiert, darunter Gesundheitswesen, Recht, Einzelhandel, Automobil und mehr. Unser Team erhält spezielle Schulungen, um die Nuancen und Anforderungen der Daten jeder Branche zu verstehen."
+        },
+        "q5": {
+            "question": "Wie handhaben Sie die Qualitätskontrolle im Annotationsprozess?",
+            "answer": "Wir implementieren ein mehrschichtiges Qualitätskontrollsystem, das Konsensscoring, Goldstandard-Aufgaben, Blindüberprüfungen und regelmäßige Leistungsüberprüfungen umfasst. Dies gewährleistet konsistente Genauigkeit und Zuverlässigkeit in unserer Annotationsausgabe."
+        },
+        "contactPrompt": "Ihre Frage wurde hier nicht beantwortet? Kontaktieren Sie uns direkt.",
+        "emailQuestion": "Frage per E-Mail senden"
+    },
+    "officeLocations": {
+        "title": "Unsere globalen Büros",
+        "subtitle": "Schweizerisch-namibische Partnerschaft mit strategisch platzierten Büros, um unsere Kunden weltweit zu bedienen",
+        "workingHours": "Öffnungszeiten",
+        "keyServices": "Hauptdienstleistungen",
+        "zurich": {
+            "description": "Unser europäischer Hauptsitz im lebendigen Affoltern-Viertel"
+        },
+        "windhoek": {
+            "description": "Unser Datenverarbeitungszentrum mit qualifizierten lokalen Talenten im Stadtzentrum"
+        },
+        "services": {
+            "dataStrategy": "Datenstrategie",
+            "clientRelations": "Kundenbeziehungen",
+            "qualityAssurance": "Qualitätssicherung",
+            "dataAnnotation": "Datenannotation",
+            "processing": "Verarbeitung",
+            "academy": "Label Ladder Akademie"
+        },
+        "schedule": {
+            "mondayFriday": "Montag - Freitag",
+            "saturday": "Samstag",
+            "sunday": "Sonntag",
+            "byAppointment": "Nach Vereinbarung",
+            "closed": "Geschlossen"
+        }
+    },
+    "readyToVisit": {
+        "title": "Bereit für einen Besuch oder ein Meeting?",
+        "subtitle": "Ob Sie in Europa oder Afrika sind, wir sind hier, um bei Ihren Datenanforderungen zu helfen. Kontaktieren Sie uns, um ein persönliches Treffen oder eine virtuelle Beratung zu vereinbaren.",
+        "scheduleMeeting": "Meeting vereinbaren",
+        "sendEmail": "E-Mail senden"
+    }
+}

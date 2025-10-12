@@ -3,45 +3,55 @@ import Container from '../ui/Container';
 import SectionHeading from '../ui/SectionHeading';
 import Image from 'next/image';
 import { trackOfficeInteraction, trackEmailClick } from '../../lib/gtag';
+import { useTranslation } from 'next-i18next';
 
 const OfficeLocationsDemo = () => {
   const [selectedOffice, setSelectedOffice] = useState(0);
+  const { t } = useTranslation('contact');
 
   const offices = [
     {
       city: 'Zürich',
       country: 'Switzerland',
       address: 'Hungerbergstrasse 26, 8046 Zürich, Switzerland',
-      description: 'Our European headquarters in the vibrant Affoltern district',
+      description: t('officeLocations.zurich.description'),
       email: 'hello@labelladder.com',
       flag: '/images/icons/switzerland.png',
       mapEmbed: 'https://www.openstreetmap.org/export/embed.html?bbox=8.4950%2C47.4170%2C8.5050%2C47.4220&layer=mapnik&marker=47.4196%2C8.4993',
       coordinates: { lat: 47.4196, lng: 8.4993 },
       timezone: 'CET (UTC+1)',
       workingHours: [
-        'Monday - Friday: 9:00 - 18:00',
-        'Saturday: By appointment',
-        'Sunday: Closed'
+        `${t('officeLocations.schedule.mondayFriday')}: 9:00 - 18:00`,
+        `${t('officeLocations.schedule.saturday')}: ${t('officeLocations.schedule.byAppointment')}`,
+        `${t('officeLocations.schedule.sunday')}: ${t('officeLocations.schedule.closed')}`
       ],
-      services: ['Data Strategy', 'Client Relations', 'Quality Assurance'],
+      services: [
+        t('officeLocations.services.dataStrategy'),
+        t('officeLocations.services.clientRelations'),
+        t('officeLocations.services.qualityAssurance')
+      ],
       bgGradient: 'from-red-500 to-white'
     },
     {
       city: 'Windhoek',
       country: 'Namibia',
       address: '8 Bell Street, Windhoek, Namibia',
-      description: 'Our data processing center with skilled local talent in the city center',
+      description: t('officeLocations.windhoek.description'),
       email: 'hello@labelladder.com',
       flag: '/images/icons/namibia.png',
       mapEmbed: 'https://www.openstreetmap.org/export/embed.html?bbox=17.0830%2C-22.5830%2C17.0890%2C-22.5780&layer=mapnik&marker=-22.5806%2C17.0859',
       coordinates: { lat: -22.5806, lng: 17.0859 },
       timezone: 'CAT (UTC+2)',
       workingHours: [
-        'Monday - Friday: 8:00 - 17:00',
-        'Saturday: 9:00 - 13:00',
-        'Sunday: Closed'
+        `${t('officeLocations.schedule.mondayFriday')}: 8:00 - 17:00`,
+        `${t('officeLocations.schedule.saturday')}: 9:00 - 13:00`,
+        `${t('officeLocations.schedule.sunday')}: ${t('officeLocations.schedule.closed')}`
       ],
-      services: ['Data Annotation', 'Processing', 'Label Ladder Academy'],
+      services: [
+        t('officeLocations.services.dataAnnotation'),
+        t('officeLocations.services.processing'),
+        t('officeLocations.services.academy')
+      ],
       bgGradient: 'from-blue-500 via-red-500 to-green-500'
     }
   ];
@@ -68,8 +78,8 @@ const OfficeLocationsDemo = () => {
     <section className="py-16 bg-gray-50">
       <Container>
         <SectionHeading
-          title="Our Global Offices"
-          subtitle="Swiss-Namibian partnership with offices strategically located to serve our clients worldwide"
+          title={t('officeLocations.title')}
+          subtitle={t('officeLocations.subtitle')}
           centered
         />
 
@@ -81,8 +91,8 @@ const OfficeLocationsDemo = () => {
                 key={index}
                 onClick={() => handleOfficeSelect(index)}
                 className={`flex items-center px-6 py-3 rounded-md transition-all duration-300 ${selectedOffice === index
-                    ? 'bg-primary text-white shadow-md'
-                    : 'text-gray-600 hover:text-primary hover:bg-gray-50'
+                  ? 'bg-primary text-white shadow-md'
+                  : 'text-gray-600 hover:text-primary hover:bg-gray-50'
                   }`}
               >
                 <div className="w-6 h-4 rounded-sm overflow-hidden mr-3">
@@ -210,7 +220,7 @@ const OfficeLocationsDemo = () => {
 
               {/* Working Hours */}
               <div className="mb-6">
-                <h4 className="font-semibold text-primary mb-3">Working Hours</h4>
+                <h4 className="font-semibold text-primary mb-3">{t('officeLocations.workingHours')}</h4>
                 <div className="space-y-1">
                   {offices[selectedOffice].workingHours.map((hours, index) => (
                     <p key={index} className="text-sm text-gray-600">{hours}</p>
@@ -220,7 +230,7 @@ const OfficeLocationsDemo = () => {
 
               {/* Services */}
               <div>
-                <h4 className="font-semibold text-primary mb-3">Key Services</h4>
+                <h4 className="font-semibold text-primary mb-3">{t('officeLocations.keyServices')}</h4>
                 <div className="flex flex-wrap gap-2">
                   {offices[selectedOffice].services.map((service, index) => (
                     <span
@@ -240,11 +250,10 @@ const OfficeLocationsDemo = () => {
         <div className="mt-12 text-center">
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h3 className="text-2xl font-bold text-primary mb-4">
-              Ready to Visit or Schedule a Meeting?
+              {t('readyToVisit.title')}
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Whether you're in Europe or Africa, we're here to help with your data needs.
-              Contact us to schedule an in-person meeting or virtual consultation.
+              {t('readyToVisit.subtitle')}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
@@ -254,7 +263,7 @@ const OfficeLocationsDemo = () => {
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
-                Schedule Meeting
+                {t('readyToVisit.scheduleMeeting')}
               </a>
               <a
                 href="mailto:hello@labelladder.com"
@@ -264,7 +273,7 @@ const OfficeLocationsDemo = () => {
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                Send Email
+                {t('readyToVisit.sendEmail')}
               </a>
             </div>
           </div>

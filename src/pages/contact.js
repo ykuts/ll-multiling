@@ -5,8 +5,12 @@ import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
 import OfficeLocationsDemo from '../components/sections/OfficeLocationsDemo';
 import { trackContactForm } from '../lib/gtag';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 export default function Contact() {
+    const { t } = useTranslation('contact');
+
     const structuredData = [
         {
             "@context": "https://schema.org",
@@ -124,7 +128,7 @@ export default function Contact() {
             setFormStatus({
                 submitted: false,
                 error: true,
-                message: 'Please fill in all required fields.'
+                message: t('form.errorMessage')
             });
             return;
         }
@@ -151,7 +155,7 @@ export default function Contact() {
                 setFormStatus({
                     submitted: true,
                     error: false,
-                    message: 'Thank you for your message! We will get back to you shortly.'
+                    message: t('form.successMessage')
                 });
 
                 // Reset form after successful submission
@@ -172,28 +176,28 @@ export default function Contact() {
             setFormStatus({
                 submitted: false,
                 error: true,
-                message: 'There was an error sending your message. Please try again or contact us directly at hello@labelladder.com'
+                message: t('form.errorMessageGeneral')
             });
         }
     };
 
     const serviceTypes = [
-        { value: '', label: 'Select a service type' },
-        { value: 'text', label: 'Text Annotation' },
-        { value: 'image', label: 'Image Annotation' },
-        { value: 'video', label: 'Video Annotation' },
-        { value: 'audio', label: 'Audio Annotation' },
-        { value: 'processing', label: 'Data Processing' },
-        { value: 'other', label: 'Other / Not Sure' }
+        { value: '', label: t('serviceTypes.select') },
+        { value: 'text', label: t('serviceTypes.text') },
+        { value: 'image', label: t('serviceTypes.image') },
+        { value: 'video', label: t('serviceTypes.video') },
+        { value: 'audio', label: t('serviceTypes.audio') },
+        { value: 'processing', label: t('serviceTypes.processing') },
+        { value: 'other', label: t('serviceTypes.other') }
     ];
 
     const dataVolumes = [
-        { value: '', label: 'Select data volume (if applicable)' },
-        { value: 'small', label: 'Small (Less than 1,000 items)' },
-        { value: 'medium', label: 'Medium (1,000 - 10,000 items)' },
-        { value: 'large', label: 'Large (10,000 - 100,000 items)' },
-        { value: 'enterprise', label: 'Enterprise (100,000+ items)' },
-        { value: 'unknown', label: 'Not sure yet' }
+        { value: '', label: t('dataVolumes.select') },
+        { value: 'small', label: t('dataVolumes.small') },
+        { value: 'medium', label: t('dataVolumes.medium') },
+        { value: 'large', label: t('dataVolumes.large') },
+        { value: 'enterprise', label: t('dataVolumes.enterprise') },
+        { value: 'unknown', label: t('dataVolumes.unknown') }
     ];
 
     return (
@@ -209,10 +213,10 @@ export default function Contact() {
                 <Container>
                     <div className="max-w-3xl">
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                            Contact Us
+                            {t('hero.title')}
                         </h1>
                         <p className="text-xl mb-8 text-accent">
-                            Get in touch with our team to discuss your data annotation and processing needs.
+                            {t('hero.subtitle')}
                         </p>
                     </div>
                 </Container>
@@ -225,8 +229,8 @@ export default function Contact() {
                         {/* Left column - Contact information */}
                         <div>
                             <SectionHeading
-                                title="Get in Touch"
-                                subtitle="We'd love to hear from you! Fill out the form and our team will get back to you as soon as possible."
+                                title={t('getInTouch.title')}
+                                subtitle={t('getInTouch.subtitle')}
                             />
 
                             <div className="mt-8 space-y-6">
@@ -238,7 +242,7 @@ export default function Contact() {
                                         </svg>
                                     </div>
                                     <div className="ml-4">
-                                        <h3 className="text-lg font-medium text-primary">Email Us</h3>
+                                        <h3 className="text-lg font-medium text-primary">{t('getInTouch.emailUs')}</h3>
                                         <p className="mt-1 text-gray-600">
                                             <a href="mailto:hello@labelladder.com" className="hover:text-secondary transition-colors">
                                                 hello@labelladder.com
@@ -249,7 +253,7 @@ export default function Contact() {
                             </div>
 
                             <div className="mt-12">
-                                <h3 className="text-xl font-bold text-primary mb-6">Follow Us</h3>
+                                <h3 className="text-xl font-bold text-primary mb-6">{t('socialMedia.title')}</h3>
                                 <div className="flex space-x-4">
                                     {/* LinkedIn */}
                                     <a href="https://linkedin.com/company/labelladder" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-primary text-white flex items-center justify-center hover:bg-secondary transition-colors">
@@ -270,7 +274,7 @@ export default function Contact() {
 
                         {/* Right column - Contact form */}
                         <div className="bg-white p-8 rounded-lg shadow-md">
-                            <h3 className="text-xl font-bold text-primary mb-6">Send Us a Message</h3>
+                            <h3 className="text-xl font-bold text-primary mb-6">{t('form.title')}</h3>
 
                             {formStatus.submitted ? (
                                 <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-md">
@@ -292,7 +296,7 @@ export default function Contact() {
                                         <div>
                                             <input type="hidden" name="form-name" value="contact" />
                                             <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
-                                                First Name <span className="text-red-500">*</span>
+                                                {t('form.firstName')} <span className="text-red-500">{t('form.required')}</span>
                                             </label>
                                             <input
                                                 type="text"
@@ -307,7 +311,7 @@ export default function Contact() {
 
                                         <div>
                                             <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
-                                                Last Name
+                                                {t('form.lastName')}
                                             </label>
                                             <input
                                                 type="text"
@@ -323,7 +327,7 @@ export default function Contact() {
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                                         <div>
                                             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                                                Email Address <span className="text-red-500">*</span>
+                                                {t('form.email')} <span className="text-red-500">{t('form.required')}</span>
                                             </label>
                                             <input
                                                 type="email"
@@ -338,7 +342,7 @@ export default function Contact() {
 
                                         <div>
                                             <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                                                Phone Number
+                                                {t('form.phone')}
                                             </label>
                                             <input
                                                 type="tel"
@@ -353,7 +357,7 @@ export default function Contact() {
 
                                     <div className="mb-6">
                                         <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
-                                            Company
+                                            {t('form.company')}
                                         </label>
                                         <input
                                             type="text"
@@ -387,7 +391,7 @@ export default function Contact() {
 
                                         <div>
                                             <label htmlFor="dataVolume" className="block text-sm font-medium text-gray-700 mb-1">
-                                                Data Volume
+                                                {t('form.dataVolume')}
                                             </label>
                                             <select
                                                 id="dataVolume"
@@ -407,7 +411,7 @@ export default function Contact() {
 
                                     <div className="mb-6">
                                         <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                                            Message <span className="text-red-500">*</span>
+                                            {t('form.message')} <span className="text-red-500">{t('form.required')}</span>
                                         </label>
                                         <textarea
                                             id="message"
@@ -428,7 +432,7 @@ export default function Contact() {
                                             className="w-full"
                                             disabled={formStatus.submitted}
                                         >
-                                            {formStatus.submitted ? 'Message Sent!' : 'Send Message'}
+                                            {formStatus.submitted ? t('form.submitted') : t('form.submit')}
                                         </Button>
                                     </div>
                                 </form>
@@ -445,53 +449,53 @@ export default function Contact() {
             <section className="py-16 bg-gray-50">
                 <Container>
                     <SectionHeading
-                        title="Frequently Asked Questions"
-                        subtitle="Find answers to common questions about our services."
+                        title={t('faq.title')}
+                        subtitle={t('faq.subtitle')}
                         centered
                     />
 
                     <div className="mt-12 space-y-6 max-w-4xl mx-auto">
                         <div className="bg-white p-6 rounded-lg shadow-md">
-                            <h3 className="text-lg font-bold text-primary mb-2">What types of data can you help us annotate?</h3>
+                            <h3 className="text-lg font-bold text-primary mb-2">{t('faq.q1.question')}</h3>
                             <p className="text-gray-600">
-                                We provide annotation services for a wide range of data types including text, images, video, and audio. Our services cover everything from basic labeling to complex segmentation tasks for machine learning and AI applications.
+                                {t('faq.q1.answer')}
                             </p>
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-md">
-                            <h3 className="text-lg font-bold text-primary mb-2">How do you ensure data security and confidentiality?</h3>
+                            <h3 className="text-lg font-bold text-primary mb-2">{t('faq.q2.question')}</h3>
                             <p className="text-gray-600">
-                                We follow strict data security protocols compliant with international standards. All our annotators sign confidentiality agreements, and we can implement additional security measures based on your specific requirements, including secure infrastructure and access controls.
+                                {t('faq.q2.answer')}
                             </p>
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-md">
-                            <h3 className="text-lg font-bold text-primary mb-2">What is the typical turnaround time for projects?</h3>
+                            <h3 className="text-lg font-bold text-primary mb-2">{t('faq.q3.question')}</h3>
                             <p className="text-gray-600">
-                                Project timelines vary based on the complexity and volume of data. We provide detailed timeline estimates during the project scoping phase. For urgent needs, we can allocate additional resources to accelerate delivery while maintaining quality standards.
+                                {t('faq.q3.answer')}
                             </p>
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-md">
-                            <h3 className="text-lg font-bold text-primary mb-2">Do you offer custom annotation services for specific industries?</h3>
+                            <h3 className="text-lg font-bold text-primary mb-2">{t('faq.q4.question')}</h3>
                             <p className="text-gray-600">
-                                Yes, we specialize in domain-specific annotation across various industries including healthcare, legal, retail, automotive, and more. Our team receives specialized training to understand the nuances and requirements of each industry&apos;s data.
+                                {t('faq.q4.answer')}
                             </p>
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-md">
-                            <h3 className="text-lg font-bold text-primary mb-2">How do you handle quality control in the annotation process?</h3>
+                            <h3 className="text-lg font-bold text-primary mb-2">{t('faq.q5.question')}</h3>
                             <p className="text-gray-600">
-                                We implement a multi-layered quality control system including consensus scoring, gold standard tasks, blind reviews, and regular performance reviews. This ensures consistent accuracy and reliability in our annotation output.
+                                {t('faq.q5.answer')}
                             </p>
                         </div>
 
                         <div className="mt-8 text-center">
                             <p className="text-gray-600 mb-4">
-                                Don&apos;t see your question answered here? Contact us directly.
+                                {t('faq.contactPrompt')}
                             </p>
                             <Button href="mailto:hello@labelladder.com" variant="outline">
-                                Email Your Question
+                                {t('faq.emailQuestion')}
                             </Button>
                         </div>
                     </div>
@@ -499,4 +503,12 @@ export default function Contact() {
             </section>
         </Layout>
     );
+}
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'contact'])),
+        },
+    };
 }

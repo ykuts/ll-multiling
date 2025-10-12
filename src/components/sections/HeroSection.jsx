@@ -2,10 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 
 const HeroSection = () => {
   const parallaxRef = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const { t } = useTranslation('contact');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,8 +20,8 @@ const HeroSection = () => {
     };
   }, []);
 
-  // Параллакс-эффект - смещение фона при прокрутке
-  const parallaxOffset = scrollPosition * 0.4; // Регулируйте скорость эффекта здесь
+  // Parallax effect calculation
+  const parallaxOffset = scrollPosition * 0.4; // Adjust the effect speed here
 
   return (
     <section className="relative min-h-screen flex items-center justify-center py-20 md:py-32 text-white overflow-hidden">

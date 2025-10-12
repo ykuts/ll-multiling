@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { trackEmailClick } from '../../lib/gtag';
+import { useTranslation } from 'next-i18next';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useTranslation('footer');
 
   return (
     <footer className="bg-primary text-white">
@@ -24,27 +26,27 @@ const Footer = () => {
               />
             </Link>
             <p className="text-accent text-sm leading-relaxed">
-              We provide end-to-end data processing and annotation services to transform your data into a powerful asset.
+              {t('description')}
             </p>
           </div>
 
           {/* Column 2: Quick Links */}
           <div>
-            <h3 className="text-lg font-bold text-white mb-4">Quick Links</h3>
+            <h3 className="text-lg font-bold text-white mb-4">{t('quickLinks.title')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/about/" className="text-accent hover:text-white transition text-sm">
-                  About Us
+                  {t('quickLinks.aboutUs')}
                 </Link>
               </li>
               <li>
                 <Link href="/approach/" className="text-accent hover:text-white transition text-sm">
-                  Our Approach
+                  {t('quickLinks.ourApproach')}
                 </Link>
               </li>
               <li>
                 <Link href="/credentials/" className="text-accent hover:text-white transition text-sm">
-                  Credentials
+                  {t('quickLinks.credentials')}
                 </Link>
               </li>
             </ul>
@@ -52,16 +54,16 @@ const Footer = () => {
 
           {/* Column 3: Services */}
           <div>
-            <h3 className="text-lg font-bold text-white mb-4">Services</h3>
+            <h3 className="text-lg font-bold text-white mb-4">{t('services.title')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/general-services/" className="text-accent hover:text-white transition text-sm">
-                  General Data Annotation
+                  {t('services.generalData')}
                 </Link>
               </li>
               <li>
                 <Link href="/expert-services/" className="text-accent hover:text-white transition text-sm">
-                  Expert & Specialist Annotation
+                  {t('services.expertAnnotation')}
                 </Link>
               </li>
             </ul>
@@ -69,11 +71,11 @@ const Footer = () => {
 
           {/* Column 4: Contact */}
           <div>
-            <h3 className="text-lg font-bold text-white mb-4">Contact</h3>
+            <h3 className="text-lg font-bold text-white mb-4">{t('contact.title')}</h3>
             <div className="space-y-3">
               <div>
                 <p className="text-accent text-sm">
-                  <span className="font-medium text-white">Email:</span><br />
+                  <span className="font-medium text-white">{t('contact.email')}</span><br />
                   <a href="mailto:hello@labelladder.com" className="hover:text-white transition" onClick={trackEmailClick}>
                     hello@labelladder.com
                   </a>
@@ -81,7 +83,7 @@ const Footer = () => {
               </div>
               <div>
                 <p className="text-accent text-sm">
-                  <span className="font-medium text-white">Website:</span><br />
+                  <span className="font-medium text-white">{t('contact.website')}</span><br />
                   <a href="https://www.labelladder.com" className="hover:text-white transition" target="_blank" rel="noopener noreferrer">
                     www.labelladder.com
                   </a>
@@ -95,7 +97,7 @@ const Footer = () => {
                 href="/contact/"
                 className="inline-block bg-secondary hover:bg-secondary/90 text-white px-4 py-2 rounded-md text-sm font-medium transition"
               >
-                Start Your Project
+                {t('cta')}
               </Link>
             </div>
           </div>
@@ -119,7 +121,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="text-accent text-sm leading-relaxed">
-                We provide end-to-end data processing and annotation services to transform your data into a powerful asset.
+                {t('description')}
               </p>
             </div>
           </div>
@@ -128,21 +130,21 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-4">
             {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-bold text-white mb-3">Quick Links</h3>
+              <h3 className="text-lg font-bold text-white mb-3">{t('quickLinks.title')}</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/about/" className="text-accent hover:text-white transition text-sm">
-                    About Us
+                    {t('quickLinks.aboutUs')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/approach/" className="text-accent hover:text-white transition text-sm">
-                    Our Approach
+                    {t('quickLinks.ourApproach')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/credentials/" className="text-accent hover:text-white transition text-sm">
-                    Credentials
+                    {t('quickLinks.credentials')}
                   </Link>
                 </li>
               </ul>
@@ -150,16 +152,16 @@ const Footer = () => {
 
             {/* Services */}
             <div>
-              <h3 className="text-lg font-bold text-white mb-3">Services</h3>
+              <h3 className="text-lg font-bold text-white mb-3">{t('services.title')}</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/general-services/" className="text-accent hover:text-white transition text-sm">
-                    General Data Annotation
+                    {t('services.generalData')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/expert-services/" className="text-accent hover:text-white transition text-sm">
-                    Expert & Specialist Annotation
+                    {t('services.expertAnnotation')}
                   </Link>
                 </li>
               </ul>
@@ -168,11 +170,11 @@ const Footer = () => {
 
           {/* Row 3: Contact (full width) */}
           <div>
-            <h3 className="text-lg font-bold text-white mb-3">Contact</h3>
+            <h3 className="text-lg font-bold text-white mb-3">{t('contact.title')}</h3>
             <div className="grid grid-cols-2 gap-4 mb-4">
               <div>
                 <p className="text-accent text-sm">
-                  <span className="font-medium text-white">Email:</span><br />
+                  <span className="font-medium text-white">{t('contact.email')}</span><br />
                   <a href="mailto:hello@labelladder.com" className="hover:text-white transition">
                     hello@labelladder.com
                   </a>
@@ -180,7 +182,7 @@ const Footer = () => {
               </div>
               <div>
                 <p className="text-accent text-sm">
-                  <span className="font-medium text-white">Website:</span><br />
+                  <span className="font-medium text-white">{t('contact.website')}</span><br />
                   <a href="https://www.labelladder.com" className="hover:text-white transition" target="_blank" rel="noopener noreferrer">
                     www.labelladder.com
                   </a>
@@ -194,7 +196,7 @@ const Footer = () => {
                 href="/contact/"
                 className="inline-block bg-secondary hover:bg-secondary/90 text-white px-4 py-2 rounded-md text-sm font-medium transition"
               >
-                Start Your Project
+                {t('cta')}
               </Link>
 
               <a href="https://linkedin.com/company/labelladder" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-white transition mr-10">
@@ -207,7 +209,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 mt-8 border-t border-accent/30 text-center text-sm text-accent">
-          <p className='p-footer'>&copy; {currentYear} Label Ladder. All rights reserved.</p>
+          <p className='p-footer'>&copy; {currentYear} {t('copyright')}</p>
         </div>
       </div>
     </footer>

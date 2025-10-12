@@ -9,8 +9,12 @@ import CredentialsSection from '../components/sections/CredentialsSection';
 import FoundationSection from '../components/sections/FoundationSection';
 import ExpertAnnotationSection from '../components/sections/ExpertAnnotationSection';
 import WhyChooseSection from '../components/sections/WhyChooseSection';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 export default function Home() {
+  const { t } = useTranslation('common');
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -75,6 +79,7 @@ export default function Home() {
       image="https://labelladder.com/images/og/homepage-medical-og.jpg"
       structuredData={structuredData}
     >
+      <p className="text-center text-2xl my-4">{t('test')}</p>
       <HeroSection />
       <FoundationSection />
       <ExpertAnnotationSection />
@@ -87,4 +92,12 @@ export default function Home() {
       <CTASection />
     </Layout>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'header', 'footer'])),
+    },
+  };
 }

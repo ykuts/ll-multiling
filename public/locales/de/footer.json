@@ -1,0 +1,21 @@
+{
+    "description": "Wir bieten umfassende Datenverarbeitungs- und Annotationsdienste, um Ihre Daten in ein wertvolles Asset zu verwandeln.",
+    "quickLinks": {
+        "title": "Schnellzugriff",
+        "aboutUs": "Über uns",
+        "ourApproach": "Unser Ansatz",
+        "credentials": "Referenzen"
+    },
+    "services": {
+        "title": "Dienstleistungen",
+        "generalData": "Allgemeine Datenannotation",
+        "expertAnnotation": "Experten- und Spezialannotation"
+    },
+    "contact": {
+        "title": "Kontakt",
+        "email": "E-Mail:",
+        "website": "Webseite:"
+    },
+    "cta": "Projekt starten",
+    "copyright": "Label Ladder. Alle Rechte vorbehalten."
+}

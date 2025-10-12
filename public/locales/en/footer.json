@@ -1,0 +1,21 @@
+{
+    "description": "We provide end-to-end data processing and annotation services to transform your data into a powerful asset.",
+    "quickLinks": {
+        "title": "Quick Links",
+        "aboutUs": "About Us",
+        "ourApproach": "Our Approach",
+        "credentials": "Credentials"
+    },
+    "services": {
+        "title": "Services",
+        "generalData": "General Data Annotation",
+        "expertAnnotation": "Expert & Specialist Annotation"
+    },
+    "contact": {
+        "title": "Contact",
+        "email": "Email:",
+        "website": "Website:"
+    },
+    "cta": "Start Your Project",
+    "copyright": "Label Ladder. All rights reserved."
+}

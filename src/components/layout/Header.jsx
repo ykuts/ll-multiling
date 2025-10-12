@@ -2,12 +2,49 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import LanguageSwitcher from '../ui/LanguageSwitcher';
+import { useTranslation } from 'next-i18next';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSubmenuOpen, setIsSubmenuOpen] = useState('');
   const router = useRouter();
+  const { t } = useTranslation('header');
+
+  const navigation = [
+    {
+      name: t('navigation.aboutUs'),
+      href: '/about/',
+      submenu: [
+        { name: t('aboutSubmenu.mission'), href: '/about#mission' },
+        { name: t('aboutSubmenu.meetTheTeam'), href: '/about#team' }
+      ]
+    },
+    { name: t('navigation.approach'), href: '/approach/' },
+    {
+      name: t('navigation.services'),
+      href: '/services/',
+      submenu: [
+        {
+          name: t('servicesSubmenu.ourServices.title'),
+          href: '/services/',
+          description: t('servicesSubmenu.ourServices.description')
+        },
+        {
+          name: t('servicesSubmenu.generalData.title'),
+          href: '/general-services/',
+          description: t('servicesSubmenu.generalData.description')
+        },
+        {
+          name: t('servicesSubmenu.expertAnnotation.title'),
+          href: '/expert-services/',
+          description: t('servicesSubmenu.expertAnnotation.description')
+        }
+      ]
+    },
+    { name: t('navigation.credentials'), href: '/credentials/' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,40 +58,6 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
-  const navigation = [
-    {
-      name: 'About Us',
-      href: '/about/',
-      submenu: [
-        { name: 'Mission', href: '/about#mission' },
-        { name: 'Meet the Team', href: '/about#team' }
-      ]
-    },
-    { name: 'Approach', href: '/approach/' },
-    {
-      name: 'Services',
-      href: '/services/',
-      submenu: [
-      { 
-        name: 'Our Services', 
-        href: '/services/', 
-        description: 'About Our Services' 
-      },
-      { 
-        name: 'General Data Annotation', 
-        href: '/general-services/', 
-        description: 'For Large-Scale Projects' 
-      },
-      { 
-        name: 'Expert & Specialist Annotation', 
-        href: '/expert-services/', 
-        description: 'For Medical, etc.' 
-      }
-    ]
-    },
-    { name: 'Credentials', href: '/credentials/' },
-  ];
 
   const handleSubmenuToggle = (name) => {
     if (isSubmenuOpen === name) {
@@ -92,8 +95,8 @@ const Header = () => {
                     <Link
                       href={item.href}
                       className={`text-base font-medium transition duration-300 flex items-center ${router.pathname === item.href || router.pathname.startsWith(item.href + '/')
-                          ? 'text-white'
-                          : 'text-white hover:text-secondary'
+                        ? 'text-white'
+                        : 'text-white hover:text-secondary'
                         }`}
                     >
                       {item.name}
@@ -138,11 +141,14 @@ const Header = () => {
               </li>
             ))}
             <li>
+              <LanguageSwitcher />
+            </li>
+            <li>
               <Link
                 href="/contact/"
                 className="btn btn-secondary"
               >
-                Contact Us
+                {t('navigation.contactUs')}
               </Link>
             </li>
           </ul>
@@ -216,13 +222,16 @@ const Header = () => {
                 )}
               </li>
             ))}
+            <li className="pt-2 flex justify-center">
+              <LanguageSwitcher isMobile={true} />
+            </li>
             <li className="pt-2">
               <Link
-                href="/contact"
+                href="/contact/"
                 className="block w-full text-center btn btn-primary"
                 onClick={() => setIsOpen(false)}
               >
-                Contact Us
+                {t('navigation.contactUs')}
               </Link>
             </li>
           </ul>

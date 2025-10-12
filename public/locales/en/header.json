@@ -1,0 +1,27 @@
+{
+    "navigation": {
+        "aboutUs": "About Us",
+        "approach": "Approach",
+        "services": "Services",
+        "credentials": "Credentials",
+        "contactUs": "Contact Us"
+    },
+    "aboutSubmenu": {
+        "mission": "Mission",
+        "meetTheTeam": "Meet the Team"
+    },
+    "servicesSubmenu": {
+        "ourServices": {
+            "title": "Our Services",
+            "description": "About Our Services"
+        },
+        "generalData": {
+            "title": "General Data Annotation",
+            "description": "For Large-Scale Projects"
+        },
+        "expertAnnotation": {
+            "title": "Expert & Specialist Annotation",
+            "description": "For Medical, etc."
+        }
+    }
+}

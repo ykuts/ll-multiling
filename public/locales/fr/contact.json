@@ -1,0 +1,107 @@
+{
+    "hero": {
+        "title": "Contact",
+        "subtitle": "Contactez notre équipe pour discuter de vos besoins en annotation et traitement de données."
+    },
+    "getInTouch": {
+        "title": "Contactez-nous",
+        "subtitle": "Nous serions ravis d'avoir de vos nouvelles ! Remplissez le formulaire et notre équipe vous répondra dans les plus brefs délais.",
+        "emailUs": "Par e-mail"
+    },
+    "socialMedia": {
+        "title": "Suivez-nous"
+    },
+    "form": {
+        "title": "Envoyez-nous un message",
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "email": "Adresse e-mail",
+        "company": "Entreprise",
+        "phone": "Numéro de téléphone",
+        "serviceType": "Type de service",
+        "dataVolume": "Volume de données",
+        "message": "Message",
+        "required": "*",
+        "submit": "Envoyer le message",
+        "submitted": "Message envoyé !",
+        "successMessage": "Merci pour votre message ! Nous vous répondrons sous peu.",
+        "errorMessage": "Veuillez remplir tous les champs obligatoires.",
+        "errorMessageGeneral": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer ou nous contacter directement à hello@labelladder.com"
+    },
+    "serviceTypes": {
+        "select": "Sélectionner un type de service",
+        "text": "Annotation de texte",
+        "image": "Annotation d'images",
+        "video": "Annotation de vidéos",
+        "audio": "Annotation audio",
+        "processing": "Traitement de données",
+        "other": "Autre / Pas sûr"
+    },
+    "dataVolumes": {
+        "select": "Sélectionner le volume de données (le cas échéant)",
+        "small": "Petit (Moins de 1 000 éléments)",
+        "medium": "Moyen (1 000 - 10 000 éléments)",
+        "large": "Grand (10 000 - 100 000 éléments)",
+        "enterprise": "Entreprise (100 000+ éléments)",
+        "unknown": "Pas encore sûr"
+    },
+    "faq": {
+        "title": "Questions fréquemment posées",
+        "subtitle": "Trouvez des réponses aux questions courantes sur nos services.",
+        "q1": {
+            "question": "Quels types de données pouvez-vous nous aider à annoter ?",
+            "answer": "Nous fournissons des services d'annotation pour une large gamme de types de données, y compris le texte, les images, la vidéo et l'audio. Nos services couvrent tout, de l'étiquetage de base aux tâches de segmentation complexes pour les applications d'apprentissage automatique et d'IA."
+        },
+        "q2": {
+            "question": "Comment assurez-vous la sécurité et la confidentialité des données ?",
+            "answer": "Nous suivons des protocoles stricts de sécurité des données conformes aux normes internationales. Tous nos annotateurs signent des accords de confidentialité, et nous pouvons mettre en œuvre des mesures de sécurité supplémentaires en fonction de vos exigences spécifiques, y compris une infrastructure sécurisée et des contrôles d'accès."
+        },
+        "q3": {
+            "question": "Quel est le délai d'exécution typique pour les projets ?",
+            "answer": "Les délais des projets varient en fonction de la complexité et du volume de données. Nous fournissons des estimations détaillées de calendrier pendant la phase de cadrage du projet. Pour les besoins urgents, nous pouvons allouer des ressources supplémentaires pour accélérer la livraison tout en maintenant les normes de qualité."
+        },
+        "q4": {
+            "question": "Proposez-vous des services d'annotation personnalisés pour des secteurs spécifiques ?",
+            "answer": "Oui, nous sommes spécialisés dans l'annotation spécifique à un domaine dans divers secteurs, notamment la santé, le juridique, la vente au détail, l'automobile et plus encore. Notre équipe reçoit une formation spécialisée pour comprendre les nuances et les exigences des données de chaque secteur."
+        },
+        "q5": {
+            "question": "Comment gérez-vous le contrôle qualité dans le processus d'annotation ?",
+            "answer": "Nous mettons en œuvre un système de contrôle qualité à plusieurs niveaux comprenant le scoring par consensus, des tâches de référence, des examens à l'aveugle et des examens réguliers des performances. Cela garantit une précision et une fiabilité constantes dans notre production d'annotations."
+        },
+        "contactPrompt": "Vous ne voyez pas votre question ici ? Contactez-nous directement.",
+        "emailQuestion": "Envoyer votre question par e-mail"
+    },
+    "officeLocations": {
+        "title": "Nos bureaux internationaux",
+        "subtitle": "Partenariat suisse-namibien avec des bureaux stratégiquement situés pour servir nos clients dans le monde entier",
+        "workingHours": "Horaires d'ouverture",
+        "keyServices": "Services clés",
+        "zurich": {
+            "description": "Notre siège européen dans le quartier dynamique d'Affoltern"
+        },
+        "windhoek": {
+            "description": "Notre centre de traitement de données avec des talents locaux qualifiés au centre-ville"
+        },
+        "services": {
+            "dataStrategy": "Stratégie de données",
+            "clientRelations": "Relations clients",
+            "qualityAssurance": "Assurance qualité",
+            "dataAnnotation": "Annotation de données",
+            "processing": "Traitement",
+            "academy": "Académie Label Ladder"
+        },
+        "schedule": {
+            "mondayFriday": "Lundi - Vendredi",
+            "saturday": "Samedi",
+            "sunday": "Dimanche",
+            "byAppointment": "Sur rendez-vous",
+            "closed": "Fermé"
+        }
+    },
+    "readyToVisit": {
+        "title": "Prêt à visiter ou planifier une réunion ?",
+        "subtitle": "Que vous soyez en Europe ou en Afrique, nous sommes là pour vous aider avec vos besoins en données. Contactez-nous pour planifier une réunion en personne ou une consultation virtuelle.",
+        "scheduleMeeting": "Planifier une réunion",
+        "sendEmail": "Envoyer un e-mail"
+    }
+}

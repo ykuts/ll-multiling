@@ -1,0 +1,107 @@
+{
+    "hero": {
+        "title": "Contact Us",
+        "subtitle": "Get in touch with our team to discuss your data annotation and processing needs."
+    },
+    "getInTouch": {
+        "title": "Get in Touch",
+        "subtitle": "We'd love to hear from you! Fill out the form and our team will get back to you as soon as possible.",
+        "emailUs": "Email Us"
+    },
+    "socialMedia": {
+        "title": "Follow Us"
+    },
+    "form": {
+        "title": "Send Us a Message",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email Address",
+        "company": "Company",
+        "phone": "Phone Number",
+        "serviceType": "Service Type",
+        "dataVolume": "Data Volume",
+        "message": "Message",
+        "required": "*",
+        "submit": "Send Message",
+        "submitted": "Message Sent!",
+        "successMessage": "Thank you for your message! We will get back to you shortly.",
+        "errorMessage": "Please fill in all required fields.",
+        "errorMessageGeneral": "There was an error sending your message. Please try again or contact us directly at hello@labelladder.com"
+    },
+    "serviceTypes": {
+        "select": "Select a service type",
+        "text": "Text Annotation",
+        "image": "Image Annotation",
+        "video": "Video Annotation",
+        "audio": "Audio Annotation",
+        "processing": "Data Processing",
+        "other": "Other / Not Sure"
+    },
+    "dataVolumes": {
+        "select": "Select data volume (if applicable)",
+        "small": "Small (Less than 1,000 items)",
+        "medium": "Medium (1,000 - 10,000 items)",
+        "large": "Large (10,000 - 100,000 items)",
+        "enterprise": "Enterprise (100,000+ items)",
+        "unknown": "Not sure yet"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Find answers to common questions about our services.",
+        "q1": {
+            "question": "What types of data can you help us annotate?",
+            "answer": "We provide annotation services for a wide range of data types including text, images, video, and audio. Our services cover everything from basic labeling to complex segmentation tasks for machine learning and AI applications."
+        },
+        "q2": {
+            "question": "How do you ensure data security and confidentiality?",
+            "answer": "We follow strict data security protocols compliant with international standards. All our annotators sign confidentiality agreements, and we can implement additional security measures based on your specific requirements, including secure infrastructure and access controls."
+        },
+        "q3": {
+            "question": "What is the typical turnaround time for projects?",
+            "answer": "Project timelines vary based on the complexity and volume of data. We provide detailed timeline estimates during the project scoping phase. For urgent needs, we can allocate additional resources to accelerate delivery while maintaining quality standards."
+        },
+        "q4": {
+            "question": "Do you offer custom annotation services for specific industries?",
+            "answer": "Yes, we specialize in domain-specific annotation across various industries including healthcare, legal, retail, automotive, and more. Our team receives specialized training to understand the nuances and requirements of each industry's data."
+        },
+        "q5": {
+            "question": "How do you handle quality control in the annotation process?",
+            "answer": "We implement a multi-layered quality control system including consensus scoring, gold standard tasks, blind reviews, and regular performance reviews. This ensures consistent accuracy and reliability in our annotation output."
+        },
+        "contactPrompt": "Don't see your question answered here? Contact us directly.",
+        "emailQuestion": "Email Your Question"
+    },
+    "officeLocations": {
+        "title": "Our Global Offices",
+        "subtitle": "Swiss-Namibian partnership with offices strategically located to serve our clients worldwide",
+        "workingHours": "Working Hours",
+        "keyServices": "Key Services",
+        "zurich": {
+            "description": "Our European headquarters in the vibrant Affoltern district"
+        },
+        "windhoek": {
+            "description": "Our data processing center with skilled local talent in the city center"
+        },
+        "services": {
+            "dataStrategy": "Data Strategy",
+            "clientRelations": "Client Relations",
+            "qualityAssurance": "Quality Assurance",
+            "dataAnnotation": "Data Annotation",
+            "processing": "Processing",
+            "academy": "Label Ladder Academy"
+        },
+        "schedule": {
+            "mondayFriday": "Monday - Friday",
+            "saturday": "Saturday",
+            "sunday": "Sunday",
+            "byAppointment": "By appointment",
+            "closed": "Closed"
+        }
+    },
+    "readyToVisit": {
+        "title": "Ready to Visit or Schedule a Meeting?",
+        "subtitle": "Whether you're in Europe or Africa, we're here to help with your data needs. Contact us to schedule an in-person meeting or virtual consultation.",
+        "scheduleMeeting": "Schedule Meeting",
+        "sendEmail": "Send Email"
+    }
+}
