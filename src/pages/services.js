@@ -4,6 +4,8 @@ import Container from '../components/ui/Container';
 import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
 import { trackServiceInquiry } from '../lib/gtag';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 export default function Services() {
   useEffect(() => {
@@ -313,4 +315,12 @@ export default function Services() {
       </section>
     </Layout>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'services'])),
+    },
+  };
 }

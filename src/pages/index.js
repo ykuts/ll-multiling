@@ -79,7 +79,6 @@ export default function Home() {
       image="https://labelladder.com/images/og/homepage-medical-og.jpg"
       structuredData={structuredData}
     >
-      <p className="text-center text-2xl my-4">{t('test')}</p>
       <HeroSection />
       <FoundationSection />
       <ExpertAnnotationSection />

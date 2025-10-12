@@ -1,1 +1,61 @@
-{}
+{
+    "hero": {
+        "title": "Our Mission",
+        "subtitle": "Behind every smart model is smarter data preparation"
+    },
+    "aboutUs": {
+        "title": "About Us",
+        "subtitle": "Label Ladder is a Swiss-Namibian company with offices in Zürich and Windhoek.",
+        "intro": "We provide <strong>end-to-end data processing and annotation services</strong> — not just to label your data, but to transform it into a powerful asset that drives smarter decisions, streamlined operations, and real competitive edge.",
+        "paragraph2": "Whether you're training AI models or managing complex datasets, our solutions are built to <strong>reduce operational costs, enhance data quality and usability</strong>, and enable <strong>faster, insight-driven decisions.</strong>",
+        "paragraph3": "We combine Swiss precision and data excellence with Namibian talent and agility to deliver high-quality, scalable data solutions that are both globally competitive and locally grounded.",
+        "paragraph4": "Let us help you unlock the full potential of your data — with <strong>precision, purpose, and long-term impact.</strong>"
+    },
+    "workingWithUs": {
+        "title": "Working with Us",
+        "subtitle": "Our commitment to quality and expertise are what sets us apart.",
+        "quality": {
+            "title": "HIGH-QUALITY DATA SERVICES",
+            "text": "Quality <strong>control processes</strong> for in-house data labelers ensure <strong>accurate</strong> and <strong>high-quality processed data</strong>, avoiding common crowdsourcing inconsistency issues"
+        },
+        "cost": {
+            "title": "COST-EFFECTIVE SERVICE",
+            "text": "Leveraging a specialized external provider <strong>reduces the overhead costs</strong> associated with hiring, training, and maintaining an in-house team, allowing <strong>focus on core business</strong> activities for greater overall productivity"
+        },
+        "talent": {
+            "title": "SKILLED TALENT POOL",
+            "text": "A group of <strong>trained and experienced annotators</strong> facilitating transformation of raw data to enable the proper functioning of machine-learning systems"
+        },
+        "impact": {
+            "title": "A VENTURE BUILT ON IMPACT",
+            "text": "Label Ladder is based on empowerment, where <strong>1,000 Namibians</strong> are trained with digital skills, supporting <strong>economic development</strong> and <strong>youth employment</strong>"
+        }
+    },
+    "ourImpact": {
+        "title": "Our Impact",
+        "subtitle": "We are on a mission to upskill 1,000 Namibians by 2027, providing them with the necessary tools and knowledge to work in the data and AI industries.",
+        "paragraph1": "Our project is supported by the Namibian <strong>Ministry of Education, Innovation, Youth, Sports, Arts and Culture</strong>.",
+        "paragraph2": "Through our <strong>Label Ladder Academy</strong> program, we guarantee our employees a pathway to growth and employability in a <strong>globally competitive industry</strong>.",
+        "coreTeachings": "Core Teachings of the Academy:",
+        "teachings": {
+            "intro": "<strong>Intro to Data Work:</strong> Learn the basics of data annotation, digital tools, and working in tech",
+            "annotation": "<strong>Annotation Skills Training:</strong> Get hands-on with real data — images, text, audio, and video — using industry tools",
+            "quality": "<strong>Quality & Review Certification:</strong> Train to become a quality checker or team lead with advanced annotation skills",
+            "project": "<strong>Project & Tech Skills:</strong> Learn how to manage data projects, use dashboards, and communicate with global teams",
+            "workplace": "<strong>Workplace Readiness & Soft Skills:</strong> Build confidence in communication, teamwork, time management, and professionalism"
+        }
+    },
+    "team": {
+        "title": "Meet the Team",
+        "subtitle": "Well-rounded leaders and technologists, driven by a mission to empower our clients' data.",
+        "labelers": {
+            "title": "Our Labelers",
+            "subtitle": "A dynamic and diverse group of data labelers and processors to deliver our mission."
+        }
+    },
+    "cta": {
+        "title": "Ready to work with us?",
+        "subtitle": "Contact us today to learn more about how Label Ladder can help with your data annotation and processing needs.",
+        "button": "Get in Touch"
+    }
+}

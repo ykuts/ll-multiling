@@ -3,8 +3,12 @@ import Container from '../components/ui/Container';
 import Button from '../components/ui/Button';
 import SectionHeading from '../components/ui/SectionHeading';
 import Image from 'next/image';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
+import { Trans } from 'next-i18next';
 
 export default function About() {
+    const { t } = useTranslation('about');
     // Structured data for SEO
     const structuredData = {
         "@context": "https://schema.org",
@@ -92,10 +96,10 @@ export default function About() {
                 <Container>
                     <div className="max-w-3xl">
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                            Our Mission
+                            {t('hero.title')}
                         </h1>
                         <p className="text-xl mb-8 text-accent">
-                            Behind every smart model is smarter data preparation
+                            {t('hero.subtitle')}
                         </p>
                     </div>
                 </Container>
@@ -107,20 +111,29 @@ export default function About() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div>
                             <SectionHeading
-                                title="About Us"
-                                subtitle="Label Ladder is a Swiss-Namibian company with offices in Zürich and Windhoek."
+                                title={t('aboutUs.title')}
+                                subtitle={t('aboutUs.subtitle')}
                             />
                             <p className="text-gray-600 mb-6">
-                                We provide <strong>end-to-end data processing and annotation services</strong> — not just to label your data, but to transform it into a powerful asset that drives smarter decisions, streamlined operations, and real competitive edge.
+                                <Trans
+                                    i18nKey="about:aboutUs.intro"
+                                    components={{ strong: <strong /> }}
+                                />
                             </p>
                             <p className="text-gray-600 mb-6">
-                                Whether you&rsquo;re training AI models or managing complex datasets, our solutions are built to <strong>reduce operational costs, enhance data quality and usability</strong>, and enable <strong>faster, insight-driven decisions.</strong>
+                                <Trans
+                                    i18nKey="about:aboutUs.paragraph2"
+                                    components={{ strong: <strong /> }}
+                                />
                             </p>
                             <p className="text-gray-600 mb-6">
-                                We combine Swiss precision and data excellence with Namibian talent and agility to deliver high-quality, scalable data solutions that are both globally competitive and locally grounded.
+                                {t('aboutUs.paragraph3')}
                             </p>
                             <p className="text-gray-600">
-                                Let us help you unlock the full potential of your data — with <strong>precision, purpose, and long-term impact.</strong>
+                                <Trans
+                                    i18nKey="about:aboutUs.paragraph4"
+                                    components={{ strong: <strong /> }}
+                                />
                             </p>
                         </div>
                         <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
@@ -139,8 +152,8 @@ export default function About() {
             <section className="py-16 bg-gray-50">
                 <Container>
                     <SectionHeading
-                        title="Working with Us"
-                        subtitle="Our commitment to quality and expertise are what sets us apart."
+                        title={t('workingWithUs.title')}
+                        subtitle={t('workingWithUs.subtitle')}
                         centered
                     />
                     <div className="flex justify-center">
@@ -157,9 +170,15 @@ export default function About() {
                                             className="w-full text-blue-900"
                                         />
                                     </div>
-                                    <h3 className="text-blue-900 text-xl font-bold">HIGH-QUALITY DATA SERVICES</h3>
+                                    <h3 className="text-blue-900 text-xl font-bold">{t('workingWithUs.quality.title')}</h3>
                                 </div>
-                                <p className="text-blue-900 font-medium mb-2">Quality <span className="font-bold">control processes</span> for in-house data labelers ensure</p>
+                                <p className="text-blue-900 font-medium mb-2">
+                                    <Trans
+                                        i18nKey="workingWithUs.quality.text"
+                                        ns='about'
+                                        components={{ strong: <strong /> }}
+                                    />
+                                </p>
                                 <p className="text-blue-900 mb-2"><span className="font-bold">accurate</span> and <span className="font-bold">high-quality processed data</span>, avoiding common crowdsourcing inconsistency issues</p>
                             </div>
                             {/* Cost-Effective Service */}
@@ -174,9 +193,15 @@ export default function About() {
                                             className="w-full text-blue-900"
                                         />
                                     </div>
-                                    <h3 className="text-blue-900 text-xl font-bold">COST-EFFECTIVE SERVICE</h3>
+                                    <h3 className="text-blue-900 text-xl font-bold">{t('workingWithUs.cost.title')}</h3>
                                 </div>
-                                <p className="text-blue-900 font-medium mb-2">Leveraging a specialized external provider <span className="font-bold">reduces the overhead costs</span> associated with hiring, training, and maintaining an in-house team, allowing <span className="font-bold">focus on core business</span> activities for greater overall productivity</p>
+                                <p className="text-blue-900 font-medium mb-2">
+                                    <Trans
+                                        i18nKey="workingWithUs.cost.text"
+                                        ns='about'
+                                        components={{ strong: <strong /> }}
+                                    />
+                                </p>
                             </div>
                             {/* Skilled Talent Pool */}
                             <div className="border-2 border-blue-900 rounded-lg p-6">
@@ -190,9 +215,15 @@ export default function About() {
                                             className="w-full text-blue-900"
                                         />
                                     </div>
-                                    <h3 className="text-blue-900 text-xl font-bold">SKILLED TALENT POOL</h3>
+                                    <h3 className="text-blue-900 text-xl font-bold">{t('workingWithUs.talent.title')}</h3>
                                 </div>
-                                <p className="text-blue-900 font-medium mb-2">A group of <span className="font-bold">trained and experienced annotators</span> facilitating transformation of raw data to enable the proper functioning of machine-learning systems</p>
+                                <p className="text-blue-900 font-medium mb-2">
+                                    <Trans
+                                        i18nKey="workingWithUs.talent.text"
+                                        ns='about'
+                                        components={{ strong: <strong /> }}
+                                    />
+                                </p>
                             </div>
                             {/* A Venture Built on Impact */}
                             <div className="border-2 border-blue-900 rounded-lg p-6">
@@ -206,9 +237,15 @@ export default function About() {
                                             className="w-full text-blue-900"
                                         />
                                     </div>
-                                    <h3 className="text-blue-900 text-xl font-bold">A VENTURE BUILT ON IMPACT</h3>
+                                    <h3 className="text-blue-900 text-xl font-bold">{t('workingWithUs.impact.title')}</h3>
                                 </div>
-                                <p className="text-blue-900 font-medium mb-2">Label Ladder is based on empowerment, where <span className="font-bold">1&rsquo;000 Namibians</span> are trained with digital skills, supporting <span className="font-bold">economic development</span> and <span className="font-bold">youth employment</span></p>
+                                <p className="text-blue-900 font-medium mb-2">
+                                    <Trans
+                                        i18nKey="workingWithUs.impact.text"
+                                        ns='about'
+                                        components={{ strong: <strong /> }}
+                                    />
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -219,8 +256,8 @@ export default function About() {
             <section className="py-16 bg-gray-50">
                 <Container>
                     <SectionHeading
-                        title="Our Impact"
-                        subtitle="We are on a mission to upskill 1,000 Namibians by 2027, providing them with the necessary tools and knowledge to work in the data and AI industries."
+                        title={t('ourImpact.title')}
+                        subtitle={t('ourImpact.subtitle')}
                         centered
                     />
 
@@ -240,15 +277,21 @@ export default function About() {
                 Label Ladder Academy
               </h3> */}
                             <p className="text-gray-600 mb-6">
-                                Our project is supported by the Namibian <strong>Ministry of Education, Innovation, Youth, Sports, Arts and Culture</strong>.
+                                <Trans
+                                    i18nKey="about:ourImpact.paragraph1"
+                                    components={{ strong: <strong /> }}
+                                />
                             </p>
                             <p className="text-gray-600 mb-6">
-                                Through our <strong>Label Ladder Academy</strong> program, we guarantee our employees a pathway to growth and employability in a <strong>globally competitive industry</strong>.
+                                <Trans
+                                    i18nKey="about:ourImpact.paragraph2"
+                                    components={{ strong: <strong /> }}
+                                />
                             </p>
                         </div>
                         <div className="order-4 md:order-3">
                             <h4 className="text-xl font-bold text-primary mb-4 mt-8">
-                                Core Teachings of the Academy:
+                                {t('ourImpact.coreTeachings')}
                             </h4>
                             <ul className="space-y-3 text-gray-600">
                                 <li className="flex items-start">
@@ -256,35 +299,60 @@ export default function About() {
                                     <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
                                         1
                                     </div>
-                                    <span><strong>Intro to Data Work:</strong> Learn the basics of data annotation, digital tools, and working in tech</span>
+                                    <span>
+                                        <Trans
+                                            i18nKey="about:ourImpact.teachings.intro"
+                                            components={{ strong: <strong /> }}
+                                        />
+                                    </span>
                                 </li>
                                 <li className="flex items-start">
                                     {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">2</span> */}
                                     <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
                                         2
                                     </div>
-                                    <span><strong>Annotation Skills Training:</strong> Get hands-on with real data — images, text, audio, and video — using industry tools</span>
+                                    <span>
+                                        <Trans
+                                            i18nKey="about:ourImpact.teachings.annotation"
+                                            components={{ strong: <strong /> }}
+                                        />
+                                    </span>
                                 </li>
                                 <li className="flex items-start">
                                     {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">3</span> */}
                                     <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
                                         3
                                     </div>
-                                    <span><strong>Quality & Review Certification:</strong> Train to become a quality checker or team lead with advanced annotation skills</span>
+                                    <span>
+                                        <Trans
+                                            i18nKey="about:ourImpact.teachings.quality"
+                                            components={{ strong: <strong /> }}
+                                        />
+                                    </span>
                                 </li>
                                 <li className="flex items-start">
                                     {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">4</span> */}
                                     <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
                                         4
                                     </div>
-                                    <span><strong>Project & Tech Skills:</strong> Learn how to manage data projects, use dashboards, and communicate with global teams</span>
+                                    <span>
+                                        <Trans
+                                            i18nKey="about:ourImpact.teachings.project"
+                                            components={{ strong: <strong /> }}
+                                        />
+                                    </span>
                                 </li>
                                 <li className="flex items-start">
                                     {/* <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white font-bold text-sm mr-3 mt-0.5">5</span> */}
                                     <div className="flex-shrink-0 w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-sm mr-4">
                                         5
                                     </div>
-                                    <span><strong>Workplace Readiness & Soft Skills:</strong> Build confidence in communication, teamwork, time management, and professionalism</span>
+                                    <span>
+                                        <Trans
+                                            i18nKey="about:ourImpact.teachings.workplace"
+                                            components={{ strong: <strong /> }}
+                                        />
+                                    </span>
                                 </li>
                             </ul>
                         </div>
@@ -322,8 +390,8 @@ export default function About() {
             <section className="py-16" id="team">
                 <Container>
                     <SectionHeading
-                        title="Meet the Team"
-                        subtitle="Well-rounded leaders and technologists, driven by a mission to empower our clients' data."
+                        title={t('team.title')}
+                        subtitle={t('team.subtitle')}
                         centered
                     />
 
@@ -350,8 +418,8 @@ export default function About() {
 
                     <div className="mt-16">
                         <SectionHeading
-                            title="Our Labelers"
-                            subtitle="A dynamic and diverse group of data labelers and processors to deliver our mission."
+                            title={t('team.labelers.title')}
+                            subtitle={t('team.labelers.subtitle')}
                             centered
                         />
 
@@ -382,17 +450,25 @@ export default function About() {
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                            Ready to work with us?
+                            {t('cta.title')}
                         </h2>
                         <p className="text-xl mb-8 text-accent">
-                            Contact us today to learn more about how Label Ladder can help with your data annotation and processing needs.
+                            {t('cta.subtitle')}
                         </p>
                         <Button href="/contact/" variant="white" size="lg">
-                            Get in Touch
+                            {t('cta.button')}
                         </Button>
                     </div>
                 </Container>
             </section>
         </Layout>
     );
+}
+
+export async function getStaticProps({ locale }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'about'])),
+        },
+    };
 }

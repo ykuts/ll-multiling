@@ -5,6 +5,8 @@ import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
 import Image from 'next/image';
 import { trackServiceInquiry } from '../lib/gtag';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 export default function Medical() {
     useEffect(() => {
@@ -285,4 +287,12 @@ export default function Medical() {
             </section>
         </Layout>
     );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'expert-services'])),
+    },
+  };
 }

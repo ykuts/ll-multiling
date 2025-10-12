@@ -507,7 +507,7 @@ function getIndustryIcon(industry) {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'home', 'services', 'credentials', 'contact'])),
+      ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'credentials'])),
     },
   };
 }

@@ -1,1 +1,61 @@
-{}
+{
+    "hero": {
+        "title": "Unsere Mission",
+        "subtitle": "Hinter jedem intelligenten Modell steht eine intelligentere Datenaufbereitung"
+    },
+    "aboutUs": {
+        "title": "Über uns",
+        "subtitle": "Label Ladder ist ein schweizerisch-namibisches Unternehmen mit Büros in Zürich und Windhoek.",
+        "intro": "Wir bieten <strong>umfassende Datenverarbeitungs- und Annotationsdienste</strong> — nicht nur zur Beschriftung Ihrer Daten, sondern um sie in ein leistungsstarkes Asset zu verwandeln, das intelligentere Entscheidungen, optimierte Abläufe und echten Wettbewerbsvorteil ermöglicht.",
+        "paragraph2": "Ob Sie KI-Modelle trainieren oder komplexe Datensätze verwalten, unsere Lösungen sind darauf ausgelegt, <strong>Betriebskosten zu senken, Datenqualität und Nutzbarkeit zu verbessern</strong> und <strong>schnellere, datengestützte Entscheidungen</strong> zu ermöglichen.",
+        "paragraph3": "Wir kombinieren Schweizer Präzision und Datenexzellenz mit namibischem Talent und Agilität, um hochwertige, skalierbare Datenlösungen zu liefern, die sowohl global wettbewerbsfähig als auch lokal verankert sind.",
+        "paragraph4": "Lassen Sie uns Ihnen helfen, das volle Potenzial Ihrer Daten zu erschließen — mit <strong>Präzision, Zielstrebigkeit und langfristiger Wirkung.</strong>"
+    },
+    "workingWithUs": {
+        "title": "Zusammenarbeit mit uns",
+        "subtitle": "Unser Engagement für Qualität und Expertise zeichnet uns aus.",
+        "quality": {
+            "title": "HOCHWERTIGE DATENDIENSTE",
+            "text": "Qualitäts <strong>kontrollprozesse</strong> für interne Datenbeschrifter gewährleisten <strong>genaue</strong> und <strong>hochwertig verarbeitete Daten</strong> und vermeiden gängige Inkonsistenzprobleme beim Crowdsourcing"
+        },
+        "cost": {
+            "title": "KOSTENEFFIZIENTER SERVICE",
+            "text": "Die Nutzung eines spezialisierten externen Anbieters <strong>reduziert die Gemeinkosten</strong>, die mit der Einstellung, Schulung und Aufrechterhaltung eines internen Teams verbunden sind, und ermöglicht die <strong>Konzentration auf Kerngeschäftsaktivitäten</strong> für größere Gesamtproduktivität"
+        },
+        "talent": {
+            "title": "QUALIFIZIERTER TALENTPOOL",
+            "text": "Eine Gruppe <strong>geschulter und erfahrener Annotatoren</strong>, die die Transformation von Rohdaten ermöglichen, um das ordnungsgemäße Funktionieren von Machine-Learning-Systemen zu gewährleisten"
+        },
+        "impact": {
+            "title": "EIN AUF WIRKUNG AUFGEBAUTES UNTERNEHMEN",
+            "text": "Label Ladder basiert auf Empowerment, bei dem <strong>1.000 Namibier</strong> mit digitalen Fähigkeiten ausgebildet werden, um <strong>wirtschaftliche Entwicklung</strong> und <strong>Jugendbeschäftigung</strong> zu unterstützen"
+        }
+    },
+    "ourImpact": {
+        "title": "Unsere Wirkung",
+        "subtitle": "Wir haben uns zum Ziel gesetzt, bis 2027 1.000 Namibier weiterzubilden und ihnen die notwendigen Werkzeuge und Kenntnisse zu vermitteln, um in der Daten- und KI-Industrie zu arbeiten.",
+        "paragraph1": "Unser Projekt wird vom namibischen <strong>Ministerium für Bildung, Innovation, Jugend, Sport, Kunst und Kultur</strong> unterstützt.",
+        "paragraph2": "Durch unser <strong>Label Ladder Akademie</strong>-Programm garantieren wir unseren Mitarbeitern einen Weg zu Wachstum und Beschäftigungsfähigkeit in einer <strong>global wettbewerbsfähigen Branche</strong>.",
+        "coreTeachings": "Kernlehren der Akademie:",
+        "teachings": {
+            "intro": "<strong>Einführung in die Datenarbeit:</strong> Lernen Sie die Grundlagen der Datenannotation, digitale Tools und die Arbeit in der Technologiebranche",
+            "annotation": "<strong>Annotationsfähigkeiten-Training:</strong> Sammeln Sie praktische Erfahrungen mit echten Daten — Bilder, Text, Audio und Video — unter Verwendung von Branchentools",
+            "quality": "<strong>Qualitäts- und Überprüfungszertifizierung:</strong> Werden Sie Qualitätsprüfer oder Teamleiter mit fortgeschrittenen Annotationsfähigkeiten",
+            "project": "<strong>Projekt- und Tech-Fähigkeiten:</strong> Lernen Sie, wie man Datenprojekte verwaltet, Dashboards verwendet und mit globalen Teams kommuniziert",
+            "workplace": "<strong>Arbeitsplatzbereitschaft & Soft Skills:</strong> Bauen Sie Vertrauen in Kommunikation, Teamarbeit, Zeitmanagement und Professionalität auf"
+        }
+    },
+    "team": {
+        "title": "Lernen Sie das Team kennen",
+        "subtitle": "Vielseitige Führungskräfte und Technologen, angetrieben von der Mission, die Daten unserer Kunden zu stärken.",
+        "labelers": {
+            "title": "Unsere Beschrifter",
+            "subtitle": "Eine dynamische und vielfältige Gruppe von Datenbeschriftern und -verarbeitern zur Erfüllung unserer Mission."
+        }
+    },
+    "cta": {
+        "title": "Bereit, mit uns zusammenzuarbeiten?",
+        "subtitle": "Kontaktieren Sie uns noch heute, um mehr darüber zu erfahren, wie Label Ladder bei Ihren Datenannotations- und Verarbeitungsanforderungen helfen kann.",
+        "button": "Kontakt aufnehmen"
+    }
+}
