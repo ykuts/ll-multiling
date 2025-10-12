@@ -1,1 +1,224 @@
-{}
+{
+    "hero": {
+        "brandName": "LABEL LADDER",
+        "tagline1": "Annotation de données de haute qualité.",
+        "tagline2": "De l'échelle à la spécialisation.",
+        "subtitle1": "Alimentez votre IA avec des données précises, fournies par notre équipe de 1 000 personnes en Namibie.",
+        "subtitle2": "Tout le spectre de l'annotation de données : étiquetage général évolutif et services dirigés par des experts.",
+        "btnServices": "Nos services",
+        "btnContact": "Contactez-nous"
+    },
+    "foundation": {
+        "title": "Notre fondation",
+        "subtitle": "Échelle et impact social : nos 1 000 annotateurs qualifiés",
+        "stats": {
+            "annotators": {
+                "number": "1 000",
+                "label": "Annotateurs qualifiés",
+                "description": "Professionnels formés en Namibie fournissant une annotation de données de qualité"
+            },
+            "accuracy": {
+                "number": "98%",
+                "label": "Précision des données",
+                "description": "Qualité constante grâce à une formation rigoureuse et un contrôle qualité"
+            },
+            "costReduction": {
+                "number": "45%",
+                "label": "Réduction des coûts",
+                "description": "Économies significatives par rapport aux opérations internes de données"
+            },
+            "delivery": {
+                "number": "3x",
+                "label": "Livraison plus rapide",
+                "description": "Délais accélérés grâce à des flux de travail optimisés"
+            }
+        },
+        "capabilities": {
+            "largeScale": {
+                "title": "Projets à grande échelle",
+                "description": "Gérez des projets d'annotation de volume entreprise avec notre vaste main-d'œuvre"
+            },
+            "nativeEnglish": {
+                "title": "Locuteurs natifs anglais",
+                "description": "Notre équipe namibienne comprend des locuteurs natifs anglais assurant une précision linguistique"
+            },
+            "socialImpact": {
+                "title": "Impact social",
+                "description": "Création d'opportunités d'emploi significatives et développement de compétences numériques en Namibie"
+            },
+            "swissQuality": {
+                "title": "Normes de qualité suisses",
+                "description": "Combinaison du talent namibien avec la précision et la gestion de qualité suisse"
+            }
+        },
+        "academy": {
+            "title": "Label Ladder Academy",
+            "description1": "Notre projet est soutenu par le Ministère namibien de l'Éducation, de l'Innovation, de la Jeunesse, des Sports, des Arts et de la Culture.",
+            "description2": "Grâce à notre programme Label Ladder Academy, nous garantissons à nos employés une voie vers la croissance et l'employabilité dans une industrie compétitive à l'échelle mondiale.",
+            "stat": "1 000",
+            "statLabel": "Namibiens formés d'ici 2027",
+            "statDescription": "Soutenir le développement économique et l'emploi des jeunes"
+        }
+    },
+    "expertAnnotation": {
+        "title": "Annotation dirigée par des experts pour des domaines complexes",
+        "subtitle": "En plus de notre base solide, nous constituons des équipes dédiées d'experts namibiens pour des projets nécessitant une connaissance approfondie du domaine.",
+        "medical": {
+            "title": "Annotation médicale et santé",
+            "subtitle": "Notre principal domaine d'expertise avec une formation spécialisée et une supervision clinique",
+            "radiology": {
+                "title": "Radiologie et imagerie médicale",
+                "description": "Annotation experte des radiographies, IRM, scanners et autres images médicales avec précision clinique",
+                "features": {
+                    "dicom": "Prise en charge du format DICOM",
+                    "validation": "Validation clinique",
+                    "oversight": "Supervision par radiologue"
+                }
+            },
+            "pathology": {
+                "title": "Pathologie et données de laboratoire",
+                "description": "Annotation précise des images d'histopathologie, des résultats de laboratoire et des données diagnostiques",
+                "features": {
+                    "cellular": "Identification cellulaire",
+                    "tissue": "Classification des tissus",
+                    "diagnostic": "Étiquetage diagnostique"
+                }
+            },
+            "clinical": {
+                "title": "Documentation clinique",
+                "description": "Annotation structurée des dossiers médicaux, des données patient et des notes cliniques",
+                "features": {
+                    "hipaa": "Conformité HIPAA",
+                    "terminology": "Terminologie médicale",
+                    "standardization": "Standardisation des données"
+                }
+            }
+        },
+        "cta": "Discuter de vos besoins spécialisés"
+    },
+    "challenge": {
+        "title": "Votre défi",
+        "subtitle": "Les organisations qui prennent des décisions basées sur les données ou utilisent des modèles d'apprentissage automatique font face à divers défis.",
+        "challenges": {
+            "time": {
+                "title": "TEMPS",
+                "description": "Le temps passé sur la préparation des données retarde souvent les projets ou réduit la productivité globale."
+            },
+            "quality": {
+                "title": "QUALITÉ",
+                "description": "Des données de mauvaise qualité et trompeuses entraînent des prédictions inexactes, des modèles peu fiables et des pertes financières."
+            },
+            "costs": {
+                "title": "COÛTS",
+                "description": "La gestion interne du traitement, de l'étiquetage et de l'annotation des données est coûteuse et chronophage."
+            },
+            "scalability": {
+                "title": "SCALABILITÉ",
+                "description": "Certains projets nécessitent une montée en charge rapide, tandis que d'autres peuvent exiger des annotations spécialisées pour des applications de niche."
+            },
+            "integration": {
+                "title": "INTÉGRATION",
+                "description": "L'intégration des données dans les flux de travail ou pipelines IA/ML existants peut créer des goulots d'étranglement techniques et de processus."
+            }
+        }
+    },
+    "solution": {
+        "title": "Notre solution",
+        "subtitle": "NOUS COMBINONS LA PRÉCISION SUISSE ET L'EXCELLENCE DES DONNÉES AVEC LE TALENT ET L'AGILITÉ NAMIBIENS POUR FOURNIR DES SOLUTIONS DE DONNÉES DE HAUTE QUALITÉ ET ÉVOLUTIVES QUI SONT À LA FOIS COMPÉTITIVES À L'ÉCHELLE MONDIALE ET ANCRÉES LOCALEMENT",
+        "solutions": {
+            "speed": {
+                "title": "RAPIDITÉ",
+                "description": "Nous déployons rapidement des équipes formées et livrons des résultats rapidement – sans compromettre la qualité."
+            },
+            "scale": {
+                "title": "ÉCHELLE",
+                "description": "Du pilote aux volumes d'entreprise, notre modèle s'adapte de manière transparente à l'évolution de vos besoins en données."
+            },
+            "savings": {
+                "title": "ÉCONOMIES",
+                "description": "Nous offrons des services rentables en combinant une conception intelligente avec des talents locaux de haute qualité."
+            },
+            "efficiency": {
+                "title": "EFFICACITÉ",
+                "description": "Nos flux de travail optimisés réduisent les frictions, éliminent les retouches et accélèrent la préparation de vos données."
+            },
+            "reliability": {
+                "title": "FIABILITÉ",
+                "description": "Les normes suisses garantissent une précision constante, la sécurité des données et une livraison fiable à chaque fois."
+            }
+        }
+    },
+    "whyChoose": {
+        "title": "Pourquoi choisir Label Ladder",
+        "subtitle": "Nous combinons l'échelle avec la spécialisation - de l'annotation générale à haut volume aux services médicaux dirigés par des experts.",
+        "features": {
+            "scale": {
+                "title": "ÉCHELLE ET CAPACITÉ",
+                "description": "Notre équipe suisse-namibienne de 1 000 personnes gère des projets de volume d'entreprise avec des normes de qualité suisses et une maîtrise native de l'anglais."
+            },
+            "medical": {
+                "title": "EXPERTISE MÉDICALE",
+                "description": "Équipes spécialisées pour l'annotation de soins de santé, y compris la radiologie, la pathologie et la documentation clinique avec supervision d'experts."
+            },
+            "social": {
+                "title": "MISSION D'IMPACT SOCIAL",
+                "description": "Former 1 000 Namibiens d'ici 2027 aux compétences numériques, soutenu par les ministères du gouvernement namibien pour un développement économique durable."
+            },
+            "excellence": {
+                "title": "EXCELLENCE SUISSE-NAMIBIENNE",
+                "description": "Combiner la précision suisse dans la gestion de la qualité avec le talent et l'agilité namibiens pour des solutions mondialement compétitives."
+            }
+        },
+        "cta": {
+            "title": "Prêt à découvrir le spectre complet ?",
+            "description": "Que vous ayez besoin d'annotation générale à grande échelle ou d'annotation spécialisée dirigée par des experts, nous avons la solution adaptée à votre projet.",
+            "btnGeneral": "Annotation générale",
+            "btnExpert": "Annotation dirigée par des experts",
+            "btnGetStarted": "Commencer"
+        }
+    },
+    "approach": {
+        "title": "Notre approche",
+        "subtitle": "Nous suivons une approche réfléchie pour concevoir une solution qui correspond à vos besoins.",
+        "steps": {
+            "assessment": {
+                "number": "1",
+                "title": "ÉVALUATION DES BESOINS",
+                "description": "Nous commençons par comprendre vos données, modèles et objectifs commerciaux. Nos professionnels des données internes travaillent avec votre équipe pour identifier le véritable objectif de l'ensemble de données."
+            },
+            "design": {
+                "number": "2",
+                "title": "CONCEPTION D'ANNOTATION PERSONNALISÉE",
+                "description": "Nous n'appliquons pas une approche universelle. Nous concevons des flux de travail d'annotation adaptés à votre cas d'usage et des protocoles de contrôle qualité alignés sur vos objectifs de précision."
+            },
+            "architecture": {
+                "number": "3",
+                "title": "ARCHITECTURE DE DONNÉES PÉRENNE",
+                "description": "Nous pensons à l'avenir. Notre approche garantit que vos données étiquetées s'intègrent de manière transparente dans les pipelines ML/IA et prennent en charge le réentraînement et le versioning des modèles."
+            },
+            "human": {
+                "number": "4",
+                "title": "HUMAIN DANS LA BOUCLE, TOUJOURS",
+                "description": "Notre main-d'œuvre est formée au-delà de l'étiquetage de base – ils sont qualifiés en annotation spécifique au domaine et s'améliorent continuellement grâce à des boucles de rétroaction."
+            }
+        },
+        "cta": "En savoir plus sur notre approche"
+    },
+    "credentials": {
+        "title": "Références",
+        "subtitle": "Découvrez comment nous avons aidé d'autres organisations à résoudre leurs défis de données.",
+        "cta": "Voir toutes les études de cas",
+        "cases": {
+            "challenge": "Défi",
+            "solution": "Solution",
+            "outcome": "Résultat",
+            "duration": "Durée",
+            "dataVolume": "Volume de données"
+        }
+    },
+    "cta": {
+        "title": "Prêt à libérer tout le potentiel de vos données ?",
+        "subtitle": "Laissez-nous vous aider à transformer vos données en un atout puissant qui favorise des décisions plus intelligentes, des opérations rationalisées et un réel avantage concurrentiel.",
+        "button": "Contactez-nous aujourd'hui"
+    }
+}

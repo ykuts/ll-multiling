@@ -1,28 +1,31 @@
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import SectionHeading from '../ui/SectionHeading';
+import { useTranslation } from 'next-i18next';
 
 const ApproachSection = () => {
+  const { t } = useTranslation('home');
+
   const steps = [
     {
       number: 1,
-      title: "NEEDS ASSESSMENT",
-      description: "We start by understanding your data, models, and business goals. Our in-house data professionals work with your team to identify the real purpose of the dataset."
+      title: t('approach.steps.assessment.title'),
+      description: t('approach.steps.assessment.description')
     },
     {
       number: 2,
-      title: "CUSTOM ANNOTATION DESIGN",
-      description: "We don't apply a one-size-fits-all approach. We design annotation workflows tailored to your use case and quality control protocols aligned with your accuracy targets."
+      title: t('approach.steps.design.title'),
+      description: t('approach.steps.design.description')
     },
     {
       number: 3,
-      title: "FUTURE-PROOFED DATA ARCHITECTURE",
-      description: "We think ahead. Our approach ensures your labelled data integrates seamlessly into ML/AI pipelines and supports model retraining and versioning."
+      title: t('approach.steps.architecture.title'),
+      description: t('approach.steps.architecture.description')
     },
     {
       number: 4,
-      title: "HUMAN IN THE LOOP, ALWAYS",
-      description: "Our workforce is trained beyond basic labelling – they are skilled in domain-specific annotation and continuously improving through feedback loops."
+      title: t('approach.steps.human.title'),
+      description: t('approach.steps.human.description')
     }
   ];
 
@@ -53,7 +56,7 @@ const ApproachSection = () => {
         
         <div className="mt-12 text-center">
           <Button href="/approach/" variant="primary" size="lg">
-            Learn More About Our Approach
+            {t('approach.cta')}
           </Button>
         </div>
       </Container>

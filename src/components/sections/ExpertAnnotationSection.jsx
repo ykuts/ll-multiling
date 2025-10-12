@@ -2,13 +2,20 @@ import Container from '../ui/Container';
 import SectionHeading from '../ui/SectionHeading';
 import Button from '../ui/Button';
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 
 const ExpertAnnotationSection = () => {
+  const { t } = useTranslation('home');
+
   const medicalServices = [
     {
-      title: "Radiology & Medical Imaging",
-      description: "Expert annotation of X-rays, MRIs, CT scans, and other medical images with clinical accuracy",
-      features: ["DICOM format support", "Clinical validation", "Radiologist oversight"],
+      title: t('expertAnnotation.medical.radiology.title'),
+      description: t('expertAnnotation.medical.radiology.description'),
+      features: [
+        t('expertAnnotation.medical.radiology.features.dicom'),
+        t('expertAnnotation.medical.radiology.features.validation'),
+        t('expertAnnotation.medical.radiology.features.oversight')
+      ],
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
           <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2"/>
@@ -17,9 +24,13 @@ const ExpertAnnotationSection = () => {
       )
     },
     {
-      title: "Pathology & Lab Data",
-      description: "Precise annotation of histopathology images, lab results, and diagnostic data",
-      features: ["Cellular identification", "Tissue classification", "Diagnostic labeling"],
+      title: t('expertAnnotation.medical.pathology.title'),
+      description: t('expertAnnotation.medical.pathology.description'),
+      features: [
+        t('expertAnnotation.medical.pathology.features.cellular'),
+        t('expertAnnotation.medical.pathology.features.tissue'),
+        t('expertAnnotation.medical.pathology.features.diagnostic')
+      ],
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
           <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" strokeWidth="2"/>
@@ -27,9 +38,13 @@ const ExpertAnnotationSection = () => {
       )
     },
     {
-      title: "Clinical Documentation",
-      description: "Structured annotation of medical records, patient data, and clinical notes",
-      features: ["HIPAA compliance", "Medical terminology", "Data standardization"],
+      title: t('expertAnnotation.medical.clinical.title'),
+      description: t('expertAnnotation.medical.clinical.description'),
+      features: [
+        t('expertAnnotation.medical.clinical.features.hipaa'),
+        t('expertAnnotation.medical.clinical.features.terminology'),
+        t('expertAnnotation.medical.clinical.features.standardization')
+      ],
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" strokeWidth="2"/>
@@ -59,8 +74,8 @@ const ExpertAnnotationSection = () => {
     <section className="py-16 md:py-24 bg-white">
       <Container>
         <SectionHeading
-          title="Expert-Led Annotation for Complex Domains"
-          subtitle="On top of our robust foundation, we build dedicated teams of Namibian experts for projects requiring deep domain knowledge."
+          title={t('expertAnnotation.title')}
+          subtitle={t('expertAnnotation.subtitle')}
           centered
         />
 
@@ -73,8 +88,8 @@ const ExpertAnnotationSection = () => {
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">Medical & Healthcare Annotation</h3>
-              <p className="text-white text-lg">Our primary area of expertise with specialized training and clinical oversight</p>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">{t('expertAnnotation.medical.title')}</h3>
+              <p className="text-white text-lg">{t('expertAnnotation.medical.subtitle')}</p>
             </div>
           </div>
 
@@ -115,7 +130,7 @@ const ExpertAnnotationSection = () => {
         {/* CTA */}
         <div className="mt-12 text-center">
           <Button href="/contact/" variant="primary" size="lg">
-            Discuss Your Specialized Needs
+            {t('expertAnnotation.cta')}
           </Button>
         </div>
       </Container>

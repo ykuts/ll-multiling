@@ -2,65 +2,68 @@ import Container from '../ui/Container';
 import Button from '../ui/Button';
 import SectionHeading from '../ui/SectionHeading';
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 
 const CredentialsSection = () => {
+  const { t } = useTranslation('home', 'credentials');
+
   const cases = [
     {
       company: "Adaire",
-      project: "Project Management Data Migration",
-      who: "Adaire is a software development company based in Namibia and serving clients across Germany and Switzerland.",
-      what: "Adaire was transitioning to a new project management tool and required manual data migration services.",
-      how: "Project data was downloaded from Azure DevOps, adjusted to the correct format, then manually imported into Jira.",
+      project: t('cases.adaire.project', { ns: 'credentials' }),
+      who: t('cases.adaire.who', { ns: 'credentials' }),
+      what: t('cases.adaire.what', { ns: 'credentials' }),
+      how: t('cases.adaire.how', { ns: 'credentials' }),
       logo: "/images/credentials/adaire.png",
       industry: "Software Development",
       duration: "2 weeks",
       dataVolume: "5,000+ records",
-      challenge: "Transitioning to a new project management tool.",
-      solution: "Delivered manual data migration with accuracy checks.",
-      outcome: "Smooth adoption with zero data loss."
+      challenge: t('cases.adaire.challenge', { ns: 'credentials' }),
+      solution: t('cases.adaire.solution', { ns: 'credentials' }),
+      outcome: t('cases.adaire.outcome', { ns: 'credentials' })
     },
     {
       company: "Digital Divine Data",
-      project: "Autonomous Driving Annotation",
-      who: "Digital Divine Data (DDD) is a specialized data annotation company focusing on AI training datasets.",
-      what: "DDD collaborated with Label Ladder on the annotation of images for an autonomous driving project, requiring precise object detection and classification for vehicle AI systems.",
-      how: "Our expert annotation team provided detailed labeling of road scenes, vehicles, pedestrians, and traffic infrastructure to support autonomous driving algorithm development.",
+      project: t('cases.ddd.project', { ns: 'credentials' }),
+      who: t('cases.ddd.who', { ns: 'credentials' }),
+      what: t('cases.ddd.what', { ns: 'credentials' }),
+      how: t('cases.ddd.how', { ns: 'credentials' }),
       logo: "/images/credentials/ddd.webp",
       industry: "Data Annotation",
       duration: "2 weeks",
       dataVolume: "200+ Records",
-      challenge: "Needed to merge tools into one unified workflow.",
-      solution: "Assisted with setup, integration, and testing.",
-      outcome: "Faster onboarding and improved collaboration."
+      challenge: t('cases.ddd.challenge', { ns: 'credentials' }),
+      solution: t('cases.ddd.solution', { ns: 'credentials' }),
+      outcome: t('cases.ddd.outcome', { ns: 'credentials' })
     },
     {
       company: "Ambulanzpartner",
-      project: "Healthcare Data Processing",
-      who: "Ambulanzpartner provides emergency medical services and healthcare solutions.",
-      what: "Label Ladder assisted Ambulanzpartner in processing and annotating healthcare data to improve patient care.",
-      how: "Our team ensured high-quality annotations and data processing to meet the specific needs of healthcare applications.",
+      project: t('cases.ambulanzpartner.project', { ns: 'credentials' }),
+      who: t('cases.ambulanzpartner.who', { ns: 'credentials' }),
+      what: t('cases.ambulanzpartner.what', { ns: 'credentials' }),
+      how: t('cases.ambulanzpartner.how', { ns: 'credentials' }),
       logo: "/images/credentials/ambulanzpartner.webp",
       industry: "Healthcare",
       duration: "2 weeks",
       dataVolume: "10,000+ records",
-      challenge: "Large amounts of patient data with inconsistent records.",
-      solution: "Cleaned, validated, and standardized datasets.",
-      outcome: "Reliable reporting and better decision-making."
+      challenge: t('cases.ambulanzpartner.challenge', { ns: 'credentials' }),
+      solution: t('cases.ambulanzpartner.solution', { ns: 'credentials' }),
+      outcome: t('cases.ambulanzpartner.outcome', { ns: 'credentials' })
     },
 
     {
       company: "Impact Tank",
-      project: "Data Pipeline Setup",
-      who: "Impact Tank is a Namibian-Swiss impact venture builder focused on social impact through data-driven solutions and community development in Africa.",
-      what: "Impact Tank required a robust data pipeline to support their wildlife conservation project, enabling efficient data collection, processing, and analysis for environmental impact monitoring.",
-      how: "Label Ladder's team designed and implemented a comprehensive data pipeline architecture for wildlife conservation data, including automated data ingestion, processing workflows, and analytics capabilities.",
+      project: t('cases.impactTank.project', { ns: 'credentials' }),
+      who: t('cases.impactTank.who', { ns: 'credentials' }),
+      what: t('cases.impactTank.what', { ns: 'credentials' }),
+      how: t('cases.impactTank.how', { ns: 'credentials' }),
       logo: "/images/credentials/impact-tank-logo.png",
       industry: "Social Impact/Conservation",
       duration: "6 weeks",
       dataVolume: "Environmental monitoring data streams",
-      challenge: "Need for scalable data infrastructure to support wildlife conservation efforts and impact measurement.",
-      solution: "Implemented automated data pipeline with real-time processing and analytics capabilities.",
-      outcome: "Enhanced conservation monitoring and data-driven decision making for community impact projects."
+      challenge: t('cases.impactTank.challenge', { ns: 'credentials' }),
+      solution: t('cases.impactTank.solution', { ns: 'credentials' }),
+      outcome: t('cases.impactTank.outcome', { ns: 'credentials' })
     } ,
     /* {
       company: "Nedbank",
@@ -79,8 +82,8 @@ const CredentialsSection = () => {
     <section className="py-16 md:py-24 bg-gray-50">
       <Container>
         <SectionHeading
-          title="Credentials"
-          subtitle="See how we've helped other organizations solve their data challenges."
+          title={t('credentials.title')}
+          subtitle={t('credentials.subtitle')}
           centered
         />
 
@@ -117,19 +120,19 @@ const CredentialsSection = () => {
                 <div className="grid grid-cols-2 gap-4 mb-4">
                   {/* <div className="text-left">
                     <div className="text-lg font-bold text-primary">{caseStudy.duration}</div>
-                    <div className="text-xs text-gray-500">Duration</div>
+                    <div className="text-xs text-gray-500">{t('credentials.cases.duration')}</div>
                   </div> */}
 
                   <div className="text-left">
-                    <div className="text-lg font-bold text-primary">Challenge</div>
+                    <div className="text-lg font-bold text-primary">{t('credentials.cases.challenge')}</div>
                     <div className="text-xs text-gray-500">{caseStudy.challenge}</div>
                   </div>
                   <div className="text-left">
-                    <div className="text-lg font-bold text-primary">Solution</div>
+                    <div className="text-lg font-bold text-primary">{t('credentials.cases.solution')}</div>
                     <div className="text-xs text-gray-500">{caseStudy.solution}</div>
                   </div>
                   {/* <div className="text-left">
-                    <div className="text-lg font-bold text-primary">Outcome</div>
+                    <div className="text-lg font-bold text-primary">{t('credentials.cases.outcome')}</div>
                     <div className="text-xs text-gray-500">{caseStudy.outcome}</div>
                   </div> */}
                 </div>
@@ -144,7 +147,7 @@ const CredentialsSection = () => {
                 
         <div className="mt-12 text-center">
           <Button href="/credentials/" variant="primary" size="lg">
-            View All Case Studies
+            {t('credentials.cta')}
           </Button>
         </div>
       </Container>

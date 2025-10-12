@@ -1,32 +1,35 @@
 import Container from '../ui/Container';
 import SectionHeading from '../ui/SectionHeading';
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 
 const SolutionSection = () => {
+  const { t } = useTranslation('home');
+
   const solutions = [
     {
-      title: "SPEED",
-      description: "We deploy trained teams quickly and deliver results fast — without compromising quality.",
+      title: t('solution.solutions.speed.title'),
+      description: t('solution.solutions.speed.description'),
       icon: "/images/icons/speed.png"
     },
     {
-      title: "SCALE",
-      description: "From pilot to enterprise volumes, our model adapts seamlessly to your evolving data needs.",
+      title: t('solution.solutions.scale.title'),
+      description: t('solution.solutions.scale.description'),
       icon: "/images/icons/scale.png"
     },
     {
-      title: "SAVINGS",
-      description: "We offer cost-effective services by combining smart design with high-quality local talent.",
+      title: t('solution.solutions.savings.title'),
+      description: t('solution.solutions.savings.description'),
       icon: "/images/icons/savings.png"
     },
     {
-      title: "EFFICIENCY",
-      description: "Our optimized workflows reduce friction, eliminate rework, and accelerate your data readiness.",
+      title: t('solution.solutions.efficiency.title'),
+      description: t('solution.solutions.efficiency.description'),
       icon: "/images/icons/efficiency.png"
     },
     {
-      title: "RELIABILITY",
-      description: "Swiss standards ensure consistent accuracy, data security, and dependable delivery every time.", 
+      title: t('solution.solutions.reliability.title'),
+      description: t('solution.solutions.reliability.description'),
       icon: "/images/icons/reliability.png"
     }
   ];
@@ -35,8 +38,8 @@ const SolutionSection = () => {
     <section className="py-16 md:py-24 bg-gray-50">
       <Container>
         <SectionHeading
-          title="Our Solution"
-          subtitle="WE COMBINE SWISS PRECISION AND DATA EXCELLENCE WITH NAMIBIAN TALENT AND AGILITY TO DELIVER HIGH-QUALITY, SCALABLE DATA SOLUTIONS THAT ARE BOTH GLOBALLY COMPETITIVE AND LOCALLY GROUNDED"
+          title={t('solution.title')}
+          subtitle={t('solution.subtitle')}
           centered
         />
         

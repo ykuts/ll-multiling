@@ -1,1 +1,224 @@
-{}
+{
+    "hero": {
+        "brandName": "LABEL LADDER",
+        "tagline1": "High-Quality Data Annotation.",
+        "tagline2": "From Scale to Specialization.",
+        "subtitle1": "Powering Your AI with Precision Data, Delivered by Our 1,000-Strong Team in Namibia.",
+        "subtitle2": "The Full Spectrum of Data Annotation: Scalable General Labeling & Expert-Led Services.",
+        "btnServices": "Our Services",
+        "btnContact": "Contact Us"
+    },
+    "foundation": {
+        "title": "Our Foundation",
+        "subtitle": "Scale and Social Impact: Our 1,000 Skilled Annotators",
+        "stats": {
+            "annotators": {
+                "number": "1,000",
+                "label": "Skilled Annotators",
+                "description": "Trained professionals in Namibia delivering quality data annotation"
+            },
+            "accuracy": {
+                "number": "98%",
+                "label": "Data Accuracy",
+                "description": "Consistent quality through rigorous training and quality control"
+            },
+            "costReduction": {
+                "number": "45%",
+                "label": "Cost Reduction",
+                "description": "Significant savings compared to in-house data operations"
+            },
+            "delivery": {
+                "number": "3x",
+                "label": "Faster Delivery",
+                "description": "Accelerated timelines through optimized workflows"
+            }
+        },
+        "capabilities": {
+            "largeScale": {
+                "title": "Large-Scale Projects",
+                "description": "Handle enterprise-volume annotation projects with our extensive workforce"
+            },
+            "nativeEnglish": {
+                "title": "Native English Speakers",
+                "description": "Our Namibian team includes native English speakers ensuring linguistic accuracy"
+            },
+            "socialImpact": {
+                "title": "Social Impact",
+                "description": "Creating meaningful employment opportunities and digital skills development in Namibia"
+            },
+            "swissQuality": {
+                "title": "Swiss Quality Standards",
+                "description": "Combining Namibian talent with Swiss precision and quality management"
+            }
+        },
+        "academy": {
+            "title": "Label Ladder Academy",
+            "description1": "Our project is supported by the Namibian Ministry of Education, Innovation, Youth, Sports, Arts and Culture.",
+            "description2": "Through our Label Ladder Academy program, we guarantee our employees a pathway to growth and employability in a globally competitive industry.",
+            "stat": "1,000",
+            "statLabel": "Namibians Trained by 2027",
+            "statDescription": "Supporting economic development and youth employment"
+        }
+    },
+    "expertAnnotation": {
+        "title": "Expert-Led Annotation for Complex Domains",
+        "subtitle": "On top of our robust foundation, we build dedicated teams of Namibian experts for projects requiring deep domain knowledge.",
+        "medical": {
+            "title": "Medical & Healthcare Annotation",
+            "subtitle": "Our primary area of expertise with specialized training and clinical oversight",
+            "radiology": {
+                "title": "Radiology & Medical Imaging",
+                "description": "Expert annotation of X-rays, MRIs, CT scans, and other medical images with clinical accuracy",
+                "features": {
+                    "dicom": "DICOM format support",
+                    "validation": "Clinical validation",
+                    "oversight": "Radiologist oversight"
+                }
+            },
+            "pathology": {
+                "title": "Pathology & Lab Data",
+                "description": "Precise annotation of histopathology images, lab results, and diagnostic data",
+                "features": {
+                    "cellular": "Cellular identification",
+                    "tissue": "Tissue classification",
+                    "diagnostic": "Diagnostic labeling"
+                }
+            },
+            "clinical": {
+                "title": "Clinical Documentation",
+                "description": "Structured annotation of medical records, patient data, and clinical notes",
+                "features": {
+                    "hipaa": "HIPAA compliance",
+                    "terminology": "Medical terminology",
+                    "standardization": "Data standardization"
+                }
+            }
+        },
+        "cta": "Discuss Your Specialized Needs"
+    },
+    "challenge": {
+        "title": "Your Challenge",
+        "subtitle": "Organizations that make data-driven decisions or use machine-learning models face various challenges.",
+        "challenges": {
+            "time": {
+                "title": "TIME",
+                "description": "Project time spent on data preparation often delays projects or reduces overall productivity."
+            },
+            "quality": {
+                "title": "QUALITY",
+                "description": "Low-quality and misleading data leads to inaccurate predictions, unreliable models and financial losses."
+            },
+            "costs": {
+                "title": "COSTS",
+                "description": "Managing in-house data processing, labelling and annotation is costly and time-consuming."
+            },
+            "scalability": {
+                "title": "SCALABILITY",
+                "description": "Some projects require rapid scaling, while others may need specialized annotations for niche applications."
+            },
+            "integration": {
+                "title": "INTEGRATION",
+                "description": "Integrating data with existing AI/ML workflows or pipelines can create process and technical bottlenecks."
+            }
+        }
+    },
+    "solution": {
+        "title": "Our Solution",
+        "subtitle": "WE COMBINE SWISS PRECISION AND DATA EXCELLENCE WITH NAMIBIAN TALENT AND AGILITY TO DELIVER HIGH-QUALITY, SCALABLE DATA SOLUTIONS THAT ARE BOTH GLOBALLY COMPETITIVE AND LOCALLY GROUNDED",
+        "solutions": {
+            "speed": {
+                "title": "SPEED",
+                "description": "We deploy trained teams quickly and deliver results fast — without compromising quality."
+            },
+            "scale": {
+                "title": "SCALE",
+                "description": "From pilot to enterprise volumes, our model adapts seamlessly to your evolving data needs."
+            },
+            "savings": {
+                "title": "SAVINGS",
+                "description": "We offer cost-effective services by combining smart design with high-quality local talent."
+            },
+            "efficiency": {
+                "title": "EFFICIENCY",
+                "description": "Our optimized workflows reduce friction, eliminate rework, and accelerate your data readiness."
+            },
+            "reliability": {
+                "title": "RELIABILITY",
+                "description": "Swiss standards ensure consistent accuracy, data security, and dependable delivery every time."
+            }
+        }
+    },
+    "whyChoose": {
+        "title": "Why Choose Label Ladder",
+        "subtitle": "We combine scale with specialization - from high-volume general annotation to expert-led medical services.",
+        "features": {
+            "scale": {
+                "title": "SCALE & CAPACITY",
+                "description": "Our 1,000-strong Swiss-Namibian team handles enterprise-volume projects with Swiss quality standards and native English proficiency."
+            },
+            "medical": {
+                "title": "MEDICAL EXPERTISE",
+                "description": "Specialized teams for healthcare annotation including radiology, pathology, and clinical documentation with expert oversight."
+            },
+            "social": {
+                "title": "SOCIAL IMPACT MISSION",
+                "description": "Training 1,000 Namibians by 2027 in digital skills, supported by Namibian government ministries for sustainable economic development."
+            },
+            "excellence": {
+                "title": "SWISS-NAMIBIAN EXCELLENCE",
+                "description": "Combining Swiss precision in quality management with Namibian talent and agility for globally competitive solutions."
+            }
+        },
+        "cta": {
+            "title": "Ready to Experience the Full Spectrum?",
+            "description": "Whether you need large-scale general annotation or specialized expert-led annotation, we have the right solution for your project.",
+            "btnGeneral": "General Annotation",
+            "btnExpert": "Expert-Led Annotation",
+            "btnGetStarted": "Get Started"
+        }
+    },
+    "approach": {
+        "title": "Our Approach",
+        "subtitle": "We follow a thoughtful approach to designing a solution that fits your needs.",
+        "steps": {
+            "assessment": {
+                "number": "1",
+                "title": "NEEDS ASSESSMENT",
+                "description": "We start by understanding your data, models, and business goals. Our in-house data professionals work with your team to identify the real purpose of the dataset."
+            },
+            "design": {
+                "number": "2",
+                "title": "CUSTOM ANNOTATION DESIGN",
+                "description": "We don't apply a one-size-fits-all approach. We design annotation workflows tailored to your use case and quality control protocols aligned with your accuracy targets."
+            },
+            "architecture": {
+                "number": "3",
+                "title": "FUTURE-PROOFED DATA ARCHITECTURE",
+                "description": "We think ahead. Our approach ensures your labelled data integrates seamlessly into ML/AI pipelines and supports model retraining and versioning."
+            },
+            "human": {
+                "number": "4",
+                "title": "HUMAN IN THE LOOP, ALWAYS",
+                "description": "Our workforce is trained beyond basic labelling – they are skilled in domain-specific annotation and continuously improving through feedback loops."
+            }
+        },
+        "cta": "Learn More About Our Approach"
+    },
+    "credentials": {
+        "title": "Credentials",
+        "subtitle": "See how we've helped other organizations solve their data challenges.",
+        "cta": "View All Case Studies",
+        "cases": {
+            "challenge": "Challenge",
+            "solution": "Solution",
+            "outcome": "Outcome",
+            "duration": "Duration",
+            "dataVolume": "Data Volume"
+        }
+    },
+    "cta": {
+        "title": "Ready to unlock the full potential of your data?",
+        "subtitle": "Let us help you transform your data into a powerful asset that drives smarter decisions, streamlined operations, and real competitive edge.",
+        "button": "Contact Us Today"
+    }
+}

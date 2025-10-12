@@ -1,1 +1,224 @@
-{}
+{
+    "hero": {
+        "brandName": "LABEL LADDER",
+        "tagline1": "Hochwertige Datenannotation.",
+        "tagline2": "Von Skalierung zu Spezialisierung.",
+        "subtitle1": "Präzise Daten für Ihre KI, geliefert von unserem 1.000-köpfigen Team in Namibia.",
+        "subtitle2": "Das gesamte Spektrum der Datenannotation: Skalierbare allgemeine Kennzeichnung & Experten-geführte Dienstleistungen.",
+        "btnServices": "Unsere Dienstleistungen",
+        "btnContact": "Kontaktieren Sie uns"
+    },
+    "foundation": {
+        "title": "Unsere Grundlage",
+        "subtitle": "Skalierung und sozialer Einfluss: Unsere 1.000 qualifizierten Annotatoren",
+        "stats": {
+            "annotators": {
+                "number": "1.000",
+                "label": "Qualifizierte Annotatoren",
+                "description": "Ausgebildete Fachkräfte in Namibia liefern hochwertige Datenannotation"
+            },
+            "accuracy": {
+                "number": "98%",
+                "label": "Daten-Genauigkeit",
+                "description": "Konstante Qualität durch strenge Schulung und Qualitätskontrolle"
+            },
+            "costReduction": {
+                "number": "45%",
+                "label": "Kostenersparnis",
+                "description": "Erhebliche Einsparungen im Vergleich zu internen Datenoperationen"
+            },
+            "delivery": {
+                "number": "3x",
+                "label": "Schnellere Lieferung",
+                "description": "Beschleunigte Zeitpläne durch optimierte Arbeitsabläufe"
+            }
+        },
+        "capabilities": {
+            "largeScale": {
+                "title": "Großprojekte",
+                "description": "Bearbeitung von Annotationen im Unternehmensmaßstab mit unserer umfangreichen Belegschaft"
+            },
+            "nativeEnglish": {
+                "title": "Muttersprachler Englisch",
+                "description": "Unser namibisches Team umfasst englische Muttersprachler für sprachliche Genauigkeit"
+            },
+            "socialImpact": {
+                "title": "Sozialer Einfluss",
+                "description": "Schaffung sinnvoller Arbeitsplätze und Entwicklung digitaler Kompetenzen in Namibia"
+            },
+            "swissQuality": {
+                "title": "Schweizer Qualitätsstandards",
+                "description": "Namibisches Talent kombiniert mit Schweizer Präzision und Qualitätsmanagement"
+            }
+        },
+        "academy": {
+            "title": "Label Ladder Akademie",
+            "description1": "Unser Projekt wird vom namibischen Ministerium für Bildung, Innovation, Jugend, Sport, Kunst und Kultur unterstützt.",
+            "description2": "Durch unser Label Ladder Akademie-Programm garantieren wir unseren Mitarbeitern einen Weg zu Wachstum und Beschäftigungsfähigkeit in einer global wettbewerbsfähigen Branche.",
+            "stat": "1.000",
+            "statLabel": "Namibier bis 2027 ausgebildet",
+            "statDescription": "Förderung der wirtschaftlichen Entwicklung und Jugendbeschäftigung"
+        }
+    },
+    "expertAnnotation": {
+        "title": "Experten-geführte Annotation für komplexe Bereiche",
+        "subtitle": "Auf unserer soliden Grundlage bauen wir engagierte Teams namibischer Experten für Projekte mit tiefgehendem Fachwissen.",
+        "medical": {
+            "title": "Medizinische & Gesundheitsannotation",
+            "subtitle": "Unser Hauptbereich mit spezieller Ausbildung und klinischer Überwachung",
+            "radiology": {
+                "title": "Radiologie & medizinische Bildgebung",
+                "description": "Fachgerechte Annotation von Röntgenbildern, MRTs, CT-Scans und anderen medizinischen Bildern mit klinischer Genauigkeit",
+                "features": {
+                    "dicom": "DICOM-Format-Unterstützung",
+                    "validation": "Klinische Validierung",
+                    "oversight": "Überwachung durch Radiologen"
+                }
+            },
+            "pathology": {
+                "title": "Pathologie & Labordaten",
+                "description": "Präzise Annotation von histopathologischen Bildern, Laborergebnissen und Diagnosedaten",
+                "features": {
+                    "cellular": "Zellidentifikation",
+                    "tissue": "Gewebeklassifikation",
+                    "diagnostic": "Diagnostische Kennzeichnung"
+                }
+            },
+            "clinical": {
+                "title": "Klinische Dokumentation",
+                "description": "Strukturierte Annotation von Krankenakten, Patientendaten und klinischen Notizen",
+                "features": {
+                    "hipaa": "HIPAA-Konformität",
+                    "terminology": "Medizinische Terminologie",
+                    "standardization": "Datenstandardisierung"
+                }
+            }
+        },
+        "cta": "Besprechen Sie Ihre speziellen Anforderungen"
+    },
+    "challenge": {
+        "title": "Ihre Herausforderung",
+        "subtitle": "Organisationen, die datenbasierte Entscheidungen treffen oder maschinelles Lernen nutzen, stehen vor verschiedenen Herausforderungen.",
+        "challenges": {
+            "time": {
+                "title": "ZEIT",
+                "description": "Die für die Datenvorbereitung aufgewendete Projektzeit verzögert oft Projekte oder verringert die Produktivität."
+            },
+            "quality": {
+                "title": "QUALITÄT",
+                "description": "Niedrige Datenqualität und irreführende Daten führen zu ungenauen Vorhersagen, unzuverlässigen Modellen und finanziellen Verlusten."
+            },
+            "costs": {
+                "title": "KOSTEN",
+                "description": "Die interne Verarbeitung, Kennzeichnung und Annotation von Daten ist teuer und zeitaufwendig."
+            },
+            "scalability": {
+                "title": "SKALIERBARKEIT",
+                "description": "Einige Projekte erfordern schnelle Skalierung, andere benötigen spezialisierte Annotationen für Nischenanwendungen."
+            },
+            "integration": {
+                "title": "INTEGRATION",
+                "description": "Die Integration von Daten in bestehende KI/ML-Workflows oder Pipelines kann zu Prozess- und technischen Engpässen führen."
+            }
+        }
+    },
+    "solution": {
+        "title": "Unsere Lösung",
+        "subtitle": "WIR KOMBINIEREN SCHWEIZER PRÄZISION UND DATENEXZELLENZ MIT NAMIBISCHEM TALENT UND AGILITÄT, UM HOCHWERTIGE, SKALIERBARE DATENLÖSUNGEN ZU LIEFERN, DIE SOWOHL GLOBAL WETTBEWERBSFÄHIG ALS AUCH LOKAL VERANKERT SIND",
+        "solutions": {
+            "speed": {
+                "title": "GESCHWINDIGKEIT",
+                "description": "Wir setzen geschulte Teams schnell ein und liefern schnell Ergebnisse – ohne Qualitätskompromisse."
+            },
+            "scale": {
+                "title": "SKALIERUNG",
+                "description": "Von Pilotprojekten bis zu Unternehmensvolumen passt sich unser Modell nahtlos an Ihre sich entwickelnden Datenanforderungen an."
+            },
+            "savings": {
+                "title": "EINSPARUNGEN",
+                "description": "Wir bieten kosteneffiziente Dienstleistungen durch die Kombination intelligenten Designs mit hochwertigen lokalen Talenten."
+            },
+            "efficiency": {
+                "title": "EFFIZIENZ",
+                "description": "Unsere optimierten Arbeitsabläufe reduzieren Reibung, eliminieren Nacharbeit und beschleunigen Ihre Datenbereitschaft."
+            },
+            "reliability": {
+                "title": "ZUVERLÄSSIGKEIT",
+                "description": "Schweizer Standards gewährleisten konsistente Genauigkeit, Datensicherheit und zuverlässige Lieferung jedes Mal."
+            }
+        }
+    },
+    "whyChoose": {
+        "title": "Warum Label Ladder wählen",
+        "subtitle": "Wir kombinieren Skalierung mit Spezialisierung – von Annotationen mit hohem Volumen bis zu von Experten geleiteten medizinischen Dienstleistungen.",
+        "features": {
+            "scale": {
+                "title": "SKALIERUNG & KAPAZITÄT",
+                "description": "Unser 1.000-köpfiges schweizerisch-namibisches Team bewältigt Projekte in Unternehmensvolumen mit Schweizer Qualitätsstandards und englischer Muttersprachenkompetenz."
+            },
+            "medical": {
+                "title": "MEDIZINISCHE EXPERTISE",
+                "description": "Spezialisierte Teams für Gesundheitsannotation, einschließlich Radiologie, Pathologie und klinischer Dokumentation mit Expertenaufsicht."
+            },
+            "social": {
+                "title": "SOZIALE WIRKUNGSMISSION",
+                "description": "Ausbildung von 1.000 Namibiern bis 2027 in digitalen Fähigkeiten, unterstützt von namibischen Regierungsministerien für nachhaltige wirtschaftliche Entwicklung."
+            },
+            "excellence": {
+                "title": "SCHWEIZERISCH-NAMIBISCHE EXZELLENZ",
+                "description": "Kombination von Schweizer Präzision im Qualitätsmanagement mit namibischem Talent und Agilität für global wettbewerbsfähige Lösungen."
+            }
+        },
+        "cta": {
+            "title": "Bereit, das gesamte Spektrum zu erleben?",
+            "description": "Ob Sie großvolumige allgemeine Annotation oder spezialisierte von Experten geleitete Annotation benötigen, wir haben die richtige Lösung für Ihr Projekt.",
+            "btnGeneral": "Allgemeine Annotation",
+            "btnExpert": "Von Experten geleitete Annotation",
+            "btnGetStarted": "Loslegen"
+        }
+    },
+    "approach": {
+        "title": "Unser Ansatz",
+        "subtitle": "Wir folgen einem durchdachten Ansatz zur Gestaltung einer Lösung, die Ihren Anforderungen entspricht.",
+        "steps": {
+            "assessment": {
+                "number": "1",
+                "title": "BEDARFSERMITTLUNG",
+                "description": "Wir beginnen damit, Ihre Daten, Modelle und Geschäftsziele zu verstehen. Unsere internen Datenprofis arbeiten mit Ihrem Team zusammen, um den wahren Zweck des Datensatzes zu identifizieren."
+            },
+            "design": {
+                "number": "2",
+                "title": "INDIVIDUELLE ANNOTATIONSGESTALTUNG",
+                "description": "Wir wenden keinen Einheitsansatz an. Wir entwerfen Annotationsworkflows, die auf Ihren Anwendungsfall zugeschnitten sind, und Qualitätskontrollprotokolle, die mit Ihren Genauigkeitszielen übereinstimmen."
+            },
+            "architecture": {
+                "number": "3",
+                "title": "ZUKUNFTSSICHERE DATENARCHITEKTUR",
+                "description": "Wir denken voraus. Unser Ansatz stellt sicher, dass Ihre beschrifteten Daten nahtlos in ML/KI-Pipelines integriert werden und Model-Retraining und Versionierung unterstützen."
+            },
+            "human": {
+                "number": "4",
+                "title": "MENSCH IN DER SCHLEIFE, IMMER",
+                "description": "Unsere Belegschaft ist über grundlegende Beschriftung hinaus geschult – sie sind in domänenspezifischer Annotation qualifiziert und verbessern sich kontinuierlich durch Feedback-Schleifen."
+            }
+        },
+        "cta": "Erfahren Sie mehr über unseren Ansatz"
+    },
+    "credentials": {
+        "title": "Referenzen",
+        "subtitle": "Sehen Sie, wie wir anderen Organisationen geholfen haben, ihre Datenherausforderungen zu lösen.",
+        "cta": "Alle Fallstudien anzeigen",
+        "cases": {
+            "challenge": "Herausforderung",
+            "solution": "Lösung",
+            "outcome": "Ergebnis",
+            "duration": "Dauer",
+            "dataVolume": "Datenvolumen"
+        }
+    },
+    "cta": {
+        "title": "Bereit, das volle Potenzial Ihrer Daten zu erschließen?",
+        "subtitle": "Lassen Sie uns Ihnen helfen, Ihre Daten in ein leistungsstarkes Asset zu verwandeln, das intelligentere Entscheidungen, optimierte Abläufe und echten Wettbewerbsvorteil ermöglicht.",
+        "button": "Kontaktieren Sie uns heute"
+    }
+}

@@ -1,11 +1,14 @@
 import Container from '../ui/Container';
 import SectionHeading from '../ui/SectionHeading';
+import { useTranslation } from 'next-i18next';
 
 const ChallengeSection = () => {
+  const { t } = useTranslation('home');
+
   const challenges = [
     {
-      title: "TIME",
-      description: "Project time spent on data preparation often delays projects or reduces overall productivity.",
+      title: t('challenge.challenges.time.title'),
+      description: t('challenge.challenges.time.description'),
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
           <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
@@ -14,8 +17,8 @@ const ChallengeSection = () => {
       ),
     },
     {
-      title: "QUALITY",
-      description: "Low-quality and misleading data leads to inaccurate predictions, unreliable models and financial losses.",
+      title: t('challenge.challenges.quality.title'),
+      description: t('challenge.challenges.quality.description'),
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
           <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -24,8 +27,8 @@ const ChallengeSection = () => {
       ),
     },
     {
-      title: "COSTS",
-      description: "Managing in-house data processing, labelling and annotation is costly and time-consuming.",
+      title: t('challenge.challenges.costs.title'),
+      description: t('challenge.challenges.costs.description'),
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
           <line x1="12" y1="1" x2="12" y2="23" stroke="currentColor" strokeWidth="2"/>
@@ -34,8 +37,8 @@ const ChallengeSection = () => {
       ),
     },
     {
-      title: "SCALABILITY",
-      description: "Some projects require rapid scaling, while others may need specialized annotations for niche applications.",
+      title: t('challenge.challenges.scalability.title'),
+      description: t('challenge.challenges.scalability.description'),
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
           <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" strokeWidth="2"/>
@@ -45,8 +48,8 @@ const ChallengeSection = () => {
       ),
     },
     {
-      title: "INTEGRATION",
-      description: "Integrating data with existing AI/ML workflows or pipelines can create process and technical bottlenecks.",
+      title: t('challenge.challenges.integration.title'),
+      description: t('challenge.challenges.integration.description'),
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
           <path d="M8 2v4" stroke="currentColor" strokeWidth="2"/>
@@ -68,8 +71,8 @@ const ChallengeSection = () => {
     <section className="py-16 md:py-24">
       <Container>
         <SectionHeading
-          title="Your Challenge"
-          subtitle="Organizations that make data-driven decisions or use machine-learning models face various challenges."
+          title={t('challenge.title')}
+          subtitle={t('challenge.subtitle')}
           centered
         />
         
