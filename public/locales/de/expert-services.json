@@ -99,6 +99,7 @@
             "button": "Loslegen"
         }
     },
+    "button": "Loslegen",
     "sections": {
         "keyCapabilities": "Hauptfähigkeiten:",
         "useCases": "Anwendungsfälle:"

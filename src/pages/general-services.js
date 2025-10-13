@@ -10,6 +10,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 
 export default function Services() {
+  const { t } = useTranslation('general-services');
 
   useEffect(() => {
     trackServiceInquiry('services_page_view');
@@ -98,136 +99,136 @@ export default function Services() {
   // Text Annotation Services
   const textServices = [
     {
-      name: "Character recognition",
-      description: "Converting printed or handwritten characters into machine-encoded text",
-      price: "$0.005–$0.02 per character or $0.50–$2 per page",
-      moq: "5,000 characters or 500 pages"
+      name: t('textAnnotation.services.recognition.name'),
+      description: t('textAnnotation.services.recognition.description'),
+      price: t('textAnnotation.services.recognition.price'),
+      moq: t('textAnnotation.services.recognition.moq')
     },
     {
-      name: "Transcription",
-      description: "Converting spoken language into written text",
-      price: "$1–$5 per minute",
-      moq: "100 minutes"
+      name: t('textAnnotation.services.transcription.name'),
+      description: t('textAnnotation.services.transcription.description'),
+      price: t('textAnnotation.services.transcription.price'),
+      moq: t('textAnnotation.services.transcription.moq')
     },
     {
-      name: "Article qualification",
-      description: "Classifying or scoring articles based on predefined criteria or relevance",
-      price: "$0.50–$2 per article",
-      moq: "500 articles"
+      name: t('textAnnotation.services.qualification.name'),
+      description: t('textAnnotation.services.qualification.description'),
+      price: t('textAnnotation.services.qualification.price'),
+      moq: t('textAnnotation.services.qualification.moq')
     },
     {
-      name: "Content moderation",
-      description: "Reviewing and filtering content to ensure compliance with guidelines or policies",
-      price: "$0.01–$0.10 per item or $10–$25 per hour",
-      moq: "10,000 items or 40 hours"
+      name: t('textAnnotation.services.moderation.name'),
+      description: t('textAnnotation.services.moderation.description'),
+      price: t('textAnnotation.services.moderation.price'),
+      moq: t('textAnnotation.services.moderation.moq')
     }
   ];
 
   // Image Annotation Services
   const imageServices = [
     {
-      name: "Image annotation",
-      description: "Tagging objects, attributes, or areas within images for machine learning",
-      price: "$0.05–$0.50 per image or per object",
-      moq: "1,000 images"
+      name: t('imageAnnotation.services.annotation.name'),
+      description: t('imageAnnotation.services.annotation.description'),
+      price: t('imageAnnotation.services.annotation.price'),
+      moq: t('imageAnnotation.services.annotation.moq')
     },
     {
-      name: "Image labelling",
-      description: "Assigning labels or categories to whole images",
-      price: "$0.02–$0.10 per image",
-      moq: "2,000 images"
+      name: t('imageAnnotation.services.labeling.name'),
+      description: t('imageAnnotation.services.labeling.description'),
+      price: t('imageAnnotation.services.labeling.price'),
+      moq: t('imageAnnotation.services.labeling.moq')
     },
     {
-      name: "Shape recognition",
-      description: "Identifying and tagging geometric shapes or object outlines in images",
-      price: "$0.10–$1 per object",
-      moq: "1,000 objects"
+      name: t('imageAnnotation.services.recognition.name'),
+      description: t('imageAnnotation.services.recognition.description'),
+      price: t('imageAnnotation.services.recognition.price'),
+      moq: t('imageAnnotation.services.recognition.moq')
     },
     {
-      name: "Image segmentation",
-      description: "Pixel-level annotation dividing an image into meaningful parts or regions",
-      price: "$0.50–$5 per image",
-      moq: "500 images"
+      name: t('imageAnnotation.services.segmentation.name'),
+      description: t('imageAnnotation.services.segmentation.description'),
+      price: t('imageAnnotation.services.segmentation.price'),
+      moq: t('imageAnnotation.services.segmentation.moq')
     }
   ];
 
   // Video Annotation Services
   const videoServices = [
     {
-      name: "Transcription",
-      description: "Converting video audio into written text",
-      price: "$2–$6 per minute",
-      moq: "100 minutes"
+      name: t('videoAnnotation.services.transcription.name'),
+      description: t('videoAnnotation.services.transcription.description'),
+      price: t('videoAnnotation.services.transcription.price'),
+      moq: t('videoAnnotation.services.transcription.moq')
     },
     {
-      name: "Sequencing",
-      description: "Labelling or ordering actions, events, or scenes over time in video",
-      price: "$5–$15 per minute",
-      moq: "50 minutes"
+      name: t('videoAnnotation.services.sequencing.name'),
+      description: t('videoAnnotation.services.sequencing.description'),
+      price: t('videoAnnotation.services.sequencing.price'),
+      moq: t('videoAnnotation.services.sequencing.moq')
     }
   ];
 
   // Audio Annotation Services
   const audioServices = [
     {
-      name: "Speech-to-text",
-      description: "Automatically or manually converting spoken words into text format",
-      price: "$1–$5 per minute",
-      moq: "100 minutes"
+      name: t('audioAnnotation.services.speechToText.name'),
+      description: t('audioAnnotation.services.speechToText.description'),
+      price: t('audioAnnotation.services.speechToText.price'),
+      moq: t('audioAnnotation.services.speechToText.moq')
     },
     {
-      name: "Sentiment analysis",
-      description: "Classifying text or audio based on emotional tone (positive, negative, neutral)",
-      price: "$0.02–$0.10 per item",
-      moq: "5,000 items"
+      name: t('audioAnnotation.services.sentiment.name'),
+      description: t('audioAnnotation.services.sentiment.description'),
+      price: t('audioAnnotation.services.sentiment.price'),
+      moq: t('audioAnnotation.services.sentiment.moq')
     }
   ];
 
   // Data Processing Services
   const dataProcessingServices = [
     {
-      title: "Data Entry",
-      subtitle: "Data Entry Tasks",
-      description: "We manually or automatically input, update, or maintain data in a digital format — usually into databases, spreadsheets, CRMs, or other software systems.",
+      title: t('dataProcessing.services.entry.title'),
+      subtitle: t('dataProcessing.services.entry.subtitle'),
+      description: t('dataProcessing.services.entry.description'),
       tasks: [
-        "Typing handwritten information in a spreadsheet",
-        "Transferring data from PDFs or scans into a database",
-        "Inputting survey responses or invoices into a system",
-        "Transferring data from one system to another (e.g., Excel to Jira)"
+        t('dataProcessing.services.entry.tasks.typing'),
+        t('dataProcessing.services.entry.tasks.transferring'),
+        t('dataProcessing.services.entry.tasks.inputting'),
+        t('dataProcessing.services.entry.tasks.migration')
       ]
     },
     {
-      title: "Data Validation",
-      subtitle: "Data Validation Tasks",
-      description: "We ensure that the data collected, entered, or processed is correct, usable, and meaningful — whether it comes from humans or machines.",
+      title: t('dataProcessing.services.validation.title'),
+      subtitle: t('dataProcessing.services.validation.subtitle'),
+      description: t('dataProcessing.services.validation.description'),
       tasks: [
-        "Format checks: Make sure the data is of the correct format",
-        "Range checks: Make sure the data is within its determined limits",
-        "Consistency checks: Make sure the data points are aligned semantically and structurally",
-        "Completeness checks: Make sure that all required fields are present"
+        t('dataProcessing.services.validation.tasks.format'),
+        t('dataProcessing.services.validation.tasks.range'),
+        t('dataProcessing.services.validation.tasks.consistency'),
+        t('dataProcessing.services.validation.tasks.completeness')
       ]
     },
     {
-      title: "Data Cleansing",
-      subtitle: "Data Cleansing Tasks",
-      description: "Our teams' work improves the quality, reliability, and usability of data by correcting or removing inaccurate, incomplete, duplicated, or irrelevant data within a dataset.",
+      title: t('dataProcessing.services.cleansing.title'),
+      subtitle: t('dataProcessing.services.cleansing.subtitle'),
+      description: t('dataProcessing.services.cleansing.description'),
       tasks: [
-        "Removing duplicates: Make sure an entry doesn't appear twice in a dataset",
-        "Fixing typos: Make sure typos are fixed and noise is removed from the data",
-        "Standardizing data: Make sure the data uses the same format and unit measures",
-        "Eliminating outliers or errors: Remove unusable and incorrect data"
+        t('dataProcessing.services.cleansing.tasks.duplicates'),
+        t('dataProcessing.services.cleansing.tasks.typos'),
+        t('dataProcessing.services.cleansing.tasks.standardizing'),
+        t('dataProcessing.services.cleansing.tasks.outliers')
       ]
     },
     {
-      title: "Data Migration",
-      subtitle: "Data Migration Process",
-      description: "Data migration is the process of moving data between systems (computing environments, storage system or format) while preserving data integrity and ensuring compatibility with the destination system.",
+      title: t('dataProcessing.services.migration.title'),
+      subtitle: t('dataProcessing.services.migration.subtitle'),
+      description: t('dataProcessing.services.migration.description'),
       tasks: [
-        "Extract data from the source system",
-        "Transform data into the format of the new system",
-        "Cleaning and validating the data",
-        "Entering the data into the new system",
-        "Testing the data integrity in the new system"
+        t('dataProcessing.services.migration.tasks.extract'),
+        t('dataProcessing.services.migration.tasks.transform'),
+        t('dataProcessing.services.migration.tasks.cleaning'),
+        t('dataProcessing.services.migration.tasks.entering'),
+        t('dataProcessing.services.migration.tasks.testing')
       ]
     }
   ];
@@ -235,8 +236,8 @@ export default function Services() {
   // Service Type Cards
   const serviceTypes = [
     {
-      title: "Text Annotation",
-      description: "Converting text into structured, machine-readable formats through recognition, transcription, and qualification.",
+      title: t('textAnnotation.title'),
+      description: t('textAnnotation.subtitle'),
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
           <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" />
@@ -248,8 +249,8 @@ export default function Services() {
       href: "#text",
     },
     {
-      title: "Image Annotation",
-      description: "Adding metadata to images through tagging, labeling, segmentation and object recognition.",
+      title: t('imageAnnotation.title'),
+      description: t('imageAnnotation.subtitle'),
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
           <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" />
@@ -260,16 +261,16 @@ export default function Services() {
       href: "#image",
     },
     {
-      title: "Video Annotation",
-      description: "Enhancing video content with metadata through transcription and sequential labeling.",
+      title: t('videoAnnotation.title'),
+      description: t('videoAnnotation.subtitle'),
       icon: (
         <svg viewBox="0 0 122.88 111.34" className="w-8 h-8 text-primary"> <title>video</title> <path fill="currentColor" d="M23.59,0h75.7a23.68,23.68,0,0,1,23.59,23.59V87.75A23.56,23.56,0,0,1,116,104.41l-.22.2a23.53,23.53,0,0,1-16.44,6.73H23.59a23.53,23.53,0,0,1-16.66-6.93l-.2-.22A23.46,23.46,0,0,1,0,87.75V23.59A23.66,23.66,0,0,1,23.59,0ZM54,47.73,79.25,65.36a3.79,3.79,0,0,1,.14,6.3L54.22,89.05a3.75,3.75,0,0,1-2.4.87A3.79,3.79,0,0,1,48,86.13V50.82h0A3.77,3.77,0,0,1,54,47.73ZM7.35,26.47h14L30.41,7.35H23.59A16.29,16.29,0,0,0,7.35,23.59v2.88ZM37.05,7.35,28,26.47H53.36L62.43,7.38v0Zm32,0L59.92,26.47h24.7L93.7,7.35Zm31.32,0L91.26,26.47h24.27V23.59a16.32,16.32,0,0,0-15.2-16.21Zm15.2,26.68H7.35V87.75A16.21,16.21,0,0,0,12,99.05l.17.16A16.19,16.19,0,0,0,23.59,104h75.7a16.21,16.21,0,0,0,11.3-4.6l.16-.18a16.17,16.17,0,0,0,4.78-11.46V34.06Z" /> </svg>
       ),
       href: "#video",
     },
     {
-      title: "Audio Annotation",
-      description: "Converting audio to text and analyzing tone through speech recognition and sentiment analysis.",
+      title: t('audioAnnotation.title'),
+      description: t('audioAnnotation.subtitle'),
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
           <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" stroke="currentColor" strokeWidth="2" />
@@ -281,8 +282,8 @@ export default function Services() {
       href: "#audio",
     },
     {
-      title: "Data Processing",
-      description: "Transforming raw data into useful formats through entry, validation, cleansing, and migration.",
+      title: t('dataProcessing.title'),
+      description: t('dataProcessing.subtitle'),
       icon: (
         <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-primary">
           <rect x="8" y="2" width="8" height="4" rx="1" stroke="currentColor" strokeWidth="2" />
@@ -344,7 +345,7 @@ export default function Services() {
     </div>
   );
 
-  const tableHeaders = ['SERVICE', 'DESCRIPTION'];
+  const tableHeaders = [t('tableHeaders.service'), t('tableHeaders.description')];
   /* , 'UNIT PRICE', 'MOQ' */
 
   return (
@@ -361,12 +362,10 @@ export default function Services() {
         <Container>
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              General Data Annotation Services
+              {t('hero.title')}
             </h1>
             <p className="text-xl mb-8 text-accent">
-              Enterprise-scale data annotation powered by our 1,000-strong team in Namibia. 
-              Cost-effective, high-quality annotation for all data types.
-              High-quality data annotation and processing services to transform your raw data into valuable assets.
+              {t('hero.subtitle')}
             </p>
           </div>
         </Container>
@@ -376,8 +375,8 @@ export default function Services() {
       <section className="py-16">
         <Container>
           <SectionHeading
-            title="Data Annotation & Processing Services"
-            subtitle="We provide a comprehensive range of data services to meet your specific needs."
+            title={t('overview.title')}
+            subtitle={t('overview.subtitle')}
             centered
           />
 
@@ -406,8 +405,8 @@ export default function Services() {
             {/* Left side - Content */}
             <div>
               <div className="mb-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Text Annotation Services</h2>
-                <p className="text-lg text-gray-600">Converting printed or spoken language into structured, machine-readable formats.</p>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">{t('serviceTypes.text.title')}</h2>
+                <p className="text-lg text-gray-600">{t('serviceTypes.text.description')}</p>
               </div>
 
               {/* Mobile Cards */}
@@ -436,8 +435,8 @@ export default function Services() {
             <div className="order-1 lg:order-2">
               <div className="mb-8">
                 <SectionHeading
-                  title="Image Annotation Services"
-                  subtitle="Adding metadata to images to make them recognizable and processable by machine learning systems."
+                  title={t('serviceTypes.image.title')}
+                  subtitle={t('serviceTypes.image.description')}
                 />
               </div>
 
@@ -449,8 +448,8 @@ export default function Services() {
                 <table className="w-full bg-white rounded-lg shadow-md">
                   <thead className="bg-primary text-white">
                     <tr>
-                      <th className="px-6 py-4 text-left">Service</th>
-                      <th className="px-6 py-4 text-left">Description</th>
+                      <th className="px-6 py-4 text-left">{t('tableHeaders.service')}</th>
+                      <th className="px-6 py-4 text-left">{t('tableHeaders.description')}</th>
                       {/* <th className="px-6 py-4 text-left">Price Range</th>
                       <th className="px-6 py-4 text-left">Min. Order Quantity</th> */}
                     </tr>
@@ -488,8 +487,8 @@ export default function Services() {
             <div>
               <div className="mb-8">
                 <SectionHeading
-                  title="Video Annotation Services"
-                  subtitle="Enhancing video content with metadata for better analysis and understanding."
+                  title={t('serviceTypes.video.title')}
+                  subtitle={t('serviceTypes.video.description')}
                 />
               </div>
 
@@ -501,10 +500,10 @@ export default function Services() {
                 <table className="w-full bg-white rounded-lg shadow-md">
                   <thead className="bg-primary text-white">
                     <tr>
-                      <th className="px-6 py-4 text-left">Service</th>
-                      <th className="px-6 py-4 text-left">Description</th>
-                      {/* <th className="px-6 py-4 text-left">Price Range</th>
-                      <th className="px-6 py-4 text-left">Min. Order Quantity</th> */}
+                      <th className="px-6 py-4 text-left">{t('tableHeaders.service')}</th>
+                      <th className="px-6 py-4 text-left">{t('tableHeaders.description')}</th>
+                      {/* <th className="px-6 py-4 text-left">{t('tableHeaders.priceRange')}</th>
+                      <th className="px-6 py-4 text-left">{t('tableHeaders.minOrderQuantity')}</th> */}
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
@@ -540,8 +539,8 @@ export default function Services() {
             <div className="order-1 lg:order-2">
               <div className="mb-8">
                 <SectionHeading
-                  title="Audio Annotation Services"
-                  subtitle="Converting audio content to structured formats and analyzing tone for better insights."
+                  title={t('serviceTypes.audio.title')}
+                  subtitle={t('serviceTypes.audio.description')}
                 />
               </div>
 
@@ -553,10 +552,10 @@ export default function Services() {
                 <table className="w-full bg-white rounded-lg shadow-md">
                   <thead className="bg-primary text-white">
                     <tr>
-                      <th className="px-6 py-4 text-left">Service</th>
-                      <th className="px-6 py-4 text-left">Description</th>
-                      {/* <th className="px-6 py-4 text-left">Price Range</th>
-                      <th className="px-6 py-4 text-left">Min. Order Quantity</th> */}
+                      <th className="px-6 py-4 text-left">{t('tableHeaders.service')}</th>
+                      <th className="px-6 py-4 text-left">{t('tableHeaders.description')}</th>
+                      {/* <th className="px-6 py-4 text-left">{t('tableHeaders.priceRange')}</th>
+                      <th className="px-6 py-4 text-left">{t('tableHeaders.minOrderQuantity')}</th> */}
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
@@ -589,8 +588,8 @@ export default function Services() {
         <Container>
           <div className="relative z-10">
             <SectionHeading
-              title="Data Processing Services"
-              subtitle="Transforming raw data into clean, structured, and usable formats for better decision-making."
+              title={t('serviceTypes.processing.title')}
+              subtitle={t('serviceTypes.processing.description')}
               centered
             />
 
@@ -627,17 +626,17 @@ export default function Services() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
                 <SectionHeading
-                  title="Custom Solutions"
-                  subtitle="Don't see exactly what you need? We can help."
+                  title={t('customSolutions.title')}
+                  subtitle={t('customSolutions.subtitle')}
                 />
                 <p className="text-gray-600 mb-6">
-                  Every business has unique data challenges. Our team can work with you to develop custom data annotation and processing solutions tailored to your specific requirements.
+                  {t('customSolutions.paragraph1')}
                 </p>
                 <p className="text-gray-600 mb-8">
-                  Whether you need a combination of services, specialized domain expertise, or a completely unique workflow, we can design a solution that meets your needs.
+                  {t('customSolutions.paragraph2')}
                 </p>
                 <Button href="/contact/" variant="primary" size="lg">
-                  Request Custom Quote
+                  {t('customSolutions.button')}
                 </Button>
               </div>
               <div className="relative h-full rounded-lg overflow-hidden shadow-xl">
@@ -658,13 +657,13 @@ export default function Services() {
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to transform your data?
+              {t('cta.title')}
             </h2>
             <p className="text-xl mb-8 text-accent">
-              Contact us today to discuss your data annotation and processing needs and get a customized quote.
+              {t('cta.subtitle')}
             </p>
             <Button href="/contact/" variant="white" size="lg">
-              Start Your Project
+              {t('cta.button')}
             </Button>
           </div>
         </Container>

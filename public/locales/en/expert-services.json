@@ -99,6 +99,7 @@
             "button": "Get Started"
         }
     },
+    "button": "Get Started",
     "sections": {
         "keyCapabilities": "Key Capabilities:",
         "useCases": "Use Cases:"

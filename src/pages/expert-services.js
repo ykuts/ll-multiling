@@ -9,6 +9,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 
 export default function Medical() {
+    const { t } = useTranslation('expert-services');
     useEffect(() => {
         trackServiceInquiry('medical_page_view');
     }, []);
@@ -28,71 +29,71 @@ export default function Medical() {
 
     const medicalServices = [
         {
-            title: "Radiology & Medical Imaging",
-            description: "Expert annotation of medical images with clinical accuracy and radiologist oversight.",
+            title: t('capabilities.radiology.title'),
+            description: t('capabilities.radiology.description'),
             image: "/images/medical/radiology.jpg",
             capabilities: [
-                "X-ray image annotation and pathology identification",
-                "MRI scan segmentation and anatomical labeling",
-                "CT scan analysis and organ identification",
-                "DICOM format processing and metadata extraction",
-                "Multi-planar reconstruction annotation",
-                "3D volume rendering and measurement"
+                t('capabilities.radiology.capabilities.xray'),
+                t('capabilities.radiology.capabilities.mri'),
+                t('capabilities.radiology.capabilities.ct'),
+                t('capabilities.radiology.capabilities.dicom'),
+                t('capabilities.radiology.capabilities.reconstruction'),
+                t('capabilities.radiology.capabilities.rendering')
             ],
-            compliance: ["DICOM standards", "HIPAA compliance", "Clinical validation"],
+            compliance: [t('capabilities.radiology.compliance.dicom'), t('capabilities.radiology.compliance.hipaa'), t('capabilities.radiology.compliance.validation')],
             useCases: [
-                "AI diagnostic tools development",
-                "Computer-aided detection systems",
-                "Medical imaging research datasets",
-                "Radiologist training platforms"
+                t('capabilities.radiology.useCases.diagnostic'),
+                t('capabilities.radiology.useCases.detection'),
+                t('capabilities.radiology.useCases.research'),
+                t('capabilities.radiology.useCases.training')
             ]
         },
         {
-            title: "Pathology & Laboratory Data",
-            description: "Precise annotation of histopathology images and laboratory diagnostics with cellular-level accuracy.",
+            title: t('capabilities.pathology.title'),
+            description: t('capabilities.pathology.description'),
             image: "/images/medical/pathology.jpg",
             capabilities: [
-                "Histopathology slide annotation and cell identification",
-                "Cancer detection and tumor classification",
-                "Tissue type identification and grading",
-                "Microscopy image segmentation",
-                "Laboratory result interpretation and coding",
-                "Biomarker identification and quantification"
+                t('capabilities.pathology.capabilities.histopathology'),
+                t('capabilities.pathology.capabilities.cancer'),
+                t('capabilities.pathology.capabilities.tissue'),
+                t('capabilities.pathology.capabilities.microscopy'),
+                t('capabilities.pathology.capabilities.laboratory'),
+                t('capabilities.pathology.capabilities.biomarker')
             ],
-            compliance: ["Lab quality standards", "Medical terminology", "Diagnostic accuracy"],
+            compliance: [t('capabilities.pathology.compliance.quality'), t('capabilities.pathology.compliance.terminology'), t('capabilities.pathology.compliance.accuracy')],
             useCases: [
-                "Cancer detection algorithms",
-                "Pathology education tools",
-                "Drug discovery research",
-                "Digital pathology platforms"
+                t('capabilities.pathology.useCases.cancer'),
+                t('capabilities.pathology.useCases.education'),
+                t('capabilities.pathology.useCases.drug'),
+                t('capabilities.pathology.useCases.digital')
             ]
         },
         {
-            title: "Clinical Documentation & EHR",
-            description: "Structured annotation of medical records, clinical notes, and patient data with medical expertise.",
+            title: t('capabilities.clinical.title'),
+            description: t('capabilities.clinical.description'),
             image: "/images/medical/clinical.jpg",
             capabilities: [
-                "Electronic Health Record (EHR) data extraction",
-                "Clinical note annotation and ICD coding",
-                "Medical terminology standardization",
-                "Patient journey mapping and timeline creation",
-                "Medication and dosage information extraction",
-                "Symptom and diagnosis correlation analysis"
+                t('capabilities.clinical.capabilities.ehr'),
+                t('capabilities.clinical.capabilities.clinical'),
+                t('capabilities.clinical.capabilities.terminology'),
+                t('capabilities.clinical.capabilities.journey'),
+                t('capabilities.clinical.capabilities.medication'),
+                t('capabilities.clinical.capabilities.correlation')
             ],
-            compliance: ["HIPAA compliance", "Medical coding standards", "Data de-identification"],
+            compliance: [t('capabilities.clinical.compliance.hipaa'), t('capabilities.clinical.compliance.coding'), t('capabilities.clinical.compliance.deidentification')],
             useCases: [
-                "Clinical decision support systems",
-                "Population health analytics",
-                "Medical research databases",
-                "Healthcare quality metrics"
+                t('capabilities.clinical.useCases.decision'),
+                t('capabilities.clinical.useCases.population'),
+                t('capabilities.clinical.useCases.research'),
+                t('capabilities.clinical.useCases.quality')
             ]
         }
     ];
 
     const whyChooseMedical = [
         {
-            title: "Clinical Expertise",
-            description: "Our Namibian team includes healthcare professionals with medical background and specialized training.",
+            title: t('whyChoose.expertise.title'),
+            description: t('whyChoose.expertise.description'),
             icon: (
                 <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
                     <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" stroke="currentColor" strokeWidth="2" />
@@ -103,8 +104,8 @@ export default function Medical() {
             )
         },
         {
-            title: "Regulatory Compliance",
-            description: "Full compliance with HIPAA, GDPR, and international medical data handling standards.",
+            title: t('whyChoose.compliance.title'),
+            description: t('whyChoose.compliance.description'),
             icon: (
                 <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" strokeWidth="2" />
@@ -113,8 +114,8 @@ export default function Medical() {
             )
         },
         {
-            title: "Quality Assurance",
-            description: "Multi-layer validation including clinical oversight and expert review processes.",
+            title: t('whyChoose.quality.title'),
+            description: t('whyChoose.quality.description'),
             icon: (
                 <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
                     <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -123,8 +124,8 @@ export default function Medical() {
             )
         },
         {
-            title: "Swiss Precision",
-            description: "Swiss quality management standards applied to medical data with zero-tolerance for errors.",
+            title: t('whyChoose.swiss.title'),
+            description: t('whyChoose.swiss.description'),
             icon: (
                 <svg viewBox="0 0 24 24" fill="none" className="w-8 h-8 text-white">
                     <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" />
@@ -152,11 +153,10 @@ export default function Medical() {
               </svg>
             </div> */}
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                            Medical Data Annotation Services
+                            {t('hero.title')}
                         </h1>
                         <p className="text-xl mb-8 text-accent">
-                            Expert annotation of medical data with clinical accuracy. Our specialized Namibian teams
-                            combine medical expertise with Swiss precision for healthcare AI applications.
+                            {t('hero.subtitle')}
                         </p>
                         {/* <div className="flex flex-wrap justify-center gap-4">
               <Button href="#services" variant="white" size="lg">
@@ -174,8 +174,8 @@ export default function Medical() {
             <section className="py-16 bg-gray-50">
                 <Container>
                     <SectionHeading
-                        title="Why Choose Our Medical Annotation Services"
-                        subtitle="Combining medical expertise with world-class data processing capabilities"
+                        title={t('whyChoose.title')}
+                        subtitle={t('whyChoose.subtitle')}
                         centered
                     />
 
@@ -200,8 +200,8 @@ export default function Medical() {
             <section id="services" className="py-16">
                 <Container>
                     <SectionHeading
-                        title="Our Medical Annotation Capabilities"
-                        subtitle="Comprehensive healthcare data annotation services with clinical expertise"
+                        title={t('capabilities.title')}
+                        subtitle={t('capabilities.subtitle')}
                         centered
                     />
 
@@ -209,8 +209,20 @@ export default function Medical() {
                         <div key={index} className={`mb-16`}>
                             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                                    {/* Image placeholder */}
+                                    <div className={`bg-gradient-to-br from-primary/5 to-secondary/5 flex items-center justify-center p-12 ${index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
+                                        <div className="text-center">
+                                            <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                                <svg viewBox="0 0 24 24" fill="none" className="w-16 h-16 text-primary">
+                                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <h4 className="text-lg font-semibold text-primary">{service.title}</h4>
+                                        </div>
+                                    </div>
+                                    
                                     {/* Content */}
-                                    <div className={`p-8 lg:p-12 ${index % 2 === 0 ? 'order-2' : 'order-2'}`}>
+                                    <div className={`p-8 lg:p-12 ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}>
                                         <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
                                             {service.title}
                                         </h3>
@@ -220,7 +232,7 @@ export default function Medical() {
 
                                         {/* Capabilities */}
                                         <div className="mb-6">
-                                            <h4 className="font-semibold text-primary mb-3">Key Capabilities:</h4>
+                                            <h4 className="font-semibold text-primary mb-3">{t('sections.keyCapabilities')}</h4>
                                             <ul className="space-y-2">
                                                 {service.capabilities.slice(0, 4).map((capability, i) => (
                                                     <li key={i} className="flex items-start">
@@ -241,21 +253,11 @@ export default function Medical() {
                                         </div>
 
                                         <Button href="/contact/" variant="primary" size="md">
-                                            Get Started
+                                            {t('button')}
                                         </Button>
                                     </div>
 
-                                    {/* Image placeholder */}
-                                    <div className={`bg-gradient-to-br from-primary/5 to-secondary/5 flex items-center justify-center p-12 ${index % 2 === 0 ? 'order-1' : 'order-1'}`}>
-                                        <div className="text-center">
-                                            <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                                <svg viewBox="0 0 24 24" fill="none" className="w-16 h-16 text-primary">
-                                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                                </svg>
-                                            </div>
-                                            <h4 className="text-lg font-semibold text-primary">{service.title}</h4>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -268,18 +270,17 @@ export default function Medical() {
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6  text-white/90">
-                            Ready to Advance Your Healthcare AI?
+                            {t('cta.title')}
                         </h2>
                         <p className="text-xl mb-8 text-white/90">
-                            Partner with us for medical data annotation that meets the highest standards of accuracy,
-                            compliance, and clinical expertise.
+                            {t('cta.subtitle')}
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
                             <Button href="/contact/" variant="white" size="lg">
-                                Start Your Medical Project
+                                {t('cta.buttons.start')}
                             </Button>
                             <Button href="/services/" variant="outline" className="text-white border-white hover:bg-white/10" size="lg">
-                                View All Services
+                                {t('cta.buttons.viewAll')}
                             </Button>
                         </div>
                     </div>
@@ -290,9 +291,9 @@ export default function Medical() {
 }
 
 export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'expert-services'])),
-    },
-  };
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'expert-services'])),
+        },
+    };
 }
