@@ -1,11 +1,11 @@
 {
     "hero": {
         "brandName": "LABEL LADDER",
-        "tagline1": "Hochwertige Datenannotation.",
-        "tagline2": "Von Skalierung zu Spezialisierung.",
+        "tagline1": "Hochwertige Daten-Annotation.",
+        "tagline2": "Skalierung bis Spezialisierung.",
         "subtitle1": "Präzise Daten für Ihre KI, geliefert von unserem 1.000-köpfigen Team in Namibia.",
-        "subtitle2": "Das gesamte Spektrum der Datenannotation: Skalierbare allgemeine Kennzeichnung & Experten-geführte Dienstleistungen.",
-        "btnServices": "Unsere Dienstleistungen",
+        "subtitle2": "Das gesamte Spektrum der Daten-Annotation: Skalierbare allgemeine Kennzeichnung & Experten-geführte Dienstleistungen.",
+        "btnServices": "Leistungen",
         "btnContact": "Kontaktieren Sie uns"
     },
     "foundation": {
@@ -14,7 +14,7 @@
         "stats": {
             "annotators": {
                 "number": "1.000",
-                "label": "Qualifizierte Annotatoren",
+                "label": "Geschulte Annotatoren",
                 "description": "Ausgebildete Fachkräfte in Namibia liefern hochwertige Datenannotation"
             },
             "accuracy": {
@@ -24,7 +24,7 @@
             },
             "costReduction": {
                 "number": "45%",
-                "label": "Kostenersparnis",
+                "label": "Ersparnis",
                 "description": "Erhebliche Einsparungen im Vergleich zu internen Datenoperationen"
             },
             "delivery": {
@@ -97,7 +97,7 @@
         "cta": "Besprechen Sie Ihre speziellen Anforderungen"
     },
     "challenge": {
-        "title": "Ihre Herausforderung",
+        "title": "Die Aufgabe",
         "subtitle": "Organisationen, die datenbasierte Entscheidungen treffen oder maschinelles Lernen nutzen, stehen vor verschiedenen Herausforderungen.",
         "challenges": {
             "time": {
@@ -183,12 +183,12 @@
         "steps": {
             "assessment": {
                 "number": "1",
-                "title": "BEDARFSERMITTLUNG",
+                "title": "BEDARFSANALYSE",
                 "description": "Wir beginnen damit, Ihre Daten, Modelle und Geschäftsziele zu verstehen. Unsere internen Datenprofis arbeiten mit Ihrem Team zusammen, um den wahren Zweck des Datensatzes zu identifizieren."
             },
             "design": {
                 "number": "2",
-                "title": "INDIVIDUELLE ANNOTATIONSGESTALTUNG",
+                "title": "ANNOTATIONSDESIGN",
                 "description": "Wir wenden keinen Einheitsansatz an. Wir entwerfen Annotationsworkflows, die auf Ihren Anwendungsfall zugeschnitten sind, und Qualitätskontrollprotokolle, die mit Ihren Genauigkeitszielen übereinstimmen."
             },
             "architecture": {
@@ -209,7 +209,7 @@
         "subtitle": "Sehen Sie, wie wir anderen Organisationen geholfen haben, ihre Datenherausforderungen zu lösen.",
         "cta": "Alle Fallstudien anzeigen",
         "cases": {
-            "challenge": "Herausforderung",
+            "challenge": "Problem",
             "solution": "Lösung",
             "outcome": "Ergebnis",
             "duration": "Dauer",

@@ -1,6 +1,6 @@
 {
     "hero": {
-        "title": "Medizinische Datenannotationsdienste",
+        "title": "Medizinische Annotation",
         "subtitle": "Expertenannotation medizinischer Daten mit klinischer Genauigkeit. Unsere spezialisierten namibischen Teams kombinieren medizinisches Fachwissen mit Schweizer Präzision für Gesundheits-KI-Anwendungen."
     },
     "whyChoose": {
@@ -24,7 +24,7 @@
         }
     },
     "capabilities": {
-        "title": "Unsere medizinischen Annotationsfähigkeiten",
+        "title": "Unsere Fähigkeiten",
         "subtitle": "Umfassende Gesundheitsdaten-Annotationsdienste mit klinischem Fachwissen",
         "radiology": {
             "title": "Radiologie & medizinische Bildgebung",

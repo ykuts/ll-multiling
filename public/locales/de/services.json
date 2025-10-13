@@ -4,14 +4,14 @@
         "subtitle": "Von großangelegter allgemeiner Annotation bis hin zu spezialisiertem medizinischem Fachwissen - wir bieten das komplette Spektrum an Datenannotationsdiensten."
     },
     "general": {
-        "title": "Allgemeine Datenannotationsdienste",
+        "title": "Allgemeine Annotation",
         "subtitle": "Hochvolumige, kosteneffiziente Annotationsdienste, unterstützt von unserem 1.000-köpfigen Team in Namibia.",
         "builtForScale": {
             "title": "Für Skalierung gebaut",
             "description": "Unsere Kernstärke liegt in der effizienten und kosteneffektiven Abwicklung großvolumiger Annotationsprojekte. Mit 1.000 geschulten Annotatoren in Namibia können wir skalieren, um Unternehmensanforderungen zu erfüllen und gleichzeitig Schweizer Qualitätsstandards aufrechtzuerhalten.",
             "stats": {
                 "processed": "Monatlich verarbeitete Elemente",
-                "turnaround": "Durchschnittliche Bearbeitungszeit"
+                "turnaround": "Bearbeitungs-zeit"
             }
         },
         "whyExcel": {
