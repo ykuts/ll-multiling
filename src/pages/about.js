@@ -179,7 +179,6 @@ export default function About() {
                                         components={{ strong: <strong /> }}
                                     />
                                 </p>
-                                <p className="text-blue-900 mb-2"><span className="font-bold">accurate</span> and <span className="font-bold">high-quality processed data</span>, avoiding common crowdsourcing inconsistency issues</p>
                             </div>
                             {/* Cost-Effective Service */}
                             <div className="border-2 border-blue-900 rounded-lg p-6">

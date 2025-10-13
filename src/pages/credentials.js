@@ -8,7 +8,7 @@ import { useTranslation } from 'next-i18next';
 
 export default function Cases() {
   const { t } = useTranslation('credentials');
-const structuredData = {
+  const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Label Ladder Case Studies and Credentials",
@@ -24,7 +24,7 @@ const structuredData = {
         }
       },
       {
-        "@type": "Article", 
+        "@type": "Article",
         "headline": "Nedbank Client Data Validation & Migration Case Study",
         "description": "Label Ladder's successful data validation and mobile app testing for Nedbank's 7 million clients",
         "author": {
@@ -123,13 +123,13 @@ const structuredData = {
   ];
 
   return (
-    <Layout 
+    <Layout
       title="Client Case Studies & Success Stories - Label Ladder Credentials"
       description="Explore Label Ladder's proven track record with real client case studies. See how we've helped Adaire, Nedbank, and other companies with data migration, validation, and processing projects achieving 98% accuracy."
       keywords="Label Ladder case studies, data annotation success stories, client testimonials, Adaire case study, Nedbank data migration, data processing results, client credentials, project portfolio"
       image="https://labelladder.com/images/og/credentials-og.jpg"
       structuredData={structuredData}
-      >
+    >
       {/* Hero Section */}
       <section className="relative py-20 bg-primary text-white">
         <Container>
@@ -152,23 +152,23 @@ const structuredData = {
             subtitle={t('successStories.subtitle')}
             centered
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             {caseStudies.map((caseStudy, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <div className="relative h-48">
-                  <Image 
-                    src={caseStudy.image} 
-                    alt={`${caseStudy.company} Case Study`} 
+                  <Image
+                    src={caseStudy.image}
+                    alt={`${caseStudy.company} Case Study`}
                     fill
                     className="object-contain"
                   />
                   <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/70 to-transparent">
                     <div className="flex items-center">
                       <div className="relative h-10 w-10 bg-white rounded-full overflow-hidden mr-3 flex-shrink-0">
-                        <Image 
-                          src={caseStudy.logo} 
-                          alt={caseStudy.company} 
+                        <Image
+                          src={caseStudy.logo}
+                          alt={caseStudy.company}
                           fill
                           className="object-contain p-1"
                         />
@@ -180,8 +180,8 @@ const structuredData = {
                 <div className="p-6">
                   <h4 className="text-primary font-semibold mb-3">{caseStudy.project}</h4>
                   <p className="text-gray-600 mb-4">{caseStudy.description}</p>
-                  <a 
-                    href={`#case-${index}`} 
+                  <a
+                    href={`#case-${index}`}
                     className="text-secondary font-medium hover:underline inline-flex items-center"
                   >
                     {t('successStories.viewCaseStudy')}
@@ -195,33 +195,33 @@ const structuredData = {
           </div>
         </Container>
       </section>
-      
+
       {/* Detailed Case Studies */}
       {caseStudies.map((caseStudy, index) => (
-        <section 
-          key={index} 
-          id={`case-${index}`} 
+        <section
+          key={index}
+          id={`case-${index}`}
           className={`py-16 ${index % 2 === 0 ? 'bg-gray-50' : ''}`}
         >
           <Container>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className={index % 2 === 0 ? 'md:order-1' : 'md:order-2'}>
                 <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-                  <Image 
-                    src={caseStudy.image} 
-                    alt={`${caseStudy.company} Case Study`} 
+                  <Image
+                    src={caseStudy.image}
+                    alt={`${caseStudy.company} Case Study`}
                     fill
                     className="object-contain"
                   />
                 </div>
               </div>
-              
+
               <div className={index % 2 === 0 ? 'md:order-2' : 'md:order-1'}>
                 <div className="flex items-center mb-4">
                   <div className="relative h-12 w-12 bg-white rounded-full overflow-hidden border border-gray-200 mr-4 flex-shrink-0">
-                    <Image 
-                      src={caseStudy.logo} 
-                      alt={caseStudy.company} 
+                    <Image
+                      src={caseStudy.logo}
+                      alt={caseStudy.company}
                       fill
                       className="object-contain p-1"
                     />
@@ -231,24 +231,24 @@ const structuredData = {
                     <p className="text-secondary font-medium">{caseStudy.project}</p>
                   </div>
                 </div>
-                
+
                 <div className="space-y-6 mt-6">
                   <div>
                     <h3 className="text-lg font-semibold text-primary mb-2">{t('detailedCase.who')}</h3>
                     <p className="text-gray-600">{caseStudy.who}</p>
                   </div>
-                  
+
                   <div>
                     <h3 className="text-lg font-semibold text-primary mb-2">{t('detailedCase.what')}</h3>
                     <p className="text-gray-600">{caseStudy.what}</p>
                   </div>
-                  
+
                   <div>
                     <h3 className="text-lg font-semibold text-primary mb-2">{t('detailedCase.how')}</h3>
                     <p className="text-gray-600">{caseStudy.how}</p>
                   </div>
                 </div>
-                
+
                 <div className="mt-8">
                   <Button href="/contact/" variant="outline">
                     {t('detailedCase.getSimilarResults')}
@@ -259,7 +259,7 @@ const structuredData = {
           </Container>
         </section>
       ))}
-      
+
       {/* Results & Metrics */}
       <section className="py-16">
         <Container>
@@ -268,20 +268,20 @@ const structuredData = {
             subtitle={t('results.subtitle')}
             centered
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="text-4xl font-bold text-primary mb-2">98%</div>
               <div className="text-xl font-semibold text-secondary mb-2">{t('results.accuracy.label')}</div>
               <p className="text-gray-600">{t('results.accuracy.description')}</p>
             </div>
-            
+
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="text-4xl font-bold text-primary mb-2">45%</div>
               <div className="text-xl font-semibold text-secondary mb-2">{t('results.costReduction.label')}</div>
               <p className="text-gray-600">{t('results.costReduction.description')}</p>
             </div>
-            
+
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="text-4xl font-bold text-primary mb-2">3x</div>
               <div className="text-xl font-semibold text-secondary mb-2">{t('results.delivery.label')}</div>
@@ -290,7 +290,7 @@ const structuredData = {
           </div>
         </Container>
       </section>
-      
+
       {/* Industries Served */}
       <section className="py-16 bg-gray-50">
         <Container>
@@ -299,23 +299,38 @@ const structuredData = {
             subtitle={t('industries.subtitle')}
             centered
           />
-          
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
-            {['Finance', 'Healthcare', 'E-commerce', 'Software', 'Automotive', 'Manufacturing', 'Logistics', 'Insurance', 'Legal', 'Real Estate', 'Education', 'Energy'].map((industry, index) => (
+            {[
+              { key: 'finance', icon: 'Finance' },
+              { key: 'healthcare', icon: 'Healthcare' },
+              { key: 'ecommerce', icon: 'E-commerce' },
+              { key: 'software', icon: 'Software' },
+              { key: 'automotive', icon: 'Automotive' },
+              { key: 'manufacturing', icon: 'Manufacturing' },
+              { key: 'logistics', icon: 'Logistics' },
+              { key: 'insurance', icon: 'Insurance' },
+              { key: 'legal', icon: 'Legal' },
+              { key: 'realEstate', icon: 'Real Estate' },
+              { key: 'education', icon: 'Education' },
+              { key: 'energy', icon: 'Energy' }
+            ].map((industry, index) => (
               <div key={index} className="bg-white p-4 rounded-lg shadow-md text-center">
                 <div className="h-20 flex items-center justify-center">
                   <span className="text-4xl text-primary">
                     {/* Placeholder for industry icons */}
-                    {getIndustryIcon(industry)}
+                    {getIndustryIcon(industry.icon)}
                   </span>
                 </div>
-                <h3 className="font-semibold text-xl lg:text-xl text-primary">{industry}</h3>
+                <h3 className="font-semibold text-xl lg:text-xl text-primary">
+                  {t(`industries.list.${industry.key}`)}
+                </h3>
               </div>
             ))}
           </div>
         </Container>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-16 bg-primary text-white">
         <Container>
@@ -350,53 +365,53 @@ function getIndustryIcon(industry) {
     ),
     'Healthcare': (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-primary">
-<path d="M8.00006 16.1556C8.0567 17.1333 8.65299 19.2845 10.585 20.0667M11.5527 1.89444L5.91936 13.1613C3.65925 17.6816 6.94624 23 12 23C17.0538 23 20.3408 17.6815 18.0807 13.1613L12.4472 1.89443C12.2629 1.52591 11.737 1.52591 11.5527 1.89444Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-</svg>
+        <path d="M8.00006 16.1556C8.0567 17.1333 8.65299 19.2845 10.585 20.0667M11.5527 1.89444L5.91936 13.1613C3.65925 17.6816 6.94624 23 12 23C17.0538 23 20.3408 17.6815 18.0807 13.1613L12.4472 1.89443C12.2629 1.52591 11.737 1.52591 11.5527 1.89444Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
 
     ),
     'E-commerce': (
       <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-primary">
-        <circle cx="8" cy="21" r="1" stroke="currentColor" strokeWidth="2"/>
-        <circle cx="19" cy="21" r="1" stroke="currentColor" strokeWidth="2"/>
-        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" stroke="currentColor" strokeWidth="2"/>
+        <circle cx="8" cy="21" r="1" stroke="currentColor" strokeWidth="2" />
+        <circle cx="19" cy="21" r="1" stroke="currentColor" strokeWidth="2" />
+        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" stroke="currentColor" strokeWidth="2" />
       </svg>
     ),
     'Software': (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-12 h-12 text-primary">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
-</svg>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+      </svg>
 
     ),
     'Automotive': (
-      <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    viewBox="0 0 512 512" 
-    className="w-12 h-12 text-primary"
-    fill="currentColor"
-  >
-    <path d="M135.2 117.4L109.1 192l293.8 0-26.1-74.6C372.3 104.6 360.2 96 346.6 96L165.4 96c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32l181.2 0c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2l0 144 0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L96 400l0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L0 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/>
-  </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        className="w-12 h-12 text-primary"
+        fill="currentColor"
+      >
+        <path d="M135.2 117.4L109.1 192l293.8 0-26.1-74.6C372.3 104.6 360.2 96 346.6 96L165.4 96c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32l181.2 0c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2l0 144 0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L96 400l0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L0 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z" />
+      </svg>
     ),
     'Manufacturing': (
-      <svg 
-        viewBox="0 0 490 490" 
+      <svg
+        viewBox="0 0 490 490"
         className="w-12 h-12 text-primary"
         fill="currentColor"
       >
         <g>
-          <path d="M5.891,97.03h74.772c3.253,0,5.891-2.637,5.891-5.89V68.562c0-3.253-2.638-5.891-5.891-5.891H5.891C2.638,62.671,0,65.309,0,68.562v22.579C0,94.394,2.638,97.03,5.891,97.03z"/>
-          <path d="M486.663,157.581c-2.081-1.36-4.708-1.578-6.986-0.578L358.099,210.39v-46.645c0-2.486-1.255-4.805-3.337-6.164c-2.082-1.36-4.709-1.578-6.986-0.578l-121.577,53.388v-46.646c0-2.486-1.256-4.805-3.337-6.164c-2.083-1.361-4.709-1.577-6.986-0.578L86.554,213.79v-90.01c0-3.252-2.638-5.89-5.891-5.89H5.891c-3.253,0-5.891,2.638-5.891,5.89v289.583c0,7.714,6.253,13.966,13.965,13.966h468.673c4.066,0,7.362-3.296,7.362-7.362V163.745C490,161.259,488.745,158.94,486.663,157.581z M176.466,338.115c0,3.811-3.09,6.901-6.902,6.901h-33.358c-3.812,0-6.901-3.091-6.901-6.901V282.9c0-3.812,3.09-6.901,6.901-6.901h33.358c3.813,0,6.902,3.09,6.902,6.901V338.115z M308.366,338.115c0,3.811-3.09,6.901-6.901,6.901h-33.358c-3.811,0-6.902-3.091-6.902-6.901V282.9c0-3.812,3.091-6.901,6.902-6.901h33.358c3.811,0,6.901,3.09,6.901,6.901V338.115z M440.268,338.115c0,3.811-3.089,6.901-6.9,6.901h-33.359c-3.811,0-6.901-3.091-6.901-6.901V282.9c0-3.812,3.091-6.901,6.901-6.901h33.359c3.811,0,6.9,3.09,6.9,6.901V338.115z"/>
+          <path d="M5.891,97.03h74.772c3.253,0,5.891-2.637,5.891-5.89V68.562c0-3.253-2.638-5.891-5.891-5.891H5.891C2.638,62.671,0,65.309,0,68.562v22.579C0,94.394,2.638,97.03,5.891,97.03z" />
+          <path d="M486.663,157.581c-2.081-1.36-4.708-1.578-6.986-0.578L358.099,210.39v-46.645c0-2.486-1.255-4.805-3.337-6.164c-2.082-1.36-4.709-1.578-6.986-0.578l-121.577,53.388v-46.646c0-2.486-1.256-4.805-3.337-6.164c-2.083-1.361-4.709-1.577-6.986-0.578L86.554,213.79v-90.01c0-3.252-2.638-5.89-5.891-5.89H5.891c-3.253,0-5.891,2.638-5.891,5.89v289.583c0,7.714,6.253,13.966,13.965,13.966h468.673c4.066,0,7.362-3.296,7.362-7.362V163.745C490,161.259,488.745,158.94,486.663,157.581z M176.466,338.115c0,3.811-3.09,6.901-6.902,6.901h-33.358c-3.812,0-6.901-3.091-6.901-6.901V282.9c0-3.812,3.09-6.901,6.901-6.901h33.358c3.813,0,6.902,3.09,6.902,6.901V338.115z M308.366,338.115c0,3.811-3.09,6.901-6.901,6.901h-33.358c-3.811,0-6.902-3.091-6.902-6.901V282.9c0-3.812,3.091-6.901,6.902-6.901h33.358c3.811,0,6.901,3.09,6.901,6.901V338.115z M440.268,338.115c0,3.811-3.089,6.901-6.9,6.901h-33.359c-3.811,0-6.901-3.091-6.901-6.901V282.9c0-3.812,3.091-6.901,6.901-6.901h33.359c3.811,0,6.9,3.09,6.9,6.901V338.115z" />
         </g>
       </svg>
     ),
     'Logistics': (
-      <svg 
-    viewBox="0 0 612.001 612" 
-    className="w-12 h-12 text-primary"
-    fill="currentColor"
-  >
-    <g>
-      <path d="M604.131,440.17h-19.12V333.237c0-12.512-3.776-24.787-10.78-35.173l-47.92-70.975
+      <svg
+        viewBox="0 0 612.001 612"
+        className="w-12 h-12 text-primary"
+        fill="currentColor"
+      >
+        <g>
+          <path d="M604.131,440.17h-19.12V333.237c0-12.512-3.776-24.787-10.78-35.173l-47.92-70.975
         c-11.725-17.311-31.238-27.698-52.169-27.698h-74.28c-8.734,0-15.737,7.082-15.737,15.738v225.043H262.475
         c11.567,9.992,19.514,23.92,21.796,39.658H412.53c4.563-31.238,31.475-55.396,63.972-55.396c32.498,0,59.33,24.158,63.895,55.396
         h63.735c4.328,0,7.869-3.541,7.869-7.869V448.04C612,443.713,608.46,440.17,604.131,440.17z M525.76,312.227h-98.044
@@ -418,60 +433,60 @@ function getIndustryIcon(industry) {
         c-1.014,0-2.052-0.131-3.082-0.407L112.641,201.5c-5.148-1.391-8.729-6.062-8.729-11.396v-59.015
         c0-6.516,5.287-11.803,11.803-11.803c6.516,0,11.803,5.287,11.803,11.803v49.971l29.614,7.983
         c6.294,1.698,10.02,8.177,8.322,14.469C164.033,208.776,159.269,212.242,154.066,212.242z"/>
-    </g>
-  </svg>
+        </g>
+      </svg>
     ),
     'Insurance': (
-      <svg 
-    width="24" 
-    height="24" 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    xmlns="http://www.w3.org/2000/svg" 
-    className="w-12 h-12 text-primary"
-  >
-    <path 
-      d="M11.9999 3C17.1853 3 21.4982 6.94668 21.9999 12C21.3942 11.8436 20.6267 11.8417 19.9013 11.9104C17.9748 12.0926 16.369 13.1073 16.1075 14.2782M11.9999 3C6.81459 3 2.55104 6.94668 2.04932 12M11.9999 3L11.9999 2M2.08044 12C2.68621 11.8436 3.45373 11.8417 4.17906 11.9104C6.10563 12.0926 7.71142 13.1073 7.97291 14.2782M7.99994 14C8.54905 12.8348 10.2583 12 11.9999 12M11.9999 12C13.7416 12 15.4508 12.8348 15.9999 14M11.9999 12L11.9999 19.5C11.9999 20.8807 10.8807 22 9.49994 22C8.11923 22 6.99994 20.8807 6.99994 19.5V19M12.1676 3C14.5452 5.62038 15.9999 9.13579 15.9999 13.0001M11.8322 3C9.45459 5.62037 7.99995 9.13572 7.99995 13" 
-      stroke="currentColor" 
-      strokeWidth="2" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-    />
-  </svg>
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-12 h-12 text-primary"
+      >
+        <path
+          d="M11.9999 3C17.1853 3 21.4982 6.94668 21.9999 12C21.3942 11.8436 20.6267 11.8417 19.9013 11.9104C17.9748 12.0926 16.369 13.1073 16.1075 14.2782M11.9999 3C6.81459 3 2.55104 6.94668 2.04932 12M11.9999 3L11.9999 2M2.08044 12C2.68621 11.8436 3.45373 11.8417 4.17906 11.9104C6.10563 12.0926 7.71142 13.1073 7.97291 14.2782M7.99994 14C8.54905 12.8348 10.2583 12 11.9999 12M11.9999 12C13.7416 12 15.4508 12.8348 15.9999 14M11.9999 12L11.9999 19.5C11.9999 20.8807 10.8807 22 9.49994 22C8.11923 22 6.99994 20.8807 6.99994 19.5V19M12.1676 3C14.5452 5.62038 15.9999 9.13579 15.9999 13.0001M11.8322 3C9.45459 5.62037 7.99995 9.13572 7.99995 13"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
     ),
     'Legal': (
-      <svg 
-        viewBox="0 0 501 512.22" 
+      <svg
+        viewBox="0 0 501 512.22"
         className="w-12 h-12 text-primary"
         fill="currentColor"
       >
-        <path d="M265.57 75.41v262.38h128.51c1.35 0 2.47 1.11 2.47 2.47v6.76h90.44c7.73 0 14.01 6.27 14.01 14.01 0 2.98-.94 5.76-2.53 8.03-10.33 17.27-15.64 39.18-15.64 61.21 0 21.87 5.24 43.54 15.98 60.5 4.11 6.52 2.15 15.15-4.38 19.26-2.32 1.46-4.9 2.15-7.44 2.15l-414.61.04c-19.82 0-37.53-10.86-50.47-26.54C8.46 469.39 0 447.44 0 427.51c0-19.92 8.35-40.49 21.69-55.69 13.01-14.81 30.85-24.8 50.69-24.8h36.41v-6.76c0-1.36 1.11-2.47 2.47-2.47h128.51V75.53c-11.19-3.88-20.06-12.74-23.96-23.93h-81.25v12.36c0 1.35-1.12 2.47-2.47 2.47h-20.85c-1.36 0-2.47-1.12-2.47-2.47V51.6H88.1c-1.58 0-2.87-1.11-2.87-2.47V28.28c0-1.36 1.29-2.47 2.87-2.47h127.8C221.26 10.77 235.62 0 252.5 0c16.87 0 31.23 10.77 36.59 25.81h128.14c1.58 0 2.88 1.11 2.88 2.47v20.85c0 1.36-1.3 2.47-2.88 2.47h-23.3v12.36c0 1.35-1.11 2.47-2.47 2.47h-20.85c-1.36 0-2.47-1.12-2.47-2.47V51.6h-78.96a38.985 38.985 0 0 1-23.61 23.81zm193.99 393.38H334.33c-4.05 0-7.34-3.28-7.34-7.33 0-4.05 3.29-7.34 7.34-7.34h122.26c-.92-6.1-1.49-12.27-1.69-18.46H331.73c-4.05 0-7.34-3.29-7.34-7.34s3.29-7.34 7.34-7.34h123.34c.31-5.31.87-10.62 1.7-15.86h-89.98c-4.05 0-7.34-3.29-7.34-7.34s3.29-7.33 7.34-7.33h93.01c1.36-5.26 2.98-10.41 4.88-15.41H72.38c-11.22 0-21.72 6.11-29.67 15.17-9.03 10.29-14.69 24.07-14.69 37.3 0 13.68 5.97 28.94 15.46 40.43 7.92 9.6 18.16 16.26 28.9 16.26h392.08c-1.92-5-3.56-10.15-4.9-15.41zM388.38 80.45l82.65 146.03a7.656 7.656 0 0 1 1 3.96h.07c.01.19.02.37.02.55 0 34.78-40.95 62.99-91.44 62.99-49.94 0-90.54-27.6-91.41-61.86a7.663 7.663 0 0 1 1.1-6.17l84.52-145.83c2.12-3.68 6.83-4.93 10.5-2.8 1.33.76 2.34 1.86 2.99 3.13zm.32 31.76v110.36h62.45L388.7 112.21zm-14.74 110.36V112.38L310.1 222.57h63.86zM128.23 80.45l82.65 146.03a7.55 7.55 0 0 1 .99 3.96h.08c0 .19.01.37.01.55 0 34.78-40.94 62.99-91.44 62.99-49.94 0-90.53-27.6-91.41-61.86a7.5 7.5 0 0 1-.22-1.85c0-1.6.48-3.08 1.32-4.32l84.52-145.83a7.688 7.688 0 0 1 10.51-2.8c1.32.76 2.33 1.86 2.99 3.13zm.31 31.76v110.36H191l-62.46-110.36zm-14.73 110.36V112.38L49.95 222.57h63.86zM252.5 21.91c9.34 0 16.92 7.58 16.92 16.93 0 9.34-7.58 16.92-16.92 16.92-9.35 0-16.93-7.58-16.93-16.92 0-9.35 7.58-16.93 16.93-16.93z"/>
+        <path d="M265.57 75.41v262.38h128.51c1.35 0 2.47 1.11 2.47 2.47v6.76h90.44c7.73 0 14.01 6.27 14.01 14.01 0 2.98-.94 5.76-2.53 8.03-10.33 17.27-15.64 39.18-15.64 61.21 0 21.87 5.24 43.54 15.98 60.5 4.11 6.52 2.15 15.15-4.38 19.26-2.32 1.46-4.9 2.15-7.44 2.15l-414.61.04c-19.82 0-37.53-10.86-50.47-26.54C8.46 469.39 0 447.44 0 427.51c0-19.92 8.35-40.49 21.69-55.69 13.01-14.81 30.85-24.8 50.69-24.8h36.41v-6.76c0-1.36 1.11-2.47 2.47-2.47h128.51V75.53c-11.19-3.88-20.06-12.74-23.96-23.93h-81.25v12.36c0 1.35-1.12 2.47-2.47 2.47h-20.85c-1.36 0-2.47-1.12-2.47-2.47V51.6H88.1c-1.58 0-2.87-1.11-2.87-2.47V28.28c0-1.36 1.29-2.47 2.87-2.47h127.8C221.26 10.77 235.62 0 252.5 0c16.87 0 31.23 10.77 36.59 25.81h128.14c1.58 0 2.88 1.11 2.88 2.47v20.85c0 1.36-1.3 2.47-2.88 2.47h-23.3v12.36c0 1.35-1.11 2.47-2.47 2.47h-20.85c-1.36 0-2.47-1.12-2.47-2.47V51.6h-78.96a38.985 38.985 0 0 1-23.61 23.81zm193.99 393.38H334.33c-4.05 0-7.34-3.28-7.34-7.33 0-4.05 3.29-7.34 7.34-7.34h122.26c-.92-6.1-1.49-12.27-1.69-18.46H331.73c-4.05 0-7.34-3.29-7.34-7.34s3.29-7.34 7.34-7.34h123.34c.31-5.31.87-10.62 1.7-15.86h-89.98c-4.05 0-7.34-3.29-7.34-7.34s3.29-7.33 7.34-7.33h93.01c1.36-5.26 2.98-10.41 4.88-15.41H72.38c-11.22 0-21.72 6.11-29.67 15.17-9.03 10.29-14.69 24.07-14.69 37.3 0 13.68 5.97 28.94 15.46 40.43 7.92 9.6 18.16 16.26 28.9 16.26h392.08c-1.92-5-3.56-10.15-4.9-15.41zM388.38 80.45l82.65 146.03a7.656 7.656 0 0 1 1 3.96h.07c.01.19.02.37.02.55 0 34.78-40.95 62.99-91.44 62.99-49.94 0-90.54-27.6-91.41-61.86a7.663 7.663 0 0 1 1.1-6.17l84.52-145.83c2.12-3.68 6.83-4.93 10.5-2.8 1.33.76 2.34 1.86 2.99 3.13zm.32 31.76v110.36h62.45L388.7 112.21zm-14.74 110.36V112.38L310.1 222.57h63.86zM128.23 80.45l82.65 146.03a7.55 7.55 0 0 1 .99 3.96h.08c0 .19.01.37.01.55 0 34.78-40.94 62.99-91.44 62.99-49.94 0-90.53-27.6-91.41-61.86a7.5 7.5 0 0 1-.22-1.85c0-1.6.48-3.08 1.32-4.32l84.52-145.83a7.688 7.688 0 0 1 10.51-2.8c1.32.76 2.33 1.86 2.99 3.13zm.31 31.76v110.36H191l-62.46-110.36zm-14.73 110.36V112.38L49.95 222.57h63.86zM252.5 21.91c9.34 0 16.92 7.58 16.92 16.93 0 9.34-7.58 16.92-16.92 16.92-9.35 0-16.93-7.58-16.93-16.92 0-9.35 7.58-16.93 16.93-16.93z" />
       </svg>
     ),
     'Real Estate': (
-      <svg 
-    viewBox="0 0 512.001 512.001" 
-    className="w-12 h-12 text-primary"
-    fill="currentColor"
-  >
-    <g>
-      <g>
-        <path d="M507.111,255.326l-50.763-50.763V94.609c0-9.22-7.475-16.696-16.696-16.696H372.87c-9.22,0-16.696,7.475-16.696,16.696
+      <svg
+        viewBox="0 0 512.001 512.001"
+        className="w-12 h-12 text-primary"
+        fill="currentColor"
+      >
+        <g>
+          <g>
+            <path d="M507.111,255.326l-50.763-50.763V94.609c0-9.22-7.475-16.696-16.696-16.696H372.87c-9.22,0-16.696,7.475-16.696,16.696
           v9.78L267.805,16.02c-6.519-6.519-17.091-6.519-23.611,0C238.116,22.099,13.778,246.436,4.89,255.325
           c-6.52,6.519-6.52,17.091,0,23.611c6.519,6.519,17.091,6.519,23.611,0l27.152-27.15v232.389c0,9.22,7.475,16.696,16.696,16.696
           h367.304c9.22,0,16.696-7.475,16.696-16.696V251.785l27.152,27.152c6.52,6.52,17.091,6.52,23.611,0
           C513.631,272.418,513.631,261.846,507.111,255.326z M422.957,467.479H89.044V218.394L256.001,51.437
           c8.681,8.681,158.347,158.347,166.957,166.957V467.479z M422.957,171.172l-33.391-33.391v-26.476h33.391V171.172z"/>
-      </g>
-    </g>
-    <g>
-      <g>
-        <circle cx="205.914" cy="261.566" r="16.696"/>
-      </g>
-    </g>
-    <g>
-      <g>
-        <path d="M373.545,355.5l-16.696-16.697c-3.131-3.131-7.377-4.89-11.805-4.89h-22.261v-22.261c0-4.429-1.759-8.675-4.891-11.805
+          </g>
+        </g>
+        <g>
+          <g>
+            <circle cx="205.914" cy="261.566" r="16.696" />
+          </g>
+        </g>
+        <g>
+          <g>
+            <path d="M373.545,355.5l-16.696-16.697c-3.131-3.131-7.377-4.89-11.805-4.89h-22.261v-22.261c0-4.429-1.759-8.675-4.891-11.805
           l-29.065-29.066c0.377-3.129,0.564-6.185,0.564-9.215c0-46.03-37.448-83.478-83.478-83.478s-83.478,37.448-83.478,83.478
           s37.448,83.478,83.478,83.478c3.031,0,6.088-0.186,9.216-0.564l84.717,84.717c3.131,3.131,7.378,4.89,11.806,4.89h50.087
           c9.22,0,16.696-7.475,16.696-16.696v-50.087C378.435,362.876,376.676,358.63,373.545,355.5z M345.044,400.696h-26.476
@@ -479,27 +494,27 @@ function getIndustryIcon(industry) {
           c-27.618,0-50.087-22.469-50.087-50.087c0-27.618,22.469-50.087,50.087-50.087c27.618,0,50.087,22.469,50.087,50.087
           c0,3.45-0.452,7.106-1.382,11.173c-1.28,5.6,0.408,11.464,4.471,15.526l30.303,30.304v32.041c0,9.22,7.475,16.696,16.696,16.696
           h32.041l6.915,6.915V400.696z"/>
-      </g>
-    </g>
-  </svg>
+          </g>
+        </g>
+      </svg>
     ),
     'Education': (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-12 h-12 text-primary">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
-</svg>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+      </svg>
 
     ),
     'Energy': (
       <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-primary">
-        <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" fill="currentColor" stroke="currentColor" strokeWidth="2"/>
+        <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" fill="currentColor" stroke="currentColor" strokeWidth="2" />
       </svg>
     )
   };
-  
+
   return industryIconMap[industry] || (
     <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-primary">
-      <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2"/>
-      <path d="M9 9h6v6H9z" stroke="currentColor" strokeWidth="2"/>
+      <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" />
+      <path d="M9 9h6v6H9z" stroke="currentColor" strokeWidth="2" />
     </svg>
   );
 }
