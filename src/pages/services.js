@@ -187,21 +187,21 @@ export default function Services() {
             subtitle={t('serviceLevel.subtitle')}
             centered
           />
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
             {/* General Data Annotation */}
-            <div className="bg-gradient-to-br from-primary to-primary/90 text-white rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-primary to-primary/90 text-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="text-center mb-6">
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/20 mb-6">
                   <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-white">
-                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" strokeWidth="2"/>
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" strokeWidth="2" />
                   </svg>
                 </div>
                 <h3 className="text-3xl font-bold mb-3 text-white">{t('serviceLevel.generalAnnotation.title')}</h3>
                 <p className="text-accent text-lg mb-6">{t('serviceLevel.generalAnnotation.subtitle')}</p>
               </div>
-              
-              <div className="space-y-4 mb-8">
+
+              <div className="space-y-4 mb-8 flex-grow">
                 <div className="flex items-start">
                   <div className="w-3 h-3 rounded-full bg-secondary mt-2 mr-4 flex-shrink-0"></div>
                   <div>
@@ -231,28 +231,31 @@ export default function Services() {
                   </div>
                 </div>
               </div>
-              
-              <Button href="/general-services/" variant="white" size="lg" className="w-full mb-4">
-                {t('serviceLevel.generalAnnotation.buttons.details')}
-              </Button>
-              <Button href="/contact/" variant="outline" className="w-full text-white border-white hover:bg-white/10" size="md">
-                {t('serviceLevel.generalAnnotation.buttons.quote')}
-              </Button>
+
+              {/* Кнопки прижаты к низу */}
+              <div className="mt-auto space-y-4">
+                <Button href="/general-services/" variant="white" size="lg" className="w-full">
+                  {t('serviceLevel.generalAnnotation.buttons.details')}
+                </Button>
+                <Button href="/contact/" variant="outline" className="w-full text-white border-white hover:bg-white/10" size="md">
+                  {t('serviceLevel.generalAnnotation.buttons.quote')}
+                </Button>
+              </div>
             </div>
 
             {/* Expert & Specialist Annotation */}
-            <div className="bg-gradient-to-br from-secondary to-secondary/90 text-white rounded-xl p-8 hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-secondary to-secondary/90 text-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="text-center mb-6">
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/20 mb-6">
                   <svg viewBox="0 0 24 24" fill="none" className="w-12 h-12 text-white">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
                 <h3 className="text-3xl font-bold mb-3">{t('serviceLevel.expertAnnotation.title')}</h3>
                 <p className="text-white/90 text-lg mb-6">{t('serviceLevel.expertAnnotation.subtitle')}</p>
               </div>
-              
-              <div className="space-y-4 mb-8">
+
+              <div className="space-y-4 mb-8 flex-grow">
                 <div className="flex items-start">
                   <div className="w-3 h-3 rounded-full bg-white mt-2 mr-4 flex-shrink-0"></div>
                   <div>
@@ -282,13 +285,16 @@ export default function Services() {
                   </div>
                 </div>
               </div>
-              
-              <Button href="/expert-services/" variant="white" size="lg" className="w-full mb-4">
-                {t('serviceLevel.expertAnnotation.buttons.details')}
-              </Button>
-              <Button href="/contact/" variant="outline" className="w-full text-white border-white hover:bg-white/10" size="md">
-                {t('serviceLevel.expertAnnotation.buttons.discuss')}
-              </Button>
+
+              {/* Кнопки прижаты к низу */}
+              <div className="mt-auto space-y-4">
+                <Button href="/expert-services/" variant="white" size="lg" className="w-full">
+                  {t('serviceLevel.expertAnnotation.buttons.details')}
+                </Button>
+                <Button href="/contact/" variant="outline" className="w-full text-white border-white hover:bg-white/10" size="md">
+                  {t('serviceLevel.expertAnnotation.buttons.discuss')}
+                </Button>
+              </div>
             </div>
           </div>
         </Container>

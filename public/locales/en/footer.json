@@ -8,6 +8,7 @@
     },
     "services": {
         "title": "Services",
+        "ourServices": "Our Services",
         "generalData": "General Data Annotation",
         "expertAnnotation": "Expert & Specialist Annotation"
     },
