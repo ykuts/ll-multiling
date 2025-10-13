@@ -1,1 +1,124 @@
-{}
+{
+    "hero": {
+        "title": "Nos services",
+        "subtitle": "De l'annotation générale à grande échelle à l'expertise médicale spécialisée - nous offrons le spectre complet des services d'annotation de données."
+    },
+    "general": {
+        "title": "Services d'annotation de données générales",
+        "subtitle": "Services d'annotation à grand volume et rentables alimentés par notre équipe de 1 000 personnes en Namibie.",
+        "builtForScale": {
+            "title": "Conçu pour l'échelle",
+            "description": "Notre force principale réside dans la gestion efficace et rentable de projets d'annotation à grand volume. Avec 1 000 annotateurs formés en Namibie, nous pouvons évoluer pour répondre aux exigences des entreprises tout en maintenant des normes de qualité suisses.",
+            "stats": {
+                "processed": "Éléments traités mensuellement",
+                "turnaround": "Délai moyen"
+            }
+        },
+        "whyExcel": {
+            "title": "Pourquoi nos services généraux excellent :",
+            "reasons": {
+                "native": "Anglophones natifs pour la précision linguistique",
+                "quality": "Gestion et supervision de qualité suisses",
+                "scalable": "Main-d'œuvre évolutive pour les délais urgents",
+                "pricing": "Tarification compétitive grâce aux talents locaux"
+            }
+        }
+    },
+    "expert": {
+        "title": "Services d'annotation experts et spécialisés",
+        "subtitle": "Équipes spécialisées avec une connaissance approfondie du domaine pour les défis d'annotation complexes.",
+        "medical": {
+            "title": "Médical & Santé",
+            "subtitle": "Notre principal domaine de spécialisation",
+            "button": "Discutez des besoins d'annotation médicale",
+            "radiology": {
+                "title": "Radiologie et imagerie médicale",
+                "description": "Annotation experte de radiographies, IRM, scanners avec précision clinique",
+                "features": {
+                    "dicom": "Support du format DICOM",
+                    "validation": "Validation clinique",
+                    "oversight": "Supervision radiologique"
+                }
+            },
+            "pathology": {
+                "title": "Pathologie et données de laboratoire",
+                "description": "Annotation précise d'images histopathologiques et de données diagnostiques",
+                "features": {
+                    "cellular": "Identification cellulaire",
+                    "tissue": "Classification tissulaire",
+                    "diagnostic": "Étiquetage diagnostique"
+                }
+            },
+            "clinical": {
+                "title": "Documentation clinique",
+                "description": "Annotation structurée de dossiers médicaux et de notes cliniques",
+                "features": {
+                    "hipaa": "Conformité HIPAA",
+                    "terminology": "Terminologie médicale",
+                    "standardization": "Standardisation des données"
+                }
+            }
+        }
+    },
+    "serviceLevel": {
+        "title": "Choisissez votre niveau de service",
+        "subtitle": "Que vous ayez besoin de volume ou d'expertise, nous avons la solution adaptée à votre projet.",
+        "generalAnnotation": {
+            "title": "Annotation de données générale",
+            "subtitle": "Pour les projets à grande échelle",
+            "features": {
+                "capacity": {
+                    "title": "Capacité de volume d'entreprise",
+                    "description": "Plus de 1 000 annotateurs formés prêts à évoluer"
+                },
+                "coverage": {
+                    "title": "Couverture complète des types de données",
+                    "description": "Annotation de texte, image, vidéo, audio"
+                },
+                "native": {
+                    "title": "Anglophones natifs",
+                    "description": "Précision linguistique pour les projets mondiaux"
+                },
+                "pricing": {
+                    "title": "Tarification rentable",
+                    "description": "Tarifs compétitifs grâce aux talents locaux"
+                }
+            },
+            "buttons": {
+                "details": "Voir les détails des services généraux",
+                "quote": "Obtenir un devis pour un projet général"
+            }
+        },
+        "expertAnnotation": {
+            "title": "Annotation experte et spécialisée",
+            "subtitle": "Pour les domaines médicaux et complexes",
+            "features": {
+                "medical": {
+                    "title": "Spécialisation médicale",
+                    "description": "Radiologie, pathologie, données cliniques"
+                },
+                "expertLed": {
+                    "title": "Équipes dirigées par des experts",
+                    "description": "Connaissance du domaine et supervision clinique"
+                },
+                "compliance": {
+                    "title": "Conformité et précision",
+                    "description": "Conformité HIPAA et validation clinique"
+                },
+                "swiss": {
+                    "title": "Normes de qualité suisses",
+                    "description": "Tolérance zéro pour les erreurs dans les données critiques"
+                }
+            },
+            "buttons": {
+                "details": "Voir les détails des services experts",
+                "discuss": "Discuter d'un projet médical"
+            }
+        }
+    },
+    "cta": {
+        "title": "Vous ne savez pas quel service vous avez besoin ?",
+        "subtitle": "Notre équipe peut vous aider à déterminer la bonne approche pour votre projet. Que vous ayez besoin de volume ou d'expertise, nous vous guiderons vers la meilleure solution.",
+        "button": "Obtenir une consultation"
+    }
+}

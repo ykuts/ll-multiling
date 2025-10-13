@@ -1,0 +1,171 @@
+{
+    "hero": {
+        "title": "Services d'annotation de données générales",
+        "subtitle": "Annotation de données à l'échelle de l'entreprise alimentée par notre équipe de 1 000 personnes en Namibie. Annotation rentable et de haute qualité pour tous les types de données."
+    },
+    "overview": {
+        "title": "Services d'annotation et de traitement de données",
+        "subtitle": "Nous fournissons une gamme complète de services de données pour répondre à vos besoins spécifiques."
+    },
+    "serviceTypes": {
+        "text": {
+            "title": "Annotation de texte",
+            "description": "Conversion de texte en formats structurés et lisibles par machine par reconnaissance, transcription et qualification."
+        },
+        "image": {
+            "title": "Annotation d'images",
+            "description": "Ajout de métadonnées aux images par étiquetage, labellisation, segmentation et reconnaissance d'objets."
+        },
+        "video": {
+            "title": "Annotation vidéo",
+            "description": "Amélioration du contenu vidéo avec des métadonnées par transcription et étiquetage séquentiel."
+        },
+        "audio": {
+            "title": "Annotation audio",
+            "description": "Conversion d'audio en texte et analyse de ton par reconnaissance vocale et analyse de sentiment."
+        },
+        "processing": {
+            "title": "Traitement de données",
+            "description": "Transformation de données brutes en formats utilisables par saisie, validation, nettoyage et migration."
+        }
+    },
+    "textAnnotation": {
+        "title": "Services d'annotation de texte",
+        "subtitle": "Conversion du langage imprimé ou parlé en formats structurés et lisibles par machine.",
+        "services": {
+            "recognition": {
+                "name": "Reconnaissance de caractères",
+                "description": "Conversion de caractères imprimés ou manuscrits en texte codé par machine"
+            },
+            "transcription": {
+                "name": "Transcription",
+                "description": "Conversion du langage parlé en texte écrit"
+            },
+            "qualification": {
+                "name": "Qualification d'articles",
+                "description": "Classification ou notation d'articles basée sur des critères prédéfinis ou la pertinence"
+            },
+            "moderation": {
+                "name": "Modération de contenu",
+                "description": "Examen et filtrage du contenu pour assurer la conformité aux directives ou politiques"
+            }
+        }
+    },
+    "imageAnnotation": {
+        "title": "Services d'annotation d'images",
+        "subtitle": "Ajout de métadonnées aux images pour les rendre reconnaissables et traitables par les systèmes d'apprentissage automatique.",
+        "services": {
+            "annotation": {
+                "name": "Annotation d'images",
+                "description": "Étiquetage d'objets, d'attributs ou de zones dans les images pour l'apprentissage automatique"
+            },
+            "labeling": {
+                "name": "Étiquetage d'images",
+                "description": "Attribution d'étiquettes ou de catégories à des images entières"
+            },
+            "recognition": {
+                "name": "Reconnaissance de formes",
+                "description": "Identification et étiquetage de formes géométriques ou de contours d'objets dans les images"
+            },
+            "segmentation": {
+                "name": "Segmentation d'images",
+                "description": "Annotation au niveau du pixel divisant une image en parties ou régions significatives"
+            }
+        }
+    },
+    "videoAnnotation": {
+        "title": "Services d'annotation vidéo",
+        "subtitle": "Amélioration du contenu vidéo avec des métadonnées pour une meilleure analyse et compréhension.",
+        "services": {
+            "transcription": {
+                "name": "Transcription",
+                "description": "Conversion de l'audio vidéo en texte écrit"
+            },
+            "sequencing": {
+                "name": "Séquençage",
+                "description": "Étiquetage ou ordonnancement d'actions, d'événements ou de scènes dans le temps dans la vidéo"
+            }
+        }
+    },
+    "audioAnnotation": {
+        "title": "Services d'annotation audio",
+        "subtitle": "Conversion du contenu audio en formats structurés et analyse du ton pour de meilleures perspectives.",
+        "services": {
+            "speechToText": {
+                "name": "Parole-vers-texte",
+                "description": "Conversion automatique ou manuelle de mots parlés en format texte"
+            },
+            "sentiment": {
+                "name": "Analyse de sentiment",
+                "description": "Classification de texte ou d'audio basée sur le ton émotionnel (positif, négatif, neutre)"
+            }
+        }
+    },
+    "dataProcessing": {
+        "title": "Services de traitement de données",
+        "subtitle": "Transformation de données brutes en formats propres, structurés et utilisables pour une meilleure prise de décision.",
+        "services": {
+            "entry": {
+                "title": "Saisie de données",
+                "subtitle": "Tâches de saisie de données",
+                "description": "Nous saisissons, mettons à jour ou maintenons manuellement ou automatiquement des données dans un format numérique - généralement dans des bases de données, des feuilles de calcul, des CRM ou d'autres systèmes logiciels.",
+                "tasks": {
+                    "typing": "Saisie d'informations manuscrites dans une feuille de calcul",
+                    "transferring": "Transfert de données de PDF ou de scans dans une base de données",
+                    "inputting": "Saisie de réponses à des enquêtes ou de factures dans un système",
+                    "migration": "Transfert de données d'un système à un autre (par exemple, Excel vers Jira)"
+                }
+            },
+            "validation": {
+                "title": "Validation de données",
+                "subtitle": "Tâches de validation de données",
+                "description": "Nous nous assurons que les données collectées, saisies ou traitées sont correctes, utilisables et significatives - qu'elles proviennent d'humains ou de machines.",
+                "tasks": {
+                    "format": "Vérifications de format : S'assurer que les données sont au bon format",
+                    "range": "Vérifications de plage : S'assurer que les données sont dans leurs limites déterminées",
+                    "consistency": "Vérifications de cohérence : S'assurer que les points de données sont alignés sémantiquement et structurellement",
+                    "completeness": "Vérifications d'exhaustivité : S'assurer que tous les champs requis sont présents"
+                }
+            },
+            "cleansing": {
+                "title": "Nettoyage de données",
+                "subtitle": "Tâches de nettoyage de données",
+                "description": "Le travail de nos équipes améliore la qualité, la fiabilité et l'utilisabilité des données en corrigeant ou en supprimant les données inexactes, incomplètes, dupliquées ou non pertinentes dans un ensemble de données.",
+                "tasks": {
+                    "duplicates": "Suppression des doublons : S'assurer qu'une entrée n'apparaît pas deux fois dans un ensemble de données",
+                    "typos": "Correction des fautes de frappe : S'assurer que les fautes de frappe sont corrigées et que le bruit est éliminé des données",
+                    "standardizing": "Standardisation des données : S'assurer que les données utilisent le même format et les mêmes unités de mesure",
+                    "outliers": "Élimination des valeurs aberrantes ou erreurs : Supprimer les données inutilisables et incorrectes"
+                }
+            },
+            "migration": {
+                "title": "Migration de données",
+                "subtitle": "Processus de migration de données",
+                "description": "La migration de données est le processus de déplacement de données entre systèmes (environnements informatiques, système de stockage ou format) tout en préservant l'intégrité des données et en assurant la compatibilité avec le système de destination.",
+                "tasks": {
+                    "extract": "Extraire les données du système source",
+                    "transform": "Transformer les données dans le format du nouveau système",
+                    "cleaning": "Nettoyage et validation des données",
+                    "entering": "Saisie des données dans le nouveau système",
+                    "testing": "Test de l'intégrité des données dans le nouveau système"
+                }
+            }
+        }
+    },
+    "customSolutions": {
+        "title": "Solutions personnalisées",
+        "subtitle": "Vous ne voyez pas exactement ce dont vous avez besoin ? Nous pouvons vous aider.",
+        "paragraph1": "Chaque entreprise a des défis de données uniques. Notre équipe peut travailler avec vous pour développer des solutions d'annotation et de traitement de données personnalisées adaptées à vos besoins spécifiques.",
+        "paragraph2": "Que vous ayez besoin d'une combinaison de services, d'une expertise de domaine spécialisée ou d'un flux de travail complètement unique, nous pouvons concevoir une solution qui répond à vos besoins.",
+        "button": "Demander un devis personnalisé"
+    },
+    "cta": {
+        "title": "Prêt à transformer vos données ?",
+        "subtitle": "Contactez-nous aujourd'hui pour discuter de vos besoins en annotation et traitement de données et obtenir un devis personnalisé.",
+        "button": "Démarrez votre projet"
+    },
+    "tableHeaders": {
+        "service": "SERVICE",
+        "description": "DESCRIPTION"
+    }
+}

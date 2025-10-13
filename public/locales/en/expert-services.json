@@ -1,0 +1,114 @@
+{
+    "hero": {
+        "title": "Medical Data Annotation Services",
+        "subtitle": "Expert annotation of medical data with clinical accuracy. Our specialized Namibian teams combine medical expertise with Swiss precision for healthcare AI applications."
+    },
+    "whyChoose": {
+        "title": "Why Choose Our Medical Annotation Services",
+        "subtitle": "Combining medical expertise with world-class data processing capabilities",
+        "expertise": {
+            "title": "Clinical Expertise",
+            "description": "Our Namibian team includes healthcare professionals with medical background and specialized training."
+        },
+        "compliance": {
+            "title": "Regulatory Compliance",
+            "description": "Full compliance with HIPAA, GDPR, and international medical data handling standards."
+        },
+        "quality": {
+            "title": "Quality Assurance",
+            "description": "Multi-layer validation including clinical oversight and expert review processes."
+        },
+        "swiss": {
+            "title": "Swiss Precision",
+            "description": "Swiss quality management standards applied to medical data with zero-tolerance for errors."
+        }
+    },
+    "capabilities": {
+        "title": "Our Medical Annotation Capabilities",
+        "subtitle": "Comprehensive healthcare data annotation services with clinical expertise",
+        "radiology": {
+            "title": "Radiology & Medical Imaging",
+            "description": "Expert annotation of medical images with clinical accuracy and radiologist oversight.",
+            "capabilities": {
+                "xray": "X-ray image annotation and pathology identification",
+                "mri": "MRI scan segmentation and anatomical labeling",
+                "ct": "CT scan analysis and organ identification",
+                "dicom": "DICOM format processing and metadata extraction",
+                "reconstruction": "Multi-planar reconstruction annotation",
+                "rendering": "3D volume rendering and measurement"
+            },
+            "compliance": {
+                "dicom": "DICOM standards",
+                "hipaa": "HIPAA compliance",
+                "validation": "Clinical validation"
+            },
+            "useCases": {
+                "diagnostic": "AI diagnostic tools development",
+                "detection": "Computer-aided detection systems",
+                "research": "Medical imaging research datasets",
+                "training": "Radiologist training platforms"
+            },
+            "button": "Get Started"
+        },
+        "pathology": {
+            "title": "Pathology & Laboratory Data",
+            "description": "Precise annotation of histopathology images and laboratory diagnostics with cellular-level accuracy.",
+            "capabilities": {
+                "histopathology": "Histopathology slide annotation and cell identification",
+                "cancer": "Cancer detection and tumor classification",
+                "tissue": "Tissue type identification and grading",
+                "microscopy": "Microscopy image segmentation",
+                "laboratory": "Laboratory result interpretation and coding",
+                "biomarker": "Biomarker identification and quantification"
+            },
+            "compliance": {
+                "quality": "Lab quality standards",
+                "terminology": "Medical terminology",
+                "accuracy": "Diagnostic accuracy"
+            },
+            "useCases": {
+                "cancer": "Cancer detection algorithms",
+                "education": "Pathology education tools",
+                "drug": "Drug discovery research",
+                "digital": "Digital pathology platforms"
+            },
+            "button": "Get Started"
+        },
+        "clinical": {
+            "title": "Clinical Documentation & EHR",
+            "description": "Structured annotation of medical records, clinical notes, and patient data with medical expertise.",
+            "capabilities": {
+                "ehr": "Electronic Health Record (EHR) data extraction",
+                "clinical": "Clinical note annotation and ICD coding",
+                "terminology": "Medical terminology standardization",
+                "journey": "Patient journey mapping and timeline creation",
+                "medication": "Medication and dosage information extraction",
+                "correlation": "Symptom and diagnosis correlation analysis"
+            },
+            "compliance": {
+                "hipaa": "HIPAA compliance",
+                "coding": "Medical coding standards",
+                "deidentification": "Data de-identification"
+            },
+            "useCases": {
+                "decision": "Clinical decision support systems",
+                "population": "Population health analytics",
+                "research": "Medical research databases",
+                "quality": "Healthcare quality metrics"
+            },
+            "button": "Get Started"
+        }
+    },
+    "sections": {
+        "keyCapabilities": "Key Capabilities:",
+        "useCases": "Use Cases:"
+    },
+    "cta": {
+        "title": "Ready to Advance Your Healthcare AI?",
+        "subtitle": "Partner with us for medical data annotation that meets the highest standards of accuracy, compliance, and clinical expertise.",
+        "buttons": {
+            "start": "Start Your Medical Project",
+            "viewAll": "View All Services"
+        }
+    }
+}

@@ -1,1 +1,124 @@
-{}
+{
+    "hero": {
+        "title": "Our Services",
+        "subtitle": "From large-scale general annotation to specialized medical expertise - we deliver the complete spectrum of data annotation services."
+    },
+    "general": {
+        "title": "General Data Annotation Services",
+        "subtitle": "High-volume, cost-effective annotation services powered by our 1,000-strong team in Namibia.",
+        "builtForScale": {
+            "title": "Built for Scale",
+            "description": "Our core strength lies in handling large-volume annotation projects efficiently and cost-effectively. With 1,000 trained annotators in Namibia, we can scale to meet enterprise demands while maintaining Swiss quality standards.",
+            "stats": {
+                "processed": "Items processed monthly",
+                "turnaround": "Average turnaround"
+            }
+        },
+        "whyExcel": {
+            "title": "Why Our General Services Excel:",
+            "reasons": {
+                "native": "Native English speakers for linguistic accuracy",
+                "quality": "Swiss quality management and oversight",
+                "scalable": "Scalable workforce for urgent deadlines",
+                "pricing": "Competitive pricing through local talent"
+            }
+        }
+    },
+    "expert": {
+        "title": "Expert & Specialist Annotation Services",
+        "subtitle": "Specialized teams with deep domain knowledge for complex annotation challenges.",
+        "medical": {
+            "title": "Medical & Healthcare",
+            "subtitle": "Our primary area of specialization",
+            "button": "Discuss Medical Annotation Needs",
+            "radiology": {
+                "title": "Radiology & Medical Imaging",
+                "description": "Expert annotation of X-rays, MRIs, CT scans with clinical accuracy",
+                "features": {
+                    "dicom": "DICOM format support",
+                    "validation": "Clinical validation",
+                    "oversight": "Radiologist oversight"
+                }
+            },
+            "pathology": {
+                "title": "Pathology & Lab Data",
+                "description": "Precise annotation of histopathology images and diagnostic data",
+                "features": {
+                    "cellular": "Cellular identification",
+                    "tissue": "Tissue classification",
+                    "diagnostic": "Diagnostic labeling"
+                }
+            },
+            "clinical": {
+                "title": "Clinical Documentation",
+                "description": "Structured annotation of medical records and clinical notes",
+                "features": {
+                    "hipaa": "HIPAA compliance",
+                    "terminology": "Medical terminology",
+                    "standardization": "Data standardization"
+                }
+            }
+        }
+    },
+    "serviceLevel": {
+        "title": "Choose Your Service Level",
+        "subtitle": "Whether you need volume or expertise, we have the right solution for your project.",
+        "generalAnnotation": {
+            "title": "General Data Annotation",
+            "subtitle": "For Large-Scale Projects",
+            "features": {
+                "capacity": {
+                    "title": "Enterprise Volume Capacity",
+                    "description": "1,000+ trained annotators ready to scale"
+                },
+                "coverage": {
+                    "title": "Full Data Types Coverage",
+                    "description": "Text, Image, Video, Audio annotation"
+                },
+                "native": {
+                    "title": "Native English Speakers",
+                    "description": "Linguistic accuracy for global projects"
+                },
+                "pricing": {
+                    "title": "Cost-Effective Pricing",
+                    "description": "Competitive rates through local talent"
+                }
+            },
+            "buttons": {
+                "details": "View General Services Details",
+                "quote": "Get Quote for General Project"
+            }
+        },
+        "expertAnnotation": {
+            "title": "Expert & Specialist Annotation",
+            "subtitle": "For Medical & Complex Domains",
+            "features": {
+                "medical": {
+                    "title": "Medical Specialization",
+                    "description": "Radiology, Pathology, Clinical data"
+                },
+                "expertLed": {
+                    "title": "Expert-Led Teams",
+                    "description": "Domain knowledge and clinical oversight"
+                },
+                "compliance": {
+                    "title": "Compliance & Accuracy",
+                    "description": "HIPAA compliance and clinical validation"
+                },
+                "swiss": {
+                    "title": "Swiss Quality Standards",
+                    "description": "Zero tolerance for errors in critical data"
+                }
+            },
+            "buttons": {
+                "details": "View Expert Services Details",
+                "discuss": "Discuss Medical Project"
+            }
+        }
+    },
+    "cta": {
+        "title": "Not Sure Which Service You Need?",
+        "subtitle": "Our team can help you determine the right approach for your project. Whether it's volume or expertise you need, we'll guide you to the best solution.",
+        "button": "Get Consultation"
+    }
+}

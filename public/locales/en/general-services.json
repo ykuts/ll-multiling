@@ -1,0 +1,171 @@
+{
+    "hero": {
+        "title": "General Data Annotation Services",
+        "subtitle": "Enterprise-scale data annotation powered by our 1,000-strong team in Namibia. Cost-effective, high-quality annotation for all data types."
+    },
+    "overview": {
+        "title": "Data Annotation & Processing Services",
+        "subtitle": "We provide a comprehensive range of data services to meet your specific needs."
+    },
+    "serviceTypes": {
+        "text": {
+            "title": "Text Annotation",
+            "description": "Converting text into structured, machine-readable formats through recognition, transcription, and qualification."
+        },
+        "image": {
+            "title": "Image Annotation",
+            "description": "Adding metadata to images through tagging, labeling, segmentation and object recognition."
+        },
+        "video": {
+            "title": "Video Annotation",
+            "description": "Enhancing video content with metadata through transcription and sequential labeling."
+        },
+        "audio": {
+            "title": "Audio Annotation",
+            "description": "Converting audio to text and analyzing tone through speech recognition and sentiment analysis."
+        },
+        "processing": {
+            "title": "Data Processing",
+            "description": "Transforming raw data into useful formats through entry, validation, cleansing, and migration."
+        }
+    },
+    "textAnnotation": {
+        "title": "Text Annotation Services",
+        "subtitle": "Converting printed or spoken language into structured, machine-readable formats.",
+        "services": {
+            "recognition": {
+                "name": "Character recognition",
+                "description": "Converting printed or handwritten characters into machine-encoded text"
+            },
+            "transcription": {
+                "name": "Transcription",
+                "description": "Converting spoken language into written text"
+            },
+            "qualification": {
+                "name": "Article qualification",
+                "description": "Classifying or scoring articles based on predefined criteria or relevance"
+            },
+            "moderation": {
+                "name": "Content moderation",
+                "description": "Reviewing and filtering content to ensure compliance with guidelines or policies"
+            }
+        }
+    },
+    "imageAnnotation": {
+        "title": "Image Annotation Services",
+        "subtitle": "Adding metadata to images to make them recognizable and processable by machine learning systems.",
+        "services": {
+            "annotation": {
+                "name": "Image annotation",
+                "description": "Tagging objects, attributes, or areas within images for machine learning"
+            },
+            "labeling": {
+                "name": "Image labelling",
+                "description": "Assigning labels or categories to whole images"
+            },
+            "recognition": {
+                "name": "Shape recognition",
+                "description": "Identifying and tagging geometric shapes or object outlines in images"
+            },
+            "segmentation": {
+                "name": "Image segmentation",
+                "description": "Pixel-level annotation dividing an image into meaningful parts or regions"
+            }
+        }
+    },
+    "videoAnnotation": {
+        "title": "Video Annotation Services",
+        "subtitle": "Enhancing video content with metadata for better analysis and understanding.",
+        "services": {
+            "transcription": {
+                "name": "Transcription",
+                "description": "Converting video audio into written text"
+            },
+            "sequencing": {
+                "name": "Sequencing",
+                "description": "Labelling or ordering actions, events, or scenes over time in video"
+            }
+        }
+    },
+    "audioAnnotation": {
+        "title": "Audio Annotation Services",
+        "subtitle": "Converting audio content to structured formats and analyzing tone for better insights.",
+        "services": {
+            "speechToText": {
+                "name": "Speech-to-text",
+                "description": "Automatically or manually converting spoken words into text format"
+            },
+            "sentiment": {
+                "name": "Sentiment analysis",
+                "description": "Classifying text or audio based on emotional tone (positive, negative, neutral)"
+            }
+        }
+    },
+    "dataProcessing": {
+        "title": "Data Processing Services",
+        "subtitle": "Transforming raw data into clean, structured, and usable formats for better decision-making.",
+        "services": {
+            "entry": {
+                "title": "Data Entry",
+                "subtitle": "Data Entry Tasks",
+                "description": "We manually or automatically input, update, or maintain data in a digital format — usually into databases, spreadsheets, CRMs, or other software systems.",
+                "tasks": {
+                    "typing": "Typing handwritten information in a spreadsheet",
+                    "transferring": "Transferring data from PDFs or scans into a database",
+                    "inputting": "Inputting survey responses or invoices into a system",
+                    "migration": "Transferring data from one system to another (e.g., Excel to Jira)"
+                }
+            },
+            "validation": {
+                "title": "Data Validation",
+                "subtitle": "Data Validation Tasks",
+                "description": "We ensure that the data collected, entered, or processed is correct, usable, and meaningful — whether it comes from humans or machines.",
+                "tasks": {
+                    "format": "Format checks: Make sure the data is of the correct format",
+                    "range": "Range checks: Make sure the data is within its determined limits",
+                    "consistency": "Consistency checks: Make sure the data points are aligned semantically and structurally",
+                    "completeness": "Completeness checks: Make sure that all required fields are present"
+                }
+            },
+            "cleansing": {
+                "title": "Data Cleansing",
+                "subtitle": "Data Cleansing Tasks",
+                "description": "Our teams' work improves the quality, reliability, and usability of data by correcting or removing inaccurate, incomplete, duplicated, or irrelevant data within a dataset.",
+                "tasks": {
+                    "duplicates": "Removing duplicates: Make sure an entry doesn't appear twice in a dataset",
+                    "typos": "Fixing typos: Make sure typos are fixed and noise is removed from the data",
+                    "standardizing": "Standardizing data: Make sure the data uses the same format and unit measures",
+                    "outliers": "Eliminating outliers or errors: Remove unusable and incorrect data"
+                }
+            },
+            "migration": {
+                "title": "Data Migration",
+                "subtitle": "Data Migration Process",
+                "description": "Data migration is the process of moving data between systems (computing environments, storage system or format) while preserving data integrity and ensuring compatibility with the destination system.",
+                "tasks": {
+                    "extract": "Extract data from the source system",
+                    "transform": "Transform data into the format of the new system",
+                    "cleaning": "Cleaning and validating the data",
+                    "entering": "Entering the data into the new system",
+                    "testing": "Testing the data integrity in the new system"
+                }
+            }
+        }
+    },
+    "customSolutions": {
+        "title": "Custom Solutions",
+        "subtitle": "Don't see exactly what you need? We can help.",
+        "paragraph1": "Every business has unique data challenges. Our team can work with you to develop custom data annotation and processing solutions tailored to your specific requirements.",
+        "paragraph2": "Whether you need a combination of services, specialized domain expertise, or a completely unique workflow, we can design a solution that meets your needs.",
+        "button": "Request Custom Quote"
+    },
+    "cta": {
+        "title": "Ready to transform your data?",
+        "subtitle": "Contact us today to discuss your data annotation and processing needs and get a customized quote.",
+        "button": "Start Your Project"
+    },
+    "tableHeaders": {
+        "service": "SERVICE",
+        "description": "DESCRIPTION"
+    }
+}

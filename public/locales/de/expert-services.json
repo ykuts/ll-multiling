@@ -1,0 +1,114 @@
+{
+    "hero": {
+        "title": "Medizinische Datenannotationsdienste",
+        "subtitle": "Expertenannotation medizinischer Daten mit klinischer Genauigkeit. Unsere spezialisierten namibischen Teams kombinieren medizinisches Fachwissen mit Schweizer Präzision für Gesundheits-KI-Anwendungen."
+    },
+    "whyChoose": {
+        "title": "Warum unsere medizinischen Annotationsdienste wählen",
+        "subtitle": "Kombination von medizinischem Fachwissen mit erstklassigen Datenverarbeitungsfähigkeiten",
+        "expertise": {
+            "title": "Klinisches Fachwissen",
+            "description": "Unser namibisches Team umfasst Gesundheitsfachkräfte mit medizinischem Hintergrund und spezialisierter Ausbildung."
+        },
+        "compliance": {
+            "title": "Regulatorische Konformität",
+            "description": "Vollständige Konformität mit HIPAA, DSGVO und internationalen Standards für den Umgang mit medizinischen Daten."
+        },
+        "quality": {
+            "title": "Qualitätssicherung",
+            "description": "Mehrschichtige Validierung einschließlich klinischer Aufsicht und Expertenprüfungsprozessen."
+        },
+        "swiss": {
+            "title": "Schweizer Präzision",
+            "description": "Schweizer Qualitätsmanagementstandards auf medizinische Daten angewendet mit Null-Toleranz für Fehler."
+        }
+    },
+    "capabilities": {
+        "title": "Unsere medizinischen Annotationsfähigkeiten",
+        "subtitle": "Umfassende Gesundheitsdaten-Annotationsdienste mit klinischem Fachwissen",
+        "radiology": {
+            "title": "Radiologie & medizinische Bildgebung",
+            "description": "Expertenannotation medizinischer Bilder mit klinischer Genauigkeit und radiologischer Aufsicht.",
+            "capabilities": {
+                "xray": "Röntgenbild-Annotation und Pathologieidentifikation",
+                "mri": "MRT-Scan-Segmentierung und anatomische Beschriftung",
+                "ct": "CT-Scan-Analyse und Organidentifikation",
+                "dicom": "DICOM-Format-Verarbeitung und Metadatenextraktion",
+                "reconstruction": "Multiplanare Rekonstruktions-Annotation",
+                "rendering": "3D-Volumen-Rendering und Messung"
+            },
+            "compliance": {
+                "dicom": "DICOM-Standards",
+                "hipaa": "HIPAA-Konformität",
+                "validation": "Klinische Validierung"
+            },
+            "useCases": {
+                "diagnostic": "Entwicklung von KI-Diagnosewerkzeugen",
+                "detection": "Computergestützte Detektionssysteme",
+                "research": "Medizinische Bildgebungsforschungsdatensätze",
+                "training": "Radiologie-Trainingsplattformen"
+            },
+            "button": "Loslegen"
+        },
+        "pathology": {
+            "title": "Pathologie & Labordaten",
+            "description": "Präzise Annotation histopathologischer Bilder und Labordiagnostik mit zellulärer Genauigkeit.",
+            "capabilities": {
+                "histopathology": "Histopathologie-Objektträger-Annotation und Zellidentifikation",
+                "cancer": "Krebserkennung und Tumorklassifikation",
+                "tissue": "Gewebetyp-Identifikation und Einstufung",
+                "microscopy": "Mikroskopie-Bildsegmentierung",
+                "laboratory": "Laborergebnis-Interpretation und Codierung",
+                "biomarker": "Biomarker-Identifikation und Quantifizierung"
+            },
+            "compliance": {
+                "quality": "Labor-Qualitätsstandards",
+                "terminology": "Medizinische Terminologie",
+                "accuracy": "Diagnostische Genauigkeit"
+            },
+            "useCases": {
+                "cancer": "Krebserkennungsalgorithmen",
+                "education": "Pathologie-Bildungswerkzeuge",
+                "drug": "Arzneimittelforschung",
+                "digital": "Digitale Pathologie-Plattformen"
+            },
+            "button": "Loslegen"
+        },
+        "clinical": {
+            "title": "Klinische Dokumentation & EHR",
+            "description": "Strukturierte Annotation medizinischer Aufzeichnungen, klinischer Notizen und Patientendaten mit medizinischem Fachwissen.",
+            "capabilities": {
+                "ehr": "Extraktion elektronischer Gesundheitsakten (EHR)",
+                "clinical": "Klinische Notizen-Annotation und ICD-Codierung",
+                "terminology": "Standardisierung medizinischer Terminologie",
+                "journey": "Patienten-Journey-Mapping und Timeline-Erstellung",
+                "medication": "Extraktion von Medikamenten- und Dosierungsinformationen",
+                "correlation": "Symptom- und Diagnosekorrelationsanalyse"
+            },
+            "compliance": {
+                "hipaa": "HIPAA-Konformität",
+                "coding": "Medizinische Codierungsstandards",
+                "deidentification": "Daten-Anonymisierung"
+            },
+            "useCases": {
+                "decision": "Klinische Entscheidungsunterstützungssysteme",
+                "population": "Bevölkerungsgesundheitsanalysen",
+                "research": "Medizinische Forschungsdatenbanken",
+                "quality": "Gesundheitsqualitätsmetriken"
+            },
+            "button": "Loslegen"
+        }
+    },
+    "sections": {
+        "keyCapabilities": "Hauptfähigkeiten:",
+        "useCases": "Anwendungsfälle:"
+    },
+    "cta": {
+        "title": "Bereit, Ihre Gesundheits-KI voranzubringen?",
+        "subtitle": "Werden Sie unser Partner für medizinische Datenannotation, die höchste Standards an Genauigkeit, Konformität und klinischem Fachwissen erfüllt.",
+        "buttons": {
+            "start": "Starten Sie Ihr medizinisches Projekt",
+            "viewAll": "Alle Dienste anzeigen"
+        }
+    }
+}

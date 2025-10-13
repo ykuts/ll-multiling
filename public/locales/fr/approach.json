@@ -1,1 +1,165 @@
-{}
+{
+    "hero": {
+        "title": "Notre approche",
+        "subtitle": "Nous suivons une approche réfléchie pour concevoir une solution qui correspond à vos besoins"
+    },
+    "intro": {
+        "title": "Base stratégique pour une annotation réussie",
+        "subtitle": "Conception du processus",
+        "paragraph1": "Nous croyons qu'une annotation et un traitement de données réussis commencent par une compréhension approfondie de l'espace problématique et un flux de travail soigneusement conçu.",
+        "paragraph2": "Notre approche garantit que le résultat final n'est pas seulement des \"données étiquetées\", mais un actif de données stratégique qui alimente le succès à long terme de l'apprentissage automatique et des opérations.",
+        "paragraph3": "En pensant à l'avenir et en planifiant l'intégration, les mises à jour futures et l'utilisation à long terme, nous construisons des solutions de données qui continuent à apporter de la valeur bien au-delà du projet initial."
+    },
+    "steps": {
+        "whatWeDo": "CE QUE NOUS FAISONS :",
+        "howWeDoIt": "COMMENT NOUS LE FAISONS :",
+        "needsAssessment": {
+            "title": "Évaluation des besoins",
+            "subtitle": "Nous n'acceptons pas simplement les données — nous les interrogeons.",
+            "description": "Chaque engagement commence par une évaluation approfondie menée par notre équipe interfonctionnelle de scientifiques des données et d'architectes d'annotation.",
+            "actions": {
+                "useCase": {
+                    "title": "Découverte du cas d'usage",
+                    "description": "Cartographier les objectifs du modèle et la valeur commerciale pour guider la stratégie de données"
+                },
+                "dataAudit": {
+                    "title": "Audit et profilage des données",
+                    "description": "Identifier les lacunes, les anomalies et les incohérences de schéma"
+                },
+                "labelStrategy": {
+                    "title": "Définition de la stratégie d'étiquetage",
+                    "description": "Co-créer un ensemble d'étiquettes, une ontologie et une politique d'annotation adaptés à votre domaine"
+                }
+            },
+            "teamWork": {
+                "swiss": "Notre équipe suisse dirige les évaluations structurées et définit les KPI d'annotation et les références de préparation des données",
+                "namibian": "Notre équipe namibienne effectue l'exploration des ensembles de données, la cartographie des métadonnées et prépare les ensembles de données pour l'ingestion de pipeline"
+            }
+        },
+        "customDesign": {
+            "title": "Conception d'annotation personnalisée",
+            "subtitle": "Une fois les objectifs clairs, nous concevons un flux de travail d'annotation qui reflète à la fois la complexité de la tâche et la structure de vos données.",
+            "description": "",
+            "actions": {
+                "workflow": {
+                    "title": "Conception du flux de travail",
+                    "description": "Concevoir des pipelines d'annotation de bout en bout (création de tâches, étiquetage, validation, AQ et approbation) en utilisant des plateformes flexibles"
+                },
+                "quality": {
+                    "title": "Contrôles qualité",
+                    "description": "Mettre en œuvre des contrôles qualité à plusieurs niveaux, y compris le scoring par consensus, les tâches de référence et les examens à l'aveugle"
+                },
+                "scalability": {
+                    "title": "Évolutivité",
+                    "description": "Configurer le pipeline pour l'intégrer à votre infrastructure pour la distribution de tâches et la synchronisation du stockage cloud"
+                }
+            },
+            "teamWork": {
+                "swiss": "Notre équipe suisse met en place des systèmes de contrôle et de mesure en utilisant des références d'annotation",
+                "namibian": "Notre équipe namibienne opérationnalise le flux de travail, garantissant la flexibilité pour les boucles de rétroaction AQ quotidiennes"
+            }
+        },
+        "architecture": {
+            "title": "Architecture de données pérenne",
+            "subtitle": "L'étiquetage des données est un investissement. Nous nous assurons qu'il continue à générer des rendements en intégrant la réutilisabilité, la traçabilité et l'extensibilité dans la sortie.",
+            "description": "",
+            "actions": {
+                "formats": {
+                    "title": "Formats de sortie standardisés",
+                    "description": "Livrer dans des formats prêts pour le ML comme COCO, JSONL, TFRecord ou Pascal VOC"
+                },
+                "version": {
+                    "title": "Contrôle de version",
+                    "description": "Suivre les itérations et les modifications des ensembles de données à l'aide d'outils comme DVC ou des systèmes basés sur Git"
+                },
+                "retraining": {
+                    "title": "Préparation au réentraînement",
+                    "description": "Concevoir des boucles de rétroaction pour les cycles d'annotation futurs et l'ajustement fin du modèle"
+                }
+            },
+            "teamWork": {
+                "swiss": "Notre équipe suisse définit l'architecture de sortie, la gouvernance de schéma et la documentation de données conforme",
+                "namibian": "Notre équipe namibienne assure le versioning, la traçabilité et la livraison cohérente des données via des pipelines gérés"
+            }
+        },
+        "humanInLoop": {
+            "title": "Humain dans la boucle",
+            "subtitle": "Nous croyons que l'annotation n'est pas une tâche mécanique — c'est une compétence cognitive.",
+            "description": "Notre modèle Human-in-the-Loop (HITL) permet des annotations contextuelles et de haute qualité.",
+            "actions": {
+                "training": {
+                    "title": "Formation spécifique au domaine",
+                    "description": "Les annotateurs sont formés aux nuances de l'industrie (juridique, médical, commerce de détail, etc.)"
+                },
+                "collaboration": {
+                    "title": "Collaboration humain-IA",
+                    "description": "Combiner pré-annotations, suggestions de modèle et corrections manuelles"
+                },
+                "feedback": {
+                    "title": "Amélioration par rétroaction",
+                    "description": "Utiliser les examens de performance et l'analyse des désaccords pour améliorer continuellement la qualité de l'annotation"
+                }
+            },
+            "teamWork": {
+                "swiss": "Notre équipe suisse établit les politiques de révision et gère l'apprentissage continu à partir des résultats du modèle",
+                "namibian": "Notre équipe namibienne exécute l'annotation avec une discipline axée sur la qualité, en escaladant les ambiguïtés et en affinant le travail"
+            }
+        }
+    },
+    "results": {
+        "title": "Les résultats",
+        "subtitle": "Pas seulement des \"données étiquetées\", mais un actif de données stratégique qui alimente le succès à long terme de l'apprentissage automatique et des opérations.",
+        "button": "Démarrez votre projet"
+    },
+    "processDesign": {
+        "title": "Conception du processus",
+        "subtitle": "Nous suivons une approche réfléchie pour concevoir une solution qui correspond à vos besoins",
+        "needsAssessment": {
+            "title1": "ÉVALUATION",
+            "title2": "DES BESOINS",
+            "description": "Nous commençons par comprendre vos données, modèles et objectifs commerciaux. Nos professionnels des données internes travaillent avec votre équipe pour identifier :",
+            "items": {
+                "purpose": "Le véritable <strong>objectif</strong> de l'ensemble de données",
+                "methods": "Les meilleures <strong>méthodes d'annotation</strong> pour la performance du modèle",
+                "gaps": "Les lacunes en <strong>qualité ou structure des données</strong> qui peuvent impacter les résultats"
+            }
+        },
+        "customDesign": {
+            "title1": "CONCEPTION",
+            "title2": "D'ANNOTATION",
+            "title3": "PERSONNALISÉE",
+            "description": "Nous n'appliquons pas une approche universelle. Nous concevons :",
+            "items": {
+                "workflows": "Des <strong>flux de travail d'annotation</strong> adaptés à votre cas d'usage",
+                "quality": "Des <strong>protocoles de contrôle qualité</strong> alignés sur vos objectifs de précision",
+                "scalable": "Des <strong>pipelines évolutifs</strong> qui soutiennent la croissance et les besoins évolutifs"
+            }
+        },
+        "architecture": {
+            "title1": "ARCHITECTURE",
+            "title2": "DE DONNÉES",
+            "title3": "PÉRENNE",
+            "description": "Nous pensons à l'avenir. Notre approche garantit que vos données étiquetées :",
+            "items": {
+                "integrates": "<strong>S'intègrent de manière transparente</strong> dans les pipelines ML/IA",
+                "supports": "<strong>Prennent en charge le réentraînement</strong> et le versioning des modèles",
+                "reduces": "<strong>Réduisent le besoin</strong> de retouches coûteuses plus tard"
+            }
+        },
+        "humanInLoop": {
+            "title1": "HUMAIN DANS",
+            "title2": "LA BOUCLE,",
+            "title3": "TOUJOURS",
+            "description": "Notre main-d'œuvre est formée au-delà de l'étiquetage de base – ils sont :",
+            "items": {
+                "skilled": "<strong>Qualifiés en annotation</strong> spécifique au domaine",
+                "supported": "<strong>Soutenus par des experts en données</strong> pour assurer la précision",
+                "improving": "<strong>En amélioration continue</strong> grâce aux boucles de rétroaction"
+            }
+        },
+        "results": {
+            "title": "LES RÉSULTATS",
+            "description": "Pas seulement des \"données étiquetées\", mais un <strong>actif de données stratégique</strong> qui alimente <strong>l'apprentissage automatique à long terme</strong> et le <strong>succès opérationnel</strong>"
+        }
+    }
+}

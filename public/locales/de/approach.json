@@ -1,1 +1,165 @@
-{}
+{
+    "hero": {
+        "title": "Unser Ansatz",
+        "subtitle": "Wir verfolgen einen durchdachten Ansatz zur Gestaltung einer Lösung, die Ihren Anforderungen entspricht"
+    },
+    "intro": {
+        "title": "Strategische Grundlage für erfolgreiche Annotation",
+        "subtitle": "Gestaltung des Prozesses",
+        "paragraph1": "Wir glauben, dass erfolgreiche Datenannotation und -verarbeitung mit einem tiefen Verständnis des Problembereichs und einem sorgfältig gestalteten Workflow beginnt.",
+        "paragraph2": "Unser Ansatz stellt sicher, dass das Endergebnis nicht nur \"beschriftete Daten\" sind, sondern ein strategisches Datenanset, das langfristigen Machine-Learning- und Betriebserfolg ermöglicht.",
+        "paragraph3": "Durch vorausschauendes Denken und Planung für Integration, zukünftige Updates und langfristige Nutzung bauen wir Datenlösungen, die weit über das ursprüngliche Projekt hinaus Wert liefern."
+    },
+    "steps": {
+        "whatWeDo": "WAS WIR TUN:",
+        "howWeDoIt": "WIE WIR ES TUN:",
+        "needsAssessment": {
+            "title": "Bedarfsermittlung",
+            "subtitle": "Wir akzeptieren Daten nicht einfach — wir hinterfragen sie.",
+            "description": "Jedes Engagement beginnt mit einer tiefgehenden Bewertung, die von unserem funktionsübergreifenden Team aus Datenwissenschaftlern und Annotationsarchitekten geleitet wird.",
+            "actions": {
+                "useCase": {
+                    "title": "Use-Case-Entdeckung",
+                    "description": "Modellziele und Geschäftswert kartieren, um die Datenstrategie zu leiten"
+                },
+                "dataAudit": {
+                    "title": "Datenprüfung & Profiling",
+                    "description": "Lücken, Anomalien und Schema-Inkonsistenzen identifizieren"
+                },
+                "labelStrategy": {
+                    "title": "Label-Strategie-Definition",
+                    "description": "Gemeinsam ein Label-Set, Ontologie und Annotationsrichtlinie erstellen, die auf Ihre Domäne zugeschnitten sind"
+                }
+            },
+            "teamWork": {
+                "swiss": "Unser Schweizer Team leitet strukturierte Bewertungen und definiert Annotations-KPIs und Datenbereitschafts-Benchmarks",
+                "namibian": "Unser namibisches Team führt Datensatz-Exploration, Metadaten-Mapping durch und bereitet Datensätze für die Pipeline-Aufnahme vor"
+            }
+        },
+        "customDesign": {
+            "title": "Individuelle Annotationsgestaltung",
+            "subtitle": "Sobald die Ziele klar sind, entwerfen wir einen Annotations-Workflow, der sowohl die Komplexität der Aufgabe als auch die Struktur Ihrer Daten widerspiegelt.",
+            "description": "",
+            "actions": {
+                "workflow": {
+                    "title": "Workflow-Design",
+                    "description": "End-to-End-Annotations-Pipelines entwerfen (Aufgabenerstellung, Beschriftung, Validierung, QA und Genehmigung) unter Verwendung flexibler Plattformen"
+                },
+                "quality": {
+                    "title": "Qualitätskontrollen",
+                    "description": "Mehrschichtige Qualitätsprüfungen implementieren, einschließlich Konsens-Scoring, Goldstandard-Aufgaben und Blind-Reviews"
+                },
+                "scalability": {
+                    "title": "Skalierbarkeit",
+                    "description": "Pipeline konfigurieren, um sie mit Ihrer Infrastruktur für Aufgabenversand und Cloud-Speicher-Synchronisation zu integrieren"
+                }
+            },
+            "teamWork": {
+                "swiss": "Unser Schweizer Team richtet Kontroll- und Messsysteme unter Verwendung von Annotations-Benchmarks ein",
+                "namibian": "Unser namibisches Team operationalisiert den Workflow und gewährleistet Flexibilität für tägliche QA-Feedback-Schleifen"
+            }
+        },
+        "architecture": {
+            "title": "Zukunftssichere Datenarchitektur",
+            "subtitle": "Datenbeschriftung ist eine Investition. Wir stellen sicher, dass sie weiterhin Erträge liefert, indem wir Wiederverwendbarkeit, Nachverfolgbarkeit und Erweiterbarkeit in die Ausgabe einbetten.",
+            "description": "",
+            "actions": {
+                "formats": {
+                    "title": "Standardisierte Ausgabeformate",
+                    "description": "Lieferung in ML-bereiten Formaten wie COCO, JSONL, TFRecord oder Pascal VOC"
+                },
+                "version": {
+                    "title": "Versionskontrolle",
+                    "description": "Datensatz-Iterationen und Änderungen mit Tools wie DVC oder Git-basierten Systemen verfolgen"
+                },
+                "retraining": {
+                    "title": "Retraining-Bereitschaft",
+                    "description": "Feedback-Schleifen für zukünftige Annotationszyklen und Modell-Feinabstimmung entwerfen"
+                }
+            },
+            "teamWork": {
+                "swiss": "Unser Schweizer Team definiert Ausgabearchitektur, Schema-Governance und compliance-bereite Datendokumentation",
+                "namibian": "Unser namibisches Team gewährleistet Versionierung, Nachverfolgbarkeit und konsistente Datenlieferung durch verwaltete Pipelines"
+            }
+        },
+        "humanInLoop": {
+            "title": "Mensch in der Schleife",
+            "subtitle": "Wir glauben, dass Annotation keine mechanische Aufgabe ist — es ist eine kognitive Fähigkeit.",
+            "description": "Unser Human-in-the-Loop (HITL)-Modell ermöglicht kontextuelle, hochwertige Annotationen.",
+            "actions": {
+                "training": {
+                    "title": "Domänenspezifische Schulung",
+                    "description": "Annotatoren werden in den Nuancen der Branche geschult (rechtlich, medizinisch, Einzelhandel usw.)"
+                },
+                "collaboration": {
+                    "title": "Mensch-KI-Zusammenarbeit",
+                    "description": "Kombinieren von Vor-Annotationen, Modellvorschlägen und manuellen Korrekturen"
+                },
+                "feedback": {
+                    "title": "Feedback-getriebene Verbesserung",
+                    "description": "Leistungsüberprüfungen und Meinungsverschiedenheitsanalysen verwenden, um die Annotationsqualität kontinuierlich zu erhöhen"
+                }
+            },
+            "teamWork": {
+                "swiss": "Unser Schweizer Team legt Überprüfungsrichtlinien fest und verwaltet kontinuierliches Lernen aus Modellergebnissen",
+                "namibian": "Unser namibisches Team führt Annotation mit qualitätsorientierter Disziplin aus, eskaliert Mehrdeutigkeiten und verfeinert die Arbeit"
+            }
+        }
+    },
+    "results": {
+        "title": "Die Ergebnisse",
+        "subtitle": "Nicht nur \"beschriftete Daten\", sondern ein strategisches Datenanset, das langfristigen Machine-Learning- und Betriebserfolg ermöglicht.",
+        "button": "Starten Sie Ihr Projekt"
+    },
+    "processDesign": {
+        "title": "Gestaltung des Prozesses",
+        "subtitle": "Wir verfolgen einen durchdachten Ansatz zur Gestaltung einer Lösung, die Ihren Anforderungen entspricht",
+        "needsAssessment": {
+            "title1": "BEDARFS-",
+            "title2": "ERMITTLUNG",
+            "description": "Wir beginnen damit, Ihre Daten, Modelle und Geschäftsziele zu verstehen. Unsere internen Datenprofis arbeiten mit Ihrem Team zusammen, um zu identifizieren:",
+            "items": {
+                "purpose": "Den wahren <strong>Zweck</strong> des Datensatzes",
+                "methods": "Die besten <strong>Annotationsmethoden</strong> für Modellleistung",
+                "gaps": "Lücken in <strong>Datenqualität oder -struktur</strong>, die Ergebnisse beeinträchtigen können"
+            }
+        },
+        "customDesign": {
+            "title1": "INDIVIDUELLE",
+            "title2": "ANNOTATIONS-",
+            "title3": "GESTALTUNG",
+            "description": "Wir wenden keinen Einheitsansatz an. Wir entwerfen:",
+            "items": {
+                "workflows": "<strong>Annotations-Workflows</strong>, die auf Ihren Anwendungsfall zugeschnitten sind",
+                "quality": "<strong>Qualitätskontrollprotokolle</strong>, die mit Ihren Genauigkeitszielen übereinstimmen",
+                "scalable": "<strong>Skalierbare Pipelines</strong>, die Wachstum und sich entwickelnde Bedürfnisse unterstützen"
+            }
+        },
+        "architecture": {
+            "title1": "ZUKUNFTSSICHERE",
+            "title2": "DATEN-",
+            "title3": "ARCHITEKTUR",
+            "description": "Wir denken voraus. Unser Ansatz stellt sicher, dass Ihre beschrifteten Daten:",
+            "items": {
+                "integrates": "<strong>Nahtlos integriert werden</strong> in ML/KI-Pipelines",
+                "supports": "<strong>Model-Retraining unterstützen</strong> und Versionierung",
+                "reduces": "<strong>Den Bedarf reduzieren</strong> an kostspieliger Nacharbeit später"
+            }
+        },
+        "humanInLoop": {
+            "title1": "MENSCH IN DER",
+            "title2": "SCHLEIFE,",
+            "title3": "IMMER",
+            "description": "Unsere Belegschaft ist über grundlegende Beschriftung hinaus geschult – sie sind:",
+            "items": {
+                "skilled": "<strong>Qualifiziert in domänenspezifischer</strong> Annotation",
+                "supported": "<strong>Unterstützt von Datenexperten</strong>, um Präzision sicherzustellen",
+                "improving": "<strong>Kontinuierlich verbessernd</strong> durch Feedback-Schleifen"
+            }
+        },
+        "results": {
+            "title": "DIE ERGEBNISSE",
+            "description": "Nicht nur \"beschriftete Daten\", sondern ein <strong>strategisches Datenanset</strong>, das <strong>langfristiges maschinelles Lernen</strong> und <strong>Betriebserfolg</strong> ermöglicht"
+        }
+    }
+}

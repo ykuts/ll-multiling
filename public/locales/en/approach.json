@@ -1,1 +1,165 @@
-{}
+{
+    "hero": {
+        "title": "Our Approach",
+        "subtitle": "We follow a thoughtful approach to designing a solution that fits your needs"
+    },
+    "intro": {
+        "title": "Strategic Groundwork for Successful Annotation",
+        "subtitle": "Designing the Process",
+        "paragraph1": "We believe that successful data annotation and processing starts with a deep understanding of the problem space and a carefully designed workflow.",
+        "paragraph2": "Our approach ensures that the final outcome is not just \"labelled data\", but a strategic data asset that powers long-term machine learning and operational success.",
+        "paragraph3": "By thinking ahead and planning for integration, future updates, and long-term use, we build data solutions that continue to deliver value well beyond the initial project."
+    },
+    "steps": {
+        "whatWeDo": "WHAT WE DO:",
+        "howWeDoIt": "HOW WE DO IT:",
+        "needsAssessment": {
+            "title": "Needs Assessment",
+            "subtitle": "We don't just accept data — we interrogate it.",
+            "description": "Every engagement starts with a deep-dive assessment led by our cross-functional team of data scientists and annotation architects.",
+            "actions": {
+                "useCase": {
+                    "title": "Use Case Discovery",
+                    "description": "Map out model objectives and business value to guide data strategy"
+                },
+                "dataAudit": {
+                    "title": "Data Audit & Profiling",
+                    "description": "Identify gaps, anomalies, and schema inconsistencies"
+                },
+                "labelStrategy": {
+                    "title": "Label Strategy Definition",
+                    "description": "Co-create a label set, ontology, and annotation policy tailored to your domain"
+                }
+            },
+            "teamWork": {
+                "swiss": "Our Swiss team leads structured assessments and defines annotation KPIs and data readiness benchmarks",
+                "namibian": "Our Namibian team conducts dataset exploration, metadata mapping, and prepares datasets for pipeline ingestion"
+            }
+        },
+        "customDesign": {
+            "title": "Custom Annotation Design",
+            "subtitle": "Once the goals are clear, we design an annotation workflow that reflects both the complexity of the task and the structure of your data.",
+            "description": "",
+            "actions": {
+                "workflow": {
+                    "title": "Workflow Design",
+                    "description": "Design end-to-end annotation pipelines (task creation, labelling, validation, QA, and approval) using flexible platforms"
+                },
+                "quality": {
+                    "title": "Quality Controls",
+                    "description": "Implement multi-layered quality checks including consensus scoring, gold standard tasks and blind reviews"
+                },
+                "scalability": {
+                    "title": "Scalability",
+                    "description": "Configure the pipeline to integrate with your infrastructure for task dispatching and cloud storage sync"
+                }
+            },
+            "teamWork": {
+                "swiss": "Our Swiss team sets up control and measurement systems using annotation benchmarks",
+                "namibian": "Our Namibian team operationalizes the workflow, ensuring flexibility for daily QA feedback loops"
+            }
+        },
+        "architecture": {
+            "title": "Future-Proofed Data Architecture",
+            "subtitle": "Data labelling is an investment. We ensure it continues to yield returns by embedding reusability, traceability, and extensibility into the output.",
+            "description": "",
+            "actions": {
+                "formats": {
+                    "title": "Standardized Output Formats",
+                    "description": "Deliver in ML-ready formats like COCO, JSONL, TFRecord, or Pascal VOC"
+                },
+                "version": {
+                    "title": "Version Control",
+                    "description": "Track dataset iterations and changes using tools like DVC or Git-based systems"
+                },
+                "retraining": {
+                    "title": "Retraining Readiness",
+                    "description": "Design feedback loops for future annotation cycles and model fine-tuning"
+                }
+            },
+            "teamWork": {
+                "swiss": "Our Swiss team defines output architecture, schema governance, and compliance-ready data documentation",
+                "namibian": "Our Namibian team ensures versioning, traceability, and consistent data delivery through managed pipelines"
+            }
+        },
+        "humanInLoop": {
+            "title": "Human in the Loop",
+            "subtitle": "We believe annotation is not a mechanical task — it's a cognitive skill.",
+            "description": "Our Human-in-the-Loop (HITL) model enables contextual, high-quality annotations.",
+            "actions": {
+                "training": {
+                    "title": "Domain-Specific Training",
+                    "description": "Annotators are trained in the nuances of the industry (legal, medical, retail, etc.)"
+                },
+                "collaboration": {
+                    "title": "Human-AI Collaboration",
+                    "description": "Combine pre-annotations, model suggestions, and manual corrections"
+                },
+                "feedback": {
+                    "title": "Feedback-Driven Improvement",
+                    "description": "Use performance reviews and disagreement analysis to continuously raise annotation quality"
+                }
+            },
+            "teamWork": {
+                "swiss": "Our Swiss team sets review policies and manages continuous learning from model outcomes",
+                "namibian": "Our Namibian team executes annotation with quality-first discipline, escalating ambiguities and refining work"
+            }
+        }
+    },
+    "results": {
+        "title": "The Results",
+        "subtitle": "Not just \"labelled data\", but a strategic data asset that powers long-term machine learning and operational success.",
+        "button": "Start Your Project"
+    },
+    "processDesign": {
+        "title": "Designing the Process",
+        "subtitle": "We follow a thoughtful approach to designing a solution that fits your needs",
+        "needsAssessment": {
+            "title1": "NEEDS",
+            "title2": "ASSESSMENT",
+            "description": "We start by understanding your data, models, and business goals. Our in-house data professionals work with your team to identify:",
+            "items": {
+                "purpose": "The real <strong>purpose</strong> of the dataset",
+                "methods": "The best <strong>annotation methods</strong> for model performance",
+                "gaps": "Gaps in <strong>data quality or structure</strong> that may impact outcomes"
+            }
+        },
+        "customDesign": {
+            "title1": "CUSTOM",
+            "title2": "ANNOTATION",
+            "title3": "DESIGN",
+            "description": "We don't apply a one-size-fits-all approach. We design:",
+            "items": {
+                "workflows": "<strong>Annotation workflows</strong> tailored to your use case",
+                "quality": "<strong>Quality control protocols</strong> aligned with your accuracy targets",
+                "scalable": "<strong>Scalable pipelines</strong> that support growth and evolving needs"
+            }
+        },
+        "architecture": {
+            "title1": "FUTURE-PROOFED",
+            "title2": "DATA",
+            "title3": "ARCHITECTURE",
+            "description": "We think ahead. Our approach ensures your labelled data:",
+            "items": {
+                "integrates": "<strong>Integrates seamlessly</strong> into ML/AI pipelines",
+                "supports": "<strong>Supports model retraining</strong> and versioning",
+                "reduces": "<strong>Reduces the need</strong> for costly rework later"
+            }
+        },
+        "humanInLoop": {
+            "title1": "HUMAN IN THE",
+            "title2": "LOOP,",
+            "title3": "ALWAYS",
+            "description": "Our workforce is trained beyond basic labelling – they are:",
+            "items": {
+                "skilled": "<strong>Skilled in domain-specific</strong> annotation",
+                "supported": "<strong>Supported by data experts</strong> to ensure precision",
+                "improving": "<strong>Continuously improving</strong> through feedback loops"
+            }
+        },
+        "results": {
+            "title": "THE RESULTS",
+            "description": "Not just \"labelled data\", but a <strong>strategic data asset</strong> that powers <strong>long-term machine learning</strong> and <strong>operational success</strong>"
+        }
+    }
+}

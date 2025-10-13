@@ -1,0 +1,114 @@
+{
+    "hero": {
+        "title": "Services d'annotation de données médicales",
+        "subtitle": "Annotation experte de données médicales avec précision clinique. Nos équipes spécialisées namibiennes combinent expertise médicale et précision suisse pour les applications d'IA de santé."
+    },
+    "whyChoose": {
+        "title": "Pourquoi choisir nos services d'annotation médicale",
+        "subtitle": "Combinant l'expertise médicale avec des capacités de traitement de données de classe mondiale",
+        "expertise": {
+            "title": "Expertise clinique",
+            "description": "Notre équipe namibienne comprend des professionnels de santé avec formation médicale et formation spécialisée."
+        },
+        "compliance": {
+            "title": "Conformité réglementaire",
+            "description": "Conformité totale avec HIPAA, RGPD et normes internationales de gestion des données médicales."
+        },
+        "quality": {
+            "title": "Assurance qualité",
+            "description": "Validation multi-niveaux incluant supervision clinique et processus de révision par des experts."
+        },
+        "swiss": {
+            "title": "Précision suisse",
+            "description": "Normes de gestion de qualité suisses appliquées aux données médicales avec tolérance zéro pour les erreurs."
+        }
+    },
+    "capabilities": {
+        "title": "Nos capacités d'annotation médicale",
+        "subtitle": "Services complets d'annotation de données de santé avec expertise clinique",
+        "radiology": {
+            "title": "Radiologie et imagerie médicale",
+            "description": "Annotation experte d'images médicales avec précision clinique et supervision radiologique.",
+            "capabilities": {
+                "xray": "Annotation d'images radiographiques et identification de pathologies",
+                "mri": "Segmentation d'IRM et étiquetage anatomique",
+                "ct": "Analyse de scanner et identification d'organes",
+                "dicom": "Traitement du format DICOM et extraction de métadonnées",
+                "reconstruction": "Annotation de reconstruction multiplanaire",
+                "rendering": "Rendu volumétrique 3D et mesure"
+            },
+            "compliance": {
+                "dicom": "Normes DICOM",
+                "hipaa": "Conformité HIPAA",
+                "validation": "Validation clinique"
+            },
+            "useCases": {
+                "diagnostic": "Développement d'outils diagnostiques IA",
+                "detection": "Systèmes de détection assistée par ordinateur",
+                "research": "Ensembles de données de recherche en imagerie médicale",
+                "training": "Plateformes de formation pour radiologues"
+            },
+            "button": "Commencer"
+        },
+        "pathology": {
+            "title": "Pathologie et données de laboratoire",
+            "description": "Annotation précise d'images histopathologiques et diagnostics de laboratoire avec précision cellulaire.",
+            "capabilities": {
+                "histopathology": "Annotation de lames histopathologiques et identification cellulaire",
+                "cancer": "Détection de cancer et classification tumorale",
+                "tissue": "Identification et gradation de types tissulaires",
+                "microscopy": "Segmentation d'images de microscopie",
+                "laboratory": "Interprétation et codage de résultats de laboratoire",
+                "biomarker": "Identification et quantification de biomarqueurs"
+            },
+            "compliance": {
+                "quality": "Normes de qualité de laboratoire",
+                "terminology": "Terminologie médicale",
+                "accuracy": "Précision diagnostique"
+            },
+            "useCases": {
+                "cancer": "Algorithmes de détection de cancer",
+                "education": "Outils d'éducation en pathologie",
+                "drug": "Recherche de découverte de médicaments",
+                "digital": "Plateformes de pathologie numérique"
+            },
+            "button": "Commencer"
+        },
+        "clinical": {
+            "title": "Documentation clinique et DSE",
+            "description": "Annotation structurée de dossiers médicaux, notes cliniques et données de patients avec expertise médicale.",
+            "capabilities": {
+                "ehr": "Extraction de données de Dossier de Santé Électronique (DSE)",
+                "clinical": "Annotation de notes cliniques et codage CIM",
+                "terminology": "Standardisation de terminologie médicale",
+                "journey": "Cartographie du parcours patient et création de chronologie",
+                "medication": "Extraction d'informations sur médicaments et posologie",
+                "correlation": "Analyse de corrélation symptômes-diagnostic"
+            },
+            "compliance": {
+                "hipaa": "Conformité HIPAA",
+                "coding": "Normes de codage médical",
+                "deidentification": "Anonymisation de données"
+            },
+            "useCases": {
+                "decision": "Systèmes d'aide à la décision clinique",
+                "population": "Analytique de santé des populations",
+                "research": "Bases de données de recherche médicale",
+                "quality": "Métriques de qualité des soins"
+            },
+            "button": "Commencer"
+        }
+    },
+    "sections": {
+        "keyCapabilities": "Capacités clés :",
+        "useCases": "Cas d'usage :"
+    },
+    "cta": {
+        "title": "Prêt à faire progresser votre IA de santé ?",
+        "subtitle": "Associez-vous à nous pour une annotation de données médicales qui répond aux normes les plus élevées de précision, conformité et expertise clinique.",
+        "buttons": {
+            "start": "Démarrez votre projet médical",
+            "viewAll": "Voir tous les services"
+        }
+    }
+}

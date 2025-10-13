@@ -1,38 +1,93 @@
+import { useEffect, useRef } from 'react';
 import Container from "../ui/Container";
 import Image from "next/image";
+import { Trans, useTranslation } from "next-i18next";
 
 const ProcessDesignSection = () => {
+  const { t } = useTranslation('approach');
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    // Выравниваем высоту всех карточек после рендера
+    const alignCardHeights = () => {
+      if (cardsRef.current.length > 0 && window.innerWidth >= 1024) { // только на desktop
+        // Сбрасываем минимальную высоту
+        cardsRef.current.forEach(card => {
+          if (card) card.style.minHeight = 'auto';
+        });
+
+        // Получаем максимальную высоту
+        const heights = cardsRef.current.map(card => card?.offsetHeight || 0);
+        const maxHeight = Math.max(...heights);
+
+        // Устанавливаем одинаковую высоту для всех
+        cardsRef.current.forEach(card => {
+          if (card) card.style.minHeight = `${maxHeight}px`;
+        });
+      } else {
+        // На мобильных сбрасываем высоту
+        cardsRef.current.forEach(card => {
+          if (card) card.style.minHeight = 'auto';
+        });
+      }
+    };
+
+    // Выравниваем при загрузке и смене языка
+    alignCardHeights();
+
+    // Выравниваем при изменении размера окна
+    window.addEventListener('resize', alignCardHeights);
+
+    return () => {
+      window.removeEventListener('resize', alignCardHeights);
+    };
+  }, [t]); // пересчитываем при смене языка
+
   return (
     <section className="py-16 bg-primary text-white">
       <Container>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Designing the Process
+            {t('processDesign.title')}
           </h2>
           <p className="text-xl text-accent max-w-3xl mx-auto">
-            We follow a thoughtful approach to designing a solution that fits your needs
+            {t('processDesign.subtitle')}
           </p>
         </div>
 
         {/* Process Flow */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-4">
-          
+
           {/* Step 1: Needs Assessment */}
-          <div className="bg-white text-primary rounded-lg p-4 w-full lg:w-72 h-96 relative flex flex-col">
+          <div 
+            ref={el => cardsRef.current[0] = el}
+            className="bg-white text-primary rounded-lg p-4 w-full lg:w-72 relative flex flex-col"
+          >
             <div className="text-center mb-3">
-              <h3 className="text-xl lg:text-base font-bold text-primary mb-1">NEEDS</h3>
-              <h3 className="text-xl lg:text-base font-bold text-primary">ASSESSMENT</h3>
+              <h3 className="text-xl lg:text-base font-bold text-primary mb-1">{t('processDesign.needsAssessment.title1')}</h3>
+              <h3 className="text-xl lg:text-base font-bold text-primary">{t('processDesign.needsAssessment.title2')}</h3>
             </div>
-            
+
             <p className="text-base lg:text-xs mb-3">
-              We start by understanding your data, models, and business goals. 
-              Our in-house data professionals work with your team to identify:
+              {t('processDesign.needsAssessment.description')}
             </p>
-            
+
             <ul className="text-base lg:text-xs space-y-1 flex-grow">
-              <li>• The real <strong>purpose</strong> of the dataset</li>
-              <li>• The best <strong>annotation methods</strong> for model performance</li>
-              <li>• Gaps in <strong>data quality or structure</strong> that may impact outcomes</li>
+              <li>• <Trans
+                i18nKey="processDesign.needsAssessment.items.purpose"
+                ns="approach"
+                components={{ strong: <strong /> }}
+              /></li>
+              <li>• <Trans
+                i18nKey="processDesign.needsAssessment.items.methods"
+                ns="approach"
+                components={{ strong: <strong /> }}
+              /></li>
+              <li>• <Trans
+                i18nKey="processDesign.needsAssessment.items.gaps"
+                ns="approach"
+                components={{ strong: <strong /> }}
+              /></li>
             </ul>
           </div>
 
@@ -53,21 +108,36 @@ const ProcessDesignSection = () => {
           </div>
 
           {/* Step 2: Custom Annotation Design */}
-          <div className="bg-white text-primary rounded-lg p-4 w-full lg:w-72 h-96 relative flex flex-col">
+          <div 
+            ref={el => cardsRef.current[1] = el}
+            className="bg-white text-primary rounded-lg p-4 w-full lg:w-72 relative flex flex-col"
+          >
             <div className="text-center mb-3">
-              <h3 className="text-xl lg:text-base font-bold text-primary mb-0.5">CUSTOM</h3>
-              <h3 className="text-xl lg:text-base font-bold text-primary mb-0.5">ANNOTATION</h3>
-              <h3 className="text-xl lg:text-base font-bold text-primary">DESIGN</h3>
+              <h3 className="text-xl lg:text-base font-bold text-primary mb-0.5">{t('processDesign.customDesign.title1')}</h3>
+              <h3 className="text-xl lg:text-base font-bold text-primary mb-0.5">{t('processDesign.customDesign.title2')}</h3>
+              <h3 className="text-xl lg:text-base font-bold text-primary">{t('processDesign.customDesign.title3')}</h3>
             </div>
-            
+
             <p className="text-base lg:text-xs mb-3">
-              We don't apply a one-size-fits-all approach. We design:
+              {t('processDesign.customDesign.description')}
             </p>
-            
+
             <ul className="text-base lg:text-xs space-y-1 flex-grow">
-              <li>• <strong>Annotation workflows</strong> tailored to your use case</li>
-              <li>• <strong>Quality control protocols</strong> aligned with your accuracy targets</li>
-              <li>• <strong>Scalable pipelines</strong> that support growth and evolving needs</li>
+              <li>• <Trans
+                i18nKey="processDesign.customDesign.items.workflows"
+                ns="approach"
+                components={{ strong: <strong /> }}
+              /></li>
+              <li>• <Trans
+                i18nKey="processDesign.customDesign.items.quality"
+                ns="approach"
+                components={{ strong: <strong /> }}
+              /></li>
+              <li>• <Trans
+                i18nKey="processDesign.customDesign.items.scalable"
+                ns="approach"
+                components={{ strong: <strong /> }}
+              /></li>
             </ul>
           </div>
 
@@ -88,21 +158,24 @@ const ProcessDesignSection = () => {
           </div>
 
           {/* Step 3: Future-Proofed Data Architecture */}
-          <div className="bg-white text-primary rounded-lg p-4 w-full lg:w-72 h-96 relative flex flex-col">
+          <div 
+            ref={el => cardsRef.current[2] = el}
+            className="bg-white text-primary rounded-lg p-4 w-full lg:w-72 relative flex flex-col"
+          >
             <div className="text-center mb-3">
-              <h3 className="text-xl lg:text-base font-bold text-primary mb-0.5">FUTURE-PROOFED</h3>
-              <h3 className="text-xl lg:text-base font-bold text-primary mb-0.5">DATA</h3>
-              <h3 className="text-xl lg:text-base font-bold text-primary">ARCHITECTURE</h3>
+              <h3 className="text-xl lg:text-base font-bold text-primary mb-0.5">{t('processDesign.architecture.title1')}</h3>
+              <h3 className="text-xl lg:text-base font-bold text-primary mb-0.5">{t('processDesign.architecture.title2')}</h3>
+              <h3 className="text-xl lg:text-base font-bold text-primary">{t('processDesign.architecture.title3')}</h3>
             </div>
-            
+
             <p className="text-base lg:text-xs mb-3">
-              We think ahead. Our approach ensures your labelled data:
+              {t('processDesign.architecture.description')}
             </p>
-            
+
             <ul className="text-base lg:text-xs space-y-1 flex-grow">
-              <li>• <strong>Integrates seamlessly</strong> into ML/AI pipelines</li>
-              <li>• <strong>Supports model retraining</strong> and versioning</li>
-              <li>• <strong>Reduces the need</strong> for costly rework later</li>
+              <li>• <Trans i18nKey="processDesign.architecture.items.integrates" ns="approach" components={{ strong: <strong /> }} /></li>
+              <li>• <Trans i18nKey="processDesign.architecture.items.supports" ns="approach" components={{ strong: <strong /> }} /></li>
+              <li>• <Trans i18nKey="processDesign.architecture.items.reduces" ns="approach" components={{ strong: <strong /> }} /></li>
             </ul>
           </div>
 
@@ -123,21 +196,24 @@ const ProcessDesignSection = () => {
           </div>
 
           {/* Step 4: Human in the Loop */}
-          <div className="bg-white text-primary rounded-lg p-4 w-full lg:w-72 h-96 relative flex flex-col">
+          <div 
+            ref={el => cardsRef.current[3] = el}
+            className="bg-white text-primary rounded-lg p-4 w-full lg:w-72 relative flex flex-col"
+          >
             <div className="text-center mb-3">
-              <h3 className="text-xl lg:text-base font-bold text-primary mb-0.5">HUMAN IN THE</h3>
-              <h3 className="text-xl lg:text-base font-bold text-primary mb-0.5">LOOP,</h3>
-              <h3 className="text-xl lg:text-base font-bold text-primary">ALWAYS</h3>
+              <h3 className="text-xl lg:text-base font-bold text-primary mb-0.5">{t('processDesign.humanInLoop.title1')}</h3>
+              <h3 className="text-xl lg:text-base font-bold text-primary mb-0.5">{t('processDesign.humanInLoop.title2')}</h3>
+              <h3 className="text-xl lg:text-base font-bold text-primary">{t('processDesign.humanInLoop.title3')}</h3>
             </div>
-            
+
             <p className="text-base lg:text-xs mb-3">
-              Our workforce is trained beyond basic labelling – they are:
+              {t('processDesign.humanInLoop.description')}
             </p>
-            
+
             <ul className="text-base lg:text-xs space-y-1 flex-grow">
-              <li>• <strong>Skilled in domain-specific</strong> annotation</li>
-              <li>• <strong>Supported by data experts</strong> to ensure precision</li>
-              <li>• <strong>Continuously improving</strong> through feedback loops</li>
+              <li>• <Trans i18nKey="processDesign.humanInLoop.items.skilled" ns="approach" components={{ strong: <strong /> }} /></li>
+              <li>• <Trans i18nKey="processDesign.humanInLoop.items.supported" ns="approach" components={{ strong: <strong /> }} /></li>
+              <li>• <Trans i18nKey="processDesign.humanInLoop.items.improving" ns="approach" components={{ strong: <strong /> }} /></li>
             </ul>
           </div>
 
@@ -158,7 +234,10 @@ const ProcessDesignSection = () => {
           </div>
 
           {/* Final Result */}
-          <div className="bg-primary border-4 border-white rounded-lg p-4 w-full lg:w-72 h-96 relative flex flex-col">
+          <div 
+            ref={el => cardsRef.current[4] = el}
+            className="bg-primary border-4 border-white rounded-lg p-4 w-full lg:w-72 relative flex flex-col"
+          >
             <div className="text-center mb-4">
               <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
                 <Image
@@ -169,12 +248,12 @@ const ProcessDesignSection = () => {
                   className="text-primary"
                 />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">THE RESULTS</h3>
+              <h3 className="text-xl font-bold text-white mb-2">{t('processDesign.results.title')}</h3>
             </div>
-            
+
             <div className="text-center flex-grow flex flex-col justify-center">
               <p className="text-accent text-base lg:text-xs font-medium leading-relaxed">
-                Not just "labelled data", but a <strong className="text-white">strategic data asset</strong> that powers <strong className="text-white">long-term machine learning</strong> and <strong className="text-white">operational success</strong>
+                <Trans i18nKey="processDesign.results.description" ns="approach" components={{ strong: <strong className="text-white" /> }} />
               </p>
             </div>
           </div>
