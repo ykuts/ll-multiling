@@ -44,3 +44,7 @@ next-env.d.ts
 
 /tmp
 
+
+node_modules
+.tina/__generated__
+.env

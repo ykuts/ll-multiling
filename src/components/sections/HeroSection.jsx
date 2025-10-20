@@ -4,10 +4,19 @@ import Button from '../ui/Button';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 
-const HeroSection = () => {
+const HeroSection = ({ tinaData }) => {
   const parallaxRef = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
   const { t } = useTranslation('home');
+  const content = {
+    brandName: tinaData?.brandName || t('hero.brandName'),
+    tagline1: tinaData?.tagline1 || t('hero.tagline1'),
+    tagline2: tinaData?.tagline2 || t('hero.tagline2'),
+    subtitle1: tinaData?.subtitle1 || t('hero.subtitle1'),
+    subtitle2: tinaData?.subtitle2 || t('hero.subtitle2'),
+    btnServices: tinaData?.btnServices || t('hero.btnServices'),
+    btnContact: tinaData?.btnContact || t('hero.btnContact'),
+  };
 
   useEffect(() => {
     const handleScroll = () => {

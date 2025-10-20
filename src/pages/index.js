@@ -1,3 +1,5 @@
+import { useTina } from 'tinacms/dist/react'
+import client from '../../tina/__generated__/client'
 import Layout from '../components/layout/Layout';
 import HeroSection from '../components/sections/HeroSection';
 import ChallengeSection from '../components/sections/ChallengeSection';
@@ -12,8 +14,14 @@ import WhyChooseSection from '../components/sections/WhyChooseSection';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 
-export default function Home() {
+export default function Home(props) {
   const { t } = useTranslation('common');
+
+  const { data } = useTina({
+    query: props.query,
+    variables: props.variables,
+    data: props.data,
+  })
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -79,7 +87,7 @@ export default function Home() {
       image="https://labelladder.com/images/og/homepage-medical-og.jpg"
       structuredData={structuredData}
     >
-      <HeroSection />
+      <HeroSection tinaData={data?.homeTranslations?.hero} />
       <FoundationSection />
       <ExpertAnnotationSection />
       <ChallengeSection />
@@ -94,9 +102,25 @@ export default function Home() {
 }
 
 export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'home', 'services', 'credentials', 'contact'])),
-    },
-  };
+  try {
+    // Загружаем данные из Tina для текущего языка
+    const tinaProps = await client.queries.homeTranslations({
+      relativePath: `${locale}/home.json`,
+    })
+
+    return {
+      props: {
+        ...tinaProps,
+        ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'home', 'services', 'credentials', 'contact'])),
+      },
+    }
+  } catch (error) {
+    console.error('Error loading Tina data:', error)
+    // Fallback если Tina не работает
+    return {
+      props: {
+        ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'home', 'services', 'credentials', 'contact'])),
+      },
+    }
+  }
 }
