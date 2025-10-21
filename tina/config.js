@@ -27,7 +27,7 @@ export default defineConfig({
   schema: {
   collections: [
     // Главная страница
-   {
+  {
   name: "homeTranslations",
   label: "Home Page Translations",
   path: "public/locales",
@@ -49,49 +49,15 @@ export default defineConfig({
     {
       type: "object",
       name: "hero",
-      label: "Hero Section",
+      label: "🎯 Hero Section",
       fields: [
-        {
-          type: "string",
-          name: "brandName",
-          label: "Brand Name",
-        },
-        {
-          type: "string",
-          name: "tagline1",
-          label: "Tagline Line 1",
-        },
-        {
-          type: "string",
-          name: "tagline2",
-          label: "Tagline Line 2",
-        },
-        {
-          type: "string",
-          name: "subtitle1",
-          label: "Subtitle 1",
-          ui: {
-            component: "textarea",
-          },
-        },
-        {
-          type: "string",
-          name: "subtitle2",
-          label: "Subtitle 2",
-          ui: {
-            component: "textarea",
-          },
-        },
-        {
-          type: "string",
-          name: "btnServices",
-          label: "Services Button Text",
-        },
-        {
-          type: "string",
-          name: "btnContact",
-          label: "Contact Button Text",
-        },
+        { type: "string", name: "brandName", label: "Brand Name" },
+        { type: "string", name: "tagline1", label: "Tagline Line 1" },
+        { type: "string", name: "tagline2", label: "Tagline Line 2" },
+        { type: "string", name: "subtitle1", label: "Subtitle 1", ui: { component: "textarea" } },
+        { type: "string", name: "subtitle2", label: "Subtitle 2", ui: { component: "textarea" } },
+        { type: "string", name: "btnServices", label: "Services Button" },
+        { type: "string", name: "btnContact", label: "Contact Button" },
       ],
     },
     
@@ -99,20 +65,133 @@ export default defineConfig({
     {
       type: "object",
       name: "foundation",
-      label: "Foundation Section",
+      label: "🏛️ Foundation Section",
       fields: [
+        { type: "string", name: "title", label: "Title" },
+        { type: "string", name: "subtitle", label: "Subtitle", ui: { component: "textarea" } },
         {
-          type: "string",
-          name: "title",
-          label: "Title",
+          type: "object",
+          name: "stats",
+          label: "Statistics",
+          fields: [
+            {
+              type: "object",
+              name: "annotators",
+              label: "Annotators Stat",
+              fields: [
+                { type: "string", name: "number", label: "Number" },
+                { type: "string", name: "label", label: "Label" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "accuracy",
+              label: "Accuracy Stat",
+              fields: [
+                { type: "string", name: "number", label: "Number" },
+                { type: "string", name: "label", label: "Label" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "costReduction",
+              label: "Cost Reduction Stat",
+              fields: [
+                { type: "string", name: "number", label: "Number" },
+                { type: "string", name: "label", label: "Label" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "delivery",
+              label: "Delivery Stat",
+              fields: [
+                { type: "string", name: "number", label: "Number" },
+                { type: "string", name: "label", label: "Label" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+          ],
         },
         {
-          type: "string",
-          name: "subtitle",
-          label: "Subtitle",
-          ui: {
-            component: "textarea",
-          },
+          type: "object",
+          name: "capabilities",
+          label: "Capabilities",
+          fields: [
+            {
+              type: "object",
+              name: "largeScale",
+              label: "Large Scale",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "nativeEnglish",
+              label: "Native English",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "socialImpact",
+              label: "Social Impact",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "swissQuality",
+              label: "Swiss Quality",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+          ],
+        },
+        {
+          type: "object",
+          name: "academy",
+          label: "Academy",
+          fields: [
+            { type: "string", name: "title", label: "Title" },
+            { type: "string", name: "description1", label: "Description 1", ui: { component: "textarea" } },
+            { type: "string", name: "description2", label: "Description 2", ui: { component: "textarea" } },
+            { type: "string", name: "stat", label: "Stat Number" },
+            { type: "string", name: "statLabel", label: "Stat Label" },
+            { type: "string", name: "statDescription", label: "Stat Description", ui: { component: "textarea" } },
+          ],
+        },
+      ],
+    },
+    
+    // Expert Annotation Section
+    {
+      type: "object",
+      name: "expertAnnotation",
+      label: "🔬 Expert Annotation Section",
+      fields: [
+        { type: "string", name: "title", label: "Title" },
+        { type: "string", name: "subtitle", label: "Subtitle", ui: { component: "textarea" } },
+        { type: "string", name: "cta", label: "CTA Button Text" },
+        {
+          type: "object",
+          name: "medical",
+          label: "Medical & Healthcare",
+          fields: [
+            { type: "string", name: "title", label: "Title" },
+            { type: "string", name: "subtitle", label: "Subtitle", ui: { component: "textarea" } },
+          ],
         },
       ],
     },
@@ -121,20 +200,61 @@ export default defineConfig({
     {
       type: "object",
       name: "challenge",
-      label: "Challenge Section",
+      label: "⚠️ Challenge Section",
       fields: [
+        { type: "string", name: "title", label: "Title" },
+        { type: "string", name: "subtitle", label: "Subtitle", ui: { component: "textarea" } },
         {
-          type: "string",
-          name: "title",
-          label: "Title",
-        },
-        {
-          type: "string",
-          name: "subtitle",
-          label: "Subtitle",
-          ui: {
-            component: "textarea",
-          },
+          type: "object",
+          name: "challenges",
+          label: "Challenges",
+          fields: [
+            {
+              type: "object",
+              name: "time",
+              label: "Time Challenge",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "quality",
+              label: "Quality Challenge",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "costs",
+              label: "Costs Challenge",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "scalability",
+              label: "Scalability Challenge",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "integration",
+              label: "Integration Challenge",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+          ],
         },
       ],
     },
@@ -143,20 +263,127 @@ export default defineConfig({
     {
       type: "object",
       name: "solution",
-      label: "Solution Section",
+      label: "✅ Solution Section",
       fields: [
+        { type: "string", name: "title", label: "Title" },
+        { type: "string", name: "subtitle", label: "Subtitle", ui: { component: "textarea" } },
         {
-          type: "string",
-          name: "title",
-          label: "Title",
+          type: "object",
+          name: "solutions",
+          label: "Solutions",
+          fields: [
+            {
+              type: "object",
+              name: "speed",
+              label: "Speed",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "scale",
+              label: "Scale",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "savings",
+              label: "Savings",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "efficiency",
+              label: "Efficiency",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "reliability",
+              label: "Reliability",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    
+    // Why Choose Section
+    {
+      type: "object",
+      name: "whyChoose",
+      label: "💡 Why Choose Section",
+      fields: [
+        { type: "string", name: "title", label: "Title" },
+        { type: "string", name: "subtitle", label: "Subtitle", ui: { component: "textarea" } },
+        {
+          type: "object",
+          name: "features",
+          label: "Features",
+          fields: [
+            {
+              type: "object",
+              name: "scale",
+              label: "Scale & Capacity",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "medical",
+              label: "Medical Expertise",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "social",
+              label: "Social Impact",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "excellence",
+              label: "Excellence",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+          ],
         },
         {
-          type: "string",
-          name: "subtitle",
-          label: "Subtitle",
-          ui: {
-            component: "textarea",
-          },
+          type: "object",
+          name: "cta",
+          label: "CTA",
+          fields: [
+            { type: "string", name: "title", label: "Title" },
+            { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+            { type: "string", name: "btnGeneral", label: "General Button" },
+            { type: "string", name: "btnExpert", label: "Expert Button" },
+            { type: "string", name: "btnGetStarted", label: "Get Started Button" },
+          ],
         },
       ],
     },
@@ -165,53 +392,94 @@ export default defineConfig({
     {
       type: "object",
       name: "approach",
-      label: "Approach Section",
+      label: "📋 Approach Section",
       fields: [
+        { type: "string", name: "title", label: "Title" },
+        { type: "string", name: "subtitle", label: "Subtitle", ui: { component: "textarea" } },
         {
-          type: "string",
-          name: "title",
-          label: "Title",
+          type: "object",
+          name: "steps",
+          label: "Steps",
+          fields: [
+            {
+              type: "object",
+              name: "assessment",
+              label: "Step 1: Assessment",
+              fields: [
+                { type: "string", name: "number", label: "Number" },
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "design",
+              label: "Step 2: Design",
+              fields: [
+                { type: "string", name: "number", label: "Number" },
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "architecture",
+              label: "Step 3: Architecture",
+              fields: [
+                { type: "string", name: "number", label: "Number" },
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+            {
+              type: "object",
+              name: "human",
+              label: "Step 4: Human in Loop",
+              fields: [
+                { type: "string", name: "number", label: "Number" },
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              ],
+            },
+          ],
         },
+        { type: "string", name: "cta", label: "CTA Button Text" },
+      ],
+    },
+    
+    // Credentials Section
+    {
+      type: "object",
+      name: "credentials",
+      label: "🏆 Credentials Section",
+      fields: [
+        { type: "string", name: "title", label: "Title" },
+        { type: "string", name: "subtitle", label: "Subtitle", ui: { component: "textarea" } },
+        { type: "string", name: "cta", label: "CTA Button Text" },
         {
-          type: "string",
-          name: "subtitle",
-          label: "Subtitle",
-          ui: {
-            component: "textarea",
-          },
-        },
-        {
-          type: "string",
-          name: "cta",
-          label: "CTA Button Text",
+          type: "object",
+          name: "cases",
+          label: "Case Labels",
+          fields: [
+            { type: "string", name: "challenge", label: "Challenge Label" },
+            { type: "string", name: "solution", label: "Solution Label" },
+            { type: "string", name: "outcome", label: "Outcome Label" },
+            { type: "string", name: "duration", label: "Duration Label" },
+            { type: "string", name: "dataVolume", label: "Data Volume Label" },
+          ],
         },
       ],
     },
     
-    // CTA Section
+    // Final CTA Section
     {
       type: "object",
       name: "cta",
-      label: "CTA Section",
+      label: "📢 Final CTA Section",
       fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
-        },
-        {
-          type: "string",
-          name: "subtitle",
-          label: "Subtitle",
-          ui: {
-            component: "textarea",
-          },
-        },
-        {
-          type: "string",
-          name: "button",
-          label: "Button Text",
-        },
+        { type: "string", name: "title", label: "Title" },
+        { type: "string", name: "subtitle", label: "Subtitle", ui: { component: "textarea" } },
+        { type: "string", name: "button", label: "Button Text" },
       ],
     },
   ],
