@@ -483,7 +483,6 @@ export default defineConfig({
   ],
 },
     
-    // Оставляем Posts для примера
     {
       name: "post",
       label: "Posts",
