@@ -36,7 +36,6 @@ export default defineConfig({
     include: "*/home"
   },
   ui: {
-    // ui ДОЛЖЕН быть ДО fields!
     router: ({ document }) => {
       const locale = document._sys.breadcrumbs[0];
       if (locale === 'en') {
@@ -46,6 +45,7 @@ export default defineConfig({
     },
   },
   fields: [
+    // Hero Section
     {
       type: "object",
       name: "hero",
@@ -94,11 +94,131 @@ export default defineConfig({
         },
       ],
     },
+    
+    // Foundation Section
+    {
+      type: "object",
+      name: "foundation",
+      label: "Foundation Section",
+      fields: [
+        {
+          type: "string",
+          name: "title",
+          label: "Title",
+        },
+        {
+          type: "string",
+          name: "subtitle",
+          label: "Subtitle",
+          ui: {
+            component: "textarea",
+          },
+        },
+      ],
+    },
+    
+    // Challenge Section
+    {
+      type: "object",
+      name: "challenge",
+      label: "Challenge Section",
+      fields: [
+        {
+          type: "string",
+          name: "title",
+          label: "Title",
+        },
+        {
+          type: "string",
+          name: "subtitle",
+          label: "Subtitle",
+          ui: {
+            component: "textarea",
+          },
+        },
+      ],
+    },
+    
+    // Solution Section
+    {
+      type: "object",
+      name: "solution",
+      label: "Solution Section",
+      fields: [
+        {
+          type: "string",
+          name: "title",
+          label: "Title",
+        },
+        {
+          type: "string",
+          name: "subtitle",
+          label: "Subtitle",
+          ui: {
+            component: "textarea",
+          },
+        },
+      ],
+    },
+    
+    // Approach Section
+    {
+      type: "object",
+      name: "approach",
+      label: "Approach Section",
+      fields: [
+        {
+          type: "string",
+          name: "title",
+          label: "Title",
+        },
+        {
+          type: "string",
+          name: "subtitle",
+          label: "Subtitle",
+          ui: {
+            component: "textarea",
+          },
+        },
+        {
+          type: "string",
+          name: "cta",
+          label: "CTA Button Text",
+        },
+      ],
+    },
+    
+    // CTA Section
+    {
+      type: "object",
+      name: "cta",
+      label: "CTA Section",
+      fields: [
+        {
+          type: "string",
+          name: "title",
+          label: "Title",
+        },
+        {
+          type: "string",
+          name: "subtitle",
+          label: "Subtitle",
+          ui: {
+            component: "textarea",
+          },
+        },
+        {
+          type: "string",
+          name: "button",
+          label: "Button Text",
+        },
+      ],
+    },
   ],
 },
     
     // Оставляем Posts для примера
-    {
+    /* {
       name: "post",
       label: "Posts",
       path: "content/posts",
@@ -121,7 +241,7 @@ export default defineConfig({
       ui: {
           router: ({ document }) => `/demo/blog/${document._sys.filename}`,
         },
-    },
+    }, */
   ],
 }
 });
