@@ -6,9 +6,18 @@ import Image from 'next/image';
 import ProcessDesignSection from '@/components/sections/ProcessDesignSection';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import { useTina } from 'tinacms/dist/react'
+import client from '../../tina/__generated__/client'
 
-export default function Approach() {
+export default function Approach(props) {
   const { t } = useTranslation('approach');
+
+  const { data } = useTina({
+        query: props.query,
+        variables: props.variables,
+        data: props.data,
+    });
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -269,9 +278,23 @@ export default function Approach() {
 }
 
 export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'approach'])),
-    },
-  };
+    try {
+        const tinaProps = await client.queries.approachTranslations({
+            relativePath: `${locale}/approach.json`,
+        });
+
+        return {
+            props: {
+                ...tinaProps,
+                ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'approach'])),
+            },
+        };
+    } catch (error) {
+        console.error('Error loading Tina data:', error);
+        return {
+            props: {
+                ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'approach'])),
+            },
+        };
+    }
 }

@@ -7,9 +7,18 @@ import Image from 'next/image';
 import { trackServiceInquiry } from '../lib/gtag';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import { useTina } from 'tinacms/dist/react'
+import client from '../../tina/__generated__/client'
 
-export default function Medical() {
+export default function Medical(props) {
     const { t } = useTranslation('expert-services');
+
+    const { data } = useTina({
+        query: props.query,
+        variables: props.variables,
+        data: props.data,
+    });
+
     useEffect(() => {
         trackServiceInquiry('medical_page_view');
     }, []);
@@ -220,7 +229,7 @@ export default function Medical() {
                                             <h4 className="text-lg font-semibold text-primary">{service.title}</h4>
                                         </div>
                                     </div>
-                                    
+
                                     {/* Content */}
                                     <div className={`p-8 lg:p-12 ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}>
                                         <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
@@ -257,7 +266,7 @@ export default function Medical() {
                                         </Button>
                                     </div>
 
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -291,9 +300,23 @@ export default function Medical() {
 }
 
 export async function getStaticProps({ locale }) {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'expert-services'])),
-        },
-    };
+    try {
+        const tinaProps = await client.queries.expertServicesTranslations({
+            relativePath: `${locale}/expert-services.json`,
+        });
+
+        return {
+            props: {
+                ...tinaProps,
+                ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'expert-services'])),
+            },
+        };
+    } catch (error) {
+        console.error('Error loading Tina data:', error);
+        return {
+            props: {
+                ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'expert-services'])),
+            },
+        };
+    }
 }

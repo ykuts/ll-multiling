@@ -6,9 +6,18 @@ import Image from 'next/image';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { Trans } from 'next-i18next';
+import { useTina } from 'tinacms/dist/react'
+import client from '../../tina/__generated__/client'
 
-export default function About() {
+export default function About(props) {
     const { t } = useTranslation('about');
+
+    const { data } = useTina({
+        query: props.query,
+        variables: props.variables,
+        data: props.data,
+    });
+
     // Structured data for SEO
     const structuredData = {
         "@context": "https://schema.org",
@@ -66,11 +75,31 @@ export default function About() {
             role: 'Operations',
             image: '/images/team/klaudia.png',
         },
+        
+    ];
+
+    const advisors = [
         {
             name: 'Elzine Mushambi',
-            role: 'Co-founder & Advisor',
+            role: 'Emerging Markets',
             image: '/images/team/elzine.png',
         },
+        {
+            name: 'Christoph Buchli',
+            role: 'Strategy & Tech',
+            image: '/images/team/christoph.jpg',
+        },
+        {
+            name: 'Jocelyne Kuhn',
+            role: 'Sales & Marketing',
+            image: '/images/team/jocelyne.jpeg',
+        },
+        {
+            name: 'Marcel Blattner, PhD',
+            role: 'Data & AI',
+            image: '/images/team/marcel.jpg',
+        },
+        
     ];
 
     const labelers = [
@@ -417,6 +446,34 @@ export default function About() {
 
                     <div className="mt-16">
                         <SectionHeading
+                            title="Advisory Board"
+                            subtitle="Experienced advisors guiding our strategic vision and growth."
+                            centered
+                        />
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                            {advisors.map((advisor, index) => (
+                                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                                    <div className="relative aspect-square">
+                                        <Image
+                                            src={advisor.image}
+                                            alt={advisor.name}
+                                            fill
+                                            className="object-contain"
+                                            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 12.5vw"
+                                        />
+                                    </div>
+                                    <div className="p-4 text-center">
+                                    <h3 className="text-xl font-bold text-primary">{advisor.name}</h3>
+                                    <p className="text-gray-600">{advisor.role}</p>
+                                </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="mt-16">
+                        <SectionHeading
                             title={t('team.labelers.title')}
                             subtitle={t('team.labelers.subtitle')}
                             centered
@@ -465,9 +522,25 @@ export default function About() {
 }
 
 export async function getStaticProps({ locale }) {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'about'])),
-        },
-    };
+    try {
+        // Download data from Tina for the current language
+        const tinaProps = await client.queries.aboutTranslations({
+            relativePath: `${locale}/about.json`,
+        });
+
+        return {
+            props: {
+                ...tinaProps,
+                ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'about'])),
+            },
+        };
+    } catch (error) {
+        console.error('Error loading Tina data:', error);
+        // Fallback if Tina is not working
+        return {
+            props: {
+                ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'about'])),
+            },
+        };
+    }
 }

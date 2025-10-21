@@ -5,9 +5,18 @@ import Button from '../components/ui/Button';
 import Image from 'next/image';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import { useTina } from 'tinacms/dist/react'
+import client from '../../tina/__generated__/client'
 
-export default function Cases() {
+export default function Cases(props) {
   const { t } = useTranslation('credentials');
+
+  const { data } = useTina({
+        query: props.query,
+        variables: props.variables,
+        data: props.data,
+    });
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -520,9 +529,23 @@ function getIndustryIcon(industry) {
 }
 
 export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'credentials'])),
-    },
-  };
+    try {
+        const tinaProps = await client.queries.credentialsTranslations({
+            relativePath: `${locale}/credentials.json`,
+        });
+
+        return {
+            props: {
+                ...tinaProps,
+                ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'credentials'])),
+            },
+        };
+    } catch (error) {
+        console.error('Error loading Tina data:', error);
+        return {
+            props: {
+                ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'credentials'])),
+            },
+        };
+    }
 }

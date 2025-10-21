@@ -7,9 +7,17 @@ import OfficeLocationsDemo from '../components/sections/OfficeLocationsDemo';
 import { trackContactForm } from '../lib/gtag';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import { useTina } from 'tinacms/dist/react'
+import client from '../../tina/__generated__/client'
 
-export default function Contact() {
+export default function Contact(props) {
     const { t } = useTranslation('contact');
+
+    const { data } = useTina({
+        query: props.query,
+        variables: props.variables,
+        data: props.data,
+    });
 
     const structuredData = [
         {
@@ -506,9 +514,23 @@ export default function Contact() {
 }
 
 export async function getStaticProps({ locale }) {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'contact'])),
-        },
-    };
+    try {
+        const tinaProps = await client.queries.contactTranslations({
+            relativePath: `${locale}/contact.json`,
+        });
+
+        return {
+            props: {
+                ...tinaProps,
+                ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'contact'])),
+            },
+        };
+    } catch (error) {
+        console.error('Error loading Tina data:', error);
+        return {
+            props: {
+                ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'contact'])),
+            },
+        };
+    }
 }

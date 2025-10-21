@@ -6,9 +6,18 @@ import Button from '../components/ui/Button';
 import { trackServiceInquiry } from '../lib/gtag';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import { useTina } from 'tinacms/dist/react'
+import client from '../../tina/__generated__/client'
 
-export default function Services() {
+export default function Services(props) {
   const { t } = useTranslation('services');
+
+  const { data } = useTina({
+    query: props.query,
+    variables: props.variables,
+    data: props.data,
+  });
+
   useEffect(() => {
     trackServiceInquiry('services_page_view');
   }, []);
@@ -321,9 +330,23 @@ export default function Services() {
 }
 
 export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'services'])),
-    },
-  };
+    try {
+        const tinaProps = await client.queries.servicesTranslations({
+            relativePath: `${locale}/services.json`,
+        });
+
+        return {
+            props: {
+                ...tinaProps,
+                ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'services'])),
+            },
+        };
+    } catch (error) {
+        console.error('Error loading Tina data:', error);
+        return {
+            props: {
+                ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'services'])),
+            },
+        };
+    }
 }
