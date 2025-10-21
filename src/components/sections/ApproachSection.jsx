@@ -33,8 +33,8 @@ const ApproachSection = () => {
     <section className="py-16 md:py-24 bg-gray-50">
       <Container>
         <SectionHeading
-          title="Our Approach"
-          subtitle="We follow a thoughtful approach to designing a solution that fits your needs."
+          title={t('approach.title')}
+          subtitle={t('approach.subtitle')}
           centered
         />
         

@@ -464,8 +464,6 @@ export default defineConfig({
             { type: "string", name: "challenge", label: "Challenge Label" },
             { type: "string", name: "solution", label: "Solution Label" },
             { type: "string", name: "outcome", label: "Outcome Label" },
-            { type: "string", name: "duration", label: "Duration Label" },
-            { type: "string", name: "dataVolume", label: "Data Volume Label" },
           ],
         },
       ],
