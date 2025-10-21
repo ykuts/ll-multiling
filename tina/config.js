@@ -484,7 +484,7 @@ export default defineConfig({
 },
     
     // Оставляем Posts для примера
-    /* {
+    {
       name: "post",
       label: "Posts",
       path: "content/posts",
@@ -507,7 +507,7 @@ export default defineConfig({
       ui: {
           router: ({ document }) => `/demo/blog/${document._sys.filename}`,
         },
-    }, */
+    },
   ],
 }
 });
