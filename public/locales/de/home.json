@@ -35,20 +35,20 @@
     },
     "capabilities": {
       "largeScale": {
-        "title": "Großprojekte",
-        "description": "Bearbeitung von Annotationen im Unternehmensmaßstab mit unserer umfangreichen Belegschaft"
+        "title": "",
+        "description": ""
       },
       "nativeEnglish": {
-        "title": "Muttersprachler Englisch",
-        "description": "Unser namibisches Team umfasst englische Muttersprachler für sprachliche Genauigkeit"
+        "title": "",
+        "description": ""
       },
       "socialImpact": {
-        "title": "Sozialer Einfluss",
-        "description": "Schaffung sinnvoller Arbeitsplätze und Entwicklung digitaler Kompetenzen in Namibia"
+        "title": "",
+        "description": ""
       },
       "swissQuality": {
-        "title": "Schweizer Qualitätsstandards",
-        "description": "Namibisches Talent kombiniert mit Schweizer Präzision und Qualitätsmanagement"
+        "title": "Schweizer Qualitätskontrolle",
+        "description": "Unsere Prozesse orientieren sich an strengen Schweizer Qualitätsstandards. Damit gewährleisten wir eine Datenaufbereitung, die höchsten Ansprüchen genügt und Ihnen erlaubt, sich auf Ihr Kerngeschäft zu konzentriere"
       }
     },
     "academy": {
