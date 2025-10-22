@@ -90,8 +90,8 @@
         "description": "Einige Projekte erfordern schnelle Skalierung, andere benötigen spezialisierte Annotationen für Nischenanwendungen."
       },
       "integration": {
-        "title": "INTEGRATION",
-        "description": "Die Integration von Daten in bestehende KI/ML-Workflows oder Pipelines kann zu Prozess- und technischen Engpässen führen."
+        "title": "🔗 Integration",
+        "description": "Daten fliessen oft nicht reibungslos in bestehende Systeme ein."
       }
     }
   },
