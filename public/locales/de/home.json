@@ -61,12 +61,12 @@
     }
   },
   "expertAnnotation": {
-    "title": "Experten-geführte Annotation für komplexe Bereiche",
-    "subtitle": "Auf unserer soliden Grundlage bauen wir engagierte Teams namibischer Experten für Projekte mit tiefgehendem Fachwissen.",
+    "title": "Fallbeispiel: Wie Label Ladder KI im Gesundheitswesen unterstützt",
+    "subtitle": "Ein internationales MedTech-Unternehmen wollte einen KI-Agenten entwickeln, die Röntgen- und CT-Bilder automatisch auswertet. Dafür brauchte es zehntausende präzise gekennzeichnete Bilder um den KI-Agenten zu schulen: ein Projekt, das intern zu teuer und zeitaufwendig gewesen wäre. Allein die interne Rekrutierung und Schulung von Fachkräften hätte Monate in Anspruch genommen. Gleichzeitig fehlte es an skalierbaren Prozessen, um die Datenmenge in der geforderten Qualität und Geschwindigkeit bereitzustellen. Und genau hier kommt Label Ladder ins Spiel.",
     "cta": "Besprechen Sie Ihre speziellen Anforderungen",
     "medical": {
-      "title": "Medizinische & Gesundheitsannotation",
-      "subtitle": "Unser Hauptbereich mit spezieller Ausbildung und klinischer Überwachung"
+      "title": "So haben wir das Projekt umgesetzt:",
+      "subtitle": "1. Aufbau eines Expertenteams\nWir stellten ein spezialisiertes Team mit medizinischer Zusatzausbildung zusammen und schulten es nach Schweizer Qualitätsstandards.\n\n2. Präzise Annotation medizinischer Daten\nDas Team kennzeichnete tausende Röntgen- und CT-Aufnahmen mit klinischer Genauigkeit – inklusive Validierung durch Fachärzte.\n\n3. Sichere Dokumentation & Compliance\nAlle Daten wurden HIPAA-konform verarbeitet, standardisiert und für den direkten Einsatz in die Systeme des Kunden überführt."
     }
   },
   "challenge": {
