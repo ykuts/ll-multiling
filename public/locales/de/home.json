@@ -178,9 +178,9 @@
     "cta": "Kostenloses Erstgespräch buchen"
   },
   "credentials": {
-    "title": "Referenzen",
-    "subtitle": "Sehen Sie, wie wir anderen Organisationen geholfen haben, ihre Datenherausforderungen zu lösen.",
-    "cta": "Alle Fallstudien anzeigen",
+    "title": "Erfolgsgeschichten unserer Kunden",
+    "subtitle": "Study Cases should be sorted by industry, in a slider to shorten the website a bit. \nSoftware & IT\n\nAdair (Software Development)\nProjektmanagement-Datenmigration → Wir stellten sicher, dass beim Umstieg auf ein neues Tool die Daten vollständig und korrekt übertragen wurden.\n\nAutomotive / Mobilität\n\nDigital Divine Data\nAutonomes Fahren → Bilder für KI-Systeme präzise aufbereitet, damit Fahrzeuge Objekte zuverlässig erkennen.\n\nHealthcare\n\nAmbulanzpartner\nGesundheitsdatenverarbeitung → Patientendaten bereinigt und strukturiert, um eine bessere Versorgung zu ermöglichen.\n\nSocial Impact / Nachhaltigkeit\n\nImpact Tank\nUmweltschutz → Datenpipeline für Wildtier-Monitoring aufgebaut, damit Umwelteinflüsse in Echtzeit gemessen werden können.",
+    "cta": "Mehr Erfolgsgeschichten entdecken",
     "cases": {
       "challenge": "Problem",
       "solution": "Lösung",
