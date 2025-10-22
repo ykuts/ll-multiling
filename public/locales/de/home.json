@@ -18,7 +18,7 @@
         "description": "Ein starkes Netzwerk aus ausgebildeten Fachkräften liefert die Daten, die Ihre KI für verlässliche Ergebnisse braucht. "
       },
       "accuracy": {
-        "number": "",
+        "number": "delete",
         "label": "",
         "description": ""
       },
