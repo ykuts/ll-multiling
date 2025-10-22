@@ -78,8 +78,8 @@
         "description": "Datenaufbereitung frisst Ressourcen und verzögert Projekte."
       },
       "quality": {
-        "title": "QUALITÄT",
-        "description": "Niedrige Datenqualität und irreführende Daten führen zu ungenauen Vorhersagen, unzuverlässigen Modellen und finanziellen Verlusten."
+        "title": "⭐ Qualität",
+        "description": "Ungenaue Daten führen zu falschen Ergebnissen."
       },
       "costs": {
         "title": "💰 Kosten",
