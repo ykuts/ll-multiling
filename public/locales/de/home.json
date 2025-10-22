@@ -1,4 +1,13 @@
 {
+  "hero": {
+    "brandName": "LABEL LADDER",
+    "tagline1": "Präzise Datenaufbereitung",
+    "tagline2": "von der Skalierung zur gezielten Fachlösung.",
+    "subtitle1": "Präzise Daten für Ihre KI, geliefert von unserem 1.000-köpfigen Team in Namibia.",
+    "subtitle2": "Das gesamte Spektrum der Daten-Annotation: Skalierbare allgemeine Kennzeichnung & Experten-geführte Dienstleistungen.",
+    "btnServices": "Leistungen",
+    "btnContact": "Kontaktieren Sie uns"
+  },
   "foundation": {
     "title": "Unsere Grundlage",
     "subtitle": "Skalierung und sozialer Einfluss: Unsere 1.000 qualifizierten Annotatoren",
@@ -54,38 +63,11 @@
   "expertAnnotation": {
     "title": "Experten-geführte Annotation für komplexe Bereiche",
     "subtitle": "Auf unserer soliden Grundlage bauen wir engagierte Teams namibischer Experten für Projekte mit tiefgehendem Fachwissen.",
+    "cta": "Besprechen Sie Ihre speziellen Anforderungen",
     "medical": {
       "title": "Medizinische & Gesundheitsannotation",
-      "subtitle": "Unser Hauptbereich mit spezieller Ausbildung und klinischer Überwachung",
-      "radiology": {
-        "title": "Radiologie & medizinische Bildgebung",
-        "description": "Fachgerechte Annotation von Röntgenbildern, MRTs, CT-Scans und anderen medizinischen Bildern mit klinischer Genauigkeit",
-        "features": {
-          "dicom": "DICOM-Format-Unterstützung",
-          "validation": "Klinische Validierung",
-          "oversight": "Überwachung durch Radiologen"
-        }
-      },
-      "pathology": {
-        "title": "Pathologie & Labordaten",
-        "description": "Präzise Annotation von histopathologischen Bildern, Laborergebnissen und Diagnosedaten",
-        "features": {
-          "cellular": "Zellidentifikation",
-          "tissue": "Gewebeklassifikation",
-          "diagnostic": "Diagnostische Kennzeichnung"
-        }
-      },
-      "clinical": {
-        "title": "Klinische Dokumentation",
-        "description": "Strukturierte Annotation von Krankenakten, Patientendaten und klinischen Notizen",
-        "features": {
-          "hipaa": "HIPAA-Konformität",
-          "terminology": "Medizinische Terminologie",
-          "standardization": "Datenstandardisierung"
-        }
-      }
-    },
-    "cta": "Besprechen Sie Ihre speziellen Anforderungen"
+      "subtitle": "Unser Hauptbereich mit spezieller Ausbildung und klinischer Überwachung"
+    }
   },
   "challenge": {
     "title": "Die Aufgabe",
@@ -202,23 +184,12 @@
     "cases": {
       "challenge": "Problem",
       "solution": "Lösung",
-      "outcome": "Ergebnis",
-      "duration": "Dauer",
-      "dataVolume": "Datenvolumen"
+      "outcome": "Ergebnis"
     }
   },
   "cta": {
     "title": "Bereit, das volle Potenzial Ihrer Daten zu erschließen?",
     "subtitle": "Lassen Sie uns Ihnen helfen, Ihre Daten in ein leistungsstarkes Asset zu verwandeln, das intelligentere Entscheidungen, optimierte Abläufe und echten Wettbewerbsvorteil ermöglicht.",
     "button": "Kontaktieren Sie uns heute"
-  },
-  "hero": {
-    "brandName": "LABEL",
-    "tagline1": "Hochwertige Daten",
-    "tagline2": "Skalierung bis Spezialisierung.",
-    "subtitle1": "Präzise Daten für Ihre KI, geliefert von unserem 1.000-köpfigen Team in Namibia.",
-    "subtitle2": "Das gesamte Spektrum der Daten-Annotation: Skalierbare allgemeine Kennzeichnung & Experten-geführte Dienstleistungen.",
-    "btnServices": "Leistungen",
-    "btnContact": "Kontaktieren Sie uns"
   }
 }
