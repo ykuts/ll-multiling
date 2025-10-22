@@ -82,8 +82,8 @@
         "description": "Niedrige Datenqualität und irreführende Daten führen zu ungenauen Vorhersagen, unzuverlässigen Modellen und finanziellen Verlusten."
       },
       "costs": {
-        "title": "KOSTEN",
-        "description": "Die interne Verarbeitung, Kennzeichnung und Annotation von Daten ist teuer und zeitaufwendig."
+        "title": "💰 Kosten",
+        "description": "Interne Verarbeitung ist teuer und ineffizient."
       },
       "scalability": {
         "title": "SKALIERBARKEIT",
