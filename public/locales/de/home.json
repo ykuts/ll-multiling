@@ -151,13 +151,13 @@
     }
   },
   "approach": {
-    "title": "Unser Ansatz",
-    "subtitle": "Wir folgen einem durchdachten Ansatz zur Gestaltung einer Lösung, die Ihren Anforderungen entspricht.",
+    "title": "So gehen wir vor",
+    "subtitle": "",
     "steps": {
       "assessment": {
         "number": "1",
-        "title": "BEDARFSANALYSE",
-        "description": "Wir beginnen damit, Ihre Daten, Modelle und Geschäftsziele zu verstehen. Unsere internen Datenprofis arbeiten mit Ihrem Team zusammen, um den wahren Zweck des Datensatzes zu identifizieren."
+        "title": "Analyse",
+        "description": "Wir verstehen Ihre Daten und Geschäftsziele, bevor wir starten."
       },
       "design": {
         "number": "2",
