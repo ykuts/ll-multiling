@@ -86,8 +86,8 @@
         "description": "Interne Verarbeitung ist teuer und ineffizient."
       },
       "scalability": {
-        "title": "SKALIERBARKEIT",
-        "description": "Einige Projekte erfordern schnelle Skalierung, andere benötigen spezialisierte Annotationen für Nischenanwendungen."
+        "title": "DELETE SECTION",
+        "description": "delete section"
       },
       "integration": {
         "title": "🔗 Integration",
