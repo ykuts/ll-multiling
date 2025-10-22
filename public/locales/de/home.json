@@ -122,8 +122,8 @@
     }
   },
   "whyChoose": {
-    "title": "Warum Label Ladder wählen",
-    "subtitle": "Wir kombinieren Skalierung mit Spezialisierung – von Annotationen mit hohem Volumen bis zu von Experten geleiteten medizinischen Dienstleistungen.",
+    "title": "Warum Unternehmen auf Label Ladder setzen",
+    "subtitle": "⭐ Skalierbarkeit & Kapazität\n1.000 Fachkräfte, schnell einsatzbereit – für Projekte jeder Größe.\n\n🩺 Fachliche Präzision\nErfahrung in komplexen Bereichen wie Medizin, Finanzdaten und technischen Anwendungen – mit Schweizer Qualitätsmanagement.\n\n🌍 Sozialer & wirtschaftlicher Impact\nNachhaltige Ausbildung und Beschäftigung in Namibia, offiziell unterstützt vom Bildungsministerium.",
     "features": {
       "scale": {
         "title": "SKALIERUNG & KAPAZITÄT",
@@ -143,11 +143,11 @@
       }
     },
     "cta": {
-      "title": "Bereit, das gesamte Spektrum zu erleben?",
-      "description": "Ob Sie großvolumige allgemeine Annotation oder spezialisierte von Experten geleitete Annotation benötigen, wir haben die richtige Lösung für Ihr Projekt.",
-      "btnGeneral": "Allgemeine Annotation",
-      "btnExpert": "Von Experten geleitete Annotation",
-      "btnGetStarted": "Loslegen"
+      "title": "Bereit, Ihr Projekt umzusetzen?",
+      "description": "",
+      "btnGeneral": "Buchen Sie jetzt Ihr kostenloses Erstgespräch mit Label Ladder",
+      "btnExpert": "delete",
+      "btnGetStarted": "delete"
     }
   },
   "approach": {
