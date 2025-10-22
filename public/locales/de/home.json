@@ -9,13 +9,13 @@
     "btnContact": "Kontaktieren Sie uns"
   },
   "foundation": {
-    "title": "Unsere Grundlage",
+    "title": "Warum Label Ladder?",
     "subtitle": "Skalierung und sozialer Einfluss: Unsere 1.000 qualifizierten Annotatoren",
     "stats": {
       "annotators": {
         "number": "1.000",
-        "label": "Geschulte Annotatoren",
-        "description": "Ausgebildete Fachkräfte in Namibia liefern hochwertige Datenannotation"
+        "label": "Expert*innen im Team",
+        "description": "Ein starkes Netzwerk aus ausgebildeten Fachkräften liefert die Daten, die Ihre KI für verlässliche Ergebnisse braucht. "
       },
       "accuracy": {
         "number": "98%",
