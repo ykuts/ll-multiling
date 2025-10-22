@@ -70,12 +70,12 @@
     }
   },
   "challenge": {
-    "title": "Die Aufgabe",
-    "subtitle": "Organisationen, die datenbasierte Entscheidungen treffen oder maschinelles Lernen nutzen, stehen vor verschiedenen Herausforderungen.",
+    "title": "Warum Daten oft zum Engpass werden",
+    "subtitle": "Viele Unternehmen stehen vor denselben Hürden, wenn es um die Vorbereitung von Daten geht:",
     "challenges": {
       "time": {
-        "title": "ZEIT",
-        "description": "Die für die Datenvorbereitung aufgewendete Projektzeit verzögert oft Projekte oder verringert die Produktivität."
+        "title": "⏱️ Zeit",
+        "description": "Datenaufbereitung frisst Ressourcen und verzögert Projekte."
       },
       "quality": {
         "title": "QUALITÄT",
