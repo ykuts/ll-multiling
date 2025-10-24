@@ -97,17 +97,17 @@
   },
   "solution": {
     "title": "So bringt Label Ladder Ihr KI-Projekt voran",
-    "subtitle": "⏱️ Schnell & effizient\nGeschulte Teams liefern in kurzer Zeit präzise Ergebnisse mit optimierten Prozessen, die Nacharbeit vermeiden.\n\n💰 Kostenvorteil\nBis zu 45% günstiger als interne Lösungen, ohne Abstriche bei Qualität und Datensicherheit.\n\n⭐ Schweizer Qualität, global umgesetzt\nStrenge Schweizer Standards kombiniert mit einem 1.000-köpfigen Expert*innenteam für verlässliche Datenaufbereitung, auf die Sie sich jederzeit verlassen können.",
+    "subtitle": "",
     "solutions": {
       "speed": {
-        "title": "DELETE",
-        "description": "Wir setzen geschulte Teams schnell ein und liefern schnell Ergebnisse – ohne Qualitätskompromisse."
-      },
-      "scale": {
-        "title": "DELETE",
-        "description": "Von Pilotprojekten bis zu Unternehmensvolumen passt sich unser Modell nahtlos an Ihre sich entwickelnden Datenanforderungen an."
+        "title": "⏱️ Schnell & effizient",
+        "description": "Geschulte Teams liefern in kurzer Zeit präzise Ergebnisse mit optimierten Prozessen, die Nacharbeit vermeiden."
       },
       "savings": {
+        "title": "💰 Kostenvorteil",
+        "description": "Bis zu 45% günstiger als interne Lösungen, ohne Abstriche bei Qualität und Datensicherheit."
+      },
+      "scale": {
         "title": "DELETE",
         "description": "Wir bieten kosteneffiziente Dienstleistungen durch die Kombination intelligenten Designs mit hochwertigen lokalen Talenten."
       },
@@ -116,26 +116,26 @@
         "description": "Unsere optimierten Arbeitsabläufe reduzieren Reibung, eliminieren Nacharbeit und beschleunigen Ihre Datenbereitschaft."
       },
       "reliability": {
-        "title": "DELETE",
-        "description": "Schweizer Standards gewährleisten konsistente Genauigkeit, Datensicherheit und zuverlässige Lieferung jedes Mal."
+        "title": "⭐ Schweizer Qualität, global umgesetzt",
+        "description": "Strenge Schweizer Standards kombiniert mit einem 1.000-köpfigen Expert*innenteam für verlässliche Datenaufbereitung, auf die Sie sich jederzeit verlassen können."
       }
     }
   },
   "whyChoose": {
     "title": "Warum Unternehmen auf Label Ladder setzen",
-    "subtitle": "⭐ Skalierbarkeit & Kapazität\n1.000 Fachkräfte, schnell einsatzbereit – für Projekte jeder Größe.\n\n🩺 Fachliche Präzision\nErfahrung in komplexen Bereichen wie Medizin, Finanzdaten und technischen Anwendungen – mit Schweizer Qualitätsmanagement.\n\n🌍 Sozialer & wirtschaftlicher Impact\nNachhaltige Ausbildung und Beschäftigung in Namibia, offiziell unterstützt vom Bildungsministerium.",
+    "subtitle": "",
     "features": {
       "scale": {
-        "title": "delete",
-        "description": "Unser 1.000-köpfiges schweizerisch-namibisches Team bewältigt Projekte in Unternehmensvolumen mit Schweizer Qualitätsstandards und englischer Muttersprachenkompetenz."
+        "title": "⭐ Skalierbarkeit & Kapazität",
+        "description": "1.000 Fachkräfte, schnell einsatzbereit – für Projekte jeder Größe."
       },
       "medical": {
-        "title": "delete",
-        "description": "Spezialisierte Teams für Gesundheitsannotation, einschließlich Radiologie, Pathologie und klinischer Dokumentation mit Expertenaufsicht."
+        "title": "🩺 Fachliche Präzision",
+        "description": "Erfahrung in komplexen Bereichen wie Medizin, Finanzdaten und technischen Anwendungen – mit Schweizer Qualitätsmanagement."
       },
       "social": {
-        "title": "delete",
-        "description": "Ausbildung von 1.000 Namibiern bis 2027 in digitalen Fähigkeiten, unterstützt von namibischen Regierungsministerien für nachhaltige wirtschaftliche Entwicklung."
+        "title": "🌍 Sozialer & wirtschaftlicher Impact",
+        "description": "Nachhaltige Ausbildung und Beschäftigung in Namibia, offiziell unterstützt vom Bildungsministerium."
       },
       "excellence": {
         "title": "delete",
@@ -179,7 +179,8 @@
   },
   "credentials": {
     "title": "Erfolgsgeschichten unserer Kunden",
-    "subtitle": "+++Study Cases should be sorted by industry, in a slider to shorten the website a bit. +++\nSoftware & IT\n\nAdair (Software Development)\nProjektmanagement-Datenmigration → Wir stellten sicher, dass beim Umstieg auf ein neues Tool die Daten vollständig und korrekt übertragen wurden.\n\nAutomotive / Mobilität\n\nDigital Divine Data\nAutonomes Fahren → Bilder für KI-Systeme präzise aufbereitet, damit Fahrzeuge Objekte zuverlässig erkennen.\n\nHealthcare\n\nAmbulanzpartner\nGesundheitsdatenverarbeitung → Patientendaten bereinigt und strukturiert, um eine bessere Versorgung zu ermöglichen.\n\nSocial Impact / Nachhaltigkeit\n\nImpact Tank\nUmweltschutz → Datenpipeline für Wildtier-Monitoring aufgebaut, damit Umwelteinflüsse in Echtzeit gemessen werden können.",
+    "subtitle": "",
+    "subtitle2": "+++Study Cases should be sorted by industry, in a slider to shorten the website a bit. +++\nSoftware & IT\n\nAdair (Software Development)\nProjektmanagement-Datenmigration → Wir stellten sicher, dass beim Umstieg auf ein neues Tool die Daten vollständig und korrekt übertragen wurden.\n\nAutomotive / Mobilität\n\nDigital Divine Data\nAutonomes Fahren → Bilder für KI-Systeme präzise aufbereitet, damit Fahrzeuge Objekte zuverlässig erkennen.\n\nHealthcare\n\nAmbulanzpartner\nGesundheitsdatenverarbeitung → Patientendaten bereinigt und strukturiert, um eine bessere Versorgung zu ermöglichen.\n\nSocial Impact / Nachhaltigkeit\n\nImpact Tank\nUmweltschutz → Datenpipeline für Wildtier-Monitoring aufgebaut, damit Umwelteinflüsse in Echtzeit gemessen werden können.",
     "cta": "Mehr Erfolgsgeschichten entdecken",
     "cases": {
       "challenge": "Problem",

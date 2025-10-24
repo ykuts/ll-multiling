@@ -13,6 +13,24 @@ const SolutionSection = () => {
       icon: "/images/icons/speed.png"
     },
     {
+      title: t('solution.solutions.savings.title'),
+      description: t('solution.solutions.savings.description'),
+      icon: "/images/icons/savings.png"
+    },
+    {
+      title: t('solution.solutions.reliability.title'),
+      description: t('solution.solutions.reliability.description'),
+      icon: "/images/icons/reliability.png"
+    }
+  ];
+
+  /* const solutions = [
+    {
+      title: t('solution.solutions.speed.title'),
+      description: t('solution.solutions.speed.description'),
+      icon: "/images/icons/speed.png"
+    },
+    {
       title: t('solution.solutions.scale.title'),
       description: t('solution.solutions.scale.description'),
       icon: "/images/icons/scale.png"
@@ -32,7 +50,7 @@ const SolutionSection = () => {
       description: t('solution.solutions.reliability.description'),
       icon: "/images/icons/reliability.png"
     }
-  ];
+  ]; */
 
   return (
     <section className="py-16 md:py-24 bg-gray-50">
@@ -43,7 +61,7 @@ const SolutionSection = () => {
           centered
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-12">
           {solutions.map((solution, index) => (
             <div 
               key={index} 

@@ -12,11 +12,11 @@ const FoundationSection = () => {
       label: t('foundation.stats.annotators.label'),
       description: t('foundation.stats.annotators.description')
     },
-    {
+    /* {
       number: t('foundation.stats.accuracy.number'),
       label: t('foundation.stats.accuracy.label'),
       description: t('foundation.stats.accuracy.description')
-    },
+    }, */
     {
       number: t('foundation.stats.costReduction.number'),
       label: t('foundation.stats.costReduction.label'),
@@ -26,6 +26,11 @@ const FoundationSection = () => {
       number: t('foundation.stats.delivery.number'),
       label: t('foundation.stats.delivery.label'),
       description: t('foundation.stats.delivery.description')
+    },
+    {
+      number: "Q",
+      label: t('foundation.capabilities.swissQuality.title'),
+      description: t('foundation.capabilities.swissQuality.description')
     }
   ];
 
@@ -85,7 +90,7 @@ const FoundationSection = () => {
         />
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
@@ -102,13 +107,13 @@ const FoundationSection = () => {
         </div>
 
         {/* Capabilities Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {capabilities.map((capability, index) => (
             <div
               key={index}
               className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-primary group"
             >
-              {/* Icon */}
+              
               <div className="mb-4 flex justify-center">
                 <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
                   {capability.icon}
@@ -121,7 +126,7 @@ const FoundationSection = () => {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Bottom text about Label Ladder Academy */}
         <div className="mt-12 bg-primary text-white p-8 rounded-xl">

@@ -37,7 +37,7 @@ const WhyChooseSection = () => {
         </svg>
       )
     },
-    {
+    /* {
       title: t('whyChoose.features.excellence.title'),
       description: t('whyChoose.features.excellence.description'),
       icon: (
@@ -46,7 +46,7 @@ const WhyChooseSection = () => {
           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" strokeWidth="2"/>
         </svg>
       )
-    }
+    } */
   ];
 
   return (
@@ -58,7 +58,7 @@ const WhyChooseSection = () => {
           centered
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           {features.map((feature, index) => (
             <div key={index} className="group">
               <div className="p-8 bg-gray-50 rounded-xl hover:shadow-xl border-l-4 border-primary hover:border-secondary transition-all duration-300">
@@ -92,12 +92,12 @@ const WhyChooseSection = () => {
             <Button href="/services#general" variant="white" size="md">
               {t('whyChoose.cta.btnGeneral')}
             </Button>
-            <Button href="/services#expert" variant="secondary" size="md">
+            {/* <Button href="/services#expert" variant="secondary" size="md">
               {t('whyChoose.cta.btnExpert')}
             </Button>
             <Button href="/contact/" variant="outline" className="text-white border-white hover:bg-white/10" size="md">
               {t('whyChoose.cta.btnGetStarted')}
-            </Button>
+            </Button> */}
           </div>
         </div>
       </Container>

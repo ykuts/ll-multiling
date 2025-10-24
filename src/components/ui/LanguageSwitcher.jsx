@@ -10,8 +10,8 @@ const LanguageSwitcher = ({ isMobile = false }) => {
 
     const languages = {
         en: { name: 'English', short: 'EN', flag: '/images/flags/gb.svg' },
-        de: { name: 'Deutsch', short: 'DE', flag: '/images/flags/de.svg' },
-        fr: { name: 'Français', short: 'FR', flag: '/images/flags/fr.svg' }
+        de: { name: 'Deutsch', short: 'DE', flag: '/images/flags/ch.svg' },
+        fr: { name: 'Français', short: 'FR', flag: '/images/flags/ch.svg' }
     };
 
     // Мобильная версия - горизонтальные кнопки

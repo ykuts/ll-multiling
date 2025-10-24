@@ -36,7 +36,7 @@ const ChallengeSection = () => {
         </svg>
       ),
     },
-    {
+    /* {
       title: t('challenge.challenges.scalability.title'),
       description: t('challenge.challenges.scalability.description'),
       icon: (
@@ -46,7 +46,7 @@ const ChallengeSection = () => {
           <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" strokeWidth="2"/>
         </svg>
       ),
-    },
+    }, */
     {
       title: t('challenge.challenges.integration.title'),
       description: t('challenge.challenges.integration.description'),
@@ -76,7 +76,7 @@ const ChallengeSection = () => {
           centered
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {challenges.map((challenge, index) => (
             <div 
               key={index} 
