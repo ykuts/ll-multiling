@@ -141,20 +141,21 @@ export default function Contact(props) {
             return;
         }
 
-        // Prepare data for submission
-        const formDataToSend = new FormData();
-        formDataToSend.append('form-name', 'contact');
-
-        // Add all form fields
-        Object.keys(formData).forEach(key => {
-            formDataToSend.append(key, formData[key]);
-        });
-
         try {
+            // Encode form data for Netlify
+            const encode = (data) => {
+                return Object.keys(data)
+                    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+                    .join("&");
+            };
+
             const response = await fetch('/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(formDataToSend).toString()
+                body: encode({
+                    'form-name': 'contact',
+                    ...formData
+                })
             });
 
             if (response.ok) {
