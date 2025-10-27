@@ -72,7 +72,7 @@ const WhyChooseSection = () => {
 
         {/* Call to Action */}
         <div className="mt-12 bg-primary rounded-xl p-8 text-white text-center">
-          <h3 className="text-2xl font-bold mb-4">
+          <h3 className="text-white text-2xl font-bold mb-4">
             {t('whyChoose.cta.title')}
           </h3>
           <p className="text-accent mb-6 max-w-2xl mx-auto">

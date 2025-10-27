@@ -16,44 +16,44 @@ const CredentialsSection = () => {
   const [swiperKey, setSwiperKey] = useState(0);
 
   const categories = [
-    { id: 'all', name: 'Alle' },
-    { id: 'software', name: 'Software & IT' },
-    { id: 'automotive', name: 'Automotive / Mobilität' },
-    { id: 'healthcare', name: 'Healthcare' },
-    { id: 'impact', name: 'Social Impact / Nachhaltigkeit' }
+    { id: 'all', name: t('categories.all', { ns: 'credentials' }) },
+    { id: 'software', name: t('categories.software', { ns: 'credentials' }) },
+    { id: 'automotive', name: t('categories.automotive', { ns: 'credentials' }) },
+    { id: 'healthcare', name: t('categories.healthcare', { ns: 'credentials' }) },
+    { id: 'impact', name: t('categories.impact', { ns: 'credentials' }) }
   ];
 
   const cases = [
     {
       company: "Adaire",
       category: 'software',
-      industry: "Software Development",
-      project: "Projektmanagement-Datenmigration",
-      description: "Wir stellten sicher, dass beim Umstieg auf ein neues Tool die Daten vollständig und korrekt übertragen wurden.",
+      industry: t('categories.software', { ns: 'credentials' }),
+      project: t('cases.adaire.project', { ns: 'credentials' }),
+      description: t('cases.adaire.description', { ns: 'credentials' }),
       logo: "/images/credentials/adaire.png"
     },
     {
       company: "Digital Divine Data",
       category: 'automotive',
-      industry: "Automotive / Mobilität",
-      project: "Autonomes Fahren",
-      description: "Bilder für KI-Systeme präzise aufbereitet, damit Fahrzeuge Objekte zuverlässig erkennen.",
+      industry: t('categories.automotive', { ns: 'credentials' }),
+      project: t('cases.ddd.project', { ns: 'credentials' }),
+      description: t('cases.ddd.description', { ns: 'credentials' }),
       logo: "/images/credentials/ddd.webp"
     },
     {
       company: "Ambulanzpartner",
       category: 'healthcare',
-      industry: "Healthcare",
-      project: "Gesundheitsdatenverarbeitung",
-      description: "Patientendaten bereinigt und strukturiert, um eine bessere Versorgung zu ermöglichen.",
+      industry: t('categories.healthcare', { ns: 'credentials' }),
+      project: t('cases.ambulanzpartner.project', { ns: 'credentials' }),
+      description: t('cases.ambulanzpartner.description', { ns: 'credentials' }),
       logo: "/images/credentials/ambulanzpartner.webp"
     },
     {
       company: "Impact Tank",
       category: 'impact',
-      industry: "Social Impact / Nachhaltigkeit",
-      project: "Umweltschutz",
-      description: "Datenpipeline für Wildtier-Monitoring aufgebaut, damit Umwelteinflüsse in Echtzeit gemessen werden können.",
+      industry: t('categories.impact', { ns: 'credentials' }),
+      project: t('cases.impactTank.project', { ns: 'credentials' }),
+      description: t('cases.impactTank.description', { ns: 'credentials' }),
       logo: "/images/credentials/impact-tank-logo.png"
     }
   ];
@@ -171,7 +171,7 @@ const CredentialsSection = () => {
                 
         <div className="mt-12 text-center">
           <Button href="/credentials/" variant="primary" size="lg">
-            Mehr Erfolgsgeschichten entdecken
+            {t('credentials.cta')}
           </Button>
         </div>
       </Container>
