@@ -302,7 +302,7 @@ export default function Contact(props) {
 
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                                         <div>
-                                            <input type="hidden" name="form-name" value="contact" />
+                                            {/* <input type="hidden" name="form-name" value="contact" /> */}
                                             <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
                                                 {t('form.firstName')} <span className="text-red-500">{t('form.required')}</span>
                                             </label>
