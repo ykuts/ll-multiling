@@ -154,6 +154,7 @@ export default function Contact(props) {
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: encode({
                     'form-name': 'contact',
+                    'bot-field': '',
                     ...formData
                 })
             });
