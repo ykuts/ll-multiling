@@ -170,21 +170,6 @@ export default function Services(props) {
               </Button>
             </div>
           </div>
-
-          {/* Future Specializations */}
-          {/* <div className="bg-gray-50 rounded-xl p-6">
-            <h4 className="text-xl font-bold text-primary text-center mb-4">Developing Specializations</h4>
-            <div className="flex flex-wrap justify-center gap-4">
-              <span className="bg-white px-4 py-2 rounded-lg text-sm border border-gray-200">
-                <span className="font-medium text-primary">Agriculture & Environmental</span>
-                <span className="text-xs text-gray-500 ml-2">• Crop monitoring • Satellite imagery</span>
-              </span>
-              <span className="bg-white px-4 py-2 rounded-lg text-sm border border-gray-200">
-                <span className="font-medium text-primary">Geospatial Analysis</span>
-                <span className="text-xs text-gray-500 ml-2">• GIS data • Mapping</span>
-              </span>
-            </div>
-          </div> */}
         </Container>
       </section>
 
@@ -241,7 +226,7 @@ export default function Services(props) {
                 </div>
               </div>
 
-              {/* Кнопки прижаты к низу */}
+              {/* Buttons */}
               <div className="mt-auto space-y-4">
                 <Button href="/general-services/" variant="white" size="lg" className="w-full">
                   {t('serviceLevel.generalAnnotation.buttons.details')}
@@ -295,7 +280,7 @@ export default function Services(props) {
                 </div>
               </div>
 
-              {/* Кнопки прижаты к низу */}
+              {/* Buttons */}
               <div className="mt-auto space-y-4">
                 <Button href="/expert-services/" variant="white" size="lg" className="w-full">
                   {t('serviceLevel.expertAnnotation.buttons.details')}

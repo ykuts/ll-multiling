@@ -84,16 +84,6 @@ const ExpertAnnotationSection = () => {
                     centered
                 />
 
-                {/* Case Study Example */}
-                {/* <div className="mt-12 mb-12 max-w-4xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-bold text-primary text-center mb-6">
-            Fallbeispiel: Wie Label Ladder KI im Gesundheitswesen unterstützt
-          </h3>
-          <p className="text-gray-600 text-center leading-relaxed">
-            Ein internationales MedTech-Unternehmen wollte einen KI-Agenten entwickeln, die Röntgen- und CT-Bilder automatisch auswertet. Dafür brauchte es zehntausende präzise gekennzeichnete Bilder um den KI-Agenten zu schulen: ein Projekt, das intern zu teuer und zeitaufwendig gewesen wäre. Allein die interne Rekrutierung und Schulung von Fachkräften hätte Monate in Anspruch genommen. Gleichzeitig fehlte es an skalierbaren Prozessen, um die Datenmenge in der geforderten Qualität und Geschwindigkeit bereitzustellen. Und genau hier kommt Label Ladder ins Spiel.
-          </p>
-        </div> */}
-
                 {/* Process Steps - Large Colored Block */}
 <div className="mb-12">
     <div className="bg-gradient-to-br from-secondary to-secondary/90 rounded-2xl p-8 md:p-12 text-white shadow-xl">
@@ -109,19 +99,19 @@ const ExpertAnnotationSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             {processSteps.map((step, index) => (
                 <div key={index} className="bg-white rounded-lg p-6 hover:shadow-lg transition-all duration-300">
-                    {/* Номер по центру */}
+                    {/* Number centered */}
                     <div className="flex justify-center mb-4">
                         <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center font-bold text-xl text-white">
                             {step.number}
                         </div>
                     </div>
-                    
-                    {/* Заголовок */}
+
+                    {/* Title */}
                     <h4 className="text-primary font-bold text-lg mb-3 text-center">
                         {step.title}
                     </h4>
-                    
-                    {/* Описание */}
+
+                    {/* Description */}
                     <p className="text-gray-600 leading-relaxed text-center">
                         {step.description}
                     </p>
@@ -130,8 +120,6 @@ const ExpertAnnotationSection = () => {
         </div>
     </div>
 </div>
-
-                
 
                 {/* CTA */}
                 <div className="mt-12 text-center">

@@ -91,9 +91,6 @@ const HeroSection = ({ tinaData }) => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
-            {/*<Button href="/services/" variant="secondary" size="lg" className="w-48 sm:w-auto">
-              {t('hero.btnServices')}
-            </Button>*/}
             <Button href="/contact/" variant="outline" size="lg" className="text-white border-white hover:bg-white/10 w-48 sm:w-auto">
               {t('hero.btnContact')}
             </Button>

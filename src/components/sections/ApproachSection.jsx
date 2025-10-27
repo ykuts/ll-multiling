@@ -38,7 +38,7 @@ const ApproachSection = () => {
           centered
         />
 
-        {/* Мобильная версия - блоки по порядку 1-2-3-4 */}
+        {/* Mobile version - blocks in order 1-2-3-4 */}
         <div className="mt-12 md:hidden space-y-6">
           {steps.map((step, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-md">
@@ -56,7 +56,7 @@ const ApproachSection = () => {
         </div>
 
         <div className="hidden md:block mt-12 max-w-6xl mx-auto relative">
-          {/* Первый блок - по центру */}
+          {/* First block - centered */}
           <div className="flex justify-center mb-8">
             <div className="bg-white p-8 rounded-lg shadow-md w-full md:w-2/3 lg:w-1/2 border-2 border-primary relative z-10">
               <div className="flex items-center mb-4">
@@ -71,7 +71,7 @@ const ApproachSection = () => {
             </div>
           </div>
 
-          {/* Стрелка от блока 1 к блоку 2 - ТЕПЕРЬ ПОВЕРХ */}
+          {/* Arrow from block 1 to block 2 - NOW ON TOP */}
           <div className="absolute top-[80px] right-[12%] w-40 h-32 pointer-events-none z-20">
             <svg viewBox="0 0 120 100" className="w-full h-full">
               <defs>
@@ -90,7 +90,7 @@ const ApproachSection = () => {
             </svg>
           </div>
 
-          {/* Второй ряд - блоки 4 и 2 */}
+          {/* Second row - blocks 4 and 2 */}
           <div className="grid grid-cols-2 gap-8 mb-8 relative">
             <div className="bg-white p-8 rounded-lg shadow-md relative z-10">
               <div className="flex items-center mb-4">
@@ -117,7 +117,7 @@ const ApproachSection = () => {
             </div>
           </div>
 
-          {/* Стрелка от блока 3 к блоку 4 */}
+          {/* Arrow from block 3 to block 4 */}
           <div className="absolute top-[450px] left-[12%] w-48 h-32 pointer-events-none z-20">
             <svg viewBox="0 0 140 100" className="w-full h-full">
               <defs>
@@ -136,7 +136,7 @@ const ApproachSection = () => {
             </svg>
           </div>
 
-          {/* Стрелка от блока 2 к блоку 3 - ТЕПЕРЬ ПОВЕРХ */}
+          {/* Arrow from block 2 to block 3 - NOW ON TOP */}
           <div className="absolute top-[440px] right-[12%] w-48 h-32 pointer-events-none z-20">
             <svg viewBox="0 0 140 100" className="w-full h-full">
               <defs>
@@ -155,7 +155,7 @@ const ApproachSection = () => {
             </svg>
           </div>
 
-          {/* Третий блок - по центру */}
+          {/* Third block - centered */}
           <div className="flex justify-center">
             <div className="bg-white p-8 rounded-lg shadow-md w-full md:w-2/3 lg:w-1/2 relative z-10">
               <div className="flex items-center mb-4">

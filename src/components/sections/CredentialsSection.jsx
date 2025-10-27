@@ -62,7 +62,7 @@ const CredentialsSection = () => {
     ? cases 
     : cases.filter(c => c.category === activeCategory);
 
-  // Пересоздаем Swiper при смене категории
+  // Reset Swiper when activeCategory changes
   useEffect(() => {
     setSwiperKey(prev => prev + 1);
   }, [activeCategory]);

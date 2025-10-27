@@ -103,7 +103,7 @@ export default function Home(props) {
 
 export async function getStaticProps({ locale }) {
   try {
-    // Загружаем данные из Tina для текущего языка
+    // Download data from Tina CMS
     const tinaProps = await client.queries.homeTranslations({
       relativePath: `${locale}/home.json`,
     })
@@ -116,7 +116,7 @@ export async function getStaticProps({ locale }) {
     }
   } catch (error) {
     console.error('Error loading Tina data:', error)
-    // Fallback если Tina не работает
+    // Fallback if Tina CMS is not working
     return {
       props: {
         ...(await serverSideTranslations(locale, ['common', 'header', 'footer', 'home', 'services', 'credentials', 'contact'])),

@@ -8,40 +8,40 @@ const ProcessDesignSection = () => {
   const cardsRef = useRef([]);
 
   useEffect(() => {
-    // Выравниваем высоту всех карточек после рендера
+    // Align heights of all cards to the tallest one
     const alignCardHeights = () => {
       if (cardsRef.current.length > 0 && window.innerWidth >= 1024) { // только на desktop
-        // Сбрасываем минимальную высоту
+        // Reset heights
         cardsRef.current.forEach(card => {
           if (card) card.style.minHeight = 'auto';
         });
 
-        // Получаем максимальную высоту
+        // Get the maximum height
         const heights = cardsRef.current.map(card => card?.offsetHeight || 0);
         const maxHeight = Math.max(...heights);
 
-        // Устанавливаем одинаковую высоту для всех
+        // Set the same height for all
         cardsRef.current.forEach(card => {
           if (card) card.style.minHeight = `${maxHeight}px`;
         });
       } else {
-        // На мобильных сбрасываем высоту
+        // Reset heights on mobile
         cardsRef.current.forEach(card => {
           if (card) card.style.minHeight = 'auto';
         });
       }
     };
 
-    // Выравниваем при загрузке и смене языка
+    // Align heights of all cards to the tallest one
     alignCardHeights();
 
-    // Выравниваем при изменении размера окна
+    // Align heights on window resize
     window.addEventListener('resize', alignCardHeights);
 
     return () => {
       window.removeEventListener('resize', alignCardHeights);
     };
-  }, [t]); // пересчитываем при смене языка
+  }, [t]); // Recalculate on language change
 
   return (
     <section className="py-16 bg-primary text-white">
