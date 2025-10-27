@@ -66,11 +66,11 @@
     "cta": "Discuss Your Specific Requirements",
     "how": {
       "title": "How we implemented the project:",
-      "step1_title": "1. Building an Expert Team",
+      "step1_title": "Building an Expert Team",
       "step1_description": "We assembled a specialized team with additional medical training and trained it according to Swiss quality standards.",
-      "step2_title": "2. Precise Annotation of Medical Data",
+      "step2_title": "Precise Annotation of Medical Data",
       "step2_description": "The team labeled thousands of X-ray and CT images with clinical accuracy – including validation by medical specialists.",
-      "step3_title": "3. Secure Documentation & Compliance",
+      "step3_title": "Secure Documentation & Compliance",
       "step3_description": "All data was processed in HIPAA-compliant manner, standardized, and transferred for direct use into the client's systems."
     }
   },
@@ -79,15 +79,15 @@
     "subtitle": "Many companies face the same obstacles when it comes to data preparation:",
     "challenges": {
       "time": {
-        "title": "⏱️ Time",
+        "title": "Time",
         "description": "Data preparation consumes resources and delays projects."
       },
       "quality": {
-        "title": "⭐ Quality",
+        "title": "Quality",
         "description": "Inaccurate data leads to incorrect results."
       },
       "costs": {
-        "title": "💰 Costs",
+        "title": "Costs",
         "description": "Internal processing is expensive and inefficient."
       },
       "scalability": {
@@ -95,7 +95,7 @@
         "description": "delete section"
       },
       "integration": {
-        "title": "🔗 Integration",
+        "title": "Integration",
         "description": "Data often does not flow smoothly into existing systems."
       }
     }
@@ -105,11 +105,11 @@
     "subtitle": "",
     "solutions": {
       "speed": {
-        "title": "⏱️ Fast & Efficient",
+        "title": "Fast & Efficient",
         "description": "Trained teams deliver precise results quickly with optimized processes that avoid rework."
       },
       "savings": {
-        "title": "💰 Cost Advantage",
+        "title": "Cost Advantage",
         "description": "Up to 45% cheaper than internal solutions, without compromising on quality and data security."
       },
       "scale": {
@@ -121,7 +121,7 @@
         "description": "Our optimized workflows reduce friction, eliminate rework, and accelerate your data readiness."
       },
       "reliability": {
-        "title": "⭐ Swiss Quality, Globally Implemented",
+        "title": "Swiss Quality, Globally Implemented",
         "description": "Strict Swiss standards combined with a 1,000-strong expert team for reliable data preparation you can always count on."
       }
     }
@@ -131,15 +131,15 @@
     "subtitle": "",
     "features": {
       "scale": {
-        "title": "⭐ Scalability & Capacity",
+        "title": "Scalability & Capacity",
         "description": "1,000 specialists, ready to deploy quickly – for projects of any size."
       },
       "medical": {
-        "title": "🩺 Professional Precision",
+        "title": "Professional Precision",
         "description": "Experience in complex areas such as medicine, financial data, and technical applications – with Swiss quality management."
       },
       "social": {
-        "title": "🌍 Social & Economic Impact",
+        "title": "Social & Economic Impact",
         "description": "Sustainable training and employment in Namibia, officially supported by the Ministry of Education."
       },
       "excellence": {

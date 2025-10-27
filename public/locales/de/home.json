@@ -10,11 +10,11 @@
   },
   "foundation": {
     "title": "Warum Label Ladder?",
-    "subtitle": "Skalierung und sozialer Einfluss: Unsere 1.000 qualifizierte*n Annotator*innen",
+    "subtitle": "Skalierung und sozialer Einfluss: Unsere 1.000 qualifizierten Annotator:innen",
     "stats": {
       "annotators": {
         "number": "1.000",
-        "label": "Expert*innen im Team",
+        "label": "Expert:innen im Team",
         "description": "Ein starkes Netzwerk aus ausgebildeten Fachkräften liefert die Daten, die Ihre KI für verlässliche Ergebnisse braucht. "
       },
       "accuracy": {
@@ -54,9 +54,9 @@
     "academy": {
       "title": "Label Ladder Akademie",
       "description1": "Label Ladder arbeitet mit offizieller Unterstützung des namibischen Ministeriums für Bildung und Innovation, ein Garant für Sicherheit und Nachhaltigkeit.",
-      "description2": "Durch das Label Ladder Akademie-Programm schaffen wir Chancen für persönliches Wachstum und stellen sicher, dass unsere Mitarbeiter*innen in einer global dynamischen Branche erfolgreich bestehen können.",
+      "description2": "Durch das Label Ladder Akademie-Programm schaffen wir Chancen für persönliches Wachstum und stellen sicher, dass unsere Mitarbeiter:innen in einer global dynamischen Branche erfolgreich bestehen können.",
       "stat": "1.000",
-      "statLabel": "Namibier*innen bis 2027 ausgebildet",
+      "statLabel": "Namibier:innen bis 2027 ausgebildet",
       "statDescription": "Mit unserem Engagement fördern wir die wirtschaftliche Entwicklung und eröffnen jungen Menschen neue Beschäftigungsmöglichkeiten."
     }
   },
@@ -66,11 +66,11 @@
     "cta": "Besprechen Sie Ihre speziellen Anforderungen",
     "how": {
       "title": "So haben wir das Projekt umgesetzt:",
-      "step1_title": "1. Aufbau eines Expertenteams",
+      "step1_title": "Aufbau eines Expertenteams",
       "step1_description": "Wir stellten ein spezialisiertes Team mit medizinischer Zusatzausbildung zusammen und schulten es nach Schweizer Qualitätsstandards.",
-      "step2_title": "2. Präzise Annotation medizinischer Daten", 
+      "step2_title": "Präzise Annotation medizinischer Daten", 
       "step2_description": "Das Team kennzeichnete tausende Röntgen- und CT-Aufnahmen mit klinischer Genauigkeit – inklusive Validierung durch Fachärzte.",
-      "step3_title": "3. Sichere Dokumentation & Compliance",
+      "step3_title": "Sichere Dokumentation & Compliance",
       "step3_description": "Alle Daten wurden HIPAA-konform verarbeitet, standardisiert und für den direkten Einsatz in die Systeme des Kunden überführt."
     }
   },
@@ -79,15 +79,15 @@
     "subtitle": "Viele Unternehmen stehen vor denselben Hürden, wenn es um die Vorbereitung von Daten geht:",
     "challenges": {
       "time": {
-        "title": "⏱️ Zeit",
+        "title": "Zeit",
         "description": "Datenaufbereitung frisst Ressourcen und verzögert Projekte."
       },
       "quality": {
-        "title": "⭐ Qualität",
+        "title": "Qualität",
         "description": "Ungenaue Daten führen zu falschen Ergebnissen."
       },
       "costs": {
-        "title": "💰 Kosten",
+        "title": "Kosten",
         "description": "Interne Verarbeitung ist teuer und ineffizient."
       },
       "scalability": {
@@ -95,7 +95,7 @@
         "description": "delete section"
       },
       "integration": {
-        "title": "🔗 Integration",
+        "title": "Integration",
         "description": "Daten fliessen oft nicht reibungslos in bestehende Systeme ein."
       }
     }
@@ -105,11 +105,11 @@
     "subtitle": "",
     "solutions": {
       "speed": {
-        "title": "⏱️ Schnell & effizient",
+        "title": "Schnell & effizient",
         "description": "Geschulte Teams liefern in kurzer Zeit präzise Ergebnisse mit optimierten Prozessen, die Nacharbeit vermeiden."
       },
       "savings": {
-        "title": "💰 Kostenvorteil",
+        "title": "Kostenvorteil",
         "description": "Bis zu 45% günstiger als interne Lösungen, ohne Abstriche bei Qualität und Datensicherheit."
       },
       "scale": {
@@ -121,8 +121,8 @@
         "description": "Unsere optimierten Arbeitsabläufe reduzieren Reibung, eliminieren Nacharbeit und beschleunigen Ihre Datenbereitschaft."
       },
       "reliability": {
-        "title": "⭐ Schweizer Qualität, global umgesetzt",
-        "description": "Strenge Schweizer Standards kombiniert mit einem 1.000-köpfigen Expert*innenteam für verlässliche Datenaufbereitung, auf die Sie sich jederzeit verlassen können."
+        "title": "Schweizer Qualität, global umgesetzt",
+        "description": "Strenge Schweizer Standards kombiniert mit einem 1.000-köpfigen Expert:innenteam für verlässliche Datenaufbereitung, auf die Sie sich jederzeit verlassen können."
       }
     }
   },
@@ -131,15 +131,15 @@
     "subtitle": "",
     "features": {
       "scale": {
-        "title": "⭐ Skalierbarkeit & Kapazität",
+        "title": "Skalierbarkeit & Kapazität",
         "description": "1.000 Fachkräfte, schnell einsatzbereit – für Projekte jeder Größe."
       },
       "medical": {
-        "title": "🩺 Fachliche Präzision",
+        "title": "Fachliche Präzision",
         "description": "Erfahrung in komplexen Bereichen wie Medizin, Finanzdaten und technischen Anwendungen – mit Schweizer Qualitätsmanagement."
       },
       "social": {
-        "title": "🌍 Sozialer & wirtschaftlicher Impact",
+        "title": "Sozialer & wirtschaftlicher Impact",
         "description": "Nachhaltige Ausbildung und Beschäftigung in Namibia, offiziell unterstützt vom Bildungsministerium."
       },
       "excellence": {

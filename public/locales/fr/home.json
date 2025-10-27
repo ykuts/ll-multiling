@@ -66,11 +66,11 @@
         "cta": "Discutez de vos exigences spécifiques",
         "how": {
             "title": "Comment nous avons mis en œuvre le projet :",
-            "step1_title": "1. Constitution d'une équipe d'experts",
+            "step1_title": "Constitution d'une équipe d'experts",
             "step1_description": "Nous avons constitué une équipe spécialisée avec une formation médicale complémentaire et l'avons formée selon les normes de qualité suisses.",
-            "step2_title": "2. Annotation précise des données médicales",
+            "step2_title": "Annotation précise des données médicales",
             "step2_description": "L'équipe a étiqueté des milliers d'images radiographiques et tomodensitométriques avec une précision clinique – y compris la validation par des médecins spécialistes.",
-            "step3_title": "3. Documentation sécurisée et conformité",
+            "step3_title": "Documentation sécurisée et conformité",
             "step3_description": "Toutes les données ont été traitées de manière conforme à la HIPAA, normalisées et transférées pour une utilisation directe dans les systèmes du client."
         }
     },
@@ -79,15 +79,15 @@
         "subtitle": "De nombreuses entreprises font face aux mêmes obstacles en matière de préparation des données :",
         "challenges": {
             "time": {
-                "title": "⏱️ Temps",
+                "title": "Temps",
                 "description": "La préparation des données consomme des ressources et retarde les projets."
             },
             "quality": {
-                "title": "⭐ Qualité",
+                "title": "Qualité",
                 "description": "Des données inexactes conduisent à des résultats incorrects."
             },
             "costs": {
-                "title": "💰 Coûts",
+                "title": "Coûts",
                 "description": "Le traitement interne est coûteux et inefficace."
             },
             "scalability": {
@@ -95,7 +95,7 @@
                 "description": "delete section"
             },
             "integration": {
-                "title": "🔗 Intégration",
+                "title": "Intégration",
                 "description": "Les données ne s'intègrent souvent pas facilement dans les systèmes existants."
             }
         }
@@ -105,11 +105,11 @@
         "subtitle": "",
         "solutions": {
             "speed": {
-                "title": "⏱️ Rapide et efficace",
+                "title": "Rapide et efficace",
                 "description": "Des équipes formées fournissent rapidement des résultats précis avec des processus optimisés qui évitent les retouches."
             },
             "savings": {
-                "title": "💰 Avantage coût",
+                "title": "Avantage coût",
                 "description": "Jusqu'à 45% moins cher que les solutions internes, sans compromettre la qualité et la sécurité des données."
             },
             "scale": {
@@ -121,7 +121,7 @@
                 "description": "Nos flux de travail optimisés réduisent les frictions, éliminent les retouches et accélèrent votre préparation des données."
             },
             "reliability": {
-                "title": "⭐ Qualité suisse, mise en œuvre mondiale",
+                "title": "Qualité suisse, mise en œuvre mondiale",
                 "description": "Des normes suisses strictes combinées à une équipe de 1 000 experts pour une préparation de données fiable sur laquelle vous pouvez toujours compter."
             }
         }
@@ -131,15 +131,15 @@
         "subtitle": "",
         "features": {
             "scale": {
-                "title": "⭐ Évolutivité et capacité",
+                "title": "Évolutivité et capacité",
                 "description": "1 000 spécialistes, prêts à se déployer rapidement – pour des projets de toute taille."
             },
             "medical": {
-                "title": "🩺 Précision professionnelle",
+                "title": "Précision professionnelle",
                 "description": "Expérience dans des domaines complexes tels que la médecine, les données financières et les applications techniques – avec une gestion de la qualité suisse."
             },
             "social": {
-                "title": "🌍 Impact social et économique",
+                "title": "Impact social et économique",
                 "description": "Formation et emploi durables en Namibie, officiellement soutenus par le Ministère de l'Éducation."
             },
             "excellence": {
