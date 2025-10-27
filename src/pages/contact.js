@@ -291,7 +291,7 @@ export default function Contact(props) {
                                     <p>{formStatus.message}</p>
                                 </div>
                             ) : (
-                                <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                                <form onSubmit={handleSubmit} name="contact" method="POST" netlify-honeypot="bot-field">
                                     {/* Hidden fields for Netlify */}
                                     <input type="hidden" name="form-name" value="contact" />
                                     <input type="hidden" name="bot-field" />
