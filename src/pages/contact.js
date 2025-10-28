@@ -128,7 +128,7 @@ export default function Contact(props) {
         setFormData(prev => ({ ...prev, [name]: value }));
     };
 
-    /* const handleSubmit = async (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         // Basic validation
@@ -149,7 +149,7 @@ export default function Contact(props) {
                     .join("&");
             };
 
-            const response = await fetch('/', {
+            const response = await fetch('/contact/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: encode({
@@ -189,7 +189,7 @@ export default function Contact(props) {
                 message: t('form.errorMessageGeneral')
             });
         }
-    }; */
+    };
 
     const serviceTypes = [
         { value: '', label: t('serviceTypes.select') },
@@ -291,7 +291,14 @@ export default function Contact(props) {
                                     <p>{formStatus.message}</p>
                                 </div>
                             ) : (
-                                <form name="contact" method="POST" netlify-honeypot="bot-field" action="/contact" data-netlify="true">
+                                <form
+                                    name="contact"
+                                    onSubmit={handleSubmit}
+                                    method="POST"
+                                    netlify-honeypot="bot-field"
+                                    action="/contact/"
+                                    data-netlify="true"
+                                >
                                     {/* Hidden fields for Netlify */}
                                     <input type="hidden" name="form-name" value="contact" />
                                     <input type="hidden" name="bot-field" />
