@@ -142,21 +142,18 @@ export default function Contact(props) {
         }
 
         try {
-            // Encode form data for Netlify
-            const encode = (data) => {
-                return Object.keys(data)
-                    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-                    .join("&");
-            };
+            // Создаём FormData для правильной отправки в Netlify
+            const formDataToSend = new FormData();
+            formDataToSend.append('form-name', 'contact');
 
-            const response = await fetch('/contact/', {
+            // Добавляем все поля
+            Object.keys(formData).forEach(key => {
+                formDataToSend.append(key, formData[key]);
+            });
+
+            const response = await fetch('/', {  // ← НА КОРЕНЬ!
                 method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: encode({
-                    'form-name': 'contact',
-                    'bot-field': '',
-                    ...formData
-                })
+                body: formDataToSend  // ← FormData, не encoded string!
             });
 
             if (response.ok) {
@@ -168,7 +165,7 @@ export default function Contact(props) {
                     message: t('form.successMessage')
                 });
 
-                // Reset form after successful submission
+                // Reset form
                 setFormData({
                     firstName: '',
                     lastName: '',
