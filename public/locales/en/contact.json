@@ -103,5 +103,13 @@
         "subtitle": "Whether you're in Europe or Africa, we're here to help with your data needs. Contact us to schedule an in-person meeting or virtual consultation.",
         "scheduleMeeting": "Schedule Meeting",
         "sendEmail": "Send Email"
-    }
+    },
+"thankYou": {
+    "title": "Thank You - Label Ladder",
+    "description": "Thank you for contacting Label Ladder",
+    "heading": "Thank You!",
+    "message": "We've received your message and our team will get back to you shortly. We typically respond within 24 hours during business days.",
+    "backButton": "Back to Home",
+    "needHelp": "Need immediate assistance?"
+  }
 }

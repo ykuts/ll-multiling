@@ -103,5 +103,13 @@
         "subtitle": "Ob Sie in Europa oder Afrika sind, wir sind hier, um bei Ihren Datenanforderungen zu helfen. Kontaktieren Sie uns, um ein persönliches Treffen oder eine virtuelle Beratung zu vereinbaren.",
         "scheduleMeeting": "Meeting vereinbaren",
         "sendEmail": "E-Mail senden"
-    }
+    },
+    "thankYou": {
+    "title": "Vielen Dank - Label Ladder",
+    "description": "Vielen Dank, dass Sie Label Ladder kontaktiert haben",
+    "heading": "Vielen Dank!",
+    "message": "Wir haben Ihre Nachricht erhalten und unser Team wird sich in Kürze bei Ihnen melden. Wir antworten in der Regel innerhalb von 24 Stunden an Werktagen.",
+    "backButton": "Zurück zur Startseite",
+    "needHelp": "Benötigen Sie sofortige Hilfe?"
+  }
 }

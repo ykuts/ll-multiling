@@ -205,7 +205,7 @@ export default function Contact(props) {
                                 <form
                                     name="contact"
                                     method="POST"
-                                    action={`/forms-success-${locale}.html`}
+                                    action={`/${locale}/thank-you/`}
                                     netlify-honeypot="bot-field"
                                     data-netlify="true"
                                 >
