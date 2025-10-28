@@ -149,7 +149,7 @@ export default function Contact(props) {
                     .join("&");
             };
 
-            const response = await fetch('/', {
+            const response = await fetch('/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: encode({
@@ -291,7 +291,7 @@ export default function Contact(props) {
                                     <p>{formStatus.message}</p>
                                 </div>
                             ) : (
-                                <form onSubmit={handleSubmit} name="contact" method="POST" netlify-honeypot="bot-field">
+                                <form onSubmit={handleSubmit} name="contact" method="POST" netlify-honeypot="bot-field" action="/contact" data-netlify="true">
                                     {/* Hidden fields for Netlify */}
                                     <input type="hidden" name="form-name" value="contact" />
                                     <input type="hidden" name="bot-field" />
