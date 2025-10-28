@@ -1,5 +1,4 @@
 import Layout from '@/components/layout/Layout';
-import { useState } from 'react';
 import Container from '../components/ui/Container';
 import SectionHeading from '../components/ui/SectionHeading';
 import Button from '../components/ui/Button';
@@ -9,9 +8,11 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { useTina } from 'tinacms/dist/react'
 import client from '../../tina/__generated__/client'
+import { useRouter } from 'next/router';
 
 export default function Contact(props) {
     const { t } = useTranslation('contact');
+    const { locale } = useRouter();
 
     const { data } = useTina({
         query: props.query,
@@ -204,8 +205,8 @@ export default function Contact(props) {
                                 <form
                                     name="contact"
                                     method="POST"
+                                    action={`/forms-success-${locale}.html`}
                                     netlify-honeypot="bot-field"
-                                    action="/forms-success.html"
                                     data-netlify="true"
                                 >
                                     {/* Hidden fields for Netlify */}
