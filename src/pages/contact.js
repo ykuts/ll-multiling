@@ -106,88 +106,6 @@ export default function Contact(props) {
         }
     ];
 
-    const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        company: '',
-        phone: '',
-        message: '',
-        serviceType: '',
-        dataVolume: ''
-    });
-
-    const [formStatus, setFormStatus] = useState({
-        submitted: false,
-        error: false,
-        message: ''
-    });
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prev => ({ ...prev, [name]: value }));
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        // Basic validation
-        if (!formData.firstName || !formData.email || !formData.message) {
-            setFormStatus({
-                submitted: false,
-                error: true,
-                message: t('form.errorMessage')
-            });
-            return;
-        }
-
-        try {
-            // Создаём FormData для правильной отправки в Netlify
-            const formDataToSend = new FormData();
-            formDataToSend.append('form-name', 'contact');
-
-            // Добавляем все поля
-            Object.keys(formData).forEach(key => {
-                formDataToSend.append(key, formData[key]);
-            });
-
-            const response = await fetch('/', {  // ← НА КОРЕНЬ!
-                method: 'POST',
-                body: formDataToSend  // ← FormData, не encoded string!
-            });
-
-            if (response.ok) {
-                trackContactForm('main_contact_form');
-
-                setFormStatus({
-                    submitted: true,
-                    error: false,
-                    message: t('form.successMessage')
-                });
-
-                // Reset form
-                setFormData({
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    company: '',
-                    phone: '',
-                    message: '',
-                    serviceType: '',
-                    dataVolume: ''
-                });
-            } else {
-                throw new Error('Form submission failed');
-            }
-        } catch (error) {
-            setFormStatus({
-                submitted: false,
-                error: true,
-                message: t('form.errorMessageGeneral')
-            });
-        }
-    };
-
     const serviceTypes = [
         { value: '', label: t('serviceTypes.select') },
         { value: 'text', label: t('serviceTypes.text') },
@@ -283,28 +201,16 @@ export default function Contact(props) {
                         <div className="bg-white p-8 rounded-lg shadow-md">
                             <h3 className="text-xl font-bold text-primary mb-6">{t('form.title')}</h3>
 
-                            {formStatus.submitted ? (
-                                <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-md">
-                                    <p>{formStatus.message}</p>
-                                </div>
-                            ) : (
                                 <form
                                     name="contact"
-                                    onSubmit={handleSubmit}
                                     method="POST"
                                     netlify-honeypot="bot-field"
-                                    action="/contact/"
+                                    action="/forms-success.html"
                                     data-netlify="true"
                                 >
                                     {/* Hidden fields for Netlify */}
                                     <input type="hidden" name="form-name" value="contact" />
                                     <input type="hidden" name="bot-field" />
-
-                                    {formStatus.error && (
-                                        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md mb-6">
-                                            <p>{formStatus.message}</p>
-                                        </div>
-                                    )}
 
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                                         <div>
@@ -316,8 +222,7 @@ export default function Contact(props) {
                                                 type="text"
                                                 id="firstName"
                                                 name="firstName"
-                                                value={formData.firstName}
-                                                onChange={handleChange}
+                                                
                                                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-secondary"
                                                 required
                                             />
@@ -331,8 +236,7 @@ export default function Contact(props) {
                                                 type="text"
                                                 id="lastName"
                                                 name="lastName"
-                                                value={formData.lastName}
-                                                onChange={handleChange}
+                                                
                                                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-secondary"
                                             />
                                         </div>
@@ -347,8 +251,7 @@ export default function Contact(props) {
                                                 type="email"
                                                 id="email"
                                                 name="email"
-                                                value={formData.email}
-                                                onChange={handleChange}
+                                                
                                                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-secondary"
                                                 required
                                             />
@@ -362,8 +265,7 @@ export default function Contact(props) {
                                                 type="tel"
                                                 id="phone"
                                                 name="phone"
-                                                value={formData.phone}
-                                                onChange={handleChange}
+                                                
                                                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-secondary"
                                             />
                                         </div>
@@ -377,8 +279,7 @@ export default function Contact(props) {
                                             type="text"
                                             id="company"
                                             name="company"
-                                            value={formData.company}
-                                            onChange={handleChange}
+                                            
                                             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-secondary"
                                         />
                                     </div>
@@ -391,8 +292,7 @@ export default function Contact(props) {
                                             <select
                                                 id="serviceType"
                                                 name="serviceType"
-                                                value={formData.serviceType}
-                                                onChange={handleChange}
+                                                
                                                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-secondary"
                                             >
                                                 {serviceTypes.map((option) => (
@@ -410,8 +310,7 @@ export default function Contact(props) {
                                             <select
                                                 id="dataVolume"
                                                 name="dataVolume"
-                                                value={formData.dataVolume}
-                                                onChange={handleChange}
+                                                
                                                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-secondary"
                                             >
                                                 {dataVolumes.map((option) => (
@@ -430,8 +329,7 @@ export default function Contact(props) {
                                         <textarea
                                             id="message"
                                             name="message"
-                                            value={formData.message}
-                                            onChange={handleChange}
+                                            
                                             rows="5"
                                             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:border-secondary"
                                             required
@@ -444,13 +342,13 @@ export default function Contact(props) {
                                             variant="primary"
                                             size="lg"
                                             className="w-full"
-                                            disabled={formStatus.submitted}
+                                            
                                         >
-                                            {formStatus.submitted ? t('form.submitted') : t('form.submit')}
+                                            {t('form.submit')}
                                         </Button>
                                     </div>
                                 </form>
-                            )}
+                            
                         </div>
                     </div>
                 </Container>
