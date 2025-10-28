@@ -57,16 +57,6 @@ export const homeCollection = {
             },
             {
               type: "object",
-              name: "accuracy",
-              label: "Accuracy Stat",
-              fields: [
-                { type: "string", name: "number", label: "Number" },
-                { type: "string", name: "label", label: "Label" },
-                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
-              ],
-            },
-            {
-              type: "object",
               name: "costReduction",
               label: "Cost Reduction Stat",
               fields: [
@@ -92,33 +82,6 @@ export const homeCollection = {
           name: "capabilities",
           label: "Capabilities",
           fields: [
-            {
-              type: "object",
-              name: "largeScale",
-              label: "Large Scale",
-              fields: [
-                { type: "string", name: "title", label: "Title" },
-                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
-              ],
-            },
-            {
-              type: "object",
-              name: "nativeEnglish",
-              label: "Native English",
-              fields: [
-                { type: "string", name: "title", label: "Title" },
-                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
-              ],
-            },
-            {
-              type: "object",
-              name: "socialImpact",
-              label: "Social Impact",
-              fields: [
-                { type: "string", name: "title", label: "Title" },
-                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
-              ],
-            },
             {
               type: "object",
               name: "swissQuality",
@@ -209,15 +172,6 @@ export const homeCollection = {
             },
             {
               type: "object",
-              name: "scalability",
-              label: "Scalability Challenge",
-              fields: [
-                { type: "string", name: "title", label: "Title" },
-                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
-              ],
-            },
-            {
-              type: "object",
               name: "integration",
               label: "Integration Challenge",
               fields: [
@@ -254,26 +208,8 @@ export const homeCollection = {
             },
             {
               type: "object",
-              name: "scale",
-              label: "Scale",
-              fields: [
-                { type: "string", name: "title", label: "Title" },
-                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
-              ],
-            },
-            {
-              type: "object",
               name: "savings",
               label: "Savings",
-              fields: [
-                { type: "string", name: "title", label: "Title" },
-                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
-              ],
-            },
-            {
-              type: "object",
-              name: "efficiency",
-              label: "Efficiency",
               fields: [
                 { type: "string", name: "title", label: "Title" },
                 { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
@@ -328,15 +264,6 @@ export const homeCollection = {
               type: "object",
               name: "social",
               label: "Social Impact",
-              fields: [
-                { type: "string", name: "title", label: "Title" },
-                { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
-              ],
-            },
-            {
-              type: "object",
-              name: "excellence",
-              label: "Excellence",
               fields: [
                 { type: "string", name: "title", label: "Title" },
                 { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },

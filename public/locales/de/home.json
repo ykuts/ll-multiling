@@ -17,11 +17,6 @@
         "label": "Expert:innen im Team",
         "description": "Ein starkes Netzwerk aus ausgebildeten Fachkräften liefert die Daten, die Ihre KI für verlässliche Ergebnisse braucht. "
       },
-      "accuracy": {
-        "number": "delete",
-        "label": "",
-        "description": ""
-      },
       "costReduction": {
         "number": "45%",
         "label": "Kostenersparnis",
@@ -34,18 +29,6 @@
       }
     },
     "capabilities": {
-      "largeScale": {
-        "title": "",
-        "description": ""
-      },
-      "nativeEnglish": {
-        "title": "",
-        "description": ""
-      },
-      "socialImpact": {
-        "title": "",
-        "description": ""
-      },
       "swissQuality": {
         "title": "Schweizer Qualitätskontrolle",
         "description": "Unsere Prozesse orientieren sich an strengen Schweizer Qualitätsstandards. Damit gewährleisten wir eine Datenaufbereitung, die höchsten Ansprüchen genügt und Ihnen erlaubt, sich auf Ihr Kerngeschäft zu konzentriere"
@@ -90,10 +73,6 @@
         "title": "Kosten",
         "description": "Interne Verarbeitung ist teuer und ineffizient."
       },
-      "scalability": {
-        "title": "DELETE SECTION",
-        "description": "delete section"
-      },
       "integration": {
         "title": "Integration",
         "description": "Daten fliessen oft nicht reibungslos in bestehende Systeme ein."
@@ -111,14 +90,6 @@
       "savings": {
         "title": "Kostenvorteil",
         "description": "Bis zu 45% günstiger als interne Lösungen, ohne Abstriche bei Qualität und Datensicherheit."
-      },
-      "scale": {
-        "title": "DELETE",
-        "description": "Wir bieten kosteneffiziente Dienstleistungen durch die Kombination intelligenten Designs mit hochwertigen lokalen Talenten."
-      },
-      "efficiency": {
-        "title": "DELETE",
-        "description": "Unsere optimierten Arbeitsabläufe reduzieren Reibung, eliminieren Nacharbeit und beschleunigen Ihre Datenbereitschaft."
       },
       "reliability": {
         "title": "Schweizer Qualität, global umgesetzt",
@@ -141,10 +112,6 @@
       "social": {
         "title": "Sozialer & wirtschaftlicher Impact",
         "description": "Nachhaltige Ausbildung und Beschäftigung in Namibia, offiziell unterstützt vom Bildungsministerium."
-      },
-      "excellence": {
-        "title": "delete",
-        "description": "Kombination von Schweizer Präzision im Qualitätsmanagement mit namibischem Talent und Agilität für global wettbewerbsfähige Lösungen."
       }
     },
     "cta": {

@@ -17,11 +17,6 @@
         "label": "Experts on the Team",
         "description": "A strong network of trained professionals delivers the data your AI needs for reliable results."
       },
-      "accuracy": {
-        "number": "delete",
-        "label": "",
-        "description": ""
-      },
       "costReduction": {
         "number": "45%",
         "label": "Cost Savings",
@@ -34,18 +29,6 @@
       }
     },
     "capabilities": {
-      "largeScale": {
-        "title": "",
-        "description": ""
-      },
-      "nativeEnglish": {
-        "title": "",
-        "description": ""
-      },
-      "socialImpact": {
-        "title": "",
-        "description": ""
-      },
       "swissQuality": {
         "title": "Swiss Quality Control",
         "description": "Our processes are based on strict Swiss quality standards. This ensures data preparation that meets the highest requirements and allows you to focus on your core business."
@@ -90,10 +73,6 @@
         "title": "Costs",
         "description": "Internal processing is expensive and inefficient."
       },
-      "scalability": {
-        "title": "DELETE SECTION",
-        "description": "delete section"
-      },
       "integration": {
         "title": "Integration",
         "description": "Data often does not flow smoothly into existing systems."
@@ -111,14 +90,6 @@
       "savings": {
         "title": "Cost Advantage",
         "description": "Up to 45% cheaper than internal solutions, without compromising on quality and data security."
-      },
-      "scale": {
-        "title": "DELETE",
-        "description": "We offer cost-effective services by combining intelligent design with high-quality local talent."
-      },
-      "efficiency": {
-        "title": "DELETE",
-        "description": "Our optimized workflows reduce friction, eliminate rework, and accelerate your data readiness."
       },
       "reliability": {
         "title": "Swiss Quality, Globally Implemented",
@@ -141,10 +112,6 @@
       "social": {
         "title": "Social & Economic Impact",
         "description": "Sustainable training and employment in Namibia, officially supported by the Ministry of Education."
-      },
-      "excellence": {
-        "title": "delete",
-        "description": "Combination of Swiss precision in quality management with Namibian talent and agility for globally competitive solutions."
       }
     },
     "cta": {

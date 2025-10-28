@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vielen Dank - Label Ladder</title>
+    <title>Thank You - Label Ladder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -47,12 +47,8 @@
             animation: scaleIn 0.5s ease-out;
         }
         @keyframes scaleIn {
-            from {
-                transform: scale(0);
-            }
-            to {
-                transform: scale(1);
-            }
+            from { transform: scale(0); }
+            to { transform: scale(1); }
         }
         .checkmark svg {
             width: 60px;
@@ -118,15 +114,61 @@
             </svg>
         </div>
         
-        <h1>Vielen Dank!</h1>
-        <p>Wir haben Ihre Nachricht erhalten und unser Team wird sich in Kürze bei Ihnen melden. Wir antworten in der Regel innerhalb von 24 Stunden an Werktagen.</p>
+        <h1 id="heading">Thank You!</h1>
+        <p id="message">We've received your message and our team will get back to you shortly. We typically respond within 24 hours during business days.</p>
         
-        <a href="/de" class="btn">Zurück zur Startseite</a>
+        <a href="/" id="backBtn" class="btn">Back to Home</a>
         
         <div class="contact-info">
-            <p>Benötigen Sie sofortige Hilfe?</p>
-            <p>Senden Sie uns eine E-Mail an <a href="mailto:hello@labelladder.com">hello@labelladder.com</a></p>
+            <p id="helpText">Need immediate assistance?</p>
+            <p>Email us at <a href="mailto:hello@labelladder.com">hello@labelladder.com</a></p>
         </div>
     </div>
+
+    <script>
+        // Determine language from Referer
+        const referer = document.referrer;
+        let locale = 'en';
+        
+        if (referer.includes('/de/')) {
+            locale = 'de';
+        } else if (referer.includes('/fr/')) {
+            locale = 'fr';
+        }
+
+        // Translations
+        const translations = {
+            en: {
+                heading: 'Thank You!',
+                message: "We've received your message and our team will get back to you shortly. We typically respond within 24 hours during business days.",
+                backBtn: 'Back to Home',
+                helpText: 'Need immediate assistance?',
+                backUrl: '/'
+            },
+            de: {
+                heading: 'Vielen Dank!',
+                message: 'Wir haben Ihre Nachricht erhalten und unser Team wird sich in Kürze bei Ihnen melden. Wir antworten in der Regel innerhalb von 24 Stunden an Werktagen.',
+                backBtn: 'Zurück zur Startseite',
+                helpText: 'Benötigen Sie sofortige Hilfe?',
+                backUrl: '/de/'
+            },
+            fr: {
+                heading: 'Merci !',
+                message: 'Nous avons bien reçu votre message et notre équipe vous répondra sous peu. Nous répondons généralement dans les 24 heures pendant les jours ouvrables.',
+                backBtn: "Retour à l'accueil",
+                helpText: "Besoin d'une assistance immédiate ?",
+                backUrl: '/fr/'
+            }
+        };
+
+        // Apply translations
+        const t = translations[locale];
+        document.getElementById('heading').textContent = t.heading;
+        document.getElementById('message').textContent = t.message;
+        document.getElementById('backBtn').textContent = t.backBtn;
+        document.getElementById('backBtn').href = t.backUrl;
+        document.getElementById('helpText').textContent = t.helpText;
+        document.documentElement.lang = locale;
+    </script>
 </body>
 </html>

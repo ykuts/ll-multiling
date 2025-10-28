@@ -17,11 +17,6 @@
                 "label": "Experts dans l'équipe",
                 "description": "Un réseau solide de professionnels formés fournit les données dont votre IA a besoin pour des résultats fiables."
             },
-            "accuracy": {
-                "number": "delete",
-                "label": "",
-                "description": ""
-            },
             "costReduction": {
                 "number": "45%",
                 "label": "Économies de coûts",
@@ -34,18 +29,6 @@
             }
         },
         "capabilities": {
-            "largeScale": {
-                "title": "",
-                "description": ""
-            },
-            "nativeEnglish": {
-                "title": "",
-                "description": ""
-            },
-            "socialImpact": {
-                "title": "",
-                "description": ""
-            },
             "swissQuality": {
                 "title": "Contrôle qualité suisse",
                 "description": "Nos processus sont basés sur des normes de qualité suisses strictes. Cela garantit une préparation des données qui répond aux exigences les plus élevées et vous permet de vous concentrer sur votre cœur de métier."
@@ -90,10 +73,6 @@
                 "title": "Coûts",
                 "description": "Le traitement interne est coûteux et inefficace."
             },
-            "scalability": {
-                "title": "DELETE SECTION",
-                "description": "delete section"
-            },
             "integration": {
                 "title": "Intégration",
                 "description": "Les données ne s'intègrent souvent pas facilement dans les systèmes existants."
@@ -111,14 +90,6 @@
             "savings": {
                 "title": "Avantage coût",
                 "description": "Jusqu'à 45% moins cher que les solutions internes, sans compromettre la qualité et la sécurité des données."
-            },
-            "scale": {
-                "title": "DELETE",
-                "description": "Nous offrons des services rentables en combinant une conception intelligente avec des talents locaux de haute qualité."
-            },
-            "efficiency": {
-                "title": "DELETE",
-                "description": "Nos flux de travail optimisés réduisent les frictions, éliminent les retouches et accélèrent votre préparation des données."
             },
             "reliability": {
                 "title": "Qualité suisse, mise en œuvre mondiale",
@@ -141,10 +112,6 @@
             "social": {
                 "title": "Impact social et économique",
                 "description": "Formation et emploi durables en Namibie, officiellement soutenus par le Ministère de l'Éducation."
-            },
-            "excellence": {
-                "title": "delete",
-                "description": "Combinaison de la précision suisse en gestion de la qualité avec le talent et l'agilité namibiens pour des solutions compétitives à l'échelle mondiale."
             }
         },
         "cta": {
