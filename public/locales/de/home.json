@@ -25,7 +25,7 @@
       "delivery": {
         "number": "3x",
         "label": "Schnellere Lieferung",
-        "description": "Beschleunigte Zeitpläne durch optimierte Arbeitsabläufe"
+        "description": "Beschleunigte Zeitpläne durch optimierte Arbeitsabläufe."
       }
     },
     "capabilities": {
@@ -46,16 +46,7 @@
   "expertAnnotation": {
     "title": "Fallbeispiel: Wie Label Ladder KI im Gesundheitswesen unterstützt",
     "subtitle": "Ein internationales MedTech-Unternehmen wollte einen KI-Agenten entwickeln, die Röntgen- und CT-Bilder automatisch auswertet. Dafür brauchte es zehntausende präzise gekennzeichnete Bilder um den KI-Agenten zu schulen: ein Projekt, das intern zu teuer und zeitaufwendig gewesen wäre. Allein die interne Rekrutierung und Schulung von Fachkräften hätte Monate in Anspruch genommen. Gleichzeitig fehlte es an skalierbaren Prozessen, um die Datenmenge in der geforderten Qualität und Geschwindigkeit bereitzustellen. Und genau hier kommt Label Ladder ins Spiel.",
-    "cta": "Besprechen Sie Ihre speziellen Anforderungen",
-    "how": {
-      "title": "So haben wir das Projekt umgesetzt:",
-      "step1_title": "Aufbau eines Expertenteams",
-      "step1_description": "Wir stellten ein spezialisiertes Team mit medizinischer Zusatzausbildung zusammen und schulten es nach Schweizer Qualitätsstandards.",
-      "step2_title": "Präzise Annotation medizinischer Daten", 
-      "step2_description": "Das Team kennzeichnete tausende Röntgen- und CT-Aufnahmen mit klinischer Genauigkeit – inklusive Validierung durch Fachärzte.",
-      "step3_title": "Sichere Dokumentation & Compliance",
-      "step3_description": "Alle Daten wurden HIPAA-konform verarbeitet, standardisiert und für den direkten Einsatz in die Systeme des Kunden überführt."
-    }
+    "cta": "Besprechen Sie Ihre speziellen Anforderungen"
   },
   "challenge": {
     "title": "Warum Datenaufbereitung Unternehmen bremst",
@@ -152,7 +143,6 @@
   "credentials": {
     "title": "Erfolgsgeschichten unserer Kunden",
     "subtitle": "",
-    "subtitle2": "+++Study Cases should be sorted by industry, in a slider to shorten the website a bit. +++\nSoftware & IT\n\nAdair (Software Development)\nProjektmanagement-Datenmigration → Wir stellten sicher, dass beim Umstieg auf ein neues Tool die Daten vollständig und korrekt übertragen wurden.\n\nAutomotive / Mobilität\n\nDigital Divine Data\nAutonomes Fahren → Bilder für KI-Systeme präzise aufbereitet, damit Fahrzeuge Objekte zuverlässig erkennen.\n\nHealthcare\n\nAmbulanzpartner\nGesundheitsdatenverarbeitung → Patientendaten bereinigt und strukturiert, um eine bessere Versorgung zu ermöglichen.\n\nSocial Impact / Nachhaltigkeit\n\nImpact Tank\nUmweltschutz → Datenpipeline für Wildtier-Monitoring aufgebaut, damit Umwelteinflüsse in Echtzeit gemessen werden können.",
     "cta": "Mehr Erfolgsgeschichten entdecken",
     "cases": {
       "challenge": "Problem",
