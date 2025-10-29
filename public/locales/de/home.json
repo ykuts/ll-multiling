@@ -46,7 +46,16 @@
   "expertAnnotation": {
     "title": "Fallbeispiel: Wie Label Ladder KI im Gesundheitswesen unterstützt",
     "subtitle": "Ein internationales MedTech-Unternehmen wollte einen KI-Agenten entwickeln, die Röntgen- und CT-Bilder automatisch auswertet. Dafür brauchte es zehntausende präzise gekennzeichnete Bilder um den KI-Agenten zu schulen: ein Projekt, das intern zu teuer und zeitaufwendig gewesen wäre. Allein die interne Rekrutierung und Schulung von Fachkräften hätte Monate in Anspruch genommen. Gleichzeitig fehlte es an skalierbaren Prozessen, um die Datenmenge in der geforderten Qualität und Geschwindigkeit bereitzustellen. Und genau hier kommt Label Ladder ins Spiel.",
-    "cta": "Besprechen Sie Ihre speziellen Anforderungen"
+    "cta": "Besprechen Sie Ihre speziellen Anforderungen",
+ "how": {
+      "title": "So haben wir das Projekt umgesetzt:",
+      "step1_title": "1. Aufbau eines Expertenteams",
+      "step1_description": "Wir stellten ein spezialisiertes Team mit medizinischer Zusatzausbildung zusammen und schulten es nach Schweizer Qualitätsstandards.",
+      "step2_title": "2. Präzise Annotation medizinischer Daten", 
+      "step2_description": "Das Team kennzeichnete tausende Röntgen- und CT-Aufnahmen mit klinischer Genauigkeit – inklusive Validierung durch Fachärzte.",
+      "step3_title": "3. Sichere Dokumentation & Compliance",
+      "step3_description": "Alle Daten wurden HIPAA-konform verarbeitet, standardisiert und für den direkten Einsatz in die Systeme des Kunden überführt."
+    }
   },
   "challenge": {
     "title": "Warum Datenaufbereitung Unternehmen bremst",
