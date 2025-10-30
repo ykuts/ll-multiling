@@ -99,6 +99,11 @@ export default function About(props) {
             role: 'Data & AI',
             image: '/images/team/marcel.jpg',
         },
+        {
+            name: 'Karin Schleifer',
+            role: 'Archival Arrangement',
+            image: '/images/team/karin.jpg',
+        },
         
     ];
 
@@ -451,7 +456,7 @@ export default function About(props) {
                             centered
                         />
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8 mt-12">
                             {advisors.map((advisor, index) => (
                                 <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
                                     <div className="relative aspect-square">
