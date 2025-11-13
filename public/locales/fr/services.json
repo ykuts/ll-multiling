@@ -5,10 +5,10 @@
     },
     "general": {
         "title": "Services d'annotation de données générales",
-        "subtitle": "Services d'annotation à grand volume et rentables alimentés par notre équipe de 1 000 personnes en Namibie.",
+        "subtitle": "Services d'annotation à grand volume et rentables alimentés par notre équipe de 500 personnes en Namibie.",
         "builtForScale": {
             "title": "Conçu pour l'échelle",
-            "description": "Notre force principale réside dans la gestion efficace et rentable de projets d'annotation à grand volume. Avec 1000 annotateurs formés en Namibie, nous pouvons évoluer pour répondre aux exigences des entreprises tout en maintenant des normes de qualité suisses.",
+            "description": "Notre force principale réside dans la gestion efficace et rentable de projets d'annotation à grand volume. Avec 500 annotateurs formés en Namibie, nous pouvons évoluer pour répondre aux exigences des entreprises tout en maintenant des normes de qualité suisses.",
             "stats": {
                 "processed": "Éléments traités mensuellement",
                 "turnaround": "Délai moyen"
@@ -69,7 +69,7 @@
             "features": {
                 "capacity": {
                     "title": "Capacité de volume d'entreprise",
-                    "description": "Plus de 1 000 annotateurs formés prêts à évoluer"
+                    "description": "Plus de 500 annotateurs formés prêts à évoluer"
                 },
                 "coverage": {
                     "title": "Couverture complète des types de données",

@@ -10,10 +10,10 @@
     },
     "foundation": {
         "title": "Pourquoi Label Ladder ?",
-        "subtitle": "Mise à l'échelle et impact social : Nos 1 000 annotateurs qualifiés",
+        "subtitle": "Mise à l'échelle et impact social : Nos 500 annotateurs qualifiés",
         "stats": {
             "annotators": {
-                "number": "1 000",
+                "number": "500",
                 "label": "Experts dans l'équipe",
                 "description": "Un réseau solide de professionnels formés fournit les données dont votre IA a besoin pour des résultats fiables."
             },
@@ -38,7 +38,7 @@
             "title": "Académie Label Ladder",
             "description1": "Label Ladder fonctionne avec le soutien officiel du Ministère namibien de l'Éducation et de l'Innovation, une garantie de sécurité et de durabilité.",
             "description2": "Grâce au programme de l'Académie Label Ladder, nous créons des opportunités de croissance personnelle et veillons à ce que nos employés puissent réussir dans une industrie mondialement dynamique.",
-            "stat": "1 000",
+            "stat": "500",
             "statLabel": "Namibiens formés d'ici 2027",
             "statDescription": "Avec notre engagement, nous favorisons le développement économique et ouvrons de nouvelles opportunités d'emploi pour les jeunes."
         }
@@ -93,7 +93,7 @@
             },
             "reliability": {
                 "title": "Qualité suisse, mise en œuvre mondiale",
-                "description": "Des normes suisses strictes combinées à une équipe de 1 000 experts pour une préparation de données fiable sur laquelle vous pouvez toujours compter."
+                "description": "Des normes suisses strictes combinées à une équipe de 500 experts pour une préparation de données fiable sur laquelle vous pouvez toujours compter."
             }
         }
     },
@@ -103,7 +103,7 @@
         "features": {
             "scale": {
                 "title": "Évolutivité et capacité",
-                "description": "1 000 spécialistes, prêts à se déployer rapidement – pour des projets de toute taille."
+                "description": "500 spécialistes, prêts à se déployer rapidement – pour des projets de toute taille."
             },
             "medical": {
                 "title": "Précision professionnelle",

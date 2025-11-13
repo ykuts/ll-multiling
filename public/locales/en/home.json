@@ -10,10 +10,10 @@
   },
   "foundation": {
     "title": "Why Label Ladder?",
-    "subtitle": "Scaling and social impact: Our 1,000 qualified annotators",
+    "subtitle": "Scaling and social impact: Our 500 qualified annotators",
     "stats": {
       "annotators": {
-        "number": "1,000",
+        "number": "500",
         "label": "Experts on the Team",
         "description": "A strong network of trained professionals delivers the data your AI needs for reliable results."
       },
@@ -38,7 +38,7 @@
       "title": "Label Ladder Academy",
       "description1": "Label Ladder operates with official support from the Namibian Ministry of Education and Innovation, a guarantee of security and sustainability.",
       "description2": "Through the Label Ladder Academy program, we create opportunities for personal growth and ensure that our employees can succeed in a globally dynamic industry.",
-      "stat": "1,000",
+      "stat": "500",
       "statLabel": "Namibians trained by 2027",
       "statDescription": "With our commitment, we promote economic development and open up new employment opportunities for young people."
     }
@@ -93,7 +93,7 @@
       },
       "reliability": {
         "title": "Swiss Quality, Globally Implemented",
-        "description": "Strict Swiss standards combined with a 1,000-strong expert team for reliable data preparation you can always count on."
+        "description": "Strict Swiss standards combined with a 500-strong expert team for reliable data preparation you can always count on."
       }
     }
   },
@@ -103,7 +103,7 @@
     "features": {
       "scale": {
         "title": "Scalability & Capacity",
-        "description": "1,000 specialists, ready to deploy quickly – for projects of any size."
+        "description": "500 specialists, ready to deploy quickly – for projects of any size."
       },
       "medical": {
         "title": "Professional Precision",

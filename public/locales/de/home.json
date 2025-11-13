@@ -10,10 +10,10 @@
   },
   "foundation": {
     "title": "Warum Label Ladder?",
-    "subtitle": "Skalierung und sozialer Einfluss: Unsere 1.000 qualifizierten Annotator:innen",
+    "subtitle": "Skalierung und sozialer Einfluss: Unsere 500 qualifizierten Annotator:innen",
     "stats": {
       "annotators": {
-        "number": "1.000",
+        "number": "500",
         "label": "Expert:innen im Team",
         "description": "Ein starkes Netzwerk aus ausgebildeten Fachkräften liefert die Daten, die Ihre KI für verlässliche Ergebnisse braucht. "
       },
@@ -38,7 +38,7 @@
       "title": "Label Ladder Academy",
       "description1": "Label Ladder arbeitet mit offizieller Unterstützung des namibischen Ministeriums für Bildung und Innovation, ein Garant für Sicherheit und Nachhaltigkeit.",
       "description2": "Durch das Label Ladder Akademie-Programm schaffen wir Chancen für persönliches Wachstum und stellen sicher, dass unsere Mitarbeiter:innen in einer global dynamischen Branche erfolgreich bestehen können.",
-      "stat": "1.000",
+      "stat": "500",
       "statLabel": "Namibier:innen bis 2027 ausgebildet",
       "statDescription": "Mit unserem Engagement fördern wir die wirtschaftliche Entwicklung und eröffnen jungen Menschen neue Beschäftigungsmöglichkeiten."
     }
@@ -93,7 +93,7 @@
       },
       "reliability": {
         "title": "Schweizer Qualität",
-        "description": "Strenge Schweizer Standards kombiniert mit einem 1.000-köpfigen Expert:innenteam für verlässliche Datenaufbereitung, auf die Sie sich jederzeit verlassen können."
+        "description": "Strenge Schweizer Standards kombiniert mit einem 500-köpfigen Expert:innenteam für verlässliche Datenaufbereitung, auf die Sie sich jederzeit verlassen können."
       }
     }
   },
@@ -103,7 +103,7 @@
     "features": {
       "scale": {
         "title": "Skalierbarkeit & Kapazität",
-        "description": "1.000 Fachkräfte, schnell einsatzbereit – für Projekte jeder Grösse."
+        "description": "500 Fachkräfte, schnell einsatzbereit – für Projekte jeder Grösse."
       },
       "medical": {
         "title": "Fachliche Präzision",

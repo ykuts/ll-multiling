@@ -5,10 +5,10 @@
     },
     "general": {
         "title": "General Data Annotation Services",
-        "subtitle": "High-volume, cost-effective annotation services powered by our 1,000-strong team in Namibia.",
+        "subtitle": "High-volume, cost-effective annotation services powered by our 500-strong team in Namibia.",
         "builtForScale": {
             "title": "Built for Scale",
-            "description": "Our core strength lies in handling large-volume annotation projects efficiently and cost-effectively. With 1,000 trained annotators in Namibia, we can scale to meet enterprise demands while maintaining Swiss quality standards.",
+            "description": "Our core strength lies in handling large-volume annotation projects efficiently and cost-effectively. With 500 trained annotators in Namibia, we can scale to meet enterprise demands while maintaining Swiss quality standards.",
             "stats": {
                 "processed": "Items processed monthly",
                 "turnaround": "Average turnaround"
@@ -69,7 +69,7 @@
             "features": {
                 "capacity": {
                     "title": "Enterprise Volume Capacity",
-                    "description": "1,000+ trained annotators ready to scale"
+                    "description": "500+ trained annotators ready to scale"
                 },
                 "coverage": {
                     "title": "Full Data Types Coverage",

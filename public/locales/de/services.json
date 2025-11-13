@@ -5,10 +5,10 @@
     },
     "general": {
         "title": "Allgemeine Annotation",
-        "subtitle": "Hochvolumige, kosteneffiziente Annotationsdienste, unterstützt von unserem 1.000-köpfigen Team in Namibia.",
+        "subtitle": "Hochvolumige, kosteneffiziente Annotationsdienste, unterstützt von unserem 500-köpfigen Team in Namibia.",
         "builtForScale": {
             "title": "Für Skalierung gebaut",
-            "description": "Unsere Kernstärke liegt in der effizienten und kosteneffektiven Abwicklung großvolumiger Annotationsprojekte. Mit 1.000 geschulten Annotatoren in Namibia können wir skalieren, um Unternehmensanforderungen zu erfüllen und gleichzeitig Schweizer Qualitätsstandards aufrechtzuerhalten.",
+            "description": "Unsere Kernstärke liegt in der effizienten und kosteneffektiven Abwicklung großvolumiger Annotationsprojekte. Mit 500 geschulten Annotatoren in Namibia können wir skalieren, um Unternehmensanforderungen zu erfüllen und gleichzeitig Schweizer Qualitätsstandards aufrechtzuerhalten.",
             "stats": {
                 "processed": "Monatlich verarbeitete Elemente",
                 "turnaround": "Bearbeitungs-zeit"
@@ -69,7 +69,7 @@
             "features": {
                 "capacity": {
                     "title": "Unternehmensvolumen-Kapazität",
-                    "description": "1.000+ geschulte Annotatoren bereit zu skalieren"
+                    "description": "500+ geschulte Annotatoren bereit zu skalieren"
                 },
                 "coverage": {
                     "title": "Vollständige Datentypabdeckung",
