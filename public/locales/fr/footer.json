@@ -1,5 +1,5 @@
 {
-    "description": "Nous fournissons des services complets de traitement et d'annotation de données pour transformer vos données en un atout puissant.",
+    "description": "Le partenaire des services numériques de la Namibie",
     "quickLinks": {
         "title": "Liens rapides",
         "aboutUs": "À propos",
@@ -8,9 +8,17 @@
     },
     "services": {
         "title": "Services",
-        "ourServices": "Nos services",
-        "generalData": "Annotation de données générales",
-        "expertAnnotation": "Annotation experte et spécialisée"
+        "ourServices": "Développement logiciel",
+        "generalData": "Services de données",
+        "expertAnnotation": "Conseil numérique",
+        "softwareImplementation": "Mise en œuvre logicielle",
+        "dataServices": {
+            "title": "Services de données",
+            "subOfferings": {
+                "generalDataAnnotation": "Annotation de données générales",
+                "expertSpecialistAnnotation": "Annotation experte et spécialisée"
+            }
+        }
     },
     "contact": {
         "title": "Contact",

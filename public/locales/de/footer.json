@@ -1,5 +1,5 @@
 {
-    "description": "Wir bieten umfassende Datenverarbeitungs- und Annotationsdienste, um Ihre Daten in ein wertvolles Asset zu verwandeln.",
+    "description": "Namibias Partner für digitale Dienstleistungen",
     "quickLinks": {
         "title": "Schnellzugriff",
         "aboutUs": "Über uns",
@@ -8,9 +8,17 @@
     },
     "services": {
         "title": "Dienstleistungen",
-        "ourServices": "Unsere Dienstleistungen",
-        "generalData": "Allgemeine Datenannotation",
-        "expertAnnotation": "Experten- und Spezialannotation"
+        "ourServices": "Softwareentwicklung",
+        "generalData": "Datenservices",
+        "expertAnnotation": "Digitale Beratung",
+        "softwareImplementation": "Softwareimplementierung",
+        "dataServices": {
+            "title": "Datenservices",
+            "subOfferings": {
+                "generalDataAnnotation": "Allgemeine Datenannotation",
+                "expertSpecialistAnnotation": "Experten- und Spezialannotation"
+            }
+        }
     },
     "contact": {
         "title": "Kontakt",

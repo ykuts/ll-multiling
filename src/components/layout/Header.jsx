@@ -43,6 +43,7 @@ const Header = () => {
         }
       ]
     },
+    { name: t('navigation.project1000'), href: '/project1000/' },
     { name: t('navigation.credentials'), href: '/credentials/' },
   ];
 
