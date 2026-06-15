@@ -12,17 +12,21 @@
         "meetTheTeam": "Unser Team"
     },
     "servicesSubmenu": {
-        "ourServices": {
-            "title": "Unsere Dienstleistungen",
-            "description": "Über unsere Dienstleistungen"
+        "softwareDev": {
+            "title": "Softwareentwicklung",
+            "description": "Individuelle Web- & Mobile-Apps"
         },
-        "generalData": {
-            "title": "Allgemeine Datenannotation",
-            "description": "Für großangelegte Projekte"
+        "softwareImpl": {
+            "title": "Softwareimplementierung",
+            "description": "ERP, CRM & Cloud-Bereitstellung"
         },
-        "expertAnnotation": {
-            "title": "Experten- und Spezialannotation",
-            "description": "Für medizinische Bereiche usw."
+        "dataServices": {
+            "title": "Datenservices",
+            "description": "Annotation, Verarbeitung & Qualitätssicherung"
+        },
+        "digitalConsulting": {
+            "title": "Digitale Beratung",
+            "description": "Strategie & IT-Governance"
         }
     }
 }

@@ -98,7 +98,7 @@ export default function Home(props) {
       <ChallengeSection />
       <SolutionSection />
       <WhyChooseSection />
-      <ApproachSection />
+      {/* <ApproachSection /> */}
       <CredentialsSection />
       <CTASection />
     </Layout>

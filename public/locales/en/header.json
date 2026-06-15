@@ -12,17 +12,21 @@
         "meetTheTeam": "Meet the Team"
     },
     "servicesSubmenu": {
-        "ourServices": {
-            "title": "Our Services",
-            "description": "About Our Services"
+        "softwareDev": {
+            "title": "Software Development",
+            "description": "Custom web & mobile apps"
         },
-        "generalData": {
-            "title": "General Data Annotation",
-            "description": "For Large-Scale Projects"
+        "softwareImpl": {
+            "title": "Software Implementation",
+            "description": "ERP, CRM & cloud deployment"
         },
-        "expertAnnotation": {
-            "title": "Expert & Specialist Annotation",
-            "description": "For Medical, etc."
+        "dataServices": {
+            "title": "Data Services",
+            "description": "Annotation, processing & QA"
+        },
+        "digitalConsulting": {
+            "title": "Digital Consulting",
+            "description": "Strategy & IT governance"
         }
     }
 }
