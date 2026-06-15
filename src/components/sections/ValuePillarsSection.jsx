@@ -21,7 +21,7 @@ const ValuePillarsSection = () => {
               key={index}
               className="h-full flex flex-col bg-primary text-white rounded-lg p-8 shadow-md hover:shadow-lg transition-all duration-300"
             >
-              <h3 className="text-xl font-bold mb-3">{pillar.title}</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">{pillar.title}</h3>
               <p className="text-accent leading-relaxed flex-grow">{pillar.description}</p>
             </div>
           ))}
