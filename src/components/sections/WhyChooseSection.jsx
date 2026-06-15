@@ -43,7 +43,7 @@ const WhyChooseSection = () => {
     <section className="py-16 md:py-24">
       <Container>
         <SectionHeading
-          title={t('whyChoose.title')}
+          title={t('whyChoose.impactTitle')}
           subtitle={t('whyChoose.subtitle')}
           centered
         />

@@ -83,8 +83,8 @@ export default function Home(props) {
 
   return (
     <Layout
-      title="Professional Data Annotation: From Scale to Medical Specialization"
-      description="Expert data annotation services combining 1,000-strong Namibian team for large-scale projects with specialized medical expertise for healthcare AI. Swiss precision meets social impact."
+      title="Namibia's Digital Services Partner"
+      description="Software development, software implementation, data services, and digital consulting for Namibia's leading public and private institutions"
       keywords="data annotation services, medical data annotation, healthcare AI, large scale data labeling, radiology annotation, pathology labeling, clinical data processing, Swiss Namibian partnership, native English speakers"
       image="https://labelladder.com/images/og/homepage-medical-og.jpg"
       structuredData={structuredData}
