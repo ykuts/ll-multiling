@@ -1,15 +1,17 @@
 {
     "hero": {
         "title": "Unsere Mission",
-        "subtitle": "Hinter jedem intelligenten Modell steht eine intelligentere Datenaufbereitung"
+        "subtitle": "Wir bieten Institutionen erstklassige IT-, Software- und Datenlösungen, die von Namibiern betrieben und geführt werden."
     },
     "aboutUs": {
         "title": "Über uns",
         "subtitle": "Label Ladder ist ein schweizerisch-namibisches Unternehmen mit Büros in Zürich und Windhoek.",
-        "intro": "Wir bieten <strong>umfassende Datenverarbeitungs- und Annotationsdienste</strong> — nicht nur zur Beschriftung Ihrer Daten, sondern um sie in ein leistungsstarkes Asset zu verwandeln, das intelligentere Entscheidungen, optimierte Abläufe und echten Wettbewerbsvorteil ermöglicht.",
+        "intro": "Label Ladder bietet Softwareentwicklung, Softwareimplementierung, Datenservices und digitale Beratung für führende öffentliche und private Institutionen.",
         "paragraph2": "Ob Sie KI-Modelle trainieren oder komplexe Datensätze verwalten, unsere Lösungen sind darauf ausgelegt, <strong>Betriebskosten zu senken, Datenqualität und Nutzbarkeit zu verbessern</strong> und <strong>schnellere, datengestützte Entscheidungen</strong> zu ermöglichen.",
         "paragraph3": "Wir kombinieren Schweizer Präzision und Datenexzellenz mit namibischem Talent und Agilität, um hochwertige, skalierbare Datenlösungen zu liefern, die sowohl global wettbewerbsfähig als auch lokal verankert sind.",
-        "paragraph4": "Lassen Sie uns Ihnen helfen, das volle Potenzial Ihrer Daten zu erschließen — mit <strong>Präzision, Zielstrebigkeit und langfristiger Wirkung.</strong>"
+        "paragraph4": "Lassen Sie uns Ihnen helfen, das volle Potenzial Ihrer Daten zu erschließen — mit <strong>Präzision, Zielstrebigkeit und langfristiger Wirkung.</strong>",
+        "globalPartner": "Wir arbeiten mit globalen Unternehmen zusammen, um innovative Technologien nach Namibia zu bringen – implementiert und betrieben von Namibiern.",
+        "capabilityTransfer": "Wir liefern nicht nur Software – wir schulen namibisches Personal und bauen interne Kompetenzen auf. Jedes Projekt macht unsere Kunden stärker."
     },
     "workingWithUs": {
         "title": "Zusammenarbeit mit uns",

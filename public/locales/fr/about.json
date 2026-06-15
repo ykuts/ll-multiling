@@ -1,15 +1,17 @@
 {
     "hero": {
         "title": "Notre mission",
-        "subtitle": "Derrière chaque modèle intelligent se cache une préparation de données plus intelligente"
+        "subtitle": "Nous offrons aux institutions des solutions informatiques, logicielles et de données de premier ordre, gérées et exploitées par des Namibiens."
     },
     "aboutUs": {
         "title": "À propos de nous",
         "subtitle": "Label Ladder est une entreprise suisse-namibienne avec des bureaux à Zurich et Windhoek.",
-        "intro": "Nous fournissons des <strong>services complets de traitement et d'annotation de données</strong> — non seulement pour étiqueter vos données, mais pour les transformer en un atout puissant qui favorise des décisions plus intelligentes, des opérations rationalisées et un réel avantage concurrentiel.",
+        "intro": "Label Ladder propose le développement logiciel, la mise en œuvre logicielle, les services de données et le conseil numérique aux principales institutions publiques et privées.",
         "paragraph2": "Que vous entraîniez des modèles d'IA ou gériez des ensembles de données complexes, nos solutions sont conçues pour <strong>réduire les coûts opérationnels, améliorer la qualité et l'utilisabilité des données</strong> et permettre des <strong>décisions plus rapides et basées sur les données.</strong>",
         "paragraph3": "Nous combinons la précision suisse et l'excellence des données avec le talent et l'agilité namibiens pour fournir des solutions de données de haute qualité et évolutives qui sont à la fois compétitives à l'échelle mondiale et ancrées localement.",
-        "paragraph4": "Laissez-nous vous aider à libérer tout le potentiel de vos données — avec <strong>précision, objectif et impact à long terme.</strong>"
+        "paragraph4": "Laissez-nous vous aider à libérer tout le potentiel de vos données — avec <strong>précision, objectif et impact à long terme.</strong>",
+        "globalPartner": "Nous collaborons avec des entreprises internationales pour apporter des technologies innovantes en Namibie, mises en œuvre et exploitées par des Namibiens.",
+        "capabilityTransfer": "Nous ne livrons pas seulement des logiciels – nous formons le personnel namibien et renforçons les compétences internes. Chaque mission laisse nos clients plus forts."
     },
     "workingWithUs": {
         "title": "Travailler avec nous",

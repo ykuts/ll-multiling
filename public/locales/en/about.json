@@ -1,15 +1,17 @@
 {
     "hero": {
         "title": "Our Mission",
-        "subtitle": "Behind every smart model is smarter data preparation"
+        "subtitle": "Providing institutions with best-in-class IT, software, and data solutions, to be run and operated by Namibians."
     },
     "aboutUs": {
         "title": "About Us",
         "subtitle": "Label Ladder is a Swiss-Namibian company with offices in Zürich and Windhoek.",
-        "intro": "We provide <strong>end-to-end data processing and annotation services</strong> — not just to label your data, but to transform it into a powerful asset that drives smarter decisions, streamlined operations, and real competitive edge.",
+        "intro": "Label Ladder provides software development, software implementation, data services, and digital consulting to leading public and private institutions.",
         "paragraph2": "Whether you're training AI models or managing complex datasets, our solutions are built to <strong>reduce operational costs, enhance data quality and usability</strong>, and enable <strong>faster, insight-driven decisions.</strong>",
         "paragraph3": "We combine Swiss precision and data excellence with Namibian talent and agility to deliver high-quality, scalable data solutions that are both globally competitive and locally grounded.",
-        "paragraph4": "Let us help you unlock the full potential of your data — with <strong>precision, purpose, and long-term impact.</strong>"
+        "paragraph4": "Let us help you unlock the full potential of your data — with <strong>precision, purpose, and long-term impact.</strong>",
+        "globalPartner": "We partner with global companies to bring innovative technologies to Namibia, implemented and operated by Namibians.",
+        "capabilityTransfer": "We don't just deliver software — we train Namibian staff and build internal capability. Every engagement leaves our clients stronger."
     },
     "workingWithUs": {
         "title": "Working with Us",

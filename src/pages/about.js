@@ -179,6 +179,19 @@ export default function About(props) {
                             />
                         </div>
                     </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+                        <div className="bg-primary text-white rounded-lg p-8 shadow-md">
+                            <p className="text-accent leading-relaxed">
+                                {t('aboutUs.globalPartner')}
+                            </p>
+                        </div>
+                        <div className="bg-secondary text-white rounded-lg p-8 shadow-md">
+                            <p className="text-white/90 leading-relaxed">
+                                {t('aboutUs.capabilityTransfer')}
+                            </p>
+                        </div>
+                    </div>
                 </Container>
             </section>
 

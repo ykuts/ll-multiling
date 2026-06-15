@@ -22,6 +22,18 @@ export default function Services(props) {
     trackServiceInquiry('services_page_view');
   }, []);
 
+  const serviceLines = [0, 1, 2, 3].map((index) => ({
+    id: t(`serviceLines.items.${index}.id`),
+    title: t(`serviceLines.items.${index}.title`),
+    items: [0, 1, 2, 3].map((subIndex) => t(`serviceLines.items.${index}.items.${subIndex}`)),
+  }));
+
+  const engagementSteps = [0, 1, 2, 3, 4].map((index) => ({
+    number: t(`approach.steps.${index}.number`),
+    title: t(`approach.steps.${index}.title`),
+    description: t(`approach.steps.${index}.description`),
+  }));
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -53,6 +65,55 @@ export default function Services(props) {
             <p className="text-xl mb-8 text-accent">
               {t('hero.subtitle')}
             </p>
+          </div>
+        </Container>
+      </section>
+
+      {/* Service Lines Section */}
+      <section id="service-lines" className="py-16 bg-gray-50">
+        <Container>
+          <SectionHeading title={t('serviceLines.title')} centered />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+            {serviceLines.map((line) => (
+              <div
+                key={line.id}
+                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-secondary"
+              >
+                <h3 className="text-xl font-bold text-primary mb-4">{line.title}</h3>
+                <ul className="space-y-2 text-gray-600">
+                  {line.items.map((item, i) => (
+                    <li key={i} className="flex items-start">
+                      <div className="w-2 h-2 rounded-full bg-secondary mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-sm">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Engagement Model Section */}
+      <section id="approach" className="py-16">
+        <Container>
+          <SectionHeading
+            title={t('approach.title')}
+            subtitle={t('approach.subtitle')}
+            centered
+          />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mt-12">
+            {engagementSteps.map((step, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-md p-6 text-center">
+                <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl mx-auto mb-4">
+                  {step.number}
+                </div>
+                <h3 className="text-lg font-bold text-primary mb-2">{step.title}</h3>
+                <p className="text-gray-600 text-sm">{step.description}</p>
+              </div>
+            ))}
           </div>
         </Container>
       </section>
