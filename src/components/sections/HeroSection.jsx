@@ -12,6 +12,7 @@ const HeroSection = ({ tinaData }) => {
     brandName: tinaData?.brandName || t('hero.brandName'),
     tagline1: tinaData?.tagline1 || t('hero.tagline1'),
     tagline2: tinaData?.tagline2 || t('hero.tagline2'),
+    tagline3: tinaData?.tagline3 || t('hero.tagline3'),
     subtitle1: tinaData?.subtitle1 || t('hero.subtitle1'),
     subtitle2: tinaData?.subtitle2 || t('hero.subtitle2'),
     btnServices: tinaData?.btnServices || t('hero.btnServices'),
@@ -76,7 +77,8 @@ const HeroSection = ({ tinaData }) => {
           {/* Main Tagline */}
           <h2 className="text-2xl md:text-4xl mb-4 text-white font-bold leading-tight">
             {t('hero.tagline1')}<br />
-            {t('hero.tagline2')}
+            {t('hero.tagline2')}<br />
+            {t('hero.tagline3')}
           </h2>
 
           {/* Supporting Messages */}

@@ -1,12 +1,59 @@
 {
   "hero": {
     "brandName": "LABEL LADDER",
-    "tagline1": "Namibias Partner für digitale Dienstleistungen",
-    "tagline2": "von der Skalierung zur gezielten Fachlösung.",
+    "tagline1": "Wir bieten privaten und öffentlichen Institutionen",
+    "tagline2": "erstklassige IT-, Software- und Datenlösungen,",
+    "tagline3": "betrieben und geführt von Namibiern",
     "subtitle1": "Treffsichere Daten für Ihre KI: schnell, zuverlässig und in höchster Qualität.",
     "subtitle2": "Softwareentwicklung, Softwareimplementierung, Datenservices und digitale Beratung für führende öffentliche und private Institutionen Namibias.",
     "btnServices": "Leistungen",
     "btnContact": "Kontaktieren Sie uns"
+  },
+  "valuePillars": {
+    "title": "Warum Label Ladder",
+    "pillars": [
+      {
+        "title": "Namibier beschäftigen",
+        "description": "Wir schaffen sinnstiftende digitale Arbeitsplätze für junge Namibier und bilden eine neue Generation von Tech-Fachkräften aus."
+      },
+      {
+        "title": "Interne Kompetenzen aufbauen",
+        "description": "Wir liefern nicht nur Software – wir schulen namibisches Personal und bauen interne Kompetenzen auf. Jedes Projekt macht unsere Kunden stärker."
+      },
+      {
+        "title": "Global vernetzen",
+        "description": "Wir arbeiten mit globalen Unternehmen zusammen, um innovative Technologien nach Namibia zu bringen – implementiert und betrieben von Namibiern."
+      }
+    ]
+  },
+  "servicesOverview": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Digitale Lösungen aus einer Hand für Namibias Institutionen",
+    "cards": [
+      {
+        "title": "Softwareentwicklung",
+        "description": "Massgeschneiderte Web- & Mobile-Anwendungen; API-Entwicklung & -Integration; Datenbankdesign & -architektur; KI/ML-gestützte Produktentwicklung"
+      },
+      {
+        "title": "Softwareimplementierung",
+        "description": "ERP- & CRM-Einrichtung und -Konfiguration; Bereitstellung von Cloud-Infrastruktur; Systemintegration & Automatisierung; laufender Support, Wartung & Schulung"
+      },
+      {
+        "title": "Datenservices",
+        "description": "Datenannotation & Labeling (Text, Bild, Video, Audio); Datenerfassung & -verarbeitung; Datenqualitätssicherung; Felddatenerhebung & Ground Truthing"
+      },
+      {
+        "title": "Digitale Beratung",
+        "description": "Technologiebedarfsanalyse; Roadmap für die digitale Transformation; Unterstützung bei Anbieterauswahl & Beschaffung; IT-Governance & Richtlinienberatung"
+      }
+    ],
+    "cta": "Alle Dienstleistungen ansehen"
+  },
+  "project1000": {
+    "label": "Project1000",
+    "title": "Label Ladder als Project1000-Arbeitgeber",
+    "description": "Wir verankern die nationale Agenda für digitale Beschäftigung – und vermitteln jungen Namibiern die Werkzeuge und Kenntnisse, um in den Bereichen Technologie, KI und Daten zu arbeiten.",
+    "cta": "Mehr erfahren"
   },
   "foundation": {
     "title": "Warum Label Ladder?",

@@ -2,10 +2,12 @@ import { useTina } from 'tinacms/dist/react'
 import client from '../../tina/__generated__/client'
 import Layout from '../components/layout/Layout';
 import HeroSection from '../components/sections/HeroSection';
+import ValuePillarsSection from '../components/sections/ValuePillarsSection';
+import ServicesOverviewSection from '../components/sections/ServicesOverviewSection';
+import Project1000CalloutSection from '../components/sections/Project1000CalloutSection';
 import ChallengeSection from '../components/sections/ChallengeSection';
 import SolutionSection from '../components/sections/SolutionSection';
 import ApproachSection from '../components/sections/ApproachSection';
-import ServicesOverviewSection from '../components/sections/ServicesOverviewSection';
 import CTASection from '../components/sections/CTASection';
 import CredentialsSection from '../components/sections/CredentialsSection';
 import FoundationSection from '../components/sections/FoundationSection';
@@ -88,13 +90,15 @@ export default function Home(props) {
       structuredData={structuredData}
     >
       <HeroSection tinaData={data?.homeTranslations?.hero} />
+      <ValuePillarsSection />
+      <ServicesOverviewSection />
+      <Project1000CalloutSection />
       <FoundationSection />
       <ExpertAnnotationSection />
       <ChallengeSection />
       <SolutionSection />
       <WhyChooseSection />
       <ApproachSection />
-      {/* <ServicesOverviewSection /> */}
       <CredentialsSection />
       <CTASection />
     </Layout>
