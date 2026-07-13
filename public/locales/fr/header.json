@@ -3,6 +3,7 @@
         "aboutUs": "À propos",
         "approach": "Approche",
         "services": "Services",
+        "project1000": "Project1000",
         "credentials": "Références",
         "contactUs": "Contact"
     },
@@ -11,17 +12,21 @@
         "meetTheTeam": "Notre équipe"
     },
     "servicesSubmenu": {
-        "ourServices": {
-            "title": "Nos services",
-            "description": "À propos de nos services"
+        "softwareDev": {
+            "title": "Développement logiciel",
+            "description": "Applications web et mobiles sur mesure"
         },
-        "generalData": {
-            "title": "Annotation de données générales",
-            "description": "Pour projets à grande échelle"
+        "softwareImpl": {
+            "title": "Mise en œuvre logicielle",
+            "description": "ERP, CRM et déploiement cloud"
         },
-        "expertAnnotation": {
-            "title": "Annotation experte et spécialisée",
-            "description": "Pour domaine médical, etc."
+        "dataServices": {
+            "title": "Services de données",
+            "description": "Annotation, traitement et assurance qualité"
+        },
+        "digitalConsulting": {
+            "title": "Conseil numérique",
+            "description": "Stratégie et gouvernance informatique"
         }
     }
 }

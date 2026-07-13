@@ -1,0 +1,42 @@
+{
+    "hero": {
+        "label": "Project1000",
+        "title": "Namibia's Digital Employment Initiative",
+        "subtitle": "Project1000 is an MICT national initiative implemented by Impact Tank to create 1,000 digital jobs for Namibian youth."
+    },
+    "role": {
+        "title": "Label Ladder's Role",
+        "description": "As a contributing employer, Label Ladder provides Namibians with the tools and knowledge to work in technology, AI, and data industries.",
+        "points": [
+            "Contributing employer in the Project1000 initiative",
+            "Providing hands-on training in tech, AI, and data",
+            "Creating sustainable digital employment for Namibian youth",
+            "Bridging the gap between global technology and local talent"
+        ]
+    },
+    "academy": {
+        "title": "Label Ladder Academy",
+        "description": "We guarantee employees a pathway to growth and employability in a globally competitive industry.",
+        "subtitle": "Our 5-stage academy curriculum prepares Namibian talent for the global digital economy:",
+        "stages": [
+            { "number": "1", "title": "Digital Foundations", "description": "Core computer skills, internet literacy, and workplace readiness" },
+            { "number": "2", "title": "Data & AI Basics", "description": "Introduction to data annotation, machine learning concepts, and AI tools" },
+            { "number": "3", "title": "Specialist Training", "description": "Domain-specific annotation skills: text, image, video, audio" },
+            { "number": "4", "title": "Quality & Process", "description": "Quality assurance, workflow management, and professional standards" },
+            { "number": "5", "title": "Career Development", "description": "Portfolio building, client communication, and global industry readiness" }
+        ]
+    },
+    "impact": {
+        "title": "Our Impact",
+        "stats": [
+            { "number": "1000", "label": "Digital jobs target", "suffix": "+" },
+            { "number": "5", "label": "Academy stages", "suffix": "" },
+            { "number": "100", "label": "Namibian-operated", "suffix": "%" }
+        ]
+    },
+    "cta": {
+        "title": "Join the Movement",
+        "description": "Whether you are an institution looking for digital services or a partner wanting to support Namibia's digital future — let's connect.",
+        "button": "Contact Us"
+    }
+}

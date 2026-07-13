@@ -1,0 +1,42 @@
+{
+    "hero": {
+        "label": "Project1000",
+        "title": "Namibias Initiative für digitale Beschäftigung",
+        "subtitle": "Project1000 ist eine nationale MICT-Initiative, umgesetzt von Impact Tank, um 1.000 digitale Arbeitsplätze für junge Namibier zu schaffen."
+    },
+    "role": {
+        "title": "Die Rolle von Label Ladder",
+        "description": "Als beitragender Arbeitgeber vermittelt Label Ladder Namibiern die Werkzeuge und das Wissen, um in den Bereichen Technologie, KI und Daten zu arbeiten.",
+        "points": [
+            "Beitragender Arbeitgeber in der Project1000-Initiative",
+            "Praxisnahe Schulungen in Technologie, KI und Daten",
+            "Schaffung nachhaltiger digitaler Arbeitsplätze für junge Namibier",
+            "Brücke zwischen globaler Technologie und lokalen Talenten"
+        ]
+    },
+    "academy": {
+        "title": "Label Ladder Akademie",
+        "description": "Wir garantieren unseren Mitarbeitenden einen Weg zu Wachstum und Beschäftigungsfähigkeit in einer global wettbewerbsfähigen Branche.",
+        "subtitle": "Unser 5-stufiges Akademie-Curriculum bereitet namibische Talente auf die globale digitale Wirtschaft vor:",
+        "stages": [
+            { "number": "1", "title": "Digitale Grundlagen", "description": "Grundlegende Computerkenntnisse, Internetkompetenz und Arbeitsplatzreife" },
+            { "number": "2", "title": "Daten- & KI-Grundlagen", "description": "Einführung in Datenannotation, Machine-Learning-Konzepte und KI-Tools" },
+            { "number": "3", "title": "Spezialistenschulung", "description": "Fachspezifische Annotationsfähigkeiten: Text, Bild, Video, Audio" },
+            { "number": "4", "title": "Qualität & Prozess", "description": "Qualitätssicherung, Workflow-Management und professionelle Standards" },
+            { "number": "5", "title": "Karriereentwicklung", "description": "Portfolioaufbau, Kundenkommunikation und globale Branchenreife" }
+        ]
+    },
+    "impact": {
+        "title": "Unsere Wirkung",
+        "stats": [
+            { "number": "1000", "label": "Ziel: digitale Arbeitsplätze", "suffix": "+" },
+            { "number": "5", "label": "Akademie-Stufen", "suffix": "" },
+            { "number": "100", "label": "Namibisch betrieben", "suffix": "%" }
+        ]
+    },
+    "cta": {
+        "title": "Werden Sie Teil der Bewegung",
+        "description": "Ob Sie eine Institution sind, die digitale Dienstleistungen sucht, oder ein Partner, der Namibias digitale Zukunft unterstützen möchte – lassen Sie uns in Kontakt treten.",
+        "button": "Kontaktieren Sie uns"
+    }
+}

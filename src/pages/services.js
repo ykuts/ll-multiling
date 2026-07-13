@@ -22,6 +22,18 @@ export default function Services(props) {
     trackServiceInquiry('services_page_view');
   }, []);
 
+  const serviceLines = [0, 1, 2, 3].map((index) => ({
+    id: t(`serviceLines.items.${index}.id`),
+    title: t(`serviceLines.items.${index}.title`),
+    items: [0, 1, 2, 3].map((subIndex) => t(`serviceLines.items.${index}.items.${subIndex}`)),
+  }));
+
+  const engagementSteps = [0, 1, 2, 3, 4].map((index) => ({
+    number: t(`approach.steps.${index}.number`),
+    title: t(`approach.steps.${index}.title`),
+    description: t(`approach.steps.${index}.description`),
+  }));
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -57,7 +69,58 @@ export default function Services(props) {
         </Container>
       </section>
 
-      {/* General Services Section */}
+      {/* Service Lines Section */}
+      <section id="service-lines" className="py-16 bg-gray-50">
+        <Container>
+          <SectionHeading title={t('serviceLines.title')} centered />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+            {serviceLines.map((line) => (
+              <div
+                key={line.id}
+                id={line.id}
+                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-secondary scroll-mt-24"
+              >
+                <h3 className="text-xl font-bold text-primary mb-4">{line.title}</h3>
+                <ul className="space-y-2 text-gray-600">
+                  {line.items.map((item, i) => (
+                    <li key={i} className="flex items-start">
+                      <div className="w-2 h-2 rounded-full bg-secondary mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-sm">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Engagement Model Section */}
+      <section id="approach" className="py-16">
+        <Container>
+          <SectionHeading
+            title={t('approach.title')}
+            subtitle={t('approach.subtitle')}
+            centered
+          />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mt-12">
+            {engagementSteps.map((step, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-md p-6 text-center">
+                <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl mx-auto mb-4">
+                  {step.number}
+                </div>
+                <h3 className="text-lg font-bold text-primary mb-2">{step.title}</h3>
+                <p className="text-gray-600 text-sm">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* General Services Section - commented out */}
+      {/*
       <section id="general" className="py-16 bg-gray-50">
         <Container>
           <SectionHeading
@@ -110,8 +173,10 @@ export default function Services(props) {
           </div>
         </Container>
       </section>
+      */}
 
-      {/* Expert Services Section */}
+      {/* Expert Services Section - commented out */}
+      {/*
       <section id="expert" className="py-16 bg-white">
         <Container>
           <SectionHeading
@@ -120,7 +185,6 @@ export default function Services(props) {
             centered
           />
 
-          {/* Medical & Healthcare Focus */}
           <div className="bg-gradient-to-br from-secondary/10 to-primary/10 rounded-xl p-8 mb-8">
             <div className="text-center mb-8">
               <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary mb-4">
@@ -172,8 +236,10 @@ export default function Services(props) {
           </div>
         </Container>
       </section>
+      */}
 
-      {/* Services Overview - Two Main Categories */}
+      {/* Services Overview - Two Main Categories - commented out */}
+      {/*
       <section className="py-16">
         <Container>
           <SectionHeading
@@ -183,7 +249,6 @@ export default function Services(props) {
           />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
-            {/* General Data Annotation */}
             <div className="bg-gradient-to-br from-primary to-primary/90 text-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="text-center mb-6">
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/20 mb-6">
@@ -226,7 +291,6 @@ export default function Services(props) {
                 </div>
               </div>
 
-              {/* Buttons */}
               <div className="mt-auto space-y-4">
                 <Button href="/general-services/" variant="white" size="lg" className="w-full">
                   {t('serviceLevel.generalAnnotation.buttons.details')}
@@ -237,7 +301,6 @@ export default function Services(props) {
               </div>
             </div>
 
-            {/* Expert & Specialist Annotation */}
             <div className="bg-gradient-to-br from-secondary to-secondary/90 text-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 flex flex-col">
               <div className="text-center mb-6">
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/20 mb-6">
@@ -280,7 +343,6 @@ export default function Services(props) {
                 </div>
               </div>
 
-              {/* Buttons */}
               <div className="mt-auto space-y-4">
                 <Button href="/expert-services/" variant="white" size="lg" className="w-full">
                   {t('serviceLevel.expertAnnotation.buttons.details')}
@@ -293,6 +355,7 @@ export default function Services(props) {
           </div>
         </Container>
       </section>
+      */}
 
       {/* CTA Section */}
       <section className="py-16 bg-gray-50">

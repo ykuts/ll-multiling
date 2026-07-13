@@ -21,28 +21,34 @@ const Header = () => {
         { name: t('aboutSubmenu.meetTheTeam'), href: '/about#team' }
       ]
     },
-    { name: t('navigation.approach'), href: '/approach/' },
+    // { name: t('navigation.approach'), href: '/approach/' },
     {
       name: t('navigation.services'),
       href: '/services/',
       submenu: [
         {
-          name: t('servicesSubmenu.ourServices.title'),
-          href: '/services/',
-          description: t('servicesSubmenu.ourServices.description')
+          name: t('servicesSubmenu.softwareDev.title'),
+          href: '/services/#software-development',
+          description: t('servicesSubmenu.softwareDev.description')
         },
         {
-          name: t('servicesSubmenu.generalData.title'),
-          href: '/general-services/',
-          description: t('servicesSubmenu.generalData.description')
+          name: t('servicesSubmenu.softwareImpl.title'),
+          href: '/services/#software-implementation',
+          description: t('servicesSubmenu.softwareImpl.description')
         },
         {
-          name: t('servicesSubmenu.expertAnnotation.title'),
-          href: '/expert-services/',
-          description: t('servicesSubmenu.expertAnnotation.description')
+          name: t('servicesSubmenu.dataServices.title'),
+          href: '/services/#data-services',
+          description: t('servicesSubmenu.dataServices.description')
+        },
+        {
+          name: t('servicesSubmenu.digitalConsulting.title'),
+          href: '/services/#digital-consulting',
+          description: t('servicesSubmenu.digitalConsulting.description')
         }
       ]
     },
+    { name: t('navigation.project1000'), href: '/project1000/' },
     { name: t('navigation.credentials'), href: '/credentials/' },
   ];
 

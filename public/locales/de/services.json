@@ -1,7 +1,67 @@
 {
     "hero": {
         "title": "Unsere Dienstleistungen",
-        "subtitle": "Von großangelegter allgemeiner Annotation bis hin zu spezialisiertem medizinischem Fachwissen - wir bieten das komplette Spektrum an Datenannotationsdiensten."
+        "subtitle": "Digitale Lösungen aus einer Hand für Namibias führende öffentliche und private Institutionen"
+    },
+    "serviceLines": {
+        "title": "Was wir tun",
+        "items": [
+            {
+                "id": "software-development",
+                "title": "Softwareentwicklung",
+                "description": "Massgeschneiderte Web- & Mobile-Anwendungen; API-Entwicklung & -Integration; Datenbankdesign & -architektur; KI/ML-gestützte Produktentwicklung",
+                "items": [
+                    "Massgeschneiderte Web- & Mobile-Anwendungen",
+                    "API-Entwicklung & -Integration",
+                    "Datenbankdesign & -architektur",
+                    "KI/ML-gestützte Produktentwicklung"
+                ]
+            },
+            {
+                "id": "software-implementation",
+                "title": "Softwareimplementierung",
+                "description": "ERP- & CRM-Einrichtung und -Konfiguration; Bereitstellung von Cloud-Infrastruktur; Systemintegration & Automatisierung; laufender Support & Schulung",
+                "items": [
+                    "ERP- & CRM-Einrichtung und -Konfiguration",
+                    "Bereitstellung von Cloud-Infrastruktur",
+                    "Systemintegration & Automatisierung",
+                    "Laufender Support, Wartung & Schulung"
+                ]
+            },
+            {
+                "id": "data-services",
+                "title": "Datenservices",
+                "description": "Datenannotation & Labeling (Text, Bild, Video, Audio); Datenerfassung & -verarbeitung; Datenqualitätssicherung; Felddatenerhebung",
+                "items": [
+                    "Datenannotation & Labeling (Text, Bild, Video, Audio)",
+                    "Datenerfassung & -verarbeitung",
+                    "Datenqualitätssicherung",
+                    "Felddatenerhebung & Ground Truthing"
+                ]
+            },
+            {
+                "id": "digital-consulting",
+                "title": "Digitale Beratung",
+                "description": "Technologiebedarfsanalyse; Roadmap für die digitale Transformation; Unterstützung bei Anbieterauswahl & Beschaffung; IT-Governance-Beratung",
+                "items": [
+                    "Technologiebedarfsanalyse",
+                    "Roadmap für die digitale Transformation",
+                    "Unterstützung bei Anbieterauswahl & Beschaffung",
+                    "IT-Governance- & Richtlinienberatung"
+                ]
+            }
+        ]
+    },
+    "approach": {
+        "title": "Unser Vorgehensmodell",
+        "subtitle": "Ein strukturierter 5-Stufen-Prozess für jedes Projekt",
+        "steps": [
+            { "number": "1", "title": "Bedarfsanalyse", "description": "Erfassung der Anforderungen: technisch, operativ, budgetär und partnerschaftlich" },
+            { "number": "2", "title": "Angebot", "description": "Klares Festpreisangebot mit Preisgestaltung, Zeitplan, Leistungen und Qualitätsstandards" },
+            { "number": "3", "title": "Umsetzung", "description": "Durchführung mit strukturierter Qualitätssicherung und regelmäßiger Fortschrittsberichterstattung" },
+            { "number": "4", "title": "Übergabe", "description": "Vollständige Dokumentation, gegebenenfalls Mitarbeiterschulung, strukturierter Übergang" },
+            { "number": "5", "title": "Support", "description": "Laufende Wartung, Helpdesk und iterative Verbesserung auf Anfrage" }
+        ]
     },
     "general": {
         "title": "Allgemeine Annotation",

@@ -1,5 +1,5 @@
 {
-    "description": "We provide end-to-end data processing and annotation services to transform your data into a powerful asset.",
+    "description": "Namibia's Digital Services Partner",
     "quickLinks": {
         "title": "Quick Links",
         "aboutUs": "About Us",
@@ -8,9 +8,17 @@
     },
     "services": {
         "title": "Services",
-        "ourServices": "Our Services",
-        "generalData": "General Data Annotation",
-        "expertAnnotation": "Expert & Specialist Annotation"
+        "ourServices": "Software Development",
+        "generalData": "Data Services",
+        "expertAnnotation": "Digital Consulting",
+        "softwareImplementation": "Software Implementation",
+        "dataServices": {
+            "title": "Data Services",
+            "subOfferings": {
+                "generalDataAnnotation": "General Data Annotation",
+                "expertSpecialistAnnotation": "Expert & Specialist Annotation"
+            }
+        }
     },
     "contact": {
         "title": "Contact",

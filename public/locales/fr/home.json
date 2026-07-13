@@ -1,12 +1,59 @@
 {
     "hero": {
         "brandName": "LABEL LADDER",
-        "tagline1": "Annotation de Données Précise",
-        "tagline2": "de la mise à l'échelle à la solution experte ciblée.",
+        "tagline1": "Nous offrons aux institutions privées et publiques",
+        "tagline2": "des solutions informatiques, logicielles et de données de premier ordre,",
+        "tagline3": "gérées et exploitées par des Namibiens",
         "subtitle1": "Des données précises pour votre IA : rapides, fiables et de la plus haute qualité.",
-        "subtitle2": "Label Ladder couvre tout le spectre de l'annotation de données, des solutions standard évolutives aux projets sur mesure, toujours accompagnés d'experts du domaine.",
+        "subtitle2": "Développement logiciel, mise en œuvre logicielle, services de données et conseil numérique pour les principales institutions publiques et privées de Namibie.",
         "btnServices": "Services",
         "btnContact": "Contactez-nous"
+    },
+    "valuePillars": {
+        "title": "Pourquoi Label Ladder",
+        "pillars": [
+            {
+                "title": "Employer des Namibiens",
+                "description": "Nous créons des emplois numériques porteurs de sens pour la jeunesse namibienne, formant une nouvelle génération de professionnels de la technologie."
+            },
+            {
+                "title": "Renforcer les compétences internes",
+                "description": "Nous ne livrons pas seulement des logiciels – nous formons le personnel namibien et renforçons les compétences internes. Chaque mission laisse nos clients plus forts."
+            },
+            {
+                "title": "Connecter à l'international",
+                "description": "Nous collaborons avec des entreprises internationales pour apporter des technologies innovantes en Namibie, mises en œuvre et exploitées par des Namibiens."
+            }
+        ]
+    },
+    "servicesOverview": {
+        "title": "Nos services",
+        "subtitle": "Des solutions numériques de bout en bout pour les institutions namibiennes",
+        "cards": [
+            {
+                "title": "Développement logiciel",
+                "description": "Applications web et mobiles sur mesure ; développement et intégration d'API ; conception et architecture de bases de données ; développement de produits assisté par IA/ML"
+            },
+            {
+                "title": "Mise en œuvre logicielle",
+                "description": "Mise en place et configuration d'ERP et de CRM ; déploiement d'infrastructures cloud ; intégration de systèmes et automatisation ; support, maintenance et formation continus"
+            },
+            {
+                "title": "Services de données",
+                "description": "Annotation et étiquetage de données (texte, image, vidéo, audio) ; saisie et traitement de données ; assurance qualité des données ; collecte de données de terrain et vérification de référence"
+            },
+            {
+                "title": "Conseil numérique",
+                "description": "Évaluation des besoins technologiques ; feuille de route de transformation numérique ; soutien à la sélection des fournisseurs et aux achats ; conseil en gouvernance et politiques informatiques"
+            }
+        ],
+        "cta": "Voir tous les services"
+    },
+    "project1000": {
+        "label": "Project1000",
+        "title": "Label Ladder, employeur Project1000",
+        "description": "Nous ancrons l'agenda national pour l'emploi numérique – en donnant à la jeunesse namibienne les outils et les connaissances nécessaires pour travailler dans les secteurs de la technologie, de l'IA et des données.",
+        "cta": "En savoir plus"
     },
     "foundation": {
         "title": "Pourquoi Label Ladder ?",
@@ -99,6 +146,7 @@
     },
     "whyChoose": {
         "title": "Pourquoi les entreprises font confiance à Label Ladder",
+        "impactTitle": "Notre Impact",
         "subtitle": "",
         "features": {
             "scale": {

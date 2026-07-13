@@ -1,7 +1,67 @@
 {
     "hero": {
         "title": "Our Services",
-        "subtitle": "From large-scale general annotation to specialized medical expertise - we deliver the complete spectrum of data annotation services."
+        "subtitle": "End-to-end digital solutions for Namibia's leading public and private institutions"
+    },
+    "serviceLines": {
+        "title": "What We Do",
+        "items": [
+            {
+                "id": "software-development",
+                "title": "Software Development",
+                "description": "Custom web & mobile applications; API development & integration; database design & architecture; AI/ML-assisted product development",
+                "items": [
+                    "Custom web & mobile applications",
+                    "API development & integration",
+                    "Database design & architecture",
+                    "AI/ML-assisted product development"
+                ]
+            },
+            {
+                "id": "software-implementation",
+                "title": "Software Implementation",
+                "description": "ERP & CRM setup and configuration; cloud infrastructure deployment; system integration & automation; ongoing support & training",
+                "items": [
+                    "ERP & CRM setup and configuration",
+                    "Cloud infrastructure deployment",
+                    "System integration & automation",
+                    "Ongoing support, maintenance & training"
+                ]
+            },
+            {
+                "id": "data-services",
+                "title": "Data Services",
+                "description": "Data annotation & labeling (text, image, video, audio); data entry & processing; data quality assurance; field data collection",
+                "items": [
+                    "Data annotation & labeling (text, image, video, audio)",
+                    "Data entry & processing",
+                    "Data quality assurance",
+                    "Field data collection & ground truthing"
+                ]
+            },
+            {
+                "id": "digital-consulting",
+                "title": "Digital Consulting",
+                "description": "Technology needs assessment; digital transformation roadmapping; vendor selection & procurement support; IT governance advisory",
+                "items": [
+                    "Technology needs assessment",
+                    "Digital transformation roadmapping",
+                    "Vendor selection & procurement support",
+                    "IT governance & policy advisory"
+                ]
+            }
+        ]
+    },
+    "approach": {
+        "title": "Our Engagement Model",
+        "subtitle": "A structured 5-step process for every project",
+        "steps": [
+            { "number": "1", "title": "Scoping", "description": "Understand requirements: technical, operational, budget, and partnerships" },
+            { "number": "2", "title": "Proposal", "description": "Clear, fixed-scope proposal with pricing, timeline, deliverables, and quality standards" },
+            { "number": "3", "title": "Delivery", "description": "Execution with structured QA and regular progress reporting" },
+            { "number": "4", "title": "Handover", "description": "Full documentation, staff training where relevant, structured transition" },
+            { "number": "5", "title": "Support", "description": "Ongoing maintenance, helpdesk, and iterative improvement on request" }
+        ]
     },
     "general": {
         "title": "General Data Annotation Services",

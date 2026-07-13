@@ -1,0 +1,42 @@
+{
+    "hero": {
+        "label": "Project1000",
+        "title": "L'initiative namibienne pour l'emploi numérique",
+        "subtitle": "Project1000 est une initiative nationale du MICT mise en œuvre par Impact Tank pour créer 1 000 emplois numériques pour la jeunesse namibienne."
+    },
+    "role": {
+        "title": "Le rôle de Label Ladder",
+        "description": "En tant qu'employeur contributeur, Label Ladder offre aux Namibiens les outils et les connaissances nécessaires pour travailler dans les secteurs de la technologie, de l'IA et des données.",
+        "points": [
+            "Employeur contributeur de l'initiative Project1000",
+            "Formation pratique en technologie, IA et données",
+            "Création d'emplois numériques durables pour la jeunesse namibienne",
+            "Faire le lien entre la technologie mondiale et les talents locaux"
+        ]
+    },
+    "academy": {
+        "title": "Académie Label Ladder",
+        "description": "Nous garantissons à nos employés un parcours vers la croissance et l'employabilité dans une industrie mondialement compétitive.",
+        "subtitle": "Notre programme d'académie en 5 étapes prépare les talents namibiens à l'économie numérique mondiale :",
+        "stages": [
+            { "number": "1", "title": "Fondamentaux numériques", "description": "Compétences informatiques de base, maîtrise d'Internet et préparation au monde professionnel" },
+            { "number": "2", "title": "Bases des données et de l'IA", "description": "Introduction à l'annotation de données, aux concepts de machine learning et aux outils d'IA" },
+            { "number": "3", "title": "Formation spécialisée", "description": "Compétences d'annotation spécifiques au domaine : texte, image, vidéo, audio" },
+            { "number": "4", "title": "Qualité et processus", "description": "Assurance qualité, gestion des flux de travail et normes professionnelles" },
+            { "number": "5", "title": "Développement de carrière", "description": "Constitution de portfolio, communication avec les clients et préparation au marché mondial" }
+        ]
+    },
+    "impact": {
+        "title": "Notre impact",
+        "stats": [
+            { "number": "1000", "label": "Objectif d'emplois numériques", "suffix": "+" },
+            { "number": "5", "label": "Étapes de l'académie", "suffix": "" },
+            { "number": "100", "label": "Géré par des Namibiens", "suffix": "%" }
+        ]
+    },
+    "cta": {
+        "title": "Rejoignez le mouvement",
+        "description": "Que vous soyez une institution à la recherche de services numériques ou un partenaire souhaitant soutenir l'avenir numérique de la Namibie — connectons-nous.",
+        "button": "Contactez-nous"
+    }
+}

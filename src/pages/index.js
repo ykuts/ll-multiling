@@ -2,10 +2,12 @@ import { useTina } from 'tinacms/dist/react'
 import client from '../../tina/__generated__/client'
 import Layout from '../components/layout/Layout';
 import HeroSection from '../components/sections/HeroSection';
+import ValuePillarsSection from '../components/sections/ValuePillarsSection';
+import ServicesOverviewSection from '../components/sections/ServicesOverviewSection';
+import Project1000CalloutSection from '../components/sections/Project1000CalloutSection';
 import ChallengeSection from '../components/sections/ChallengeSection';
 import SolutionSection from '../components/sections/SolutionSection';
 import ApproachSection from '../components/sections/ApproachSection';
-import ServicesOverviewSection from '../components/sections/ServicesOverviewSection';
 import CTASection from '../components/sections/CTASection';
 import CredentialsSection from '../components/sections/CredentialsSection';
 import FoundationSection from '../components/sections/FoundationSection';
@@ -81,20 +83,22 @@ export default function Home(props) {
 
   return (
     <Layout
-      title="Professional Data Annotation: From Scale to Medical Specialization"
-      description="Expert data annotation services combining 1,000-strong Namibian team for large-scale projects with specialized medical expertise for healthcare AI. Swiss precision meets social impact."
+      title="Namibia's Digital Services Partner"
+      description="Software development, software implementation, data services, and digital consulting for Namibia's leading public and private institutions"
       keywords="data annotation services, medical data annotation, healthcare AI, large scale data labeling, radiology annotation, pathology labeling, clinical data processing, Swiss Namibian partnership, native English speakers"
       image="https://labelladder.com/images/og/homepage-medical-og.jpg"
       structuredData={structuredData}
     >
       <HeroSection tinaData={data?.homeTranslations?.hero} />
+      <ValuePillarsSection />
+      <ServicesOverviewSection />
+      <Project1000CalloutSection />
       <FoundationSection />
       <ExpertAnnotationSection />
       <ChallengeSection />
       <SolutionSection />
       <WhyChooseSection />
-      <ApproachSection />
-      {/* <ServicesOverviewSection /> */}
+      {/* <ApproachSection /> */}
       <CredentialsSection />
       <CTASection />
     </Layout>
